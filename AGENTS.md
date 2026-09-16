@@ -9,3 +9,7 @@ Placeholder for a future TinaCMS editorial-content split. Do not treat this as t
 - Never commit plaintext environment files, Cloudflare credentials, Tina tokens, R2 keys, or deployment configuration.
 - Use focused branches and pull requests; never edit `main` directly.
 - During transition, canonical Seeds/Terrarium state remains in `NacoSolutions/senshac`.
+
+## Repository tooling
+
+This repository uses the pinned Seeds (`sd`) and Mulch (`ml`) tooling. At the start of a session, run `sd prime` for tracker context, then `sd ready` to inspect unblocked work. Run `ml prime` to load repository expertise before making changes. Before finishing, preserve useful setup or workflow knowledge with `ml record <domain> --type <convention|pattern|failure|decision|reference|guide> --description "..."`.
