@@ -1,0 +1,13 @@
+{
+  "name": "senshac-content-contract",
+  "private": true,
+  "scripts": {
+    "test": "bun test",
+    "lint": "bunx --bun biome check scripts tests",
+    "typecheck": "bun --check scripts/validate_export.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "typescript": "5.7.3"
+  }
+}

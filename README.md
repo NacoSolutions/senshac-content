@@ -22,3 +22,11 @@ This repository must not own Astro components, Tina schema, generated Tina artif
 6. Migrate content reversibly; retain the monorepo as rollback source until production verification.
 
 Until then, do not add production content here.
+
+## Read-only cutover handoff fixture
+
+The bounded, non-secret pinned-export contract for the future `senshac-web`
+adapter is documented in [`docs/editorial-export-contract.md`](docs/editorial-export-contract.md).
+It includes a JSON export schema, deterministic fixture validation, and explicit
+`ready`, `stale`, `missing`, and `error` behavior. This does not make this
+repository production-authoritative or add Tina/ Astro/deployment artifacts.
