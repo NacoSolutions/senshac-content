@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://senshac.example/contracts/editorial-export/v1",
+  "title": "Senshac pinned editorial export",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contractVersion", "sourceRevision", "entries"],
+  "properties": {
+    "contractVersion": { "const": 1 },
+    "sourceRevision": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$",
+      "description": "Immutable lowercase Git commit SHA of the content export."
+    },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" },
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "locale", "title", "body"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "locale": { "type": "string", "pattern": "^[a-z]{2}(?:-[A-Z]{2})?$" },
+        "title": { "type": "string", "minLength": 1 },
+        "body": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
