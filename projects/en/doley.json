@@ -1,0 +1,81 @@
+{
+	"title": "Doley",
+	"description": "Estética, color y salud capilar convertidos en una experiencia envolvente.",
+	"slug": "doley",
+	"publishDate": "2024-01-14T00:00:00.000Z",
+	"tags": ["Salón de belleza"],
+	"showTags": true,
+	"featured": false,
+	"draft": false,
+	"blocks": [
+		{
+			"_template": "projectBanner"
+		},
+		{
+			"title": "Doley",
+			"_template": "projectDetails"
+		},
+		{
+			"title": "BRIEF",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectBrief"
+		},
+		{
+			"title": "CONCEPTO",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectConcept"
+		},
+		{
+			"title": "ESTRATEGIA",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectStrategy"
+		},
+		{
+			"title": "COLABORADORES",
+			"list": [],
+			"_template": "projectCollaborators"
+		},
+		{
+			"_template": "projectFinalImage"
+		}
+	]
+}
