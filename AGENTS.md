@@ -16,4 +16,4 @@ This repository uses the pinned Seeds (`sd`) and Mulch (`ml`) tooling. At the st
 
 ## Agent guidance
 
-For focused autonomous changes, follow [Bounded Warren Task](.agents/skills/bounded-warren-task/SKILL.md). Use positive phrasing and specific instructions; apply defense in depth, gentle coding, direct execution, and token economy. Keep the named objective and files explicit, inspect the smallest relevant surface, preserve adjacent behavior, and verify with one bounded quality gate before committing.
+For focused autonomous changes, follow [Bounded Warren Task](.agents/skills/bounded-warren-task/SKILL.md) and [Senshac Agent Principles](.agents/skills/senshac-agent-principles/SKILL.md). Use positive phrasing and specific instructions; apply defense in depth, gentle coding, direct execution, and token economy. Keep the named objective and files explicit, inspect the smallest relevant surface, preserve adjacent behavior, and verify with one bounded quality gate before committing.
