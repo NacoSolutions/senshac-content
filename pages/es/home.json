@@ -1,0 +1,103 @@
+{
+	"title": "Sens*Hac - Estudio de Interiorismo Estratégico",
+	"description": "Diseñamos espacios con identidad de marca que elevan el valor y la rentabilidad de tu negocio.",
+	"headerStyle": "transparent",
+	"blocks": [
+		{
+			"title": "Communicate.\nCaptivate.\nConnect.",
+			"subtitle": "",
+			"topRight": {
+				"lines": ["interior", "design", "studio R"]
+			},
+			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
+			"imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
+			"objectFit": "cover",
+			"_template": "editorialBanner"
+		},
+		{
+			"title": "EL ESPACIO ES\nDONDE TU MARCA\nCOBRA VIDA.",
+			"intro": "Creamos interiores con\n\nlenguaje visual propio que\n\nhabitan dentro del universo\n\nde marca.\n",
+			"ctaText": "Nuestro método",
+			"ctaLink": "/es/methods",
+			"mediaType": "image",
+			"mediaId": "redesign/photos/img-9212",
+			"imageAlt": "Selección de materiales, texturas y acabados",
+			"_template": "editorialHero"
+		},
+		{
+			"mediaType": "image",
+			"mediaId": "",
+			"imageAlt": "Proceso de diseño estratégico de Senshac",
+			"_template": "editorialShowcase"
+		},
+		{
+			"title": "Unimos Espacio, Identidad de\nMarca & Estrategia.",
+			"headingLevel": "h1",
+			"body": "Diseñamos desde el ADN de marca para que el espacio sea una extensión natural\n\nde ésta. Integramos tus flujos de trabajo, creamos recorridos que agilizan la venta,\n\nzonificamos las áreas estratégicamente y elevamos la percepción de valor para\n\nimpulsar la rentabilidad en *hospitality*, *retail* y *wellness*.\n",
+			"_template": "editorialCopy"
+		},
+		{
+			"mediaType": "video",
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+			"_template": "editorialShowcase"
+		},
+		{
+			"intro": "Si tu producto o servicio te hace diferente, el diseño de tu local tiene que demostrarlo. Transformamos tu espacio *para convertirlo en tu mejor herramienta de venta y hacer crecer tu negocio.* Nuestros objetivos:\n",
+			"items": [
+				{
+					"number": "1",
+					"title": "Posicionar tu marca y darle visibilidad",
+					"summary": "Tu espacio comunica quién eres, qué te hace diferente y te posiciona en el mercado sin necesidad de explicaciones."
+				},
+				{
+					"number": "2",
+					"title": "Aumentar el valor percibido",
+					"summary": "El diseño eleva el valor de tu producto o servicio, para que tus márgenes tengan sentido."
+				},
+				{
+					"number": "3",
+					"title": "Mejorar tu rentabilidad",
+					"summary": "Diseñamos espacios inteligentes que facilitan el flujo operativo, guían la venta y potencian la fidelización de tu cliente target."
+				}
+			],
+			"_template": "editorialAccordion"
+		},
+		{
+			"mediaType": "image",
+			"mediaId": "redesign/editorial/rocas",
+			"imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
+			"_template": "editorialShowcase"
+		},
+		{
+			"title": "Somos tu aliado si buscas:",
+			"intro": "",
+			"items": [
+				{
+					"title": "Optimizar tu rentabilidad",
+					"text": "Tu canal físico actual no rinde como debería y necesitas que el espacio impulse las ventas.\n"
+				},
+				{
+					"title": "Dar el salto al canal físico",
+					"text": "Lideras un e-commerce consolidado o vas a inaugurar tu primer local exigiendo un impacto inmediato.\n"
+				},
+				{
+					"title": "Reposicionar tu marca",
+					"text": "Sientes que tu espacio no hace justicia a la calidad de tu producto y quieres atraer a un perfil de cliente de mayor valor.\n"
+				}
+			],
+			"_template": "editorialRows"
+		},
+		{
+			"text": "Cuéntanos tu proyecto",
+			"link": "/es/contact",
+			"_template": "editorialCta"
+		},
+		{
+			"description": "",
+			"tag": "novedades",
+			"limit": 4,
+			"_template": "editorialInstagram"
+		}
+	]
+}
+

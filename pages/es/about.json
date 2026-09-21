@@ -1,0 +1,37 @@
+{
+	"title": "Estudio - Sens*Hac",
+	"description": "Estudio boutique de interiorismo estratégico para retail, hospitality y wellness.",
+	"blocks": [
+		{
+			"label": "Misión",
+			"statement": "TU ESPACIO HABLA POR TI.\nCONVIÉRTELO EN TU\nACTIVO MÁS RENTABLE.",
+			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
+			"placeholderLabel": "Retrato del estudio pendiente",
+			"_template": "editorialMission",
+			"content": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Nuestra misión es proyectar espacios identitarios que traducen la esencia y los valores de tu marca en experiencias memorables diseñadas para perdurar."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Concebimos cada espacio como el escenario donde tu marca cobra vida, se siente y se experimenta, generando una auténtica conexión con tu cliente ideal. Integramos tus flujos de trabajo y tu estrategia de venta en el entorno para impulsar la rentabilidad en los sectores retail, hospitality y wellness."
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
+

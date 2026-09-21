@@ -1,0 +1,330 @@
+{
+	"title": "Method - Sens*Hac",
+	"description": "Our strategic interior design method, from brand diagnosis through opening.",
+	"blocks": [
+		{
+			"_template": "editorialCopy",
+			"title": "OUR METHOD:\nFROM STRATEGY TO\nOPENING.",
+			"headingLevel": "h1",
+			"showStar": true
+		},
+		{
+			"_template": "editorialAccordion",
+			"items": [
+				{
+					"number": "01",
+					"title": "Brand diagnosis and strategy",
+					"summary": "We analyse your business, audience and commercial goals before design begins.",
+					"details": [
+						{
+							"label": "Business audit",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We identify commercial challenges and growth goals."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Spatial feasibility",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We assess whether the location supports your business model."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "02",
+					"title": "Creative concept",
+					"summary": "We translate strategy into a memorable spatial experience.",
+					"details": [
+						{
+							"label": "Identity",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We apply your branding and values to the interior architecture."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Flow design",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We plan operations, the sales journey and key zones."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Bespoke design and FF&E",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We define furniture, lighting and materials."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "3D modelling",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "High-fidelity visualisations for confident approval."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "03",
+					"title": "Technical development",
+					"summary": "We turn the creative vision into a viable, safe and buildable project.",
+					"details": [
+						{
+							"label": "Technical drawings",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Detailed documentation for contractors and trades."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Budget development",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "A clear economic breakdown of the project."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Adapted technical design",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Alignment with the location’s technical and regulatory needs."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "04",
+					"title": "Site supervision and installation coordination",
+					"summary": "We guide execution so the built result remains faithful to the design.",
+					"details": [
+						{
+							"label": "One point of contact",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We centralise communication across the project."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Site supervision",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Periodic visits to review technical details and finishes."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Final quality control",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We verify quality and visual fidelity."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"_template": "editorialCta",
+			"text": "Book a call",
+			"link": "/en/contact"
+		},
+		{
+			"_template": "editorialRows",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Choose the level of support you need by commissioning the process in phases:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"title": "Strategic consultation",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "An intensive session to audit the location and define brand, layout and sales flow priorities."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Creative concept",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Phases I and II, including strategy, spatial layout and 3D visualisation."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Full project",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "The complete process, from initial strategy through execution."
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"_template": "editorialCta",
+			"text": "Request a tailored proposal",
+			"link": "/en/contact"
+		}
+	]
+}
+

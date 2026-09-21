@@ -1,0 +1,167 @@
+{
+	"title": "Sens*Hac - Estudi d’Interiorisme Estratègic",
+	"description": "Dissenyem espais amb identitat de marca que eleven el valor i la rendibilitat del teu negoci.",
+	"headerStyle": "transparent",
+	"blocks": [
+		{
+			"_template": "editorialHero",
+			"title": "DISSENYEM\nESPAIS AMB\nIDENTITAT DE\nMARCA",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Som un estudi boutique d’interiorisme estratègic especialitzat a crear interiors d’alt impacte per a negocis."
+							}
+						]
+					}
+				]
+			},
+			"ctaText": "sobre l’estudi",
+			"ctaLink": "/ca/studio",
+			"mediaType": "image",
+			"placeholderLabel": "Imatge de projecte pendent"
+		},
+		{
+			"_template": "editorialCopy",
+			"title": "Unim Espai, Identitat de Marca & Estratègia.",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Col·laborem estretament amb fundadors i emprenedors per construir una imatge cohesionada que alinea producte, percepció i experiència d’usuari. Creem espais identitaris amb un llenguatge visual propi."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "editorialShowcase",
+			"mediaType": "video",
+			"placeholderLabel": "Vídeo de marca pendent"
+		},
+		{
+			"_template": "editorialAccordion",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Si tens un producte o servei que et fa diferent, no competeixis per preu. Dissenyem el teu espai per convertir-lo en el teu millor actiu estratègic:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"number": "01",
+					"title": "Posicionament i visibilitat per a la teva marca",
+					"summary": "El teu espai comunica qui ets i què et fa diferent."
+				},
+				{
+					"number": "02",
+					"title": "Augmentem el teu valor percebut",
+					"summary": "Creem entorns que eleven el valor del teu producte o servei."
+				},
+				{
+					"number": "03",
+					"title": "Millorem la teva rendibilitat",
+					"summary": "Dissenyem espais intel·ligents que faciliten l’operativa i potencien la venda."
+				}
+			]
+		},
+		{
+			"_template": "editorialRows",
+			"title": "Som el teu aliat si busques:",
+			"items": [
+				{
+					"title": "Optimitzar la rendibilitat",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "El teu canal físic actual no rendeix com hauria i necessites que l’espai impulsi les vendes."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Fer el salt al canal físic",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Lideres un e-commerce o inauguraràs el teu primer local i necessites un impacte immediat."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Reposicionar la marca",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Vols que el teu espai reflecteixi la qualitat del producte i atregui un client de més valor."
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"_template": "editorialCta",
+			"text": "Explica’ns el teu projecte",
+			"link": "/ca/contact"
+		},
+		{
+			"_template": "editorialShowcase",
+			"eyebrow": "Novetats",
+			"items": [
+				{
+					"title": "La Trobada",
+					"link": "/ca/works/la-trobada",
+					"placeholderLabel": "Imatge de projecte pendent"
+				},
+				{
+					"title": "Novetats",
+					"link": "/ca/works",
+					"placeholderLabel": "Imatge de projecte pendent"
+				}
+			],
+			"ctaText": "Veure treballs",
+			"ctaLink": "/ca/works"
+		}
+	]
+}
+

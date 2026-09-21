@@ -1,0 +1,398 @@
+{
+	"title": "Método - Sens*Hac",
+	"description": "Nuestro método de interiorismo estratégico, desde el diagnóstico de marca hasta la apertura.",
+	"blocks": [
+		{
+			"title": "NUESTRO MÉTODO:\nDE LA ESTRATEGIA A\nLA APERTURA.",
+			"headingLevel": "h1",
+			"showStar": true,
+			"_template": "editorialCopy"
+		},
+		{
+			"mediaId": "https://media.senshac.com/images/about/senshac-about-our-mission/1200.webp",
+			"imageAlt": "Investigación visual y material durante el proceso creativo",
+			"_template": "editorialShowcase"
+		},
+		{
+			"items": [
+				{
+					"number": "01",
+					"title": "Diagnóstico y estrategia de marca",
+					"summary": "Analizamos el contexto de tu negocio, tu público objetivo y tus metas comerciales. Establecemos una base sólida que integra la esencia de tu marca con las necesidades funcionales del local antes de proyectar.",
+					"details": [
+						{
+							"label": "Auditoría de negocio",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Identificación de desafíos comerciales y objetivos de crecimiento."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Viabilidad espacial",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Estudio preliminar de la capacidad del local para asegurar que responde a tu modelo de negocio."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "02",
+					"title": "Concepto creativo",
+					"summary": "Traducimos tu estrategia en una experiencia espacial memorable. En esta fase nace la identidad única, el recorrido del cliente y la atmósfera visual que hará que tu negocio destaque.",
+					"details": [
+						{
+							"label": "Identidad",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Aplicación del branding y tus valores a la arquitectura interior."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Diseño de flujos",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Planificación de la distribución operativa, recorrido de venta y zonas calientes."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Diseño a medida y FF&E",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Conceptualización de mobiliario, iluminación y selección de materiales."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Modelado 3D",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Representaciones digitales de alta fidelidad para visualizar y aprobar el espacio."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "03",
+					"title": "Desarrollo técnico",
+					"summary": "Convertimos la visión creativa en un proyecto ejecutable. Elaboramos la documentación necesaria y coordinamos las validaciones técnicas para garantizar que el diseño sea viable, seguro y fiel a tu inversión.",
+					"details": [
+						{
+							"label": "Planos técnicos ejecutivos",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Planimetría detallada para constructores e industriales."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Elaboración de presupuestos",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Desglose económico de materiales, mobiliario e industriales."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Diseño técnico adaptado",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Adecuación del proyecto a los requisitos técnicos y normativos del local."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "04",
+					"title": "Supervisión de obra y coordinación de montaje",
+					"summary": "Acompañamos la ejecución para que la transición del papel a la realidad sea fiel al diseño, resolviendo imprevistos y coordinando el montaje.",
+					"details": [
+						{
+							"label": "Un solo interlocutor",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Centralizamos la comunicación entre tus necesidades y el equipo técnico."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Supervisión en obra",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Visitas periódicas para comprobar detalles técnicos y acabados."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Control de calidad final",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Verificamos la calidad y la fidelidad estética proyectada para tu marca."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"_template": "editorialAccordion"
+		},
+		{
+			"text": "Agenda una llamada",
+			"link": "/es/contact",
+			"_template": "editorialCta"
+		},
+		{
+			"mediaId": "redesign/photos/img-9212",
+			"imageAlt": "Muestras de materiales y acabados",
+			"_template": "editorialShowcase"
+		},
+		{
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Te ofrecemos la flexibilidad de contratar el proceso por fases para que elijas el nivel de acompañamiento que deseas en tu proyecto:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"title": "Consultoría estratégica",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Sesión intensiva de dos horas. Auditamos tu local para darte directrices claras sobre marca, distribución y flujos de venta."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Concepto creativo",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Incluye las fases I y II. Desarrollamos la estrategia, la distribución espacial y la infoarquitectura 3D."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Proyecto integral",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Abarcamos el proceso completo, desde la estrategia inicial hasta la ejecución del proyecto."
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"_template": "editorialRows"
+		},
+		{
+			"text": "Solicita una propuesta personalizada",
+			"link": "/es/contact",
+			"_template": "editorialCta"
+		},
+		{
+			"mediaId": "https://media.senshac.com/images/redesign/photos/img-9249/1200.webp",
+			"_template": "editorialShowcase"
+		},
+		{
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "FAQ'S"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"number": "",
+					"title": "Tengo un proyecto en mente, ¿puedo agendar una consulta gratuita?",
+					"summary": "Respuesta pendiente de validación."
+				},
+				{
+					"number": "",
+					"title": "¿Cuándo debería contratar servicios de interiorismo?",
+					"summary": "Respuesta pendiente de validación."
+				},
+				{
+					"number": "",
+					"title": "¿Ofrecéis servicios más allá del diseño interior?",
+					"summary": "Respuesta pendiente de validación."
+				},
+				{
+					"number": "",
+					"title": "¿Cuánto tiempo tarda en completarse un proyecto?",
+					"summary": "Respuesta pendiente de validación."
+				},
+				{
+					"number": "",
+					"title": "¿Cómo funciona la estructura de honorarios?",
+					"summary": "Respuesta pendiente de validación."
+				},
+				{
+					"number": "",
+					"title": "¿Con qué proveedores trabajáis? ¿Puedo comprar mis propios materiales?",
+					"summary": "Respuesta pendiente de validación."
+				},
+				{
+					"number": "",
+					"title": "¿Puedo contratar únicamente el desarrollo del concepto de diseño?",
+					"summary": "Respuesta pendiente de validación."
+				}
+			],
+			"_template": "editorialAccordion"
+		}
+	]
+}
+
