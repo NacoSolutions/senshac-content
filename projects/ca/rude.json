@@ -1,0 +1,81 @@
+{
+	"title": "Rude",
+	"description": "Una nueva marca de ropa que reivindica a la mujer como una figura fuerte e incontenible.",
+	"slug": "rude",
+	"publishDate": "2024-01-13T00:00:00.000Z",
+	"tags": ["Tienda de ropa"],
+	"showTags": true,
+	"featured": false,
+	"draft": false,
+	"blocks": [
+		{
+			"_template": "projectBanner"
+		},
+		{
+			"title": "Rude",
+			"_template": "projectDetails"
+		},
+		{
+			"title": "BRIEF",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectBrief"
+		},
+		{
+			"title": "CONCEPTO",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectConcept"
+		},
+		{
+			"title": "ESTRATEGIA",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectStrategy"
+		},
+		{
+			"title": "COLABORADORES",
+			"list": [],
+			"_template": "projectCollaborators"
+		},
+		{
+			"_template": "projectFinalImage"
+		}
+	]
+}

@@ -1,0 +1,199 @@
+{
+	"title": "La Trobada",
+	"description": "Un homenatge a la cultura mediterrània, el sabor i la calidesa. Restaurant de barri a Badalona.",
+	"slug": "la-trobada",
+	"publishDate": "2024-01-15",
+	"completedDate": "2024-01-15",
+	"tags": ["Bar/Restaurant", "Gastronomia"],
+	"featured": true,
+	"draft": false,
+	"blocks": [
+		{
+			"mediaId": "projects/la-trobada/cover",
+			"alt": "La Trobada",
+			"_template": "projectBanner"
+		},
+		{
+			"title": "La Trobada",
+			"subtitle": "Un homenatge a la cultura mediterrània, el sabor i la calidesa",
+			"mediaId": "projects/la-trobada/detail",
+			"services": "Disseny d'interiors, Identitat visual",
+			"servicesLabel": "SERVEIS",
+			"category": "Bar/Restaurant",
+			"categoryLabel": "CATEGORIA",
+			"area": "<50 m²",
+			"areaLabel": "ÀREA",
+			"location": "Badalona, Barcelona",
+			"locationLabel": "UBICACIÓ",
+			"_template": "projectDetails"
+		},
+		{
+			"title": "BRIEF",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "La Trobada és un homenatge a la cultura mediterrània, el sabor i la calidesa. Aquest petit restaurant de barri, operat per Inma i Jonathan, funciona com un espai de trobada per a veïns i amics. El nom 'La Trobada' reflecteix l'estil de vida mediterrani caracteritzat per la calidesa i els moments compartits."
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectBrief"
+		},
+		{
+			"_template": "editorialGallery",
+			"cols": 3,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/brief/01",
+					"alt": "Vista interior La Trobada"
+				},
+				{
+					"mediaId": "projects/la-trobada/brief/02",
+					"alt": "Detalls La Trobada"
+				},
+				{
+					"mediaId": "projects/la-trobada/brief/03",
+					"alt": "Ambient La Trobada"
+				}
+			]
+		},
+		{
+			"title": "CONCEPTE",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "El concepte se centra a crear un ambient acollidor que evoqui la calidesa mediterrània. La paleta de colors terrosos, materials naturals i una il·luminació càlida treballen junts per crear un espai on els comensals se sentin com a casa."
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectConcept"
+		},
+		{
+			"_template": "editorialGallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/concept/01",
+					"alt": "Visualització concepte 1"
+				},
+				{
+					"mediaId": "projects/la-trobada/concept/02",
+					"alt": "Visualització concepte 2"
+				},
+				{
+					"mediaId": "projects/la-trobada/concept/03",
+					"alt": "Visualització concepte 3"
+				},
+				{
+					"mediaId": "projects/la-trobada/concept/04",
+					"alt": "Visualització concepte 4"
+				}
+			]
+		},
+		{
+			"title": "ESTRATÈGIA",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "El repte principal va consistir a optimitzar el flux entre el compacte interior de 50m² i l'àmplia terrassa adjacent. La reorganització de la cuina va abordar zones funcionals per a cocció, preparació i neteja, a més d'estacions dedicades per al personal de sala."
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectStrategy"
+		},
+		{
+			"_template": "editorialCarousel",
+			"items": [
+				{
+					"mediaId": "projects/la-trobada/strategy/01",
+					"alt": "Estratègia 1"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/02",
+					"alt": "Estratègia 2"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/03",
+					"alt": "Estratègia 3"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/04",
+					"alt": "Estratègia 4"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/05",
+					"alt": "Estratègia 5"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/06",
+					"alt": "Estratègia 6"
+				}
+			]
+		},
+		{
+			"_template": "editorialGallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/process/01",
+					"alt": "Procés 1"
+				},
+				{
+					"mediaId": "projects/la-trobada/process/02",
+					"alt": "Procés 2"
+				}
+			]
+		},
+		{
+			"title": "COL·LABORADORS",
+			"list": [
+				{
+					"name": "I3dea",
+					"role": "Renderitzat"
+				},
+				{
+					"name": "Ceràmica Ferrés",
+					"role": "Proveïdor"
+				},
+				{
+					"name": "Auténtica Cerámica",
+					"role": "Proveïdor"
+				},
+				{
+					"name": "Vergès Design",
+					"role": "Proveïdor"
+				},
+				{
+					"name": "Marset Iluminación",
+					"role": "Proveïdor"
+				}
+			],
+			"_template": "projectCollaborators"
+		},
+		{
+			"mediaId": "projects/la-trobada/collab/01",
+			"alt": "Col·laboradors",
+			"_template": "projectFinalImage"
+		}
+	]
+}
