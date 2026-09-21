@@ -17,3 +17,10 @@ This repository uses the pinned Seeds (`sd`) and Mulch (`ml`) tooling. At the st
 ## Agent guidance
 
 For focused autonomous changes, follow [Bounded Warren Task](.agents/skills/bounded-warren-task/SKILL.md) and [Senshac Agent Principles](.agents/skills/senshac-agent-principles/SKILL.md). Use positive phrasing and specific instructions; apply defense in depth, gentle coding, direct execution, and token economy. Keep the named objective and files explicit, inspect the smallest relevant surface, preserve adjacent behavior, and verify with one bounded quality gate before committing.
+
+Use these curated role skills for focused work:
+
+- [Git Workflow](.agents/skills/git-workflow/SKILL.md) for scoped commits and pull-request handoff.
+- [Writing Documentation](.agents/skills/writing-docs/SKILL.md) for affirmative, actionable repository guidance.
+- [Verification Before Completion](.agents/skills/verification-before-completion/SKILL.md) for final documentation and configuration checks.
+- [Tina Content Migration](.agents/skills/tina-content-migration/SKILL.md) for localized editorial-content migration and export validation.
