@@ -1,0 +1,13 @@
+{
+	"title": "Contacto - Sens*Hac",
+	"description": "Contacta con nosotros para discutir tu proyecto de diseño de interiores.",
+	"blocks": [
+		{
+			"mediaId": "https://media.senshac.com/images/contact/senshac-contact-banner/1200.webp",
+			"heading": "CONTACTO",
+			"subheading": "HABLEMOS.",
+			"_template": "contactForm"
+		}
+	]
+}
+

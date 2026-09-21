@@ -1,0 +1,36 @@
+{
+	"title": "Estudi - Sens*Hac",
+	"description": "Estudi boutique d’interiorisme estratègic per a retail, hospitality i wellness.",
+	"blocks": [
+		{
+			"_template": "editorialMission",
+			"label": "Missió",
+			"statement": "EL TEU ESPAI PARLA PER TU.\nCONVERTEIX-LO EN EL TEU\nACTIU MÉS RENDIBLE.",
+			"placeholderLabel": "Retrat de l’estudi pendent",
+			"content": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "La nostra missió és projectar espais identitaris que tradueixen l’essència i els valors de la teva marca en experiències memorables."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Concebem cada espai com l’escenari on la marca cobra vida. Integrem els fluxos de treball i l’estratègia de venda per impulsar la rendibilitat."
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
+

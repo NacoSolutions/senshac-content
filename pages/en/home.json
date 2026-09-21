@@ -1,0 +1,173 @@
+{
+	"title": "Sens*Hac - Strategic Interior Design Studio",
+	"description": "We design brand-led spaces that increase the value and profitability of your business.",
+	"headerStyle": "transparent",
+	"blocks": [
+		{
+			"_template": "editorialHero",
+			"title": "WE DESIGN\nSPACES WITH\nA DISTINCT\nBRAND IDENTITY",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "We are a boutique strategic interior design studio creating high-impact interiors for businesses."
+							}
+						]
+					}
+				]
+			},
+			"ctaText": "about the studio",
+			"ctaLink": "/en/studio",
+			"mediaType": "image",
+			"placeholderLabel": "Project image pending"
+		},
+		{
+			"_template": "editorialCopy",
+			"title": "We unite Space, Brand Identity & Strategy.",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "We work closely with founders and entrepreneurs to build a cohesive image that aligns product, perception and user experience. We create distinctive spaces where interior architecture becomes a natural extension of your identity and values."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "editorialShowcase",
+			"mediaType": "video",
+			"placeholderLabel": "Brand film pending"
+		},
+		{
+			"_template": "editorialAccordion",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "If your product or service is different, do not compete on price. We turn your space into a strategic asset that raises the value of your business:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"number": "01",
+					"title": "Positioning and visibility for your brand",
+					"summary": "Your space communicates who you are and what sets you apart."
+				},
+				{
+					"number": "02",
+					"title": "We increase perceived value",
+					"summary": "We create environments that elevate the value of your product or service."
+				},
+				{
+					"number": "03",
+					"title": "We improve profitability",
+					"summary": "We design intelligent spaces that support operations, sales and customer loyalty."
+				}
+			]
+		},
+		{
+			"_template": "editorialRows",
+			"title": "We are your partner if you need to:",
+			"items": [
+				{
+					"title": "Improve profitability",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Your physical channel is underperforming and the space needs to support sales."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Move into a physical space",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "You lead an established e-commerce brand or are opening your first location."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Reposition your brand",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Your current space does not reflect the quality of your offer or attract a higher-value customer."
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"_template": "editorialCta",
+			"text": "Tell us about your project",
+			"link": "/en/contact"
+		},
+		{
+			"_template": "editorialShowcase",
+			"eyebrow": "Latest",
+			"items": [
+				{
+					"title": "La Trobada",
+					"link": "/en/works/la-trobada",
+					"placeholderLabel": "Project image pending"
+				},
+				{
+					"title": "Latest",
+					"link": "/en/works",
+					"placeholderLabel": "Project image pending"
+				}
+			],
+			"ctaText": "View work",
+			"ctaLink": "/en/works"
+		},
+		{
+			"_template": "editorialInstagram",
+			"title": "On Instagram",
+			"tag": "novedades",
+			"limit": 4
+		}
+	]
+}
+

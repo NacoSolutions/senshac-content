@@ -1,0 +1,12 @@
+{
+	"title": "Contact - Sens*Hac",
+	"description": "Get in touch with us to discuss your interior design project.",
+	"blocks": [
+		{
+			"_template": "contactForm",
+			"heading": "CONTACT",
+			"subheading": "LET'S TALK."
+		}
+	]
+}
+

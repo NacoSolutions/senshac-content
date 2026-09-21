@@ -1,0 +1,330 @@
+{
+	"title": "Mètode - Sens*Hac",
+	"description": "El nostre mètode d’interiorisme estratègic, del diagnòstic de marca a l’obertura.",
+	"blocks": [
+		{
+			"_template": "editorialCopy",
+			"title": "EL NOSTRE MÈTODE:\nDE L’ESTRATÈGIA A\nL’OBERTURA.",
+			"headingLevel": "h1",
+			"showStar": true
+		},
+		{
+			"_template": "editorialAccordion",
+			"items": [
+				{
+					"number": "01",
+					"title": "Diagnòstic i estratègia de marca",
+					"summary": "Analitzem el negoci, el públic objectiu i les metes comercials abans de projectar.",
+					"details": [
+						{
+							"label": "Auditoria de negoci",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Identifiquem reptes i objectius de creixement."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Viabilitat espacial",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Comprovem que el local respon al model de negoci."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "02",
+					"title": "Concepte creatiu",
+					"summary": "Traduïm l’estratègia en una experiència espacial memorable.",
+					"details": [
+						{
+							"label": "Identitat",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Apliquem el branding i els valors a l’arquitectura interior."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Disseny de fluxos",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Planifiquem l’operativa i el recorregut de venda."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Disseny a mida i FF&E",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Definim mobiliari, il·luminació i materials."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Modelatge 3D",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Visualitzacions d’alta fidelitat per aprovar l’espai."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "03",
+					"title": "Desenvolupament tècnic",
+					"summary": "Convertim la visió creativa en un projecte executable, viable i segur.",
+					"details": [
+						{
+							"label": "Plànols tècnics",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Documentació detallada per a constructors i industrials."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Pressupostos",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Desglossament econòmic del projecte."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Disseny tècnic adaptat",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Adequació als requisits tècnics i normatius."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "04",
+					"title": "Supervisió d’obra i coordinació de muntatge",
+					"summary": "Acompanyem l’execució perquè el resultat sigui fidel al disseny.",
+					"details": [
+						{
+							"label": "Un sol interlocutor",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Centralitzem la comunicació."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Supervisió d’obra",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Comprovem detalls tècnics i acabats."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "Control de qualitat",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Verifiquem qualitat i fidelitat estètica."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"_template": "editorialCta",
+			"text": "Agenda una trucada",
+			"link": "/ca/contact"
+		},
+		{
+			"_template": "editorialRows",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Pots contractar el procés per fases i triar el nivell d’acompanyament:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"title": "Consultoria estratègica",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Sessió intensiva per auditar el local i definir marca, distribució i fluxos."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Concepte creatiu",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Inclou les fases I i II, amb estratègia, distribució i infoarquitectura 3D."
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"title": "Projecte integral",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Procés complet, de l’estratègia inicial a l’execució."
+									}
+								]
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"_template": "editorialCta",
+			"text": "Sol·licita una proposta personalitzada",
+			"link": "/ca/contact"
+		}
+	]
+}
+
