@@ -1,0 +1,199 @@
+{
+	"title": "La Trobada",
+	"description": "A homage to Mediterranean culture, flavor, and warmth. Neighborhood restaurant in Badalona.",
+	"slug": "la-trobada",
+	"publishDate": "2024-01-15",
+	"completedDate": "2024-01-15",
+	"tags": ["Bar/Restaurant", "Gastronomy"],
+	"featured": true,
+	"draft": false,
+	"blocks": [
+		{
+			"mediaId": "projects/la-trobada/cover",
+			"alt": "La Trobada",
+			"_template": "projectBanner"
+		},
+		{
+			"title": "La Trobada",
+			"subtitle": "A homage to Mediterranean culture, flavor, and warmth",
+			"mediaId": "projects/la-trobada/detail",
+			"services": "Interior Design, Visual Identity",
+			"servicesLabel": "SERVICES",
+			"category": "Bar/Restaurant",
+			"categoryLabel": "CATEGORY",
+			"area": "<50 m²",
+			"areaLabel": "AREA",
+			"location": "Badalona, Barcelona",
+			"locationLabel": "LOCATION",
+			"_template": "projectDetails"
+		},
+		{
+			"title": "BRIEF",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "La Trobada is a homage to Mediterranean culture, flavor, and warmth. This small neighborhood restaurant operated by Inma and Jonathan functions as a gathering space for locals and friends. The name 'La Trobada' (Catalan for 'meeting point') reflects the Mediterranean lifestyle characterized by warmth and shared moments."
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectBrief"
+		},
+		{
+			"_template": "editorialGallery",
+			"cols": 3,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/brief/01",
+					"alt": "La Trobada interior view"
+				},
+				{
+					"mediaId": "projects/la-trobada/brief/02",
+					"alt": "La Trobada details"
+				},
+				{
+					"mediaId": "projects/la-trobada/brief/03",
+					"alt": "La Trobada atmosphere"
+				}
+			]
+		},
+		{
+			"title": "CONCEPT",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "The concept focuses on creating a welcoming atmosphere that evokes Mediterranean warmth. The earthy color palette, natural materials, and warm lighting work together to create a space where diners feel at home."
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectConcept"
+		},
+		{
+			"_template": "editorialGallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/concept/01",
+					"alt": "Concept visualization 1"
+				},
+				{
+					"mediaId": "projects/la-trobada/concept/02",
+					"alt": "Concept visualization 2"
+				},
+				{
+					"mediaId": "projects/la-trobada/concept/03",
+					"alt": "Concept visualization 3"
+				},
+				{
+					"mediaId": "projects/la-trobada/concept/04",
+					"alt": "Concept visualization 4"
+				}
+			]
+		},
+		{
+			"title": "STRATEGY",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "The primary challenge involved optimizing flow between the compact 50m² interior and an adjacent spacious terrace. Kitchen reorganization addressed functional zones for cooking, prep, and cleaning, plus dedicated waitstaff stations."
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectStrategy"
+		},
+		{
+			"_template": "editorialCarousel",
+			"items": [
+				{
+					"mediaId": "projects/la-trobada/strategy/01",
+					"alt": "Strategy slide 1"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/02",
+					"alt": "Strategy slide 2"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/03",
+					"alt": "Strategy slide 3"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/04",
+					"alt": "Strategy slide 4"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/05",
+					"alt": "Strategy slide 5"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy/06",
+					"alt": "Strategy slide 6"
+				}
+			]
+		},
+		{
+			"_template": "editorialGallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/process/01",
+					"alt": "Process image 1"
+				},
+				{
+					"mediaId": "projects/la-trobada/process/02",
+					"alt": "Process image 2"
+				}
+			]
+		},
+		{
+			"title": "COLLABORATORS",
+			"list": [
+				{
+					"name": "I3dea",
+					"role": "Rendering"
+				},
+				{
+					"name": "Ceràmica Ferrés",
+					"role": "Provider"
+				},
+				{
+					"name": "Auténtica Cerámica",
+					"role": "Provider"
+				},
+				{
+					"name": "Vergès Design",
+					"role": "Provider"
+				},
+				{
+					"name": "Marset Iluminación",
+					"role": "Provider"
+				}
+			],
+			"_template": "projectCollaborators"
+		},
+		{
+			"mediaId": "projects/la-trobada/collab/01",
+			"alt": "Collaborators showcase",
+			"_template": "projectFinalImage"
+		}
+	]
+}
