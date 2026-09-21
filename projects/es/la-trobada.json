@@ -1,0 +1,107 @@
+{
+	"title": "La Trobada",
+	"description": "Un homenaje a la cultura mediterránea, el sabor y la calidez. Restaurante de barrio en Badalona.",
+	"slug": "la-trobada",
+	"publishDate": "2024-01-15T00:00:00.000Z",
+	"completedDate": "2024-01-15T00:00:00.000Z",
+	"tags": ["Bar/Restaurante", "Gastronomía"],
+	"featured": true,
+	"draft": false,
+	"blocks": [
+		{
+			"mediaId": "projects/la-trobada/cover",
+			"alt": "La Trobada",
+			"_template": "projectBanner"
+		},
+		{
+			"title": "La Trobada",
+			"subtitle": "Un homenaje a la cultura mediterránea, el sabor y la calidez",
+			"mediaId": "projects/la-trobada/detail",
+			"services": "Diseño de interiores, Identidad visual",
+			"servicesLabel": "SERVICIOS",
+			"category": "Bar/Restaurante",
+			"categoryLabel": "CATEGORÍA",
+			"area": "<50 m²",
+			"areaLabel": "ÁREA",
+			"location": "Badalona, Barcelona",
+			"locationLabel": "UBICACIÓN",
+			"_template": "projectDetails"
+		},
+		{
+			"title": "BRIEF",
+			"text": {
+				"type": "root",
+				"children": [{"type": "p", "children": [{"type": "text", "text": "La Trobada es un homenaje a la cultura mediterránea, el sabor y la calidez. Este pequeño restaurante de barrio, operado por Inma y Jonathan, funciona como un espacio de encuentro para vecinos y amigos. El nombre 'La Trobada' (en catalán 'punto de encuentro') refleja el estilo de vida mediterráneo caracterizado por la calidez y los momentos compartidos."}]}]
+			},
+			"_template": "projectBrief"
+		},
+		{
+			"items": [
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/brief/01/1200.webp"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/brief/02/1200.webp"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/brief/03/1200.webp"}
+			],
+			"_template": "editorialCarousel"
+		},
+		{
+			"title": "CONCEPTO",
+			"text": {
+				"type": "root",
+				"children": [{"type": "p", "children": [{"type": "text", "text": "El concepto se centra en crear un ambiente acogedor que evoque la calidez mediterránea. La paleta de colores terrosos, materiales naturales y una iluminación cálida trabajan juntos para crear un espacio donde los comensales se sientan como en casa."}]}]
+			},
+			"_template": "projectConcept"
+		},
+		{
+			"items": [
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/01/1200.webp"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/02/1200.webp"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/03/1200.webp"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/04/1200.webp"}
+			],
+			"_template": "editorialCarousel"
+		},
+		{
+			"title": "ESTRATEGIA",
+			"text": {
+				"type": "root",
+				"children": [{"type": "p", "children": [{"type": "text", "text": "El desafío principal consistió en optimizar el flujo entre el compacto interior de 50m² y la amplia terraza adyacente. La reorganización de la cocina abordó zonas funcionales para cocción, preparación y limpieza, además de estaciones dedicadas para el personal de sala."}]}]
+			},
+			"_template": "projectStrategy"
+		},
+		{
+			"cols": 2,
+			"images": [
+				{"mediaId": "projects/la-trobada/process/01", "alt": "Proceso 1"},
+				{"mediaId": "projects/la-trobada/process/02", "alt": "Proceso 2"}
+			],
+			"_template": "editorialGallery"
+		},
+		{
+			"items": [
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/01/1200.webp", "alt": "Estrategia 1"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/02/1200.webp", "alt": "Estrategia 2"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/03/1200.webp", "alt": "Estrategia 3"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/04/1200.webp", "alt": "Estrategia 4"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/05/1200.webp", "alt": "Estrategia 5"},
+				{"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/06/1200.webp", "alt": "Estrategia 6"}
+			],
+			"_template": "editorialCarousel"
+		},
+		{
+			"title": "COLABORADORES",
+			"list": [
+				{"name": "I3dea", "role": "Renderizado"},
+				{"name": "Ceràmica Ferrés", "role": "Proveedor"},
+				{"name": "Auténtica Cerámica", "role": "Proveedor"},
+				{"name": "Vergès Design", "role": "Proveedor"},
+				{"name": "Marset Iluminación", "role": "Proveedor"}
+			],
+			"_template": "projectCollaborators"
+		},
+		{
+			"mediaId": "projects/la-trobada/collab/01",
+			"alt": "Colaboradores",
+			"_template": "projectFinalImage"
+		}
+	]
+}
