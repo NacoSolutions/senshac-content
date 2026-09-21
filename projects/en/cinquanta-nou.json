@@ -1,0 +1,81 @@
+{
+	"title": "Cinquanta-Nou",
+	"description": "La reestructuración urbanística de un bar de barrio que ha decidido crecer.",
+	"slug": "cinquanta-nou",
+	"publishDate": "2024-01-12T00:00:00.000Z",
+	"tags": ["Salchichería cervecería"],
+	"showTags": true,
+	"featured": false,
+	"draft": false,
+	"blocks": [
+		{
+			"_template": "projectBanner"
+		},
+		{
+			"title": "Cinquanta-Nou",
+			"_template": "projectDetails"
+		},
+		{
+			"title": "BRIEF",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectBrief"
+		},
+		{
+			"title": "CONCEPTO",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectConcept"
+		},
+		{
+			"title": "ESTRATEGIA",
+			"text": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": ""
+							}
+						]
+					}
+				]
+			},
+			"_template": "projectStrategy"
+		},
+		{
+			"title": "COLABORADORES",
+			"list": [],
+			"_template": "projectCollaborators"
+		},
+		{
+			"_template": "projectFinalImage"
+		}
+	]
+}
