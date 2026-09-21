@@ -13,3 +13,7 @@ Placeholder for a future TinaCMS editorial-content split. Do not treat this as t
 ## Repository tooling
 
 This repository uses the pinned Seeds (`sd`) and Mulch (`ml`) tooling. At the start of a session, run `sd prime` for tracker context, then `sd ready` to inspect unblocked work. Run `ml prime` to load repository expertise before making changes. Before finishing, preserve useful setup or workflow knowledge with `ml record <domain> --type <convention|pattern|failure|decision|reference|guide> --description "..."`.
+
+## Agent guidance
+
+For focused autonomous changes, follow [Bounded Warren Task](.agents/skills/bounded-warren-task/SKILL.md). Use positive phrasing and specific instructions; apply defense in depth, gentle coding, direct execution, and token economy. Keep the named objective and files explicit, inspect the smallest relevant surface, preserve adjacent behavior, and verify with one bounded quality gate before committing.
