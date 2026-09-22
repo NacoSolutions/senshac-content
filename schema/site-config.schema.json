@@ -20,23 +20,14 @@
     "chromeElement": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["mode", "state", "appearance"],
+      "required": ["mode", "atFinal", "scrolling"],
       "properties": {
         "mode": {
           "type": "string",
           "enum": ["fixed", "scrolling"]
         },
-        "state": { "$ref": "#/$defs/chromeState" },
-        "appearance": { "$ref": "#/$defs/appearance" }
-      }
-    },
-    "chromeState": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["atFinal", "scrolling"],
-      "properties": {
-        "atFinal": { "type": "boolean" },
-        "scrolling": { "type": "boolean" }
+        "atFinal": { "$ref": "#/$defs/appearance" },
+        "scrolling": { "$ref": "#/$defs/appearance" }
       }
     },
     "appearance": {
