@@ -59,19 +59,13 @@
 	"chrome": {
 		"header": {
 			"mode": "fixed",
-			"state": {
-				"atFinal": false,
-				"scrolling": false
-			},
-			"appearance": "transparent-adaptive"
+			"atFinal": "transparent-adaptive",
+			"scrolling": "transparent-adaptive"
 		},
 		"footer": {
 			"mode": "scrolling",
-			"state": {
-				"atFinal": false,
-				"scrolling": false
-			},
-			"appearance": "opaque-dark"
+			"atFinal": "opaque-dark",
+			"scrolling": "opaque-dark"
 		}
 	}
 }

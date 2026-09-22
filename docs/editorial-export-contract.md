@@ -32,9 +32,11 @@ uses the canonical chrome contract described by
 `header` and `footer` provide:
 
 - `mode`: `fixed` or `scrolling`.
-- `state`: the runtime boolean keys `atFinal` and `scrolling`.
-- `appearance`: one of `transparent-adaptive`, `transparent-light`,
-  `transparent-dark`, `opaque-light`, or `opaque-dark`.
+- `atFinal`: an appearance preset used when the chrome is at its final state.
+- `scrolling`: an appearance preset used while the page is scrolling.
+
+Both appearance fields accept one of `transparent-adaptive`,
+`transparent-light`, `transparent-dark`, `opaque-light`, or `opaque-dark`.
 
 The contract is content-side configuration only. Rendering behavior remains the
 responsibility of the consuming workspace.
