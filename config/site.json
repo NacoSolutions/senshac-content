@@ -55,5 +55,23 @@
 	},
 	"seo": {
 		"priceRange": "$$"
+	},
+	"chrome": {
+		"header": {
+			"mode": "fixed",
+			"state": {
+				"atFinal": false,
+				"scrolling": false
+			},
+			"appearance": "transparent-adaptive"
+		},
+		"footer": {
+			"mode": "scrolling",
+			"state": {
+				"atFinal": false,
+				"scrolling": false
+			},
+			"appearance": "opaque-dark"
+		}
 	}
 }

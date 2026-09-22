@@ -24,6 +24,21 @@ export at `schema/editorial-export.schema.json`:
 The adapter must treat the export as read-only and must not mutate it or infer
 fallback content from it.
 
+## Editable header and footer chrome
+
+The Tina-editable site configuration in [`config/site.json`](../config/site.json)
+uses the canonical chrome contract described by
+[`schema/site-config.schema.json`](../schema/site-config.schema.json). Both
+`header` and `footer` provide:
+
+- `mode`: `fixed` or `scrolling`.
+- `state`: the runtime boolean keys `atFinal` and `scrolling`.
+- `appearance`: one of `transparent-adaptive`, `transparent-light`,
+  `transparent-dark`, `opaque-light`, or `opaque-dark`.
+
+The contract is content-side configuration only. Rendering behavior remains the
+responsibility of the consuming workspace.
+
 ## Adapter handoff behavior
 
 The web adapter supplies an expected revision and requests an `(id, locale)`:

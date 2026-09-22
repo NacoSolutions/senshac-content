@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://senshac.example/contracts/site-config/v1",
+  "title": "Senshac editable site configuration",
+  "type": "object",
+  "required": ["chrome"],
+  "properties": {
+    "chrome": { "$ref": "#/$defs/chrome" }
+  },
+  "$defs": {
+    "chrome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["header", "footer"],
+      "properties": {
+        "header": { "$ref": "#/$defs/chromeElement" },
+        "footer": { "$ref": "#/$defs/chromeElement" }
+      }
+    },
+    "chromeElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "state", "appearance"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["fixed", "scrolling"]
+        },
+        "state": { "$ref": "#/$defs/chromeState" },
+        "appearance": { "$ref": "#/$defs/appearance" }
+      }
+    },
+    "chromeState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["atFinal", "scrolling"],
+      "properties": {
+        "atFinal": { "type": "boolean" },
+        "scrolling": { "type": "boolean" }
+      }
+    },
+    "appearance": {
+      "type": "string",
+      "enum": [
+        "transparent-adaptive",
+        "transparent-light",
+        "transparent-dark",
+        "opaque-light",
+        "opaque-dark"
+      ]
+    }
+  }
+}
