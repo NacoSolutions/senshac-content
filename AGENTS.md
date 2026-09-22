@@ -24,3 +24,12 @@ Use these curated role skills for focused work:
 - [Writing Documentation](.agents/skills/writing-docs/SKILL.md) for affirmative, actionable repository guidance.
 - [Verification Before Completion](.agents/skills/verification-before-completion/SKILL.md) for final documentation and configuration checks.
 - [Tina Content Migration](.agents/skills/tina-content-migration/SKILL.md) for localized editorial-content migration and export validation.
+
+## Portable rules and CLI skills
+
+Load `.agents/rules/` for Caveman ultra, direct execution, positive phrasing,
+defense in depth, gentle coding, token economy, and llm-shorthand. Load
+`instruction-specificity.md` when authoring agent guidance. Use the local
+`seeds-cli`, `mulch-cli`, `warren-operations`, and
+`verification-before-completion` skills for tracker, expertise, Warren, and
+completion work. Load role-specific skills for the implementation surface.
