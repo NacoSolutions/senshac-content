@@ -1,0 +1,1 @@
+{"type":"convention","classification":"tactical","recorded_at":"2026-09-25T21:10:37.156Z","evidence":{"commit":"47d6b0e66ff7d717a442b12743821dfed4bdc8bc"},"content":"Use devenv.nix and devenv.yaml as the repository development environment; expose Bun-backed test, lint, typecheck, and validation scripts without external package-manager configuration.","id":"mx-7a59ab"}
