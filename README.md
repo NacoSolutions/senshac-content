@@ -4,6 +4,24 @@ Placeholder repository for the future Senshac editorial/content split.
 
 This is **not** the production TinaCMS content source yet. The live site and Tina generator remain in `NacoSolutions/senshac` until the content split acceptance criteria are completed.
 
+## Development environment
+
+The repository uses [devenv](https://devenv.sh/) for its reproducible local
+shell. It supplies Bun and the repository's named checks directly, without
+requiring an external package-manager configuration.
+
+```sh
+devenv shell
+bun install --frozen-lockfile
+bun run test
+bun run lint
+bun run typecheck
+```
+
+The same checks are available as devenv scripts (`devenv shell test`,
+`devenv shell lint`, and `devenv shell typecheck`). `devenv.yaml` declares the
+Nix package source and `devenv.nix` is the single environment definition.
+
 ## Planned ownership
 
 - Editorial Markdown/MDX and localized project content
