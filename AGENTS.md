@@ -1,10 +1,16 @@
 # Senshac Content Repository
 
-Placeholder for a future TinaCMS editorial-content split. Do not treat this as the production source until an explicit cutover seed is approved.
+TinaCloud writes editorial changes to this repository. `senshac-web` publishes a
+reviewed immutable content revision through a focused pull request. This
+editorial integration is active; the broader cutover and rollback remain
+governed by their acceptance criteria.
 
 ## Rules
 
-- Keep editorial content and localization concerns here only after cutover.
+- Keep editorial content and localization source here.
+- Route website publication through the reviewed revision pin in
+  `senshac-web`; the content workflow opens or refreshes that PR and never
+  pushes web `main`.
 - Do not add Astro components, Tina schema, `tina/__generated__`, or `tina/tina-lock.json`.
 - Never commit plaintext environment files, Cloudflare credentials, Tina tokens, R2 keys, or deployment configuration.
 - Use focused branches and pull requests; never edit `main` directly.

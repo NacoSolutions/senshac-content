@@ -1,6 +1,8 @@
 # Content split cutover plan
 
-Status: placeholder only. No production migration has started.
+Status: TinaCloud editorial writes use `senshac-content`, and reviewed content
+revisions publish through a `senshac-web` pull request. The broader cutover and
+rollback acceptance remains pending.
 
 Complete this checklist in order. Until the final gate passes, the archived `senshac` monorepo remains the canonical source and the README boundary rules remain in force.
 
