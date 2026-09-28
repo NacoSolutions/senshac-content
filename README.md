@@ -1,8 +1,10 @@
 # Senshac Content
 
-Placeholder repository for the future Senshac editorial/content split.
-
-This is **not** the production TinaCMS content source yet. The live site and Tina generator remain in `NacoSolutions/senshac` until the content split acceptance criteria are completed.
+TinaCloud writes editorial changes to this repository. `senshac-web` consumes a
+reviewed immutable commit; a content update opens or refreshes a focused PR in
+the web repository, and Cloudflare Pages rebuilds after that PR merges. This
+editorial publishing path does not by itself complete the broader cutover and
+rollback acceptance criteria below.
 
 ## Development environment
 
@@ -22,11 +24,11 @@ The same checks are available as devenv scripts (`devenv shell test`,
 `devenv shell lint`, and `devenv shell typecheck`). `devenv.yaml` declares the
 Nix package source and `devenv.nix` is the single environment definition.
 
-## Planned ownership
+## Ownership
 
-- Editorial Markdown/MDX and localized project content
+- Editorial JSON/MDX and localized project content
 - Translation and content-review workflow
-- Approved editorial references and assets
+- Editorial media references; media storage and policy remain external
 
 This repository must not own Astro components, Tina schema, generated Tina artifacts, Cloudflare credentials, R2 policy, or deployment configuration.
 
@@ -39,7 +41,16 @@ This repository must not own Astro components, Tina schema, generated Tina artif
 5. Update Warren routing and the Senshac workspace registry.
 6. Migrate content reversibly; retain the monorepo as rollback source until production verification.
 
-Until then, do not add production content here.
+## Web revision updates
+
+`.github/workflows/update-web-content-revision.yml` watches relevant content
+paths on `main` and uses the repository's installed GitHub App to open or
+refresh a PR in `NacoSolutions/senshac-web`. The PR updates the default
+`SENSHAC_CONTENT_REVISION` pin to the exact content commit. The workflow uses
+the App token only for the web repository and never pushes to web `main`.
+`workflow_dispatch` accepts a full commit SHA reachable from content `main`
+for a controlled retry. Local web verification can still override the pin with
+`SENSHAC_CONTENT_REVISION`.
 
 ## Read-only cutover handoff fixture
 
