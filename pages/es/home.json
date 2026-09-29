@@ -99,7 +99,7 @@
     {
       "description": "",
       "tag": "novedades",
-      "limit": 3,
+      "limit": 4,
       "maxVisible": 3,
       "_template": "editorialInstagram"
     }
