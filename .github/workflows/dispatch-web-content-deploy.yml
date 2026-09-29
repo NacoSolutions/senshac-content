@@ -1,0 +1,74 @@
+name: Dispatch web content deployment
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - config/**
+      - legal/**
+      - pages/**
+      - projects/**
+      - translations/**
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: Content commit on main to deploy (defaults to this run's commit)
+        required: false
+        type: string
+
+concurrency:
+  group: dispatch-web-content-deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out content history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate content revision
+        id: revision
+        env:
+          REQUESTED_REVISION: ${{ inputs.revision }}
+        run: |
+          set -euo pipefail
+          revision="${REQUESTED_REVISION:-$GITHUB_SHA}"
+          [[ "$revision" =~ ^[0-9a-f]{40}$ ]]
+          git cat-file -e "${revision}^{commit}"
+          git merge-base --is-ancestor "$revision" origin/main
+          printf 'revision=%s\n' "$revision" >> "$GITHUB_OUTPUT"
+          echo "Dispatching senshac-content@$revision"
+
+      - name: Mint a web-only GitHub App token
+        id: web-token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          app-id: ${{ vars.AUTO_MERGE_APP_ID }}
+          private-key: ${{ secrets.AUTO_MERGE_APP_PRIVATE_KEY }}
+          owner: NacoSolutions
+          repositories: senshac-web
+          permission-contents: write
+
+      - name: Dispatch immutable content revision to web
+        env:
+          GH_TOKEN: ${{ steps.web-token.outputs.token }}
+          CONTENT_REVISION: ${{ steps.revision.outputs.revision }}
+        run: |
+          set -euo pipefail
+          payload=$(jq -nc --arg sha "$CONTENT_REVISION" \
+            '{event_type:"senshac-content-published",client_payload:{content_sha:$sha}}')
+          curl --fail-with-body --silent --show-error \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H 'Accept: application/vnd.github+json' \
+            -H 'X-GitHub-Api-Version: 2022-11-28' \
+            -H 'Content-Type: application/json' \
+            --data "$payload" \
+            https://api.github.com/repos/NacoSolutions/senshac-web/dispatches
+          echo "Dispatched senshac-content@$CONTENT_REVISION to senshac-web."
