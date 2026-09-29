@@ -1,18 +1,20 @@
 # Senshac Content Repository
 
-TinaCloud writes editorial changes to this repository. `senshac-web` publishes a
-reviewed immutable content revision through a focused pull request. This
-editorial integration is active; the broader cutover and rollback remain
-governed by their acceptance criteria.
+TinaCloud writes editorial changes to this repository. Editorial commits remain
+here; a content-path workflow dispatches the exact SHA to the deployment
+workflow in `senshac-web`.
 
 ## Rules
 
 - Keep editorial content and localization source here.
-- Route website publication through the reviewed revision pin in
-  `senshac-web`; the content workflow opens or refreshes that PR and never
-  pushes web `main`.
+- Route website publication through
+  `.github/workflows/dispatch-web-content-deploy.yml` and a repository-scoped
+  GitHub App dispatch token.
+- Keep source revisions, editorials, and their commits in their owning repos;
+  content publication triggers a Pages build without changing `senshac-web`.
 - Do not add Astro components, Tina schema, `tina/__generated__`, or `tina/tina-lock.json`.
-- Never commit plaintext environment files, Cloudflare credentials, Tina tokens, R2 keys, or deployment configuration.
+- Keep Cloudflare API tokens, Tina tokens, R2 keys, and Pages project
+  configuration in their owning repositories/platform secrets.
 - Use focused branches and pull requests; never edit `main` directly.
 - During transition, canonical Seeds/Terrarium state remains in `NacoSolutions/senshac`.
 
