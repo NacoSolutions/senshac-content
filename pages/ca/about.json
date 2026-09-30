@@ -6,6 +6,7 @@
 			"_template": "statement",
 			"label": "Missió",
 			"statement": "EL TEU ESPAI PARLA PER TU.\nCONVERTEIX-LO EN EL TEU\nACTIU MÉS RENDIBLE.",
+			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
 			"placeholderLabel": "Retrat de l’estudi pendent",
 			"content": {
 				"type": "root",
@@ -15,7 +16,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "La nostra missió és projectar espais identitaris que tradueixen l’essència i els valors de la teva marca en experiències memorables."
+							"text": "La nostra missió és projectar espais identitaris que tradueixen l’essència i els valors de la teva marca en experiències memorables pensades per perdurar."
 							}
 						]
 					},
@@ -24,7 +25,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "Concebem cada espai com l’escenari on la marca cobra vida. Integrem els fluxos de treball i l’estratègia de venda per impulsar la rendibilitat."
+							"text": "Concebem cada espai com l’escenari on la teva marca cobra vida, se sent i s’experimenta, creant una connexió autèntica amb el teu client ideal. Integrem els teus fluxos de treball i l’estratègia de venda a l’entorn per impulsar la rendibilitat en els sectors retail, hospitality i wellness."
 							}
 						]
 					}
