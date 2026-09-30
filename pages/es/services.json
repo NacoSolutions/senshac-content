@@ -277,7 +277,7 @@
 			},
 			"items": [
 				{
-					"title": "Consultoría estratégica",
+					"title": "CONSULTORÍA EXPRÉS",
 					"text": {
 						"type": "root",
 						"children": [
@@ -286,15 +286,26 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Sesión intensiva de dos horas. Auditamos tu local para darte directrices claras sobre marca, distribución y flujos de venta."
+										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después."
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Auditamos tu local para darte directrices sobre cómo integrar tu marca en el espacio, optimizar la distribución y mejorar tus flujos de venta."
 									}
 								]
 							}
 						]
-					}
+					},
+					"href": "/es/contact",
+					"ctaText": "Agenda sesión"
 				},
 				{
-					"title": "Concepto creativo",
+					"title": "PROYECTO DECORATIVO",
 					"text": {
 						"type": "root",
 						"children": [
@@ -303,15 +314,26 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Incluye las fases I y II. Desarrollamos la estrategia, la distribución espacial y la infoarquitectura 3D."
+										"text": "Transformación puntual y estilismo sin obras."
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Pensado para actualizar una única estancia, redefinir elementos clave (como una barra de bar o diseñar luminarias a medida) o bien refrescar el mobiliario para que encaje a la perfección con tu espacio y tu marca."
 									}
 								]
 							}
 						]
-					}
+					},
+					"href": "/es/contact",
+					"ctaText": "Cuéntanos qué necesitas"
 				},
 				{
-					"title": "Proyecto integral",
+					"title": "PROYECTO INTEGRAL",
 					"text": {
 						"type": "root",
 						"children": [
@@ -320,12 +342,23 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Abarcamos el proceso completo, desde la estrategia inicial hasta la ejecución del proyecto."
+										"text": "Acompañamiento 360º desde la idea hasta la apertura."
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Abarcamos todo el proceso desde la estrategia inicial hasta la ejecución final. La opción ideal si buscas delegar el proyecto con absoluta tranquilidad."
 									}
 								]
 							}
 						]
-					}
+					},
+					"href": "/es/contact",
+					"ctaText": "Solicita información"
 				}
 			],
 			"_template": "list"

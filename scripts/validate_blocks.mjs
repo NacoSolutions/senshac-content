@@ -137,7 +137,7 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 							continue;
 						}
 						const invalid = Object.keys(item).filter(
-							(field) => !["title", "text", "href"].includes(field),
+							(field) => !["title", "text", "href", "ctaText"].includes(field),
 						);
 						if (invalid.length)
 							errors.push(
@@ -153,6 +153,18 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 						) {
 							errors.push(
 								`${location} items[${itemIndex}] href must be a local path or HTTPS URL`,
+							);
+						}
+						if (
+							item.ctaText !== undefined &&
+							(typeof item.ctaText !== "string" || !item.ctaText.trim())
+						) {
+							errors.push(
+								`${location} items[${itemIndex}] ctaText must be a non-empty string`,
+							);
+						} else if (item.ctaText !== undefined && item.href === undefined) {
+							errors.push(
+								`${location} items[${itemIndex}] ctaText requires href`,
 							);
 						}
 					}

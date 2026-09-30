@@ -32,3 +32,10 @@ test("unsafe list links fail content validation", async () => {
 		"tests/fixtures/invalid-list-link/home.json blocks[0] items[0] href must be a local path or HTTPS URL",
 	]);
 });
+
+test("list action text requires a destination", async () => {
+	const errors = await validateBlocks(["tests/fixtures/invalid-list-action"]);
+	expect(errors).toEqual([
+		"tests/fixtures/invalid-list-action/home.json blocks[0] items[0] ctaText requires href",
+	]);
+});
