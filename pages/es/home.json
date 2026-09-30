@@ -55,9 +55,8 @@
       "link": "/es/methods"
     },
     {
-      "mediaType": "image",
-      "mediaId": "redesign/editorial/rocas",
-      "imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
+      "mediaType": "video",
+      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
       "_template": "showcase"
     },
     {
@@ -95,8 +94,9 @@
       "_template": "accordion"
     },
     {
-      "mediaType": "video",
-      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+      "mediaType": "image",
+      "mediaId": "redesign/editorial/rocas",
+      "imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
       "_template": "showcase",
       "title": "REEL DE CÓMO TOMO DECISIONES",
       "eyebrow": ""

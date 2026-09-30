@@ -46,6 +46,12 @@ test("Spanish homepage follows the WEB4 section order and owner copy", async () 
 		text: "Nuestro método",
 		link: "/es/methods",
 	});
+	expect(page.blocks[5]).toMatchObject({
+		_template: "showcase",
+		mediaType: "video",
+		mediaId:
+			"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+	});
 	expect(page.blocks[6]).toMatchObject({
 		intro: {
 			type: "root",
@@ -81,6 +87,12 @@ test("Spanish homepage follows the WEB4 section order and owner copy", async () 
 					"Una distribución inteligente agiliza la operativa, facilita la venta y mejora la experiencia del cliente. Haz que cada metro cuadrado trabaje para tu negocio.",
 			},
 		],
+	});
+	expect(page.blocks[7]).toMatchObject({
+		_template: "showcase",
+		title: "REEL DE CÓMO TOMO DECISIONES",
+		mediaType: "image",
+		mediaId: "redesign/editorial/rocas",
 	});
 	expect(page.blocks[8]).toMatchObject({
 		title: "Queremos entenderte.\n¿En qué punto está tu negocio?",
