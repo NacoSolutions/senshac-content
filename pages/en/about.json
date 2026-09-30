@@ -1,11 +1,12 @@
 {
 	"title": "Studio - Sens*Hac",
-	"description": "A boutique strategic interior design studio for retail, hospitality and wellness.",
+		"description": "A boutique strategic interior design studio for retail, hospitality and wellness.",
 	"blocks": [
 		{
 			"_template": "statement",
 			"label": "Mission",
 			"statement": "YOUR SPACE SPEAKS FOR YOU.\nTURN IT INTO YOUR\nMOST PROFITABLE ASSET.",
+			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
 			"placeholderLabel": "Studio portrait pending",
 			"content": {
 				"type": "root",
@@ -15,7 +16,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "Our mission is to design distinctive spaces that translate the essence and values of your brand into memorable experiences built to last."
+							"text": "Our mission is to design distinctive spaces that translate the essence and values of your brand into memorable experiences made to last."
 							}
 						]
 					},
@@ -24,7 +25,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "We see every space as the stage where your brand comes alive. We integrate workflows and sales strategy into the environment to improve profitability across retail, hospitality and wellness."
+							"text": "We see every space as the stage where your brand comes to life, is felt and experienced, creating a genuine connection with your ideal customer. We integrate your workflows and sales strategy into the environment to drive profitability across retail, hospitality and wellness."
 							}
 						]
 					}
