@@ -1,6 +1,6 @@
 {
 	"title": "Method - Sens*Hac",
-	"description": "Our strategic interior design method, from brand diagnosis through opening.",
+	"description": "Our strategic interior design method, from brand and spatial diagnosis to opening.",
 	"blocks": [
 		{
 			"_template": "text",
@@ -9,12 +9,17 @@
 			"showStar": true
 		},
 		{
+			"_template": "showcase",
+			"mediaId": "https://media.senshac.com/images/about/senshac-about-our-mission/1200.webp",
+			"imageAlt": "Visual and material research during the creative process"
+		},
+		{
 			"_template": "accordion",
 			"items": [
 				{
 					"number": "01",
-					"title": "Brand diagnosis and strategy",
-					"summary": "We analyse your business, audience and commercial goals before design begins.",
+					"title": "Spatial diagnosis and strategy",
+					"summary": "Before designing, we analyse your brand, business and spatial needs to set a strategy that brings everything together.",
 					"details": [
 						{
 							"label": "Business audit",
@@ -43,7 +48,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "We assess whether the location supports your business model."
+												"text": "We assess whether the premises can support your business model."
 											}
 										]
 									}
@@ -55,7 +60,7 @@
 				{
 					"number": "02",
 					"title": "Creative concept",
-					"summary": "We translate strategy into a memorable spatial experience.",
+					"summary": "We turn strategy into a memorable spatial experience, shaping the customer journey and visual atmosphere to give your business a distinctive identity.",
 					"details": [
 						{
 							"label": "Identity",
@@ -67,7 +72,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "We apply your branding and values to the interior architecture."
+												"text": "We bring your brand and values into the interior architecture."
 											}
 										]
 									}
@@ -84,7 +89,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "We plan operations, the sales journey and key zones."
+												"text": "We plan operations, the customer journey and key zones."
 											}
 										]
 									}
@@ -101,7 +106,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "We define furniture, lighting and materials."
+												"text": "We develop furniture, lighting and material selections."
 											}
 										]
 									}
@@ -118,7 +123,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "High-fidelity visualisations for confident approval."
+												"text": "High-fidelity visualisations help you review and approve the space."
 											}
 										]
 									}
@@ -130,7 +135,7 @@
 				{
 					"number": "03",
 					"title": "Technical development",
-					"summary": "We turn the creative vision into a viable, safe and buildable project.",
+					"summary": "We turn the creative vision into a coherent, buildable project with the technical documentation needed to bring it to life.",
 					"details": [
 						{
 							"label": "Technical drawings",
@@ -142,7 +147,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Detailed documentation for contractors and trades."
+												"text": "Detailed plans for contractors and trades."
 											}
 										]
 									}
@@ -159,7 +164,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "A clear economic breakdown of the project."
+												"text": "A cost breakdown for materials, furniture and trades."
 											}
 										]
 									}
@@ -176,7 +181,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Alignment with the location’s technical and regulatory needs."
+												"text": "We adapt the project to the premises’ technical and regulatory requirements."
 											}
 										]
 									}
@@ -188,7 +193,7 @@
 				{
 					"number": "04",
 					"title": "Site supervision and installation coordination",
-					"summary": "We guide execution so the built result remains faithful to the design.",
+					"summary": "We guide delivery so the finished space stays true to the design, resolving issues and coordinating installation.",
 					"details": [
 						{
 							"label": "One point of contact",
@@ -200,7 +205,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "We centralise communication across the project."
+												"text": "We coordinate communication between your needs and the technical team."
 											}
 										]
 									}
@@ -217,7 +222,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Periodic visits to review technical details and finishes."
+												"text": "Regular visits check technical details and finishes."
 											}
 										]
 									}
@@ -234,7 +239,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "We verify quality and visual fidelity."
+												"text": "We verify quality and that the result reflects your brand vision."
 											}
 										]
 									}
@@ -251,6 +256,11 @@
 			"link": "/en/contact"
 		},
 		{
+			"_template": "showcase",
+			"mediaId": "redesign/photos/img-9212",
+			"imageAlt": "Samples of materials and finishes"
+		},
+		{
 			"_template": "list",
 			"intro": {
 				"type": "root",
@@ -260,7 +270,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "Choose the level of support you need by commissioning the process in phases:"
+								"text": "You can commission the process in phases and choose the level of support you need:"
 							}
 						]
 					}
@@ -268,7 +278,7 @@
 			},
 			"items": [
 				{
-					"title": "Strategic consultation",
+					"title": "EXPRESS CONSULTATION",
 					"text": {
 						"type": "root",
 						"children": [
@@ -277,15 +287,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "An intensive session to audit the location and define brand, layout and sales flow priorities."
+										"text": "A focused two-hour session, followed by a report within 72 hours. We review your premises and advise on bringing your brand into the space, improving the layout and customer flow."
 									}
 								]
 							}
 						]
-					}
+					},
+					"href": "/en/contact",
+					"ctaText": "Book a session"
 				},
 				{
-					"title": "Creative concept",
+					"title": "DECORATIVE PROJECT",
 					"text": {
 						"type": "root",
 						"children": [
@@ -294,15 +306,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Phases I and II, including strategy, spatial layout and 3D visualisation."
+										"text": "A targeted transformation and styling, without building work. Ideal for refreshing a room, redefining key elements such as a bar or bespoke lighting, or updating furniture to fit your space and brand."
 									}
 								]
 							}
 						]
-					}
+					},
+					"href": "/en/contact",
+					"ctaText": "Tell us what you need"
 				},
 				{
-					"title": "Full project",
+					"title": "FULL PROJECT",
 					"text": {
 						"type": "root",
 						"children": [
@@ -311,12 +325,14 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "The complete process, from initial strategy through execution."
+										"text": "360° support, from the initial idea through to opening. We cover the full process, from initial strategy to final delivery: a reassuring option when you want to delegate the project."
 									}
 								]
 							}
 						]
-					}
+					},
+					"href": "/en/contact",
+					"ctaText": "Request information"
 				}
 			]
 		},
@@ -324,6 +340,178 @@
 			"_template": "callout",
 			"text": "Request a tailored proposal",
 			"link": "/en/contact"
+		},
+		{
+			"_template": "showcase",
+			"mediaId": "https://media.senshac.com/images/redesign/photos/img-9249/1200.webp"
+		},
+		{
+			"_template": "accordion",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "FAQ"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"number": "",
+					"title": "When is the best time to contact the studio?",
+					"summary": "The earlier we learn about your project, the better. We can join while you are shaping the business or considering a space, and also help rethink or improve an existing location.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Early decisions help identify opportunities and avoid later issues with layout, cost or delivery."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "",
+					"title": "Do you work outside your city?",
+					"summary": "Yes. Diagnosis and Creative Concept can be delivered in a hybrid format, combining online work with in-person visits. We travel for initial surveys and key delivery and installation stages."
+				},
+				{
+					"number": "",
+					"title": "Do you handle construction, permits and structural architecture?",
+					"summary": "Our focus is spatial strategy and interior design.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "For construction, permits and technical work requiring architects or engineers, we work with your own specialists or connect you with trusted professionals, coordinating the work so every part moves in the same direction."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "",
+					"title": "What does site supervision include?",
+					"summary": "We oversee the interior design delivery: checking placement, defining finishes and construction details, and coordinating materials and furniture installation so the result matches the design.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "The construction company and/or appointed technical professional remains responsible for the technical and legal direction of the works."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "",
+					"title": "How are project fees calculated?",
+					"summary": "Fees depend on the project scope, complexity and specific needs.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Before work begins, you receive a detailed proposal setting out the scope and fees. You also receive a progress email every Friday, whether or not we met that week."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "",
+					"title": "Do you work with your own builder, or can I choose my trades?",
+					"summary": "We work with a trusted network, especially for bespoke joinery, metalwork, lighting and furniture.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "If you already have a builder or trusted trades, we can coordinate with them and work together toward a successful result."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"number": "",
+					"title": "Can I buy my own materials?",
+					"summary": "Coordinating purchases helps us anticipate issues, align deliveries with the build and reduce errors, delays and unexpected costs. We can also incorporate suppliers or materials you have already identified.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "We mainly work with national suppliers we know and recommend according to each project’s needs and budget."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 }

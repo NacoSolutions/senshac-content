@@ -1,194 +1,73 @@
 {
 	"title": "Sens*Hac - Strategic Interior Design Studio",
-	"description": "We design brand-led spaces that increase the value and profitability of your business.",
+	"description": "We design brand-led spaces that raise the value and profitability of your business.",
 	"headerStyle": "transparent",
 	"blocks": [
 		{
+			"_template": "banner",
+			"title": "Communicate.\nCaptivate.\nConnect.",
+			"subtitle": "",
+			"topRight": { "lines": ["interior", "design", "studio R"] },
+			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
+			"imageAlt": "Black rock formations against a dark background",
+			"objectFit": "cover"
+		},
+		{
 			"_template": "hero",
-			"title": "WE DESIGN\nSPACES WITH\nA DISTINCT\nBRAND IDENTITY",
-			"intro": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "We are a boutique strategic interior design studio creating high-impact interiors for businesses."
-							}
-						]
-					}
-				]
-			},
-			"ctaText": "about the studio",
-			"ctaLink": "/en/studio",
+			"title": "SPACE IS WHERE\nYOUR BRAND\nCOMES TO LIFE.",
+			"intro": "We design spaces for brands with something to say.\nSpace, Brand Identity & Strategy.",
+			"ctaText": "Want your space to speak?",
+			"ctaLink": "/en/contact",
 			"mediaType": "image",
-			"placeholderLabel": "Project image pending"
+			"mediaId": "redesign/photos/img-9212",
+			"imageAlt": "A selection of materials, textures and finishes"
+		},
+		{
+			"_template": "showcase",
+			"mediaType": "image",
+			"mediaId": "",
+			"imageAlt": "Senshac strategic design process",
+			"items": [{ "title": "RUDE / RETAIL", "link": "/en/works/rude", "ctaText": "VIEW PROJECT", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
 		},
 		{
 			"_template": "text",
-			"title": "We unite Space, Brand Identity & Strategy.",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "We work closely with founders and entrepreneurs to build a cohesive image that aligns product, perception and user experience. We create distinctive spaces where interior architecture becomes a natural extension of your identity and values."
-							}
-						]
-					}
-				]
-			}
+			"title": "If your product or service is different, your space should show it.",
+			"headingLevel": "h2",
+			"body": "We design interiors with a distinctive visual language, rooted in your brand universe and built to work as a real part of your business.\n\nWe look at how your customers move, how your team works and what the space needs so brand, experience and operations work together."
 		},
+		{ "_template": "callout", "text": "Our method", "link": "/en/methods" },
 		{
 			"_template": "showcase",
 			"mediaType": "video",
-			"placeholderLabel": "Brand film pending"
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
 		},
 		{
 			"_template": "accordion",
-			"intro": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "If your product or service is different, do not compete on price. We turn your space into a strategic asset that raises the value of your business:"
-							}
-						]
-					}
-				]
-			},
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "What can design do for your business?" }] }] },
 			"items": [
-				{
-					"number": "01",
-					"title": "Positioning and visibility for your brand",
-					"summary": "Your space communicates who you are and what sets you apart."
-				},
-				{
-					"number": "02",
-					"title": "We increase perceived value",
-					"summary": "We create environments that elevate the value of your product or service."
-				},
-				{
-					"number": "03",
-					"title": "We improve profitability",
-					"summary": "We design intelligent spaces that support operations, sales and customer loyalty."
-				}
+				{ "number": "1", "title": "MAKE YOUR BRAND DISTINCTIVE", "summary": "Your space communicates who you are and what sets you apart. Make it as recognisable as your brand." },
+				{ "number": "2", "title": "RAISE ITS VALUE", "summary": "Design increases perceived value, attracts the right customer and positions your product or service at the level it deserves." },
+				{ "number": "3", "title": "MAKE YOUR SPACE WORK FOR YOU", "summary": "Smart planning streamlines operations, supports sales and improves the customer experience. Make every square metre work for your business." }
 			]
-		},
-		{
-			"_template": "list",
-			"title": "We are your partner if you need to:",
-			"items": [
-				{
-					"title": "Improve profitability",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Your physical channel is underperforming and the space needs to support sales."
-									}
-								]
-							}
-						]
-					}
-				},
-				{
-					"title": "Move into a physical space",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "You lead an established e-commerce brand or are opening your first location."
-									}
-								]
-							}
-						]
-					}
-				},
-				{
-					"title": "Reposition your brand",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Your current space does not reflect the quality of your offer or attract a higher-value customer."
-									}
-								]
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"_template": "list",
-			"title": "Choose your next step",
-			"intro": "Every business is at a different stage. Start with yours.",
-			"items": [
-				{
-					"title": "I’m opening a new space",
-					"text": "Tell us about the premises, opening, and project.",
-					"href": "/en/contact?path=first-space"
-				},
-				{
-					"title": "I want to improve my current space",
-					"text": "Let’s identify what limits performance and what should change.",
-					"href": "/en/contact?path=existing-space"
-				},
-				{
-					"title": "I’m planning business growth",
-					"text": "Plan a new location or a model that can scale.",
-					"href": "/en/contact?path=growth"
-				}
-			]
-		},
-		{
-			"_template": "callout",
-			"text": "Tell us about your project",
-			"link": "/en/contact"
 		},
 		{
 			"_template": "showcase",
-			"eyebrow": "Latest",
-			"items": [
-				{
-					"title": "La Trobada",
-					"link": "/en/works/la-trobada",
-					"placeholderLabel": "Project image pending"
-				},
-				{
-					"title": "Latest",
-					"link": "/en/works",
-					"placeholderLabel": "Project image pending"
-				}
-			],
-			"ctaText": "View work",
-			"ctaLink": "/en/works"
+			"mediaType": "image",
+			"mediaId": "redesign/editorial/rocas",
+			"imageAlt": "Black rock formations against a dark background",
+			"title": "A REEL ABOUT HOW I MAKE DECISIONS"
 		},
 		{
-			"_template": "feed",
-			"title": "On Instagram",
-			"tag": "novedades",
-			"limit": 4
-		}
+			"_template": "list",
+			"title": "We want to understand you.\nWhere is your business right now?",
+			"intro": "",
+			"items": [
+				{ "title": "I want to open my first space", "text": "", "href": "/en/contact?path=first-space" },
+				{ "title": "My space is not working as it should", "text": "", "href": "/en/contact?path=existing-space" },
+				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?path=growth" },
+				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact" }
+			]
+		},
+		{ "_template": "feed", "description": "", "tag": "novedades", "limit": 4, "maxVisible": 3 }
 	]
 }
