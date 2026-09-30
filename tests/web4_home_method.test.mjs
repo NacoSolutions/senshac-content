@@ -143,3 +143,38 @@ test("Spanish methods phases match the WEB4 sequence and approved descriptions",
 		},
 	]);
 });
+
+test("English and Catalan pages follow the WEB4 homepage and method structure", async () => {
+	for (const locale of ["en", "ca"]) {
+		const home = await readPage(`../pages/${locale}/home.json`);
+		const methods = await readPage(`../pages/${locale}/services.json`);
+		expect(home.blocks.map(({ _template }) => _template)).toEqual([
+			"banner",
+			"hero",
+			"showcase",
+			"text",
+			"callout",
+			"showcase",
+			"accordion",
+			"showcase",
+			"list",
+			"feed",
+		]);
+		expect(methods.blocks.map(({ _template }) => _template)).toEqual([
+			"text",
+			"showcase",
+			"accordion",
+			"callout",
+			"showcase",
+			"list",
+			"callout",
+			"showcase",
+			"accordion",
+		]);
+		expect(methods.blocks[2].items).toHaveLength(4);
+		expect(methods.blocks[8].items).toHaveLength(7);
+		const serialized = JSON.stringify({ home, methods });
+		expect(serialized).not.toContain("/es/");
+		expect(serialized).not.toContain("pendiente");
+	}
+});
