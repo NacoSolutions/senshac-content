@@ -1,0 +1,10 @@
+{
+	"blocks": [
+		{
+			"_template": "list",
+			"items": [
+				{ "title": "Bad link", "text": "", "href": "javascript:alert(1)" }
+			]
+		}
+	]
+}

@@ -66,5 +66,5 @@ description, and ordered field definitions. Keep field names and option values
 stable across locales; localize labels and option text. The web app validates
 path IDs, field kinds, and option values against this contract and rejects
 unknown input. File questions accept up to three PDF/JPEG/PNG/WebP files, at
-5 MB each; the API checks file signatures and total request size before sending
-validated attachments through Resend.
+5 MB each and 10 MB combined; the API caps the request at 12 MiB, checks file
+signatures, and sends validated attachments through Resend.

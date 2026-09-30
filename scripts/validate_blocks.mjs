@@ -132,8 +132,29 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 				}
 				if (block._template === "list" && Array.isArray(block.items)) {
 					for (const [itemIndex, item] of block.items.entries()) {
-						const invalid = Object.keys(item).filter((field) => !["title", "text", "href"].includes(field));
-						if (invalid.length) errors.push(`${location} items[${itemIndex}] has unsupported fields: ${invalid.sort().join(", ")}`);
+						if (!item || typeof item !== "object" || Array.isArray(item)) {
+							errors.push(`${location} items[${itemIndex}] must be an object`);
+							continue;
+						}
+						const invalid = Object.keys(item).filter(
+							(field) => !["title", "text", "href"].includes(field),
+						);
+						if (invalid.length)
+							errors.push(
+								`${location} items[${itemIndex}] has unsupported fields: ${invalid.sort().join(", ")}`,
+							);
+						if (
+							item.href !== undefined &&
+							(typeof item.href !== "string" ||
+								!(
+									/^(\/)(?!\/)/.test(item.href) ||
+									/^https:\/\/\S+$/.test(item.href)
+								))
+						) {
+							errors.push(
+								`${location} items[${itemIndex}] href must be a local path or HTTPS URL`,
+							);
+						}
 					}
 				}
 				const variants = blockVariants.get(block._template);
