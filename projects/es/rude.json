@@ -12,77 +12,9 @@
 	"blocks": [
 		{
 			"_template": "media",
-			"variant": "banner"
-		},
-		{
-			"title": "Rude",
-			"_template": "details"
-		},
-		{
-			"title": "BRIEF",
-			"_template": "text",
-			"variant": "brief",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": ""
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"title": "CONCEPTO",
-			"_template": "text",
-			"variant": "concept",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": ""
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"title": "ESTRATEGIA",
-			"_template": "text",
-			"variant": "strategy",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": ""
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"title": "COLABORADORES",
-			"list": [],
-			"_template": "credits"
-		},
-		{
-			"_template": "media",
-			"variant": "full"
+			"variant": "banner",
+			"mediaId": "projects/rude/cover",
+			"alt": "Interior de la tienda RUDE, con zona de exposición y probadores."
 		}
 	]
 }
