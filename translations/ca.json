@@ -91,7 +91,473 @@
 		"error": "Ha ocorregut un error. Si us plau, torna-ho a provar.",
 		"turnstileFailed": "Verificació de seguretat fallida. Si us plau, torna-ho a provar.",
 		"invalidEmail": "Email invàlid.",
-		"missingFields": "Si us plau, completa tots els camps obligatoris."
+		"missingFields": "Si us plau, completa tots els camps obligatoris.",
+		"inquiryPaths": {
+			"heading": "Explica’ns quin espai vols transformar",
+			"chooseLabel": "Què necessites resoldre?",
+			"paths": [
+				{
+					"value": "first-space",
+					"title": "Obrir un espai nou",
+					"description": "Disseny estratègic per a un negoci nou o una nova ubicació.",
+					"fields": [
+						{
+							"name": "businessType",
+							"kind": "select",
+							"label": "Tipus de negoci",
+							"required": true,
+							"options": [
+								{
+									"value": "retail",
+									"label": "Comerç / retail"
+								},
+								{
+									"value": "restaurant",
+									"label": "Restaurant / bar"
+								},
+								{
+									"value": "hospitality",
+									"label": "Hostaleria"
+								},
+								{
+									"value": "other",
+									"label": "Altres"
+								}
+							]
+						},
+						{
+							"name": "location",
+							"kind": "text",
+							"label": "Ciutat o zona",
+							"required": true
+						},
+						{
+							"name": "premisesStatus",
+							"kind": "select",
+							"label": "Situació del local",
+							"required": true,
+							"options": [
+								{
+									"value": "signed",
+									"label": "Contracte signat"
+								},
+								{
+									"value": "deciding",
+									"label": "Valorant opcions; decidiré aviat"
+								},
+								{
+									"value": "searching",
+									"label": "Estic buscant local"
+								}
+							]
+						},
+						{
+							"name": "floorArea",
+							"kind": "text",
+							"label": "Superfície aproximada (m²)",
+							"required": false
+						},
+						{
+							"name": "openingTimeframe",
+							"kind": "select",
+							"label": "Quan vols obrir?",
+							"required": true,
+							"options": [
+								{
+									"value": "under-3-months",
+									"label": "En menys de 3 mesos"
+								},
+								{
+									"value": "3-6-months",
+									"label": "En 3–6 mesos"
+								},
+								{
+									"value": "6-12-months",
+									"label": "En 6–12 mesos"
+								},
+								{
+									"value": "flexible",
+									"label": "Flexible / sense data"
+								}
+							]
+						},
+						{
+							"name": "serviceScope",
+							"kind": "select",
+							"label": "Abast del projecte",
+							"required": true,
+							"options": [
+								{
+									"value": "integral",
+									"label": "Projecte integral"
+								},
+								{
+									"value": "rebrand",
+									"label": "Rebranding espacial sense grans obres"
+								},
+								{
+									"value": "consultation",
+									"label": "Assessorament exprés"
+								}
+							]
+						},
+						{
+							"name": "investment",
+							"kind": "select",
+							"label": "Inversió estimada",
+							"required": true,
+							"options": [
+								{
+									"value": "under-30k",
+									"label": "Menys de 30.000 €"
+								},
+								{
+									"value": "30-75k",
+									"label": "30.000–75.000 €"
+								},
+								{
+									"value": "75-150k",
+									"label": "75.000–150.000 €"
+								},
+								{
+									"value": "over-150k",
+									"label": "Més de 150.000 €"
+								},
+								{
+									"value": "undecided",
+									"label": "Per definir"
+								}
+							]
+						},
+						{
+							"name": "message",
+							"kind": "textarea",
+							"label": "Explica’ns més sobre el projecte",
+							"required": false
+						}
+					]
+				},
+				{
+					"value": "existing-space",
+					"title": "Millorar un espai existent",
+					"description": "Descobrim què limita el rendiment i com millorar l’experiència.",
+					"fields": [
+						{
+							"name": "businessType",
+							"kind": "select",
+							"label": "Tipus de negoci",
+							"required": true,
+							"options": [
+								{
+									"value": "retail",
+									"label": "Comerç / retail"
+								},
+								{
+									"value": "restaurant",
+									"label": "Restaurant / bar"
+								},
+								{
+									"value": "hospitality",
+									"label": "Hostaleria"
+								},
+								{
+									"value": "other",
+									"label": "Altres"
+								}
+							]
+						},
+						{
+							"name": "location",
+							"kind": "text",
+							"label": "Ciutat o zona",
+							"required": true
+						},
+						{
+							"name": "challenges",
+							"kind": "textarea",
+							"label": "Què no funciona? (distribució, flux, il·luminació, vendes...)",
+							"required": true
+						},
+						{
+							"name": "desiredOutcome",
+							"kind": "select",
+							"label": "Què t’agradaria millorar?",
+							"required": true,
+							"options": [
+								{
+									"value": "sales",
+									"label": "Vendes i rendibilitat"
+								},
+								{
+									"value": "workflow",
+									"label": "Flux operatiu"
+								},
+								{
+									"value": "experience",
+									"label": "Experiència premium del client"
+								},
+								{
+									"value": "refresh",
+									"label": "Actualitzar sense grans obres"
+								}
+							]
+						},
+						{
+							"name": "floorArea",
+							"kind": "text",
+							"label": "Superfície aproximada (m²)",
+							"required": false
+						},
+						{
+							"name": "timeline",
+							"kind": "select",
+							"label": "Termini desitjat",
+							"required": true,
+							"options": [
+								{
+									"value": "urgent",
+									"label": "Tan aviat com sigui possible"
+								},
+								{
+									"value": "3-6-months",
+									"label": "En 3–6 mesos"
+								},
+								{
+									"value": "flexible",
+									"label": "Flexible / sense data"
+								}
+							]
+						},
+						{
+							"name": "serviceScope",
+							"kind": "select",
+							"label": "Abast del projecte",
+							"required": true,
+							"options": [
+								{
+									"value": "integral",
+									"label": "Projecte integral"
+								},
+								{
+									"value": "rebrand",
+									"label": "Rebranding espacial sense grans obres"
+								},
+								{
+									"value": "audit",
+									"label": "Auditoría express"
+								}
+							]
+						},
+						{
+							"name": "investment",
+							"kind": "select",
+							"label": "Inversió estimada",
+							"required": true,
+							"options": [
+								{
+									"value": "under-15k",
+									"label": "Menys de 15.000 €"
+								},
+								{
+									"value": "15-50k",
+									"label": "15.000–50.000 €"
+								},
+								{
+									"value": "50-100k",
+									"label": "50.000–100.000 €"
+								},
+								{
+									"value": "over-100k",
+									"label": "Més de 100.000 €"
+								},
+								{
+									"value": "undecided",
+									"label": "Per definir"
+								}
+							]
+						},
+						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Fotos o plànols (PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
+							"required": false
+						},
+						{
+							"name": "message",
+							"kind": "textarea",
+							"label": "Explica’ns més sobre el projecte",
+							"required": false
+						}
+					]
+				},
+				{
+					"value": "growth",
+					"title": "Preparar el creixement del negoci",
+					"description": "Planifiquem una nova ubicació, l’evolució de marca o un model escalable.",
+					"fields": [
+						{
+							"name": "businessType",
+							"kind": "select",
+							"label": "Tipus de negoci",
+							"required": true,
+							"options": [
+								{
+									"value": "retail",
+									"label": "Comerç / retail"
+								},
+								{
+									"value": "restaurant",
+									"label": "Restaurant / bar"
+								},
+								{
+									"value": "hospitality",
+									"label": "Hostaleria"
+								},
+								{
+									"value": "other",
+									"label": "Altres"
+								}
+							]
+						},
+						{
+							"name": "growthPlan",
+							"kind": "select",
+							"label": "Què tens previst?",
+							"required": true,
+							"options": [
+								{
+									"value": "new-location",
+									"label": "Obrir una nova ubicació"
+								},
+								{
+									"value": "transform",
+									"label": "Transformar l’espai actual"
+								},
+								{
+									"value": "replicate",
+									"label": "Replicar el model en diverses ubicacions"
+								},
+								{
+									"value": "evolve",
+									"label": "Evolucionar la marca i el concepte"
+								}
+							]
+						},
+						{
+							"name": "objective",
+							"kind": "select",
+							"label": "Objectiu principal",
+							"required": true,
+							"options": [
+								{
+									"value": "premium",
+									"label": "Augmentar el tiquet mitjà i la percepció premium"
+								},
+								{
+									"value": "throughput",
+									"label": "Millorar la capacitat i l’operativa"
+								},
+								{
+									"value": "franchise",
+									"label": "Crear un model franquiciable"
+								},
+								{
+									"value": "reposition",
+									"label": "Reposicionar la marca"
+								}
+							]
+						},
+						{
+							"name": "currentLocations",
+							"kind": "text",
+							"label": "Nombre d’ubicacions actuals",
+							"required": false
+						},
+						{
+							"name": "timeline",
+							"kind": "select",
+							"label": "Termini desitjat",
+							"required": true,
+							"options": [
+								{
+									"value": "under-6-months",
+									"label": "En menys de 6 mesos"
+								},
+								{
+									"value": "6-12-months",
+									"label": "En 6–12 mesos"
+								},
+								{
+									"value": "over-12-months",
+									"label": "Més endavant / sense data"
+								}
+							]
+						},
+						{
+							"name": "serviceScope",
+							"kind": "select",
+							"label": "Abast del projecte",
+							"required": true,
+							"options": [
+								{
+									"value": "integral",
+									"label": "Projecte integral"
+								},
+								{
+									"value": "rebrand",
+									"label": "Rebranding espacial sense grans obres"
+								},
+								{
+									"value": "manual",
+									"label": "Concepte i manual de disseny"
+								}
+							]
+						},
+						{
+							"name": "investment",
+							"kind": "select",
+							"label": "Inversió estimada",
+							"required": true,
+							"options": [
+								{
+									"value": "under-50k",
+									"label": "Menys de 50.000 €"
+								},
+								{
+									"value": "50-150k",
+									"label": "50.000–150.000 €"
+								},
+								{
+									"value": "150-300k",
+									"label": "150.000–300.000 €"
+								},
+								{
+									"value": "over-300k",
+									"label": "Més de 300.000 €"
+								},
+								{
+									"value": "undecided",
+									"label": "Per definir"
+								}
+							]
+						},
+						{
+							"name": "dossier",
+							"kind": "file",
+							"label": "Plànols o dossier de negoci (PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
+							"required": false
+						},
+						{
+							"name": "message",
+							"kind": "textarea",
+							"label": "Explica’ns més sobre el projecte",
+							"required": false
+						}
+					]
+				}
+			]
+		},
+		"invalidFile": "Fitxer no vàlid. Fes servir PDF, JPG, PNG o WebP de fins a 5 MB cadascun (màxim 3)."
 	},
 	"projects": {
 		"title": "Treballs - Sens*Hac",

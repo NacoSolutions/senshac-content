@@ -91,7 +91,473 @@
 		"error": "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
 		"turnstileFailed": "Verificación de seguridad fallida. Por favor, inténtalo de nuevo.",
 		"invalidEmail": "Email inválido.",
-		"missingFields": "Por favor, completa todos los campos obligatorios."
+		"missingFields": "Por favor, completa todos los campos obligatorios.",
+		"inquiryPaths": {
+			"heading": "Cuéntanos qué espacio quieres transformar",
+			"chooseLabel": "¿Qué necesitas resolver?",
+			"paths": [
+				{
+					"value": "first-space",
+					"title": "Abrir un nuevo espacio",
+					"description": "Diseño estratégico para un negocio que empieza o busca su próximo local.",
+					"fields": [
+						{
+							"name": "businessType",
+							"kind": "select",
+							"label": "Tipo de negocio",
+							"required": true,
+							"options": [
+								{
+									"value": "retail",
+									"label": "Comercio / retail"
+								},
+								{
+									"value": "restaurant",
+									"label": "Restaurante / bar"
+								},
+								{
+									"value": "hospitality",
+									"label": "Hostelería"
+								},
+								{
+									"value": "other",
+									"label": "Otro"
+								}
+							]
+						},
+						{
+							"name": "location",
+							"kind": "text",
+							"label": "Ciudad o zona",
+							"required": true
+						},
+						{
+							"name": "premisesStatus",
+							"kind": "select",
+							"label": "Situación del local",
+							"required": true,
+							"options": [
+								{
+									"value": "signed",
+									"label": "Contrato firmado"
+								},
+								{
+									"value": "deciding",
+									"label": "Valorando opciones; decidiré pronto"
+								},
+								{
+									"value": "searching",
+									"label": "Estoy buscando local"
+								}
+							]
+						},
+						{
+							"name": "floorArea",
+							"kind": "text",
+							"label": "Superficie aproximada (m²)",
+							"required": false
+						},
+						{
+							"name": "openingTimeframe",
+							"kind": "select",
+							"label": "¿Cuándo quieres abrir?",
+							"required": true,
+							"options": [
+								{
+									"value": "under-3-months",
+									"label": "En menos de 3 meses"
+								},
+								{
+									"value": "3-6-months",
+									"label": "En 3–6 meses"
+								},
+								{
+									"value": "6-12-months",
+									"label": "En 6–12 meses"
+								},
+								{
+									"value": "flexible",
+									"label": "Sin fecha definida"
+								}
+							]
+						},
+						{
+							"name": "serviceScope",
+							"kind": "select",
+							"label": "Alcance que buscas",
+							"required": true,
+							"options": [
+								{
+									"value": "integral",
+									"label": "Proyecto integral"
+								},
+								{
+									"value": "rebrand",
+									"label": "Rebranding espacial y proyecto sin obras"
+								},
+								{
+									"value": "consultation",
+									"label": "Asesoría express"
+								}
+							]
+						},
+						{
+							"name": "investment",
+							"kind": "select",
+							"label": "Inversión estimada para el proyecto",
+							"required": true,
+							"options": [
+								{
+									"value": "under-30k",
+									"label": "Menos de 30.000 €"
+								},
+								{
+									"value": "30-75k",
+									"label": "30.000–75.000 €"
+								},
+								{
+									"value": "75-150k",
+									"label": "75.000–150.000 €"
+								},
+								{
+									"value": "over-150k",
+									"label": "Más de 150.000 €"
+								},
+								{
+									"value": "undecided",
+									"label": "Aún por definir"
+								}
+							]
+						},
+						{
+							"name": "message",
+							"kind": "textarea",
+							"label": "Cuéntanos más sobre el proyecto",
+							"required": false
+						}
+					]
+				},
+				{
+					"value": "existing-space",
+					"title": "Mejorar un espacio existente",
+					"description": "Detectemos qué frena el rendimiento y cómo convertirlo en una mejor experiencia.",
+					"fields": [
+						{
+							"name": "businessType",
+							"kind": "select",
+							"label": "Tipo de negocio",
+							"required": true,
+							"options": [
+								{
+									"value": "retail",
+									"label": "Comercio / retail"
+								},
+								{
+									"value": "restaurant",
+									"label": "Restaurante / bar"
+								},
+								{
+									"value": "hospitality",
+									"label": "Hostelería"
+								},
+								{
+									"value": "other",
+									"label": "Otro"
+								}
+							]
+						},
+						{
+							"name": "location",
+							"kind": "text",
+							"label": "Ciudad o zona",
+							"required": true
+						},
+						{
+							"name": "challenges",
+							"kind": "textarea",
+							"label": "¿Qué no está funcionando? (distribución, flujo, iluminación, ventas...)",
+							"required": true
+						},
+						{
+							"name": "desiredOutcome",
+							"kind": "select",
+							"label": "¿Qué te gustaría mejorar?",
+							"required": true,
+							"options": [
+								{
+									"value": "sales",
+									"label": "Ventas y rentabilidad"
+								},
+								{
+									"value": "workflow",
+									"label": "Flujo operativo"
+								},
+								{
+									"value": "experience",
+									"label": "Experiencia premium del cliente"
+								},
+								{
+									"value": "refresh",
+									"label": "Actualizar sin grandes obras"
+								}
+							]
+						},
+						{
+							"name": "floorArea",
+							"kind": "text",
+							"label": "Superficie aproximada (m²)",
+							"required": false
+						},
+						{
+							"name": "timeline",
+							"kind": "select",
+							"label": "Plazo deseado",
+							"required": true,
+							"options": [
+								{
+									"value": "urgent",
+									"label": "Lo antes posible"
+								},
+								{
+									"value": "3-6-months",
+									"label": "En 3–6 meses"
+								},
+								{
+									"value": "flexible",
+									"label": "Flexible"
+								}
+							]
+						},
+						{
+							"name": "serviceScope",
+							"kind": "select",
+							"label": "Alcance que buscas",
+							"required": true,
+							"options": [
+								{
+									"value": "integral",
+									"label": "Proyecto integral"
+								},
+								{
+									"value": "rebrand",
+									"label": "Rebranding espacial sin grandes obras"
+								},
+								{
+									"value": "audit",
+									"label": "Auditoría express"
+								}
+							]
+						},
+						{
+							"name": "investment",
+							"kind": "select",
+							"label": "Inversión estimada",
+							"required": true,
+							"options": [
+								{
+									"value": "under-15k",
+									"label": "Menos de 15.000 €"
+								},
+								{
+									"value": "15-50k",
+									"label": "15.000–50.000 €"
+								},
+								{
+									"value": "50-100k",
+									"label": "50.000–100.000 €"
+								},
+								{
+									"value": "over-100k",
+									"label": "Más de 100.000 €"
+								},
+								{
+									"value": "undecided",
+									"label": "Aún por definir"
+								}
+							]
+						},
+						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Fotos o planos (PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
+							"required": false
+						},
+						{
+							"name": "message",
+							"kind": "textarea",
+							"label": "Información adicional",
+							"required": false
+						}
+					]
+				},
+				{
+					"value": "growth",
+					"title": "Preparar el crecimiento del negocio",
+					"description": "Diseñemos una nueva ubicación, una evolución de marca o un modelo replicable.",
+					"fields": [
+						{
+							"name": "businessType",
+							"kind": "select",
+							"label": "Tipo de negocio",
+							"required": true,
+							"options": [
+								{
+									"value": "retail",
+									"label": "Comercio / retail"
+								},
+								{
+									"value": "restaurant",
+									"label": "Restaurante / bar"
+								},
+								{
+									"value": "hospitality",
+									"label": "Hostelería"
+								},
+								{
+									"value": "other",
+									"label": "Otro"
+								}
+							]
+						},
+						{
+							"name": "growthPlan",
+							"kind": "select",
+							"label": "¿Qué tienes previsto?",
+							"required": true,
+							"options": [
+								{
+									"value": "new-location",
+									"label": "Abrir una nueva ubicación"
+								},
+								{
+									"value": "transform",
+									"label": "Transformar el espacio actual"
+								},
+								{
+									"value": "replicate",
+									"label": "Replicar el modelo en varias ubicaciones"
+								},
+								{
+									"value": "evolve",
+									"label": "Evolucionar la marca y el concepto"
+								}
+							]
+						},
+						{
+							"name": "objective",
+							"kind": "select",
+							"label": "Objetivo principal",
+							"required": true,
+							"options": [
+								{
+									"value": "premium",
+									"label": "Aumentar ticket medio y percepción premium"
+								},
+								{
+									"value": "throughput",
+									"label": "Mejorar capacidad y operativa"
+								},
+								{
+									"value": "franchise",
+									"label": "Crear un modelo franquiciable"
+								},
+								{
+									"value": "reposition",
+									"label": "Reposicionar la marca"
+								}
+							]
+						},
+						{
+							"name": "currentLocations",
+							"kind": "text",
+							"label": "Número de ubicaciones actuales",
+							"required": false
+						},
+						{
+							"name": "timeline",
+							"kind": "select",
+							"label": "Plazo deseado",
+							"required": true,
+							"options": [
+								{
+									"value": "under-6-months",
+									"label": "En menos de 6 meses"
+								},
+								{
+									"value": "6-12-months",
+									"label": "En 6–12 meses"
+								},
+								{
+									"value": "over-12-months",
+									"label": "Más adelante / sin fecha"
+								}
+							]
+						},
+						{
+							"name": "serviceScope",
+							"kind": "select",
+							"label": "Alcance que buscas",
+							"required": true,
+							"options": [
+								{
+									"value": "integral",
+									"label": "Proyecto integral"
+								},
+								{
+									"value": "rebrand",
+									"label": "Rebranding espacial"
+								},
+								{
+									"value": "manual",
+									"label": "Concepto y manual de diseño"
+								}
+							]
+						},
+						{
+							"name": "investment",
+							"kind": "select",
+							"label": "Inversión estimada",
+							"required": true,
+							"options": [
+								{
+									"value": "under-50k",
+									"label": "Menos de 50.000 €"
+								},
+								{
+									"value": "50-150k",
+									"label": "50.000–150.000 €"
+								},
+								{
+									"value": "150-300k",
+									"label": "150.000–300.000 €"
+								},
+								{
+									"value": "over-300k",
+									"label": "Más de 300.000 €"
+								},
+								{
+									"value": "undecided",
+									"label": "Aún por definir"
+								}
+							]
+						},
+						{
+							"name": "dossier",
+							"kind": "file",
+							"label": "Planos o dossier (PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
+							"required": false
+						},
+						{
+							"name": "message",
+							"kind": "textarea",
+							"label": "Cuéntanos tu plan de crecimiento",
+							"required": false
+						}
+					]
+				}
+			]
+		},
+		"invalidFile": "Archivo no válido. Usa PDF, JPG, PNG o WebP de hasta 5 MB por archivo (máximo 3)."
 	},
 	"projects": {
 		"title": "Trabajos - Sens*Hac",

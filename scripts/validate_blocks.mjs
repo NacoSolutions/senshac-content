@@ -130,6 +130,12 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 						`${location} has unsupported fields: ${unsupportedFields.join(", ")}`,
 					);
 				}
+				if (block._template === "list" && Array.isArray(block.items)) {
+					for (const [itemIndex, item] of block.items.entries()) {
+						const invalid = Object.keys(item).filter((field) => !["title", "text", "href"].includes(field));
+						if (invalid.length) errors.push(`${location} items[${itemIndex}] has unsupported fields: ${invalid.sort().join(", ")}`);
+					}
+				}
 				const variants = blockVariants.get(block._template);
 				const variant = block.variant;
 				if (

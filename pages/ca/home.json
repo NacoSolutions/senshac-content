@@ -140,6 +140,28 @@
 			]
 		},
 		{
+			"_template": "list",
+			"title": "Tria el pas següent",
+			"intro": "Cada negoci es troba en un moment diferent. Comencem pel teu.",
+			"items": [
+				{
+					"title": "Obriré un espai nou",
+					"text": "Explica’ns el local, l’obertura i el projecte.",
+					"href": "/ca/contact?path=first-space"
+				},
+				{
+					"title": "Vull millorar l’espai actual",
+					"text": "Descobrim què limita el rendiment i què vols canviar.",
+					"href": "/ca/contact?path=existing-space"
+				},
+				{
+					"title": "Estic preparant el creixement",
+					"text": "Planifiquem una nova ubicació o un model escalable.",
+					"href": "/ca/contact?path=growth"
+				}
+			]
+		},
+		{
 			"_template": "callout",
 			"text": "Explica’ns el teu projecte",
 			"link": "/ca/contact"

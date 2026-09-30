@@ -92,6 +92,28 @@
       "_template": "list"
     },
     {
+      "_template": "list",
+      "title": "Elige el siguiente paso",
+      "intro": "Cada negocio está en un momento distinto. Empecemos por el tuyo.",
+      "items": [
+        {
+          "title": "Voy a abrir un nuevo espacio",
+          "text": "Cuéntanos sobre el local, la apertura y el proyecto.",
+          "href": "/es/contact?path=first-space"
+        },
+        {
+          "title": "Quiero mejorar mi espacio actual",
+          "text": "Identifiquemos qué frena el rendimiento y qué quieres cambiar.",
+          "href": "/es/contact?path=existing-space"
+        },
+        {
+          "title": "Estoy preparando el crecimiento",
+          "text": "Diseñemos una nueva ubicación o un modelo que pueda escalar.",
+          "href": "/es/contact?path=growth"
+        }
+      ]
+    },
+    {
       "text": "Cuéntanos tu proyecto",
       "link": "/es/contact",
       "_template": "callout"
