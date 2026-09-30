@@ -3,8 +3,11 @@
   "private": true,
   "scripts": {
     "test": "bun test",
+    "validate:blocks": "bun scripts/validate_blocks.mjs",
     "lint": "bunx --bun biome check scripts tests",
-    "typecheck": "bun --check scripts/validate_export.mjs"
+    "typecheck": "bun --check scripts/validate_export.mjs",
+    "validate:inquiries": "bun scripts/validate_inquiries.mjs",
+    "quality:content": "bun run validate:blocks && bun run validate:inquiries && bun test"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",

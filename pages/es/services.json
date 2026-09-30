@@ -6,12 +6,12 @@
 			"title": "NUESTRO MÉTODO:\nDE LA ESTRATEGIA A\nLA APERTURA.",
 			"headingLevel": "h1",
 			"showStar": true,
-			"_template": "editorialCopy"
+			"_template": "text"
 		},
 		{
 			"mediaId": "https://media.senshac.com/images/about/senshac-about-our-mission/1200.webp",
 			"imageAlt": "Investigación visual y material durante el proceso creativo",
-			"_template": "editorialShowcase"
+			"_template": "showcase"
 		},
 		{
 			"items": [
@@ -248,17 +248,17 @@
 					]
 				}
 			],
-			"_template": "editorialAccordion"
+			"_template": "accordion"
 		},
 		{
 			"text": "Agenda una llamada",
 			"link": "/es/contact",
-			"_template": "editorialCta"
+			"_template": "callout"
 		},
 		{
 			"mediaId": "redesign/photos/img-9212",
 			"imageAlt": "Muestras de materiales y acabados",
-			"_template": "editorialShowcase"
+			"_template": "showcase"
 		},
 		{
 			"intro": {
@@ -328,16 +328,16 @@
 					}
 				}
 			],
-			"_template": "editorialRows"
+			"_template": "list"
 		},
 		{
 			"text": "Solicita una propuesta personalizada",
 			"link": "/es/contact",
-			"_template": "editorialCta"
+			"_template": "callout"
 		},
 		{
 			"mediaId": "https://media.senshac.com/images/redesign/photos/img-9249/1200.webp",
-			"_template": "editorialShowcase"
+			"_template": "showcase"
 		},
 		{
 			"intro": {
@@ -391,8 +391,7 @@
 					"summary": "Respuesta pendiente de validación."
 				}
 			],
-			"_template": "editorialAccordion"
+			"_template": "accordion"
 		}
 	]
 }
-

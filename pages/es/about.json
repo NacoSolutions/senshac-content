@@ -7,7 +7,7 @@
 			"statement": "TU ESPACIO HABLA POR TI.\nCONVIÉRTELO EN TU\nACTIVO MÁS RENTABLE.",
 			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
 			"placeholderLabel": "Retrato del estudio pendiente",
-			"_template": "editorialMission",
+			"_template": "statement",
 			"content": {
 				"type": "root",
 				"children": [
@@ -34,4 +34,3 @@
 		}
 	]
 }
-

@@ -16,7 +16,7 @@
       "mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
       "imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
       "objectFit": "cover",
-      "_template": "editorialBanner"
+      "_template": "banner"
     },
     {
       "title": "EL ESPACIO ES\nDONDE TU MARCA\nCOBRA VIDA.",
@@ -26,24 +26,24 @@
       "mediaType": "image",
       "mediaId": "redesign/photos/img-9212",
       "imageAlt": "Selección de materiales, texturas y acabados",
-      "_template": "editorialHero"
+      "_template": "hero"
     },
     {
       "mediaType": "image",
       "mediaId": "",
       "imageAlt": "Proceso de diseño estratégico de Senshac",
-      "_template": "editorialShowcase"
+      "_template": "showcase"
     },
     {
       "title": "Unimos Espacio, Identidad de\nMarca & Estrategia.",
       "headingLevel": "h1",
       "body": "Diseñamos desde el ADN de marca para que el espacio sea una extensión natural\n\nde ésta. Integramos tus flujos de trabajo, creamos recorridos que agilizan la venta,\n\nzonificamos las áreas estratégicamente y elevamos la percepción de valor para\n\nimpulsar la rentabilidad en *hospitality*, *retail* y *wellness*.\n",
-      "_template": "editorialCopy"
+      "_template": "text"
     },
     {
       "mediaType": "video",
       "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
-      "_template": "editorialShowcase"
+      "_template": "showcase"
     },
     {
       "intro": "Si tu producto o servicio te hace diferente, el diseño de tu local tiene que demostrarlo. Transformamos tu espacio *para convertirlo en tu mejor herramienta de venta y hacer crecer tu negocio.* Nuestros objetivos:\n",
@@ -64,13 +64,13 @@
           "summary": "Diseñamos espacios inteligentes que facilitan el flujo operativo, guían la venta y potencian la fidelización de tu cliente target."
         }
       ],
-      "_template": "editorialAccordion"
+      "_template": "accordion"
     },
     {
       "mediaType": "image",
       "mediaId": "redesign/editorial/rocas",
       "imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
-      "_template": "editorialShowcase"
+      "_template": "showcase"
     },
     {
       "title": "Somos tu aliado si buscas:",
@@ -89,19 +89,41 @@
           "text": "Sientes que tu espacio no hace justicia a la calidad de tu producto y quieres atraer a un perfil de cliente de mayor valor.\n"
         }
       ],
-      "_template": "editorialRows"
+      "_template": "list"
+    },
+    {
+      "_template": "list",
+      "title": "Elige el siguiente paso",
+      "intro": "Cada negocio está en un momento distinto. Empecemos por el tuyo.",
+      "items": [
+        {
+          "title": "Voy a abrir un nuevo espacio",
+          "text": "Cuéntanos sobre el local, la apertura y el proyecto.",
+          "href": "/es/contact?path=first-space"
+        },
+        {
+          "title": "Quiero mejorar mi espacio actual",
+          "text": "Identifiquemos qué frena el rendimiento y qué quieres cambiar.",
+          "href": "/es/contact?path=existing-space"
+        },
+        {
+          "title": "Estoy preparando el crecimiento",
+          "text": "Diseñemos una nueva ubicación o un modelo que pueda escalar.",
+          "href": "/es/contact?path=growth"
+        }
+      ]
     },
     {
       "text": "Cuéntanos tu proyecto",
       "link": "/es/contact",
-      "_template": "editorialCta"
+      "_template": "callout"
     },
     {
       "description": "",
       "tag": "novedades",
       "limit": 4,
-      "maxVisible": 3,
-      "_template": "editorialInstagram"
+      "_template": "feed",
+      "maxVisible": 3
     }
   ]
 }

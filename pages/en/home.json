@@ -4,7 +4,7 @@
 	"headerStyle": "transparent",
 	"blocks": [
 		{
-			"_template": "editorialHero",
+			"_template": "hero",
 			"title": "WE DESIGN\nSPACES WITH\nA DISTINCT\nBRAND IDENTITY",
 			"intro": {
 				"type": "root",
@@ -26,7 +26,7 @@
 			"placeholderLabel": "Project image pending"
 		},
 		{
-			"_template": "editorialCopy",
+			"_template": "text",
 			"title": "We unite Space, Brand Identity & Strategy.",
 			"body": {
 				"type": "root",
@@ -44,12 +44,12 @@
 			}
 		},
 		{
-			"_template": "editorialShowcase",
+			"_template": "showcase",
 			"mediaType": "video",
 			"placeholderLabel": "Brand film pending"
 		},
 		{
-			"_template": "editorialAccordion",
+			"_template": "accordion",
 			"intro": {
 				"type": "root",
 				"children": [
@@ -83,7 +83,7 @@
 			]
 		},
 		{
-			"_template": "editorialRows",
+			"_template": "list",
 			"title": "We are your partner if you need to:",
 			"items": [
 				{
@@ -140,12 +140,34 @@
 			]
 		},
 		{
-			"_template": "editorialCta",
+			"_template": "list",
+			"title": "Choose your next step",
+			"intro": "Every business is at a different stage. Start with yours.",
+			"items": [
+				{
+					"title": "I’m opening a new space",
+					"text": "Tell us about the premises, opening, and project.",
+					"href": "/en/contact?path=first-space"
+				},
+				{
+					"title": "I want to improve my current space",
+					"text": "Let’s identify what limits performance and what should change.",
+					"href": "/en/contact?path=existing-space"
+				},
+				{
+					"title": "I’m planning business growth",
+					"text": "Plan a new location or a model that can scale.",
+					"href": "/en/contact?path=growth"
+				}
+			]
+		},
+		{
+			"_template": "callout",
 			"text": "Tell us about your project",
 			"link": "/en/contact"
 		},
 		{
-			"_template": "editorialShowcase",
+			"_template": "showcase",
 			"eyebrow": "Latest",
 			"items": [
 				{
@@ -163,11 +185,10 @@
 			"ctaLink": "/en/works"
 		},
 		{
-			"_template": "editorialInstagram",
+			"_template": "feed",
 			"title": "On Instagram",
 			"tag": "novedades",
 			"limit": 4
 		}
 	]
 }
-

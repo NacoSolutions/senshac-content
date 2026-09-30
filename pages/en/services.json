@@ -3,13 +3,13 @@
 	"description": "Our strategic interior design method, from brand diagnosis through opening.",
 	"blocks": [
 		{
-			"_template": "editorialCopy",
+			"_template": "text",
 			"title": "OUR METHOD:\nFROM STRATEGY TO\nOPENING.",
 			"headingLevel": "h1",
 			"showStar": true
 		},
 		{
-			"_template": "editorialAccordion",
+			"_template": "accordion",
 			"items": [
 				{
 					"number": "01",
@@ -246,12 +246,12 @@
 			]
 		},
 		{
-			"_template": "editorialCta",
+			"_template": "callout",
 			"text": "Book a call",
 			"link": "/en/contact"
 		},
 		{
-			"_template": "editorialRows",
+			"_template": "list",
 			"intro": {
 				"type": "root",
 				"children": [
@@ -321,10 +321,9 @@
 			]
 		},
 		{
-			"_template": "editorialCta",
+			"_template": "callout",
 			"text": "Request a tailored proposal",
 			"link": "/en/contact"
 		}
 	]
 }
-

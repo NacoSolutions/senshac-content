@@ -3,7 +3,7 @@
 	"description": "A boutique strategic interior design studio for retail, hospitality and wellness.",
 	"blocks": [
 		{
-			"_template": "editorialMission",
+			"_template": "statement",
 			"label": "Mission",
 			"statement": "YOUR SPACE SPEAKS FOR YOU.\nTURN IT INTO YOUR\nMOST PROFITABLE ASSET.",
 			"placeholderLabel": "Studio portrait pending",
@@ -33,4 +33,3 @@
 		}
 	]
 }
-

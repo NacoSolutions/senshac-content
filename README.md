@@ -32,15 +32,18 @@ Nix package source and `devenv.nix` is the single environment definition.
 This repository must not own Astro components, Tina schema, generated Tina
 artifacts, Cloudflare credentials, R2 policy, or Pages project configuration.
 
-## Cutover prerequisites
+## Breaking redesign boundary
 
-1. Agree the TinaCloud generator/content topology.
-2. Prove local Tina visual editing using `localContentPath`.
-3. Prove preview, production build, and rollback from an identified content
-   commit.
-4. Define media ownership and R2 references without plaintext secrets.
-5. Update Warren routing and the Senshac workspace registry.
-6. Migrate content reversibly; retain the monorepo as rollback source until production verification.
+The owner-led redesign uses generic block identifiers and explicit layout
+variants. This is a breaking migration: unknown block names and fields fail
+validation; legacy aliases and fallback renderers are not retained. Tina content
+and application source retain separate repository histories.
+
+WordPress remains live for current production traffic. DNS migration is a
+separate future decision and is not part of this redesign.
+
+See [`docs/cutover-plan.md`](docs/cutover-plan.md) for the active sequence and
+acceptance gates.
 
 ## Pages content deployments
 

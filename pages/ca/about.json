@@ -3,7 +3,7 @@
 	"description": "Estudi boutique d’interiorisme estratègic per a retail, hospitality i wellness.",
 	"blocks": [
 		{
-			"_template": "editorialMission",
+			"_template": "statement",
 			"label": "Missió",
 			"statement": "EL TEU ESPAI PARLA PER TU.\nCONVERTEIX-LO EN EL TEU\nACTIU MÉS RENDIBLE.",
 			"placeholderLabel": "Retrat de l’estudi pendent",
@@ -33,4 +33,3 @@
 		}
 	]
 }
-
