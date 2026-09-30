@@ -357,38 +357,169 @@
 			"items": [
 				{
 					"number": "",
-					"title": "Tengo un proyecto en mente, ¿puedo agendar una consulta gratuita?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Cuándo es el mejor momento para contactar con el estudio?",
+					"summary": "Cuanto antes podamos conocer tu proyecto, mejor. Podemos intervenir desde las primeras fases, cuando estás definiendo el negocio o valorando un espacio, pero también cuando ya tienes un local y necesitas replantearlo, transformarlo o hacerlo funcionar mejor.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Los estadios iniciales son críticos para detectar oportunidades, anticipar decisiones y evitar problemas de distribución, costes o ejecución más adelante."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
 				},
 				{
 					"number": "",
-					"title": "¿Cuándo debería contratar servicios de interiorismo?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Hacéis proyectos fuera de nuestra ciudad?",
+					"summary": "Sí. Las fases de Diagnóstico y Concepto Creativo pueden desarrollarse de forma híbrida, combinando trabajo online y visitas presenciales. Nos desplazamos para la toma de datos inicial y para las fases críticas de ejecución y montaje."
 				},
 				{
 					"number": "",
-					"title": "¿Ofrecéis servicios más allá del diseño interior?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Os encargáis de la obra, los permisos y la arquitectura estructural?",
+					"summary": "Nuestro foco está en la estrategia espacial y el diseño de interiores.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Para la ejecución de obra, licencias y proyectos técnicos que requieran la intervención de arquitectos o ingenieros, colaboramos estrechamente con tus propios técnicos o te conectamos con nuestra red de profesionales de confianza. Coordinamos nuestro trabajo con ellos para que todas las piezas del proyecto avancen en la misma dirección."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
 				},
 				{
 					"number": "",
-					"title": "¿Cuánto tiempo tarda en completarse un proyecto?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Qué incluye exactamente la fase de supervisión de obra?",
+					"summary": "Supervisamos la correcta ejecución del proyecto de interiorismo: marcamos y revisamos que cada elemento quede donde corresponde, definimos cerramientos y detalles constructivos, y controlamos acabados, materiales y montaje de mobiliario para asegurar que el resultado sea fiel al diseño.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "La dirección técnica y legal de la obra corresponde a la empresa constructora y/o al técnico facultativo responsable."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
 				},
 				{
 					"number": "",
-					"title": "¿Cómo funciona la estructura de honorarios?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Cómo se calculan los honorarios del proyecto?",
+					"summary": "Los honorarios se definen en función del alcance, la complejidad y las necesidades específicas de cada proyecto.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Antes de empezar, recibirás una propuesta detallada con todo lo que incluye el proyecto y sus honorarios, para que tengas total claridad desde el principio."
+											}
+										]
+									}
+								]
+							}
+						},
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Además, cada viernes recibirás un email con el avance y seguimiento del proyecto, nos hayamos visto esa semana o no."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
 				},
 				{
 					"number": "",
-					"title": "¿Con qué proveedores trabajáis? ¿Puedo comprar mis propios materiales?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Trabajáis con vuestra propia constructora o puedo elegir a mis industriales?",
+					"summary": "Contamos con una red de profesionales e industriales que conocemos de primera mano, especialmente en carpintería a medida, cerrajería y metalistería, iluminación y mobiliario. Confiamos en ellos para garantizar el nivel de calidad, precisión y acabado que requiere cada proyecto.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Si ya tienes una constructora o industriales de confianza, podemos coordinarnos con ellos y trabajar conjuntamente para desarrollar el proyecto y asegurar una correcta ejecución."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
 				},
 				{
 					"number": "",
-					"title": "¿Puedo contratar únicamente el desarrollo del concepto de diseño?",
-					"summary": "Respuesta pendiente de validación."
+					"title": "¿Puedo comprar mis propios materiales?",
+					"summary": "Centralizar las compras nos permite detectar posibles incidencias con antelación, coordinar las entregas con la obra y reducir errores, retrasos o costes imprevistos. No obstante, si ya tienes algunos proveedores o materiales identificados, no tenemos problemas en incorporarlos.",
+					"details": [
+						{
+							"label": "",
+							"text": {
+								"type": "root",
+								"children": [
+									{
+										"type": "p",
+										"children": [
+											{
+												"type": "text",
+												"text": "Trabajamos principalmente con proveedores nacionales que conocemos y recomendamos en función de las necesidades y el presupuesto de cada proyecto."
+											}
+										]
+									}
+								]
+							}
+						}
+					]
 				}
 			],
 			"_template": "accordion"
