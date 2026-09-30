@@ -1,0 +1,10 @@
+{
+	"blocks": [
+		{
+			"_template": "list",
+			"items": [
+				{ "title": "Action without destination", "text": "", "ctaText": "Learn more" }
+			]
+		}
+	]
+}
