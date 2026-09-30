@@ -4,7 +4,7 @@
 	"headerStyle": "transparent",
 	"blocks": [
 		{
-			"_template": "editorialHero",
+			"_template": "hero",
 			"title": "DISSENYEM\nESPAIS AMB\nIDENTITAT DE\nMARCA",
 			"intro": {
 				"type": "root",
@@ -26,7 +26,7 @@
 			"placeholderLabel": "Imatge de projecte pendent"
 		},
 		{
-			"_template": "editorialCopy",
+			"_template": "text",
 			"title": "Unim Espai, Identitat de Marca & Estratègia.",
 			"body": {
 				"type": "root",
@@ -44,12 +44,12 @@
 			}
 		},
 		{
-			"_template": "editorialShowcase",
+			"_template": "showcase",
 			"mediaType": "video",
 			"placeholderLabel": "Vídeo de marca pendent"
 		},
 		{
-			"_template": "editorialAccordion",
+			"_template": "accordion",
 			"intro": {
 				"type": "root",
 				"children": [
@@ -83,7 +83,7 @@
 			]
 		},
 		{
-			"_template": "editorialRows",
+			"_template": "list",
 			"title": "Som el teu aliat si busques:",
 			"items": [
 				{
@@ -140,12 +140,12 @@
 			]
 		},
 		{
-			"_template": "editorialCta",
+			"_template": "callout",
 			"text": "Explica’ns el teu projecte",
 			"link": "/ca/contact"
 		},
 		{
-			"_template": "editorialShowcase",
+			"_template": "showcase",
 			"eyebrow": "Novetats",
 			"items": [
 				{
@@ -164,4 +164,3 @@
 		}
 	]
 }
-

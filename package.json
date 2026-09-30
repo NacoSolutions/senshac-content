@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "test": "bun test",
+    "validate:blocks": "bun scripts/validate_blocks.mjs",
     "lint": "bunx --bun biome check scripts tests",
     "typecheck": "bun --check scripts/validate_export.mjs"
   },

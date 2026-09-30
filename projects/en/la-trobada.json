@@ -4,14 +4,18 @@
 	"slug": "la-trobada",
 	"publishDate": "2024-01-15",
 	"completedDate": "2024-01-15",
-	"tags": ["Bar/Restaurant", "Gastronomy"],
+	"tags": [
+		"Bar/Restaurant",
+		"Gastronomy"
+	],
 	"featured": true,
 	"draft": false,
 	"blocks": [
 		{
 			"mediaId": "projects/la-trobada/cover",
 			"alt": "La Trobada",
-			"_template": "projectBanner"
+			"_template": "media",
+			"variant": "banner"
 		},
 		{
 			"title": "La Trobada",
@@ -25,11 +29,13 @@
 			"areaLabel": "AREA",
 			"location": "Badalona, Barcelona",
 			"locationLabel": "LOCATION",
-			"_template": "projectDetails"
+			"_template": "details"
 		},
 		{
 			"title": "BRIEF",
-			"text": {
+			"_template": "text",
+			"variant": "brief",
+			"body": {
 				"type": "root",
 				"children": [
 					{
@@ -42,11 +48,10 @@
 						]
 					}
 				]
-			},
-			"_template": "projectBrief"
+			}
 		},
 		{
-			"_template": "editorialGallery",
+			"_template": "gallery",
 			"cols": 3,
 			"images": [
 				{
@@ -65,7 +70,9 @@
 		},
 		{
 			"title": "CONCEPT",
-			"text": {
+			"_template": "text",
+			"variant": "concept",
+			"body": {
 				"type": "root",
 				"children": [
 					{
@@ -78,11 +85,10 @@
 						]
 					}
 				]
-			},
-			"_template": "projectConcept"
+			}
 		},
 		{
-			"_template": "editorialGallery",
+			"_template": "gallery",
 			"cols": 2,
 			"images": [
 				{
@@ -105,7 +111,9 @@
 		},
 		{
 			"title": "STRATEGY",
-			"text": {
+			"_template": "text",
+			"variant": "strategy",
+			"body": {
 				"type": "root",
 				"children": [
 					{
@@ -118,11 +126,10 @@
 						]
 					}
 				]
-			},
-			"_template": "projectStrategy"
+			}
 		},
 		{
-			"_template": "editorialCarousel",
+			"_template": "carousel",
 			"items": [
 				{
 					"mediaId": "projects/la-trobada/strategy/01",
@@ -151,7 +158,7 @@
 			]
 		},
 		{
-			"_template": "editorialGallery",
+			"_template": "gallery",
 			"cols": 2,
 			"images": [
 				{
@@ -188,12 +195,13 @@
 					"role": "Provider"
 				}
 			],
-			"_template": "projectCollaborators"
+			"_template": "credits"
 		},
 		{
 			"mediaId": "projects/la-trobada/collab/01",
 			"alt": "Collaborators showcase",
-			"_template": "projectFinalImage"
+			"_template": "media",
+			"variant": "full"
 		}
 	]
 }

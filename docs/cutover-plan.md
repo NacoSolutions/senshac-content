@@ -1,16 +1,59 @@
-# Content split cutover plan
+# Senshac redesign delivery plan
 
-Status: TinaCloud editorial writes use `senshac-content`. Content commits on
-`main` dispatch their immutable SHA to `senshac-web`; a single web Actions
-workflow builds and deploys both content and web-source changes. The broader
-cutover and rollback acceptance remains pending.
+Status: WEB4 owner redesign in progress. WordPress remains live on
+`senshac.com`; DNS migration is explicitly deferred.
 
-Complete this checklist in order. Until the final gate passes, the archived `senshac` monorepo remains the canonical source and the README boundary rules remain in force.
+## Active sequence
 
-1. **Agree the topology.** Record the TinaCloud project, generator in `senshac`, editorial content in `senshac-content`, and account/deployment policy in `senshac-infra`. Confirm that this repository contains no Astro application, Tina schema, generated Tina artifacts, credentials, or deployment configuration.
-2. **Prove visual editing locally.** Configure a disposable/local Tina run to use `localContentPath` pointing at a checked-out content fixture. Demonstrate create, edit, preview, and localized-content flows, and save the reproducible command and expected result without committing secrets or application files.
-3. **Pin and build content.** Build a representative multilingual project from an immutable content commit (or equivalent reviewed revision) in preview and production-like checks. Record the revision consumed by each build and verify Warren can run content-only checks and open a PR. Content edits stay in this repository; they must not create commits or SHA-pin PRs in `senshac-web`.
-4. **Test rollback before cutover.** Exercise deployment from the pinned revision, then restore the previous known-good revision and verify the site. Document the switch back to the archived monorepo content, including who approves it and how the rollback is audited.
-5. **Set media ownership.** Keep media processing with `senshac-media-runner`, R2/account policy with `senshac-infra`, and only editorial references in this repository. Verify reads and references with runtime-managed credentials; never store R2 keys, Cloudflare credentials, or plaintext environment files in Git.
-6. **Migrate reversibly.** Seed content from the archived monorepo without deleting or rewriting its source, compare representative locales and media references, and retain a tested sync/rollback path until production verification is complete.
-7. **Approve and close.** Obtain explicit cutover-seed approval, verify production behavior and rollback evidence, then update the workspace/routing registry. Do not declare this repository production-authoritative before every preceding gate is green.
+1. **Model the content.** Use generic block identifiers and explicit layout
+   variants. Treat this as a breaking migration: migrate all localized page and
+   project documents together, reject unknown templates, and do not retain
+   aliases or fallback renderers.
+2. **Build the owner experience.** Implement the WEB4 homepage and service
+   narrative, project proof, process, and three distinct inquiry paths: a new
+   space, an underperforming existing space, and business growth/expansion.
+   Each path asks only the relevant qualifying questions and accepts useful
+   project references (plans or photos) where appropriate.
+3. **Make interactions accessible.** Repeated information stays in one content
+   block and expands on click/tap and keyboard; hover may be an enhancement,
+   never the only way to access content.
+4. **Verify Tina editing.** Confirm every block and nested field is selected in
+   the live editor, including the homepage banner slogan; verify localized
+   edits and TinaCloud-triggered content deployments.
+5. **Verify the redesign deployment.** Run content validation, Tina schema
+   generation, application quality checks, preview smoke tests, and the
+   production-like Pages build. Check the resulting preview without changing
+   `senshac.com` DNS.
+
+## Explicit boundaries
+
+- Keep WordPress online for current production traffic; do not prepare or
+  rehearse a rollback to WordPress as part of this redesign.
+- Do not change DNS or claim a production cutover. The future owner-approved
+  DNS decision is separate from this work.
+- Keep the source and content histories separate: editorial changes belong in
+  `senshac-content`; application and rendering changes belong in
+  `senshac-web`.
+- Do not store credentials, Cloudflare/R2 keys, or plaintext environment files
+  in either repository.
+
+## Acceptance
+
+- All localized page and project files validate against the current generic
+  block set with no old identifiers remaining.
+- Tina schema generation succeeds against the sibling content checkout.
+- Unknown blocks and invalid variants fail with a useful file/block diagnostic.
+- Three inquiry routes collect their own relevant qualifications and pass the
+  information through the existing protected contact delivery path.
+- Interactive repeated content works by pointer, touch, and keyboard.
+- Preview deployment and live editing are verified; WordPress remains online
+  and DNS remains unchanged.
+
+## Generic block vocabulary
+
+The Tina discriminator vocabulary is `hero`, `banner`, `text`, `showcase`,
+`accordion`, `list`, `callout`, `statement`, `carousel`, `feed`, `gallery`,
+`form`, `details`, `credits`, and `media`. `text` uses `brief`, `concept`, or
+`strategy` when a project section needs a distinct layout. `media` requires the
+`banner` or `full` layout variant. These identifiers describe reusable content
+shapes, not editorial topics or page-specific roles.

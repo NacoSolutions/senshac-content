@@ -3,10 +3,9 @@
 	"description": "Contacta amb nosaltres per parlar del teu projecte de disseny d'interiors.",
 	"blocks": [
 		{
-			"_template": "contactForm",
+			"_template": "form",
 			"heading": "CONTACTE",
 			"subheading": "PARLEM."
 		}
 	]
 }
-

@@ -1,0 +1,5 @@
+{
+	"blocks": [
+		{ "_template": "hero", "title": "Example", "legacyTitle": "unexpected" }
+	]
+}

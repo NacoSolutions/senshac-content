@@ -3,21 +3,26 @@
 	"description": "Un ensayo de concepto para una marca personal que ha dado paso a múltiples product ventures.",
 	"slug": "kylie-360",
 	"publishDate": "2024-01-11T00:00:00.000Z",
-	"tags": ["Ensayo retail"],
+	"tags": [
+		"Ensayo retail"
+	],
 	"showTags": true,
 	"featured": false,
 	"draft": false,
 	"blocks": [
 		{
-			"_template": "projectBanner"
+			"_template": "media",
+			"variant": "banner"
 		},
 		{
 			"title": "Kylie 360º",
-			"_template": "projectDetails"
+			"_template": "details"
 		},
 		{
 			"title": "BRIEF",
-			"text": {
+			"_template": "text",
+			"variant": "brief",
+			"body": {
 				"type": "root",
 				"children": [
 					{
@@ -30,12 +35,13 @@
 						]
 					}
 				]
-			},
-			"_template": "projectBrief"
+			}
 		},
 		{
 			"title": "CONCEPTO",
-			"text": {
+			"_template": "text",
+			"variant": "concept",
+			"body": {
 				"type": "root",
 				"children": [
 					{
@@ -48,12 +54,13 @@
 						]
 					}
 				]
-			},
-			"_template": "projectConcept"
+			}
 		},
 		{
 			"title": "ESTRATEGIA",
-			"text": {
+			"_template": "text",
+			"variant": "strategy",
+			"body": {
 				"type": "root",
 				"children": [
 					{
@@ -66,16 +73,16 @@
 						]
 					}
 				]
-			},
-			"_template": "projectStrategy"
+			}
 		},
 		{
 			"title": "COLABORADORES",
 			"list": [],
-			"_template": "projectCollaborators"
+			"_template": "credits"
 		},
 		{
-			"_template": "projectFinalImage"
+			"_template": "media",
+			"variant": "full"
 		}
 	]
 }
