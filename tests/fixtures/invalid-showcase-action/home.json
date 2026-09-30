@@ -1,0 +1,11 @@
+{
+	"blocks": [
+		{
+			"_template": "showcase",
+			"items": [
+				{ "title": "No destination", "ctaText": "View project" },
+				{ "title": "Unsafe", "link": "javascript:alert(1)", "legacy": true }
+			]
+		}
+	]
+}

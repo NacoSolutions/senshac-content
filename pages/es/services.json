@@ -17,8 +17,8 @@
 			"items": [
 				{
 					"number": "01",
-					"title": "Diagnóstico y estrategia de marca",
-					"summary": "Analizamos el contexto de tu negocio, tu público objetivo y tus metas comerciales. Establecemos una base sólida que integra la esencia de tu marca con las necesidades funcionales del local antes de proyectar.",
+					"title": "Diagnóstico y estrategia espacial",
+					"summary": "Antes de diseñar, analizamos tu marca, tu negocio y las necesidades del espacio para definir una estrategia que haga que todo trabaje en la misma dirección.",
 					"details": [
 						{
 							"label": "Auditoría de negocio",
@@ -59,7 +59,7 @@
 				{
 					"number": "02",
 					"title": "Concepto creativo",
-					"summary": "Traducimos tu estrategia en una experiencia espacial memorable. En esta fase nace la identidad única, el recorrido del cliente y la atmósfera visual que hará que tu negocio destaque.",
+					"summary": "Traducimos tu estrategia en una experiencia espacial memorable. Diseñamos el recorrido del cliente y una atmósfera visual capaz de hacer que tu negocio destaque y tenga una identidad propia.",
 					"details": [
 						{
 							"label": "Identidad",
@@ -134,7 +134,7 @@
 				{
 					"number": "03",
 					"title": "Desarrollo técnico",
-					"summary": "Convertimos la visión creativa en un proyecto ejecutable. Elaboramos la documentación necesaria y coordinamos las validaciones técnicas para garantizar que el diseño sea viable, seguro y fiel a tu inversión.",
+					"summary": "Convertimos la visión creativa en un proyecto ejecutable. Desarrollamos toda la documentación técnica necesaria para llevar el proyecto de interiorismo a la realidad con control y coherencia.",
 					"details": [
 						{
 							"label": "Planos técnicos ejecutivos",
@@ -192,7 +192,7 @@
 				{
 					"number": "04",
 					"title": "Supervisión de obra y coordinación de montaje",
-					"summary": "Acompañamos la ejecución para que la transición del papel a la realidad sea fiel al diseño, resolviendo imprevistos y coordinando el montaje.",
+					"summary": "Acompañamos el proceso de ejecución para que la transición del papel a la realidad sea fiel al diseño, resolviendo imprevistos y coordinando el montaje.",
 					"details": [
 						{
 							"label": "Un solo interlocutor",

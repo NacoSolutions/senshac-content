@@ -169,6 +169,54 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 						}
 					}
 				}
+				if (block._template === "showcase" && Array.isArray(block.items)) {
+					for (const [itemIndex, item] of block.items.entries()) {
+						if (!item || typeof item !== "object" || Array.isArray(item)) {
+							errors.push(`${location} items[${itemIndex}] must be an object`);
+							continue;
+						}
+						const invalid = Object.keys(item).filter(
+							(field) =>
+								![
+									"title",
+									"link",
+									"mediaId",
+									"imageAlt",
+									"placeholderLabel",
+									"ctaText",
+								].includes(field),
+						);
+						if (invalid.length) {
+							errors.push(
+								`${location} items[${itemIndex}] has unsupported fields: ${invalid.sort().join(", ")}`,
+							);
+						}
+						if (
+							item.link !== undefined &&
+							(typeof item.link !== "string" ||
+								!(
+									/^(\/)(?!\/)/.test(item.link) ||
+									/^https:\/\/\S+$/.test(item.link)
+								))
+						) {
+							errors.push(
+								`${location} items[${itemIndex}] link must be a local path or HTTPS URL`,
+							);
+						}
+						if (
+							item.ctaText !== undefined &&
+							(typeof item.ctaText !== "string" || !item.ctaText.trim())
+						) {
+							errors.push(
+								`${location} items[${itemIndex}] ctaText must be a non-empty string`,
+							);
+						} else if (item.ctaText !== undefined && item.link === undefined) {
+							errors.push(
+								`${location} items[${itemIndex}] ctaText requires link`,
+							);
+						}
+					}
+				}
 				const variants = blockVariants.get(block._template);
 				const variant = block.variant;
 				if (

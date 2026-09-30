@@ -4,7 +4,7 @@
   "headerStyle": "transparent",
   "blocks": [
     {
-      "title": "Communicate.\nCaptivate.\nConnect.",
+      "title": "Comunica.\nCautiva.\nConecta.",
       "subtitle": "",
       "topRight": {
         "lines": [
@@ -20,9 +20,9 @@
     },
     {
       "title": "EL ESPACIO ES\nDONDE TU MARCA\nCOBRA VIDA.",
-      "intro": "Creamos interiores con\n\nlenguaje visual propio que\n\nhabitan dentro del universo\n\nde marca.\n",
-      "ctaText": "Nuestro método",
-      "ctaLink": "/es/methods",
+      "intro": "Diseñamos espacios para marcas que tienen algo que decir.\nEspacio, Identidad de Marca & Estrategia.",
+      "ctaText": "¿Quieres que tu espacio hable?",
+      "ctaLink": "/es/contact",
       "mediaType": "image",
       "mediaId": "redesign/photos/img-9212",
       "imageAlt": "Selección de materiales, texturas y acabados",
@@ -32,39 +32,27 @@
       "mediaType": "image",
       "mediaId": "",
       "imageAlt": "Proceso de diseño estratégico de Senshac",
-      "_template": "showcase"
+      "_template": "showcase",
+      "items": [
+        {
+          "title": "RUDE / RETAIL",
+          "link": "/es/works/rude",
+          "ctaText": "VER PROYECTO",
+          "mediaId": "projects/rude/cover",
+          "imageAlt": "Interior de la tienda RUDE, con zona de exposición y probadores."
+        }
+      ]
     },
     {
-      "title": "Unimos Espacio, Identidad de\nMarca & Estrategia.",
-      "headingLevel": "h1",
-      "body": "Diseñamos desde el ADN de marca para que el espacio sea una extensión natural\n\nde ésta. Integramos tus flujos de trabajo, creamos recorridos que agilizan la venta,\n\nzonificamos las áreas estratégicamente y elevamos la percepción de valor para\n\nimpulsar la rentabilidad en *hospitality*, *retail* y *wellness*.\n",
+      "title": "Si tu producto o servicio te hace diferente, tu espacio tiene que demostrarlo.",
+      "headingLevel": "h2",
+      "body": "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
       "_template": "text"
     },
     {
-      "mediaType": "video",
-      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
-      "_template": "showcase"
-    },
-    {
-      "intro": "Si tu producto o servicio te hace diferente, el diseño de tu local tiene que demostrarlo. Transformamos tu espacio *para convertirlo en tu mejor herramienta de venta y hacer crecer tu negocio.* Nuestros objetivos:\n",
-      "items": [
-        {
-          "number": "1",
-          "title": "Posicionar tu marca y darle visibilidad",
-          "summary": "Tu espacio comunica quién eres, qué te hace diferente y te posiciona en el mercado sin necesidad de explicaciones."
-        },
-        {
-          "number": "2",
-          "title": "Aumentar el valor percibido",
-          "summary": "El diseño eleva el valor de tu producto o servicio, para que tus márgenes tengan sentido."
-        },
-        {
-          "number": "3",
-          "title": "Mejorar tu rentabilidad",
-          "summary": "Diseñamos espacios inteligentes que facilitan el flujo operativo, guían la venta y potencian la fidelización de tu cliente target."
-        }
-      ],
-      "_template": "accordion"
+      "_template": "callout",
+      "text": "Nuestro método",
+      "link": "/es/methods"
     },
     {
       "mediaType": "image",
@@ -73,50 +61,72 @@
       "_template": "showcase"
     },
     {
-      "title": "Somos tu aliado si buscas:",
-      "intro": "",
+      "intro": {
+        "type": "root",
+        "children": [
+          {
+            "type": "h2",
+            "children": [
+              {
+                "type": "text",
+                "text": "¿Qué puede hacer el diseño por tu negocio?"
+              }
+            ]
+          }
+        ]
+      },
       "items": [
         {
-          "title": "Optimizar tu rentabilidad",
-          "text": "Tu canal físico actual no rinde como debería y necesitas que el espacio impulse las ventas.\n"
+          "number": "1",
+          "title": "DIFERENCIAR TU MARCA",
+          "summary": "Tu espacio comunica quién eres y qué te hace diferente. Haz que sea tan reconocible como tu marca."
         },
         {
-          "title": "Dar el salto al canal físico",
-          "text": "Lideras un e-commerce consolidado o vas a inaugurar tu primer local exigiendo un impacto inmediato.\n"
+          "number": "2",
+          "title": "ELEVAR SU VALOR",
+          "summary": "El diseño eleva el valor percibido, atrae al cliente adecuado y te permite posicionar tu producto o servicio en el nivel que merece."
         },
         {
-          "title": "Reposicionar tu marca",
-          "text": "Sientes que tu espacio no hace justicia a la calidad de tu producto y quieres atraer a un perfil de cliente de mayor valor.\n"
+          "number": "3",
+          "title": "CONVERTIR TU ESPACIO EN UNA HERRAMIENTA",
+          "summary": "Una distribución inteligente agiliza la operativa, facilita la venta y mejora la experiencia del cliente. Haz que cada metro cuadrado trabaje para tu negocio."
         }
       ],
-      "_template": "list"
+      "_template": "accordion"
+    },
+    {
+      "mediaType": "video",
+      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+      "_template": "showcase",
+      "title": "REEL DE CÓMO TOMO DECISIONES",
+      "eyebrow": ""
     },
     {
       "_template": "list",
-      "title": "Elige el siguiente paso",
-      "intro": "Cada negocio está en un momento distinto. Empecemos por el tuyo.",
+      "title": "Queremos entenderte.\n¿En qué punto está tu negocio?",
+      "intro": "",
       "items": [
         {
-          "title": "Voy a abrir un nuevo espacio",
-          "text": "Cuéntanos sobre el local, la apertura y el proyecto.",
+          "title": "Quiero abrir mi primer espacio",
+          "text": "",
           "href": "/es/contact?path=first-space"
         },
         {
-          "title": "Quiero mejorar mi espacio actual",
-          "text": "Identifiquemos qué frena el rendimiento y qué quieres cambiar.",
+          "title": "Mi local no funciona como debería",
+          "text": "",
           "href": "/es/contact?path=existing-space"
         },
         {
-          "title": "Estoy preparando el crecimiento",
-          "text": "Diseñemos una nueva ubicación o un modelo que pueda escalar.",
+          "title": "Quiero escalar mi negocio",
+          "text": "",
           "href": "/es/contact?path=growth"
+        },
+        {
+          "title": "¿Tienes otro reto? Hablemos",
+          "text": "",
+          "href": "/es/contact"
         }
       ]
-    },
-    {
-      "text": "Cuéntanos tu proyecto",
-      "link": "/es/contact",
-      "_template": "callout"
     },
     {
       "description": "",

@@ -39,3 +39,14 @@ test("list action text requires a destination", async () => {
 		"tests/fixtures/invalid-list-action/home.json blocks[0] items[0] ctaText requires href",
 	]);
 });
+
+test("showcase item actions require safe links and reject unknown fields", async () => {
+	const errors = await validateBlocks([
+		"tests/fixtures/invalid-showcase-action",
+	]);
+	expect(errors).toEqual([
+		"tests/fixtures/invalid-showcase-action/home.json blocks[0] items[0] ctaText requires link",
+		"tests/fixtures/invalid-showcase-action/home.json blocks[0] items[1] has unsupported fields: legacy",
+		"tests/fixtures/invalid-showcase-action/home.json blocks[0] items[1] link must be a local path or HTTPS URL",
+	]);
+});
