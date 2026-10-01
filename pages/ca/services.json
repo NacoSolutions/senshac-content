@@ -293,7 +293,7 @@
 							}
 						]
 					},
-					"href": "/ca/contact",
+					"href": "/ca/contact?package=consultation",
 					"ctaText": "Agenda una sessió"
 				},
 				{
@@ -312,7 +312,7 @@
 							}
 						]
 					},
-					"href": "/ca/contact",
+					"href": "/ca/contact?package=decorative",
 					"ctaText": "Explica’ns què necessites"
 				},
 				{
@@ -331,7 +331,7 @@
 							}
 						]
 					},
-					"href": "/ca/contact",
+					"href": "/ca/contact?package=integral",
 					"ctaText": "Sol·licita informació"
 				}
 			]
