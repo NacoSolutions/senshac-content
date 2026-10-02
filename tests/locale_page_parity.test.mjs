@@ -3,7 +3,10 @@ import { readFile } from "node:fs/promises";
 
 const readPage = async (locale, page) =>
 	JSON.parse(
-		await readFile(new URL(`../pages/${locale}/${page}.json`, import.meta.url), "utf8"),
+		await readFile(
+			new URL(`../pages/${locale}/${page}.json`, import.meta.url),
+			"utf8",
+		),
 	);
 
 test("English and Catalan about and contact pages retain Spanish page structure and media", async () => {

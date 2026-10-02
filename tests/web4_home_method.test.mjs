@@ -32,7 +32,8 @@ test("Spanish homepage follows the WEB4 section order and owner copy", async () 
 			link: "/es/works/rude",
 			ctaText: "VER PROYECTO",
 			mediaId: "projects/rude/cover",
-			imageAlt: "Interior de la tienda RUDE, con zona de exposición y probadores.",
+			imageAlt:
+				"Interior de la tienda RUDE, con zona de exposición y probadores.",
 		},
 	]);
 	expect(page.blocks[3]).toMatchObject({
@@ -97,10 +98,22 @@ test("Spanish homepage follows the WEB4 section order and owner copy", async () 
 	expect(page.blocks[8]).toMatchObject({
 		title: "Queremos entenderte.\n¿En qué punto está tu negocio?",
 		items: [
-			{ title: "Quiero abrir mi primer espacio", href: "/es/contact?path=first-space" },
-			{ title: "Mi local no funciona como debería", href: "/es/contact?path=existing-space" },
-			{ title: "Quiero escalar mi negocio", href: "/es/contact?path=growth" },
-			{ title: "¿Tienes otro reto? Hablemos", href: "/es/contact" },
+			{
+				title: "Quiero abrir mi primer espacio",
+				href: "/es/contact?situation=first-space",
+			},
+			{
+				title: "Mi local no funciona como debería",
+				href: "/es/contact?situation=existing-space",
+			},
+			{
+				title: "Quiero escalar mi negocio",
+				href: "/es/contact?situation=growth",
+			},
+			{
+				title: "¿Tienes otro reto? Hablemos",
+				href: "/es/contact?situation=growth&service=other-challenge",
+			},
 		],
 	});
 });

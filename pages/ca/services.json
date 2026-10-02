@@ -278,7 +278,7 @@
 			},
 			"items": [
 				{
-					"title": "CONSULTORIA EXPRÉS",
+					"title": "Consultoria estratègica",
 					"text": {
 						"type": "root",
 						"children": [
@@ -287,17 +287,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Sessió intensiva de dues hores, amb lliurament d’un dossier al cap de 72 hores. Revisem el local i t’orientem per integrar-hi la marca, optimitzar la distribució i millorar els fluxos de venda."
+										"text": "Sessió intensiva de dues hores, amb lliurament d’un dossier al cap de 72 hores. Analitzem el local i t’orientem estratègicament per integrar-hi la marca, optimitzar l’espai i millorar els fluxos de venda."
 									}
 								]
 							}
 						]
 					},
-					"href": "/ca/contact?package=consultation",
-					"ctaText": "Agenda una sessió"
+					"href": "/ca/contact?service=strategic-consultation",
+					"ctaText": "Sol·licita una Consultoria estratègica ↗"
 				},
 				{
-					"title": "PROJECTE DECORATIU",
+					"title": "Projecte Decoratiu i Restyling",
 					"text": {
 						"type": "root",
 						"children": [
@@ -306,17 +306,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Transformació puntual i estilisme sense obres. Ideal per actualitzar una estança, redefinir elements clau com una barra o il·luminació a mida, o renovar el mobiliari perquè encaixi amb l’espai i la marca."
+										"text": "Desenvolupem el concepte espacial i l’expressió de marca, seleccionem mobiliari, il·luminació i peces a mida, amb cap o molt pocs canvis en la distribució i sense obra o amb una intervenció mínima."
 									}
 								]
 							}
 						]
 					},
-					"href": "/ca/contact?package=decorative",
-					"ctaText": "Explica’ns què necessites"
+					"href": "/ca/contact?service=decorative-restyling",
+					"ctaText": "Sol·licita un Projecte Decoratiu i Restyling ↗"
 				},
 				{
-					"title": "PROJECTE INTEGRAL",
+					"title": "Projecte Integral",
 					"text": {
 						"type": "root",
 						"children": [
@@ -325,14 +325,14 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Acompanyament 360° des de la idea fins a l’obertura. Ens ocupem de tot el procés, de l’estratègia inicial a l’execució final: l’opció ideal si vols delegar el projecte amb tranquil·litat."
+										"text": "Acompanyament 360° des de la idea fins a l’obertura. Cobrim el procés, de l’estratègia inicial a l’execució, incloent-hi els canvis de distribució i l’obra necessaris."
 									}
 								]
 							}
 						]
 					},
-					"href": "/ca/contact?package=integral",
-					"ctaText": "Sol·licita informació"
+					"href": "/ca/contact?service=integral",
+					"ctaText": "Sol·licita un Projecte Integral ↗"
 				}
 			]
 		},

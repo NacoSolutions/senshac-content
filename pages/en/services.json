@@ -278,7 +278,7 @@
 			},
 			"items": [
 				{
-					"title": "EXPRESS CONSULTATION",
+					"title": "Strategic Consultation",
 					"text": {
 						"type": "root",
 						"children": [
@@ -287,17 +287,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "A focused two-hour session, followed by a report within 72 hours. We review your premises and advise on bringing your brand into the space, improving the layout and customer flow."
+										"text": "A focused two-hour session, followed by a report within 72 hours. We assess your premises and provide strategic guidance on integrating your brand, optimizing the space, and improving customer flow."
 									}
 								]
 							}
 						]
 					},
-					"href": "/en/contact?package=consultation",
-					"ctaText": "Book a session"
+					"href": "/en/contact?service=strategic-consultation",
+					"ctaText": "Request a Strategic Consultation ↗"
 				},
 				{
-					"title": "DECORATIVE PROJECT",
+					"title": "Decorative Project & Restyling",
 					"text": {
 						"type": "root",
 						"children": [
@@ -306,17 +306,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "A targeted transformation and styling, without building work. Ideal for refreshing a room, redefining key elements such as a bar or bespoke lighting, or updating furniture to fit your space and brand."
+										"text": "We develop the spatial concept and brand expression, and select furnishings, lighting, and custom pieces, with no or minimal changes to the existing layout and little to no construction."
 									}
 								]
 							}
 						]
 					},
-					"href": "/en/contact?package=decorative",
-					"ctaText": "Tell us what you need"
+					"href": "/en/contact?service=decorative-restyling",
+					"ctaText": "Request a Decorative Project & Restyling ↗"
 				},
 				{
-					"title": "FULL PROJECT",
+					"title": "Comprehensive Project",
 					"text": {
 						"type": "root",
 						"children": [
@@ -325,14 +325,14 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "360° support, from the initial idea through to opening. We cover the full process, from initial strategy to final delivery: a reassuring option when you want to delegate the project."
+										"text": "360° support from the initial idea through to opening. We cover the process from strategy to delivery, including any layout changes and construction needed."
 									}
 								]
 							}
 						]
 					},
-					"href": "/en/contact?package=integral",
-					"ctaText": "Request information"
+					"href": "/en/contact?service=integral",
+					"ctaText": "Request a Comprehensive Project ↗"
 				}
 			]
 		},

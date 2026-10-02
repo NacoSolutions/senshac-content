@@ -46,6 +46,20 @@ jobs:
           printf 'revision=%s\n' "$revision" >> "$GITHUB_OUTPUT"
           echo "Dispatching senshac-content@$revision"
 
+      - name: Check out selected content revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.revision.outputs.revision }}
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Validate localized content contracts
+        run: |
+          set -euo pipefail
+          bun install --frozen-lockfile
+          bun run quality:content
+
       - name: Mint a web-only GitHub App token
         id: web-token
         uses: actions/create-github-app-token@v3.2.0

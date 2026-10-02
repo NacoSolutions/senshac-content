@@ -109,22 +109,22 @@
         {
           "title": "Quiero abrir mi primer espacio",
           "text": "",
-          "href": "/es/contact?path=first-space"
+          "href": "/es/contact?situation=first-space"
         },
         {
           "title": "Mi local no funciona como debería",
           "text": "",
-          "href": "/es/contact?path=existing-space"
+          "href": "/es/contact?situation=existing-space"
         },
         {
           "title": "Quiero escalar mi negocio",
           "text": "",
-          "href": "/es/contact?path=growth"
+          "href": "/es/contact?situation=growth"
         },
         {
           "title": "¿Tienes otro reto? Hablemos",
           "text": "",
-          "href": "/es/contact"
+          "href": "/es/contact?situation=growth&service=other-challenge"
         }
       ]
     },

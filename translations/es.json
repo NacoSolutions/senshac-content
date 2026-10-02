@@ -49,41 +49,6 @@
 		"company": "Empresa",
 		"email": "Email",
 		"phone": "Teléfono",
-		"projectType": "¿Qué tipo de proyecto tienes en mente?",
-		"projectTypes": [
-			{
-				"value": "commercial",
-				"label": "Comercial/Retail"
-			},
-			{
-				"value": "restaurant",
-				"label": "Restaurante/Bar"
-			},
-			{
-				"value": "entertainment",
-				"label": "Entretenimiento"
-			},
-			{
-				"value": "other",
-				"label": "Otro"
-			}
-		],
-		"serviceType": "¿Qué tipo de servicios buscas?",
-		"serviceTypes": [
-			{
-				"value": "fullPackage",
-				"label": "Paquete completo (Diseño + Ejecución)"
-			},
-			{
-				"value": "concept",
-				"label": "Solo concepto de diseño"
-			},
-			{
-				"value": "unsure",
-				"label": "No estoy seguro/a"
-			}
-		],
-		"message": "Cuéntanos más sobre tu proyecto",
 		"privacy": "Acepto la política de privacidad",
 		"submit": "Enviar mensaje",
 		"sending": "Enviando...",
@@ -94,7 +59,6 @@
 		"missingFields": "Por favor, completa todos los campos obligatorios.",
 		"inquiryPaths": {
 			"heading": "Cuéntanos qué espacio quieres transformar",
-			"chooseLabel": "¿Qué necesitas resolver?",
 			"paths": [
 				{
 					"value": "first-space",
@@ -182,26 +146,6 @@
 							]
 						},
 						{
-							"name": "serviceScope",
-							"kind": "select",
-							"label": "Alcance que buscas",
-							"required": true,
-							"options": [
-								{
-									"value": "integral",
-									"label": "Proyecto integral"
-								},
-								{
-									"value": "rebrand",
-									"label": "Rebranding espacial y proyecto sin obras"
-								},
-								{
-									"value": "consultation",
-									"label": "Asesoría express"
-								}
-							]
-						},
-						{
 							"name": "investment",
 							"kind": "select",
 							"label": "Inversión estimada para el proyecto",
@@ -234,6 +178,23 @@
 							"kind": "textarea",
 							"label": "Cuéntanos más sobre el proyecto",
 							"required": false
+						}
+					],
+					"serviceOptions": [
+						{
+							"value": "integral",
+							"label": "Proyecto Integral",
+							"description": "Diseño estratégico, desarrollo técnico y acompañamiento de obra para crear tu primer espacio."
+						},
+						{
+							"value": "decorative-restyling",
+							"label": "Proyecto Decorativo y Restyling",
+							"description": "Concepto espacial, expresión de marca, mobiliario e iluminación con ninguna o mínima intervención en la distribución y la obra."
+						},
+						{
+							"value": "strategic-consultation",
+							"label": "Consultoría estratégica",
+							"description": "Una sesión estratégica para definir prioridades, resolver dudas y orientar las decisiones antes de abrir."
 						}
 					]
 				},
@@ -329,26 +290,6 @@
 							]
 						},
 						{
-							"name": "serviceScope",
-							"kind": "select",
-							"label": "Alcance que buscas",
-							"required": true,
-							"options": [
-								{
-									"value": "integral",
-									"label": "Proyecto integral"
-								},
-								{
-									"value": "rebrand",
-									"label": "Rebranding espacial sin grandes obras"
-								},
-								{
-									"value": "audit",
-									"label": "Auditoría express"
-								}
-							]
-						},
-						{
 							"name": "investment",
 							"kind": "select",
 							"label": "Inversión estimada",
@@ -387,6 +328,23 @@
 							"kind": "textarea",
 							"label": "Información adicional",
 							"required": false
+						}
+					],
+					"serviceOptions": [
+						{
+							"value": "integral",
+							"label": "Proyecto Integral",
+							"description": "Rediseño completo cuando mejorar el espacio requiere cambios relevantes de distribución o construcción."
+						},
+						{
+							"value": "decorative-restyling",
+							"label": "Proyecto Decorativo y Restyling",
+							"description": "Concepto espacial, expresión de marca, mobiliario e iluminación con ninguna o mínima intervención en la distribución y la obra."
+						},
+						{
+							"value": "strategic-consultation",
+							"label": "Consultoría estratégica",
+							"description": "Una sesión estratégica para diagnosticar el espacio y priorizar oportunidades de mejora."
 						}
 					]
 				},
@@ -494,26 +452,6 @@
 							]
 						},
 						{
-							"name": "serviceScope",
-							"kind": "select",
-							"label": "Alcance que buscas",
-							"required": true,
-							"options": [
-								{
-									"value": "integral",
-									"label": "Proyecto integral"
-								},
-								{
-									"value": "rebrand",
-									"label": "Rebranding espacial"
-								},
-								{
-									"value": "manual",
-									"label": "Concepto y manual de diseño"
-								}
-							]
-						},
-						{
 							"name": "investment",
 							"kind": "select",
 							"label": "Inversión estimada",
@@ -553,11 +491,45 @@
 							"label": "Cuéntanos tu plan de crecimiento",
 							"required": false
 						}
+					],
+					"serviceOptions": [
+						{
+							"value": "integral",
+							"label": "Proyecto Integral",
+							"description": "Diseño y desarrollo de nuevos espacios o de una evolución que requiere cambios de distribución o construcción."
+						},
+						{
+							"value": "decorative-restyling",
+							"label": "Proyecto Decorativo y Restyling",
+							"description": "Evolución del concepto, expresión de marca, mobiliario e iluminación con ninguna o mínima intervención en la distribución y la obra."
+						},
+						{
+							"value": "other-challenge",
+							"label": "Tengo otra situación",
+							"description": "Cuéntanos qué necesitas si ninguna de las opciones anteriores encaja con tu situación."
+						}
 					]
 				}
-			]
+			],
+			"situationLabel": "¿Cuál es la situación de tu negocio?",
+			"serviceLabel": "¿Qué servicio necesitas?",
+			"selectPlaceholder": "Selecciona una opción",
+			"continue": "Continuar",
+			"alternate": {
+				"title": "Tengo otra situación",
+				"description": "Cuéntanos brevemente qué necesitas y qué resultado te gustaría conseguir.",
+				"fields": [
+					{
+						"name": "challenge",
+						"kind": "textarea",
+						"label": "¿Qué situación o reto quieres resolver?",
+						"required": true
+					}
+				]
+			}
 		},
-		"invalidFile": "Archivo no válido. Usa PDF, JPG, PNG o WebP de hasta 5 MB por archivo (máximo 3)."
+		"invalidFile": "Archivo no válido. Usa PDF, JPG, PNG o WebP de hasta 5 MB por archivo (máximo 3).",
+		"invalidSelection": "Selecciona una situación y un servicio compatibles."
 	},
 	"projects": {
 		"title": "Trabajos - Sens*Hac",

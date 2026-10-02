@@ -62,10 +62,10 @@
 			"title": "Et volem entendre.\nEn quin punt és el teu negoci?",
 			"intro": "",
 			"items": [
-				{ "title": "Vull obrir el meu primer espai", "text": "", "href": "/ca/contact?path=first-space" },
-				{ "title": "El meu local no funciona com caldria", "text": "", "href": "/ca/contact?path=existing-space" },
-				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?path=growth" },
-				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact" }
+				{ "title": "Vull obrir el meu primer espai", "text": "", "href": "/ca/contact?situation=first-space" },
+				{ "title": "El meu local no funciona com caldria", "text": "", "href": "/ca/contact?situation=existing-space" },
+				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?situation=growth" },
+				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact?situation=growth&service=other-challenge" }
 			]
 		},
 		{ "_template": "feed", "description": "", "tag": "novedades", "limit": 4, "maxVisible": 3 }
