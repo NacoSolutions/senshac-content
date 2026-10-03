@@ -25,6 +25,14 @@
 	"footer": {
 		"privacy": "Política de Privacitat",
 		"legal": "Avís Legal",
+		"attributions": [
+			{ "label": "Disseny per", "name": "©be mediàtic" },
+			{ "label": "Desenvolupament per", "name": "Naco Solutions" }
+		],
+		"attributions": [
+			{ "label": "Disseny per", "name": "©be mediàtic" },
+			{ "label": "Desenvolupament per", "name": "Naco Solutions" }
+		],
 		"links": [
 			{
 				"label": "Estudi",
@@ -534,7 +542,7 @@
 	"projects": {
 		"title": "Treballs - Sens*Hac",
 		"description": "Explora el nostre portfolio de projectes de disseny d'interiors.",
-		"heading": "Treballs"
+		"heading": "PROJECTES,\nASSAIGS\nI OBJECTES"
 	},
 	"accessibility": {
 		"skipToContent": "Anar al contingut",

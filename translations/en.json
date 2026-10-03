@@ -25,6 +25,14 @@
 	"footer": {
 		"privacy": "Privacy Policy",
 		"legal": "Legal Notice",
+		"attributions": [
+			{ "label": "Design by", "name": "©be mediàtic" },
+			{ "label": "Development by", "name": "Naco Solutions" }
+		],
+		"attributions": [
+			{ "label": "Design by", "name": "©be mediàtic" },
+			{ "label": "Development by", "name": "Naco Solutions" }
+		],
 		"links": [
 			{
 				"label": "Studio",
@@ -534,7 +542,7 @@
 	"projects": {
 		"title": "Work - Sens*Hac",
 		"description": "Explore our portfolio of interior design projects.",
-		"heading": "Work"
+		"heading": "PROJECTS,\nEXPERIMENTS\nAND OBJECTS"
 	},
 	"accessibility": {
 		"skipToContent": "Skip to content",

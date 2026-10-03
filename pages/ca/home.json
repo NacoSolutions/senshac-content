@@ -1,7 +1,7 @@
 {
 	"title": "Sens*Hac - Estudi d’Interiorisme Estratègic",
 	"description": "Dissenyem espais amb identitat de marca que augmenten el valor i la rendibilitat del teu negoci.",
-	"headerStyle": "transparent",
+	"chrome": { "header": { "style": "transparent" } },
 	"blocks": [
 		{
 			"_template": "banner",
