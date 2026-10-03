@@ -41,6 +41,18 @@ Both appearance fields accept one of `transparent-adaptive`,
 The contract is content-side configuration only. Rendering behavior remains the
 responsibility of the consuming workspace.
 
+Localized page documents may include a `chrome` override with `header` and/or
+`footer` settings. Page-level values override matching global settings in
+`config/site.json`; omitted values inherit the global setting. Header `style`
+(`default` or `transparent`) controls page layout spacing and transparent-header
+behavior. Header/footer `mode`, `atFinal`, and `scrolling` control positioning
+and appearance. These controls change appearance and behavior only; shared
+header/footer copy remains global or localized through the translation files.
+
+Each translation document requires footer `attributions`: a repeatable list of
+`{ label, name }` pairs. Both values remain editorial, so owners can choose
+credit wording without coupling it to fixed design/development roles.
+
 ## Adapter handoff behavior
 
 The web adapter supplies an expected revision and requests an `(id, locale)`:
