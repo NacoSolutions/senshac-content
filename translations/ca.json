@@ -49,41 +49,6 @@
 		"company": "Empresa",
 		"email": "Email",
 		"phone": "Telèfon",
-		"projectType": "Quin tipus de projecte tens en ment?",
-		"projectTypes": [
-			{
-				"value": "commercial",
-				"label": "Comercial/Retail"
-			},
-			{
-				"value": "restaurant",
-				"label": "Restaurant/Bar"
-			},
-			{
-				"value": "entertainment",
-				"label": "Entreteniment"
-			},
-			{
-				"value": "other",
-				"label": "Altre"
-			}
-		],
-		"serviceType": "Quin tipus de serveis busques?",
-		"serviceTypes": [
-			{
-				"value": "fullPackage",
-				"label": "Paquet complet (Disseny + Execució)"
-			},
-			{
-				"value": "concept",
-				"label": "Només concepte de disseny"
-			},
-			{
-				"value": "unsure",
-				"label": "No estic segur/a"
-			}
-		],
-		"message": "Explica'ns més sobre el teu projecte",
 		"privacy": "Accepto la política de privacitat",
 		"submit": "Enviar missatge",
 		"sending": "Enviant...",
@@ -94,7 +59,6 @@
 		"missingFields": "Si us plau, completa tots els camps obligatoris.",
 		"inquiryPaths": {
 			"heading": "Explica’ns quin espai vols transformar",
-			"chooseLabel": "Què necessites resoldre?",
 			"paths": [
 				{
 					"value": "first-space",
@@ -182,26 +146,6 @@
 							]
 						},
 						{
-							"name": "serviceScope",
-							"kind": "select",
-							"label": "Abast del projecte",
-							"required": true,
-							"options": [
-								{
-									"value": "integral",
-									"label": "Projecte integral"
-								},
-								{
-									"value": "rebrand",
-									"label": "Rebranding espacial sense grans obres"
-								},
-								{
-									"value": "consultation",
-									"label": "Assessorament exprés"
-								}
-							]
-						},
-						{
 							"name": "investment",
 							"kind": "select",
 							"label": "Inversió estimada",
@@ -234,6 +178,23 @@
 							"kind": "textarea",
 							"label": "Explica’ns més sobre el projecte",
 							"required": false
+						}
+					],
+					"serviceOptions": [
+						{
+							"value": "integral",
+							"label": "Projecte Integral",
+							"description": "Disseny estratègic, desenvolupament tècnic i acompanyament d’obra per crear el teu primer espai."
+						},
+						{
+							"value": "decorative-restyling",
+							"label": "Projecte Decoratiu i Restyling",
+							"description": "Concepte espacial, expressió de marca, mobiliari i il·luminació amb cap o molt pocs canvis en la distribució i l’obra."
+						},
+						{
+							"value": "strategic-consultation",
+							"label": "Consultoria estratègica",
+							"description": "Una sessió estratègica per definir prioritats, resoldre dubtes i orientar les decisions abans d’obrir."
 						}
 					]
 				},
@@ -329,26 +290,6 @@
 							]
 						},
 						{
-							"name": "serviceScope",
-							"kind": "select",
-							"label": "Abast del projecte",
-							"required": true,
-							"options": [
-								{
-									"value": "integral",
-									"label": "Projecte integral"
-								},
-								{
-									"value": "rebrand",
-									"label": "Rebranding espacial sense grans obres"
-								},
-								{
-									"value": "audit",
-									"label": "Auditoría express"
-								}
-							]
-						},
-						{
 							"name": "investment",
 							"kind": "select",
 							"label": "Inversió estimada",
@@ -387,6 +328,23 @@
 							"kind": "textarea",
 							"label": "Explica’ns més sobre el projecte",
 							"required": false
+						}
+					],
+					"serviceOptions": [
+						{
+							"value": "integral",
+							"label": "Projecte Integral",
+							"description": "Redisseny complet quan millorar l’espai requereix canvis importants de distribució o construcció."
+						},
+						{
+							"value": "decorative-restyling",
+							"label": "Projecte Decoratiu i Restyling",
+							"description": "Concepte espacial, expressió de marca, mobiliari i il·luminació amb cap o molt pocs canvis en la distribució i l’obra."
+						},
+						{
+							"value": "strategic-consultation",
+							"label": "Consultoria estratègica",
+							"description": "Una sessió per diagnosticar l’espai i prioritzar oportunitats de millora."
 						}
 					]
 				},
@@ -494,26 +452,6 @@
 							]
 						},
 						{
-							"name": "serviceScope",
-							"kind": "select",
-							"label": "Abast del projecte",
-							"required": true,
-							"options": [
-								{
-									"value": "integral",
-									"label": "Projecte integral"
-								},
-								{
-									"value": "rebrand",
-									"label": "Rebranding espacial sense grans obres"
-								},
-								{
-									"value": "manual",
-									"label": "Concepte i manual de disseny"
-								}
-							]
-						},
-						{
 							"name": "investment",
 							"kind": "select",
 							"label": "Inversió estimada",
@@ -553,11 +491,45 @@
 							"label": "Explica’ns més sobre el projecte",
 							"required": false
 						}
+					],
+					"serviceOptions": [
+						{
+							"value": "integral",
+							"label": "Projecte Integral",
+							"description": "Disseny i desenvolupament de nous espais o d’una evolució que requereix canvis de distribució o construcció."
+						},
+						{
+							"value": "decorative-restyling",
+							"label": "Projecte Decoratiu i Restyling",
+							"description": "Evolució del concepte, expressió de marca, mobiliari i il·luminació amb cap o molt pocs canvis en la distribució i l’obra."
+						},
+						{
+							"value": "other-challenge",
+							"label": "Tinc una altra situació",
+							"description": "Explica’ns què necessites si cap dels serveis indicats encaixa amb la teva situació."
+						}
 					]
 				}
-			]
+			],
+			"situationLabel": "Quina és la situació del teu negoci?",
+			"serviceLabel": "Quin servei necessites?",
+			"selectPlaceholder": "Selecciona una opció",
+			"continue": "Continua",
+			"alternate": {
+				"title": "Tinc una altra situació",
+				"description": "Explica’ns breument què necessites i quin resultat t’agradaria aconseguir.",
+				"fields": [
+					{
+						"name": "challenge",
+						"kind": "textarea",
+						"label": "Quina situació o repte vols resoldre?",
+						"required": true
+					}
+				]
+			}
 		},
-		"invalidFile": "Fitxer no vàlid. Fes servir PDF, JPG, PNG o WebP de fins a 5 MB cadascun (màxim 3)."
+		"invalidFile": "Fitxer no vàlid. Fes servir PDF, JPG, PNG o WebP de fins a 5 MB cadascun (màxim 3).",
+		"invalidSelection": "Selecciona una situació i un servei compatibles."
 	},
 	"projects": {
 		"title": "Treballs - Sens*Hac",

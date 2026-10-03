@@ -62,10 +62,10 @@
 			"title": "We want to understand you.\nWhere is your business right now?",
 			"intro": "",
 			"items": [
-				{ "title": "I want to open my first space", "text": "", "href": "/en/contact?path=first-space" },
-				{ "title": "My space is not working as it should", "text": "", "href": "/en/contact?path=existing-space" },
-				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?path=growth" },
-				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact" }
+				{ "title": "I want to open my first space", "text": "", "href": "/en/contact?situation=first-space" },
+				{ "title": "My space is not working as it should", "text": "", "href": "/en/contact?situation=existing-space" },
+				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?situation=growth" },
+				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact?situation=growth&service=other-challenge" }
 			]
 		},
 		{ "_template": "feed", "description": "", "tag": "novedades", "limit": 4, "maxVisible": 3 }

@@ -277,7 +277,7 @@
 			},
 			"items": [
 				{
-					"title": "CONSULTORÍA EXPRÉS",
+					"title": "Consultoría estratégica",
 					"text": {
 						"type": "root",
 						"children": [
@@ -286,26 +286,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después."
-									}
-								]
-							},
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Auditamos tu local para darte directrices sobre cómo integrar tu marca en el espacio, optimizar la distribución y mejorar tus flujos de venta."
+										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después. Analizamos tu local y te damos directrices estratégicas para integrar la marca, optimizar el espacio y mejorar los flujos de venta."
 									}
 								]
 							}
 						]
 					},
-					"href": "/es/contact?package=consultation",
-					"ctaText": "Agenda sesión"
+					"href": "/es/contact?service=strategic-consultation",
+					"ctaText": "Solicita una Consultoría estratégica ↗"
 				},
 				{
-					"title": "PROYECTO DECORATIVO",
+					"title": "Proyecto Decorativo y Restyling",
 					"text": {
 						"type": "root",
 						"children": [
@@ -314,26 +305,17 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Transformación puntual y estilismo sin obras."
-									}
-								]
-							},
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Pensado para actualizar una única estancia, redefinir elementos clave (como una barra de bar o diseñar luminarias a medida) o bien refrescar el mobiliario para que encaje a la perfección con tu espacio y tu marca."
+										"text": "Desarrollamos el concepto espacial y la expresión de marca, seleccionamos mobiliario, iluminación y piezas a medida, con ninguna o mínima modificación de la distribución y sin obra o con intervención mínima."
 									}
 								]
 							}
 						]
 					},
-					"href": "/es/contact?package=decorative",
-					"ctaText": "Cuéntanos qué necesitas"
+					"href": "/es/contact?service=decorative-restyling",
+					"ctaText": "Solicita un Proyecto Decorativo y Restyling ↗"
 				},
 				{
-					"title": "PROYECTO INTEGRAL",
+					"title": "Proyecto Integral",
 					"text": {
 						"type": "root",
 						"children": [
@@ -342,23 +324,14 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Acompañamiento 360º desde la idea hasta la apertura."
-									}
-								]
-							},
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Abarcamos todo el proceso desde la estrategia inicial hasta la ejecución final. La opción ideal si buscas delegar el proyecto con absoluta tranquilidad."
+										"text": "Acompañamiento 360º desde la idea hasta la apertura. Abarcamos el proceso desde la estrategia inicial hasta la ejecución, incluyendo los cambios de distribución y la obra necesarios."
 									}
 								]
 							}
 						]
 					},
-					"href": "/es/contact?package=integral",
-					"ctaText": "Solicita información"
+					"href": "/es/contact?service=integral",
+					"ctaText": "Solicita un Proyecto Integral ↗"
 				}
 			],
 			"_template": "list"

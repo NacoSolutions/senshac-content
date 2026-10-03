@@ -17,7 +17,7 @@ test("Spanish services cards match WEB4 names, copy, and actions", async () => {
 	const cards = page.blocks.find(
 		(block) =>
 			block._template === "list" &&
-			block.items?.some((item) => item.title === "CONSULTORÍA EXPRÉS"),
+			block.items?.some((item) => item.title === "Consultoría estratégica"),
 	);
 
 	expect(
@@ -29,22 +29,22 @@ test("Spanish services cards match WEB4 names, copy, and actions", async () => {
 		})),
 	).toEqual([
 		{
-			title: "CONSULTORÍA EXPRÉS",
-			text: "Sesión intensiva de dos horas con entrega de dosier 72h después.\nAuditamos tu local para darte directrices sobre cómo integrar tu marca en el espacio, optimizar la distribución y mejorar tus flujos de venta.",
-			action: "Agenda sesión",
-			href: "/es/contact?package=consultation",
+			title: "Consultoría estratégica",
+			text: "Sesión intensiva de dos horas con entrega de dosier 72h después. Analizamos tu local y te damos directrices estratégicas para integrar la marca, optimizar el espacio y mejorar los flujos de venta.",
+			action: "Solicita una Consultoría estratégica ↗",
+			href: "/es/contact?service=strategic-consultation",
 		},
 		{
-			title: "PROYECTO DECORATIVO",
-			text: "Transformación puntual y estilismo sin obras.\nPensado para actualizar una única estancia, redefinir elementos clave (como una barra de bar o diseñar luminarias a medida) o bien refrescar el mobiliario para que encaje a la perfección con tu espacio y tu marca.",
-			action: "Cuéntanos qué necesitas",
-			href: "/es/contact?package=decorative",
+			title: "Proyecto Decorativo y Restyling",
+			text: "Desarrollamos el concepto espacial y la expresión de marca, seleccionamos mobiliario, iluminación y piezas a medida, con ninguna o mínima modificación de la distribución y sin obra o con intervención mínima.",
+			action: "Solicita un Proyecto Decorativo y Restyling ↗",
+			href: "/es/contact?service=decorative-restyling",
 		},
 		{
-			title: "PROYECTO INTEGRAL",
-			text: "Acompañamiento 360º desde la idea hasta la apertura.\nAbarcamos todo el proceso desde la estrategia inicial hasta la ejecución final. La opción ideal si buscas delegar el proyecto con absoluta tranquilidad.",
-			action: "Solicita información",
-			href: "/es/contact?package=integral",
+			title: "Proyecto Integral",
+			text: "Acompañamiento 360º desde la idea hasta la apertura. Abarcamos el proceso desde la estrategia inicial hasta la ejecución, incluyendo los cambios de distribución y la obra necesarios.",
+			action: "Solicita un Proyecto Integral ↗",
+			href: "/es/contact?service=integral",
 		},
 	]);
 });
