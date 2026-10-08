@@ -29,9 +29,13 @@ For focused autonomous changes, follow [Bounded Warren Task](.agents/skills/boun
 Use these curated role skills for focused work:
 
 - [Git Workflow](.agents/skills/git-workflow/SKILL.md) for scoped commits and pull-request handoff.
+- [Terrarium Triage](.agents/skills/terrarium-triage/SKILL.md) for selecting one owned, unblocked Seed from the canonical Senshac graph.
 - [Writing Documentation](.agents/skills/writing-docs/SKILL.md) for affirmative, actionable repository guidance.
 - [Verification Before Completion](.agents/skills/verification-before-completion/SKILL.md) for final documentation and configuration checks.
 - [Tina Content Migration](.agents/skills/tina-content-migration/SKILL.md) for localized editorial-content migration and export validation.
+- [Bun and Web Toolchain](.agents/skills/toolchain-bun-web/SKILL.md) for the pinned Bun setup, content checks, and generated-artifact contract.
+- [Security Review](.agents/skills/security-review/SKILL.md) for content, localization, export, and publishing-boundary changes.
+- [Terrarium Triage](.agents/skills/terrarium-triage/SKILL.md) for selecting one owned, unblocked Seed from the canonical Senshac graph.
 
 ## Portable rules and CLI skills
 
