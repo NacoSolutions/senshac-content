@@ -1,4 +1,8 @@
 {
+  "attribution": {
+    "design": "©be mediàtic",
+    "development": "Naco Solutions"
+  },
   "siteUrl": "https://senshac.com",
   "chrome": {
     "header": {
@@ -34,7 +38,7 @@
     }
   },
   "founder": {
-    "name": "Ester Cobles"
+    "name": "Ester Cobles Pérez"
   },
   "socialLinks": [
     {
@@ -58,10 +62,6 @@
       "icon": "i-simple-icons-houzz"
     }
   ],
-  "attribution": {
-    "design": "©be mediàtic",
-    "development": "Naco Solutions"
-  },
   "branding": {
     "logo": "brand/logo-senshac-optimized",
     "logoWhite": "brand/logo-senshac-white-optimized",
