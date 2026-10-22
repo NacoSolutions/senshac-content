@@ -9,7 +9,7 @@ for (const [locale, page] of Object.entries({ ca, en, es })) {
 		expect(page.chrome).toEqual({
 			header: {
 				style: "transparent",
-				scrolling: "transparent-dark",
+				scrolling: "transparent-light",
 				atFinal: "opaque-light",
 			},
 		});
