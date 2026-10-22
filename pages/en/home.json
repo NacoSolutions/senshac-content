@@ -1,7 +1,7 @@
 {
 	"title": "Sens*Hac - Strategic Interior Design Studio",
 	"description": "We design brand-led spaces that raise the value and profitability of your business.",
-	"chrome": { "header": { "style": "transparent", "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
+	"chrome": { "header": { "style": "transparent", "scrolling": "transparent-light", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"_template": "hero",
