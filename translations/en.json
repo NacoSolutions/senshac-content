@@ -540,6 +540,7 @@
 		"invalidSelection": "Choose a compatible business situation and service."
 	},
 	"projects": {
+		"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 		"title": "Work - Sens*Hac",
 		"description": "Explore our portfolio of interior design projects.",
 		"heading": "PROJECTS,\nEXPERIMENTS\nAND OBJECTS"

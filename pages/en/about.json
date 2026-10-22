@@ -1,6 +1,7 @@
 {
 	"title": "Ester, no H - Sens*Hac",
 	"description": "A boutique strategic interior design studio for retail, hospitality and wellness.",
+	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"_template": "statement",

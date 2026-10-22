@@ -1,7 +1,7 @@
 {
   "title": "Sens*Hac - Estudio de Interiorismo Estratégico",
   "description": "Diseñamos espacios con identidad de marca que elevan el valor y la rentabilidad de tu negocio.",
-	"chrome": { "header": { "style": "transparent" } },
+	"chrome": { "header": { "style": "transparent", "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
   "blocks": [
     {
       "title": "DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.",

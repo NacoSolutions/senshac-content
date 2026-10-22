@@ -1,6 +1,7 @@
 {
 	"title": "Serveis - Sens*Hac",
 	"description": "El nostre mètode d’interiorisme estratègic, del diagnòstic de marca i espai fins a l’obertura.",
+	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"_template": "text",
