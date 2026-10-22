@@ -1,6 +1,7 @@
 {
 	"title": "Servicios - Sens*Hac",
 	"description": "Nuestro método de interiorismo estratégico, desde el diagnóstico de marca hasta la apertura.",
+	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"title": "SERVICIOS A MEDIDA DE TUS NECESIDADES:",

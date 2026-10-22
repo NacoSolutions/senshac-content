@@ -540,6 +540,7 @@
 		"invalidSelection": "Selecciona una situació i un servei compatibles."
 	},
 	"projects": {
+		"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 		"title": "Treballs - Sens*Hac",
 		"description": "Explora el nostre portfolio de projectes de disseny d'interiors.",
 		"heading": "PROJECTES,\nASSAIGS\nI OBJECTES"

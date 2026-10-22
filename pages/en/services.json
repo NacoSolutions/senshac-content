@@ -1,6 +1,7 @@
 {
 	"title": "Services - Sens*Hac",
 	"description": "Our strategic interior design method, from brand and spatial diagnosis to opening.",
+	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"_template": "text",

@@ -1,6 +1,7 @@
 {
 	"title": "Ester, sin hache - Sens*Hac",
 	"description": "Estudio boutique de interiorismo estratégico para retail, hospitality y wellness.",
+	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"label": "Ester, sin hache",

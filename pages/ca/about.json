@@ -1,6 +1,7 @@
 {
 	"title": "Ester, sense hac - Sens*Hac",
 	"description": "Estudi boutique d’interiorisme estratègic per a retail, hospitality i wellness.",
+	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
 			"_template": "statement",
