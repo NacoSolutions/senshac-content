@@ -1,11 +1,11 @@
 {
-	"title": "Studio - Sens*Hac",
-		"description": "A boutique strategic interior design studio for retail, hospitality and wellness.",
+	"title": "Ester, no H - Sens*Hac",
+	"description": "A boutique strategic interior design studio for retail, hospitality and wellness.",
 	"blocks": [
 		{
 			"_template": "statement",
-			"label": "Mission",
-			"statement": "YOUR SPACE SPEAKS FOR YOU.\nTURN IT INTO YOUR\nMOST PROFITABLE ASSET.",
+			"label": "Ester, no H",
+			"statement": "Communicate,\nCaptivate,\nConnect.",
 			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
 			"placeholderLabel": "Studio portrait pending",
 			"content": {
@@ -16,7 +16,7 @@
 						"children": [
 							{
 								"type": "text",
-							"text": "Our mission is to design distinctive spaces that translate the essence and values of your brand into memorable experiences made to last."
+								"text": "Ester Cobles · Founder & Creative Director"
 							}
 						]
 					},
@@ -25,12 +25,117 @@
 						"children": [
 							{
 								"type": "text",
-							"text": "We see every space as the stage where your brand comes to life, is felt and experienced, creating a genuine connection with your ideal customer. We integrate your workflows and sales strategy into the environment to drive profitability across retail, hospitality and wellness."
+								"text": "I’m Ester—without the “h” that almost everyone insists on adding—and I’ve spent half my life repeating the same phrase: “Ester, no H.”"
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "What began as an anecdote became much more than a throwaway line over the years. It became a mark of identity."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "That is why the name of my studio, sens*hac (“sense hac,” Catalan for “without an h”), is really a statement of intent."
+							}
+						]
+					},
+					{
+						"type": "h2",
+						"children": [
+							{
+								"type": "text",
+								"text": "MISSION"
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "From this commitment to authenticity comes the studio’s philosophy:"
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Every business has its own identity and a story worth telling. Our mission is to create spaces that tell it, express the essence of your brand, and connect with your customer."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Because a space that communicates and makes people feel something multiplies your brand’s value. That is our motto:"
 							}
 						]
 					}
 				]
 			}
+		},
+		{
+			"_template": "showcase",
+			"mediaId": "reference-intake/conocenos/la-trobada",
+			"imageAlt": "Interior of La Trobada",
+			"placeholderLabel": "La Trobada image pending"
+		},
+		{
+			"_template": "text",
+			"title": "MY BACKGROUND",
+			"headingLevel": "h2",
+			"body": "Before graduating from La Massana, I studied geology between Barcelona and Norway. That period shaped my analytical outlook and ultimately strengthened and matured my creativity.\n\nSens*hac began after several years of collaborating with other designers. When my second child arrived, this life project truly began: the studio from which I help business owners with ideas and ambition bring their spaces to life and turn them into tools for sales and growth."
+		},
+		{
+			"_template": "list",
+			"title": "RECOGNITIONS",
+			"items": [
+				{
+					"title": "INTERCIDEC 2026",
+					"text": "Runner-up — Calma. La convivencia en equilibrio."
+				},
+				{
+					"title": "ARGO AWARDS (UAB), 2021",
+					"text": "First prize — project: Agua, una dosis de realidad."
+				},
+				{
+					"title": "EXTRAORDINARY AWARDS, 2021",
+					"text": "Honourable mention at the Premios Extraordinarios de Artes Plásticas y Diseño."
+				},
+				{
+					"title": "CODIC AWARDS, 2021",
+					"text": "Finalist at the 23rd edition of the Premios CODIC."
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"title": "WHY WORK WITH SENS*HAC?",
+			"headingLevel": "h2",
+			"body": "We stand out for our personal, one-to-one approach and our technical ability to create distinctive brand narratives that bring your essence into the space without diluting it. We do this by building a team of specialists around your project. Acting as a bridge between disciplines and partners, we provide one point of contact and ensure every design decision serves your business goals."
+		},
+		{
+			"_template": "text",
+			"title": "Have a business idea in mind?",
+			"headingLevel": "h2",
+			"body": "Thinking of opening, renovating or giving your space a new lease of life? Tell me what you have in mind and let’s talk about how we can shape it."
+		},
+		{
+			"_template": "callout",
+			"text": "Tell us about your project",
+			"link": "/en/contact"
 		}
 	]
 }

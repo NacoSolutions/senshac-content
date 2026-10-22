@@ -1,11 +1,11 @@
 {
-	"title": "Estudi - Sens*Hac",
+	"title": "Ester, sense hac - Sens*Hac",
 	"description": "Estudi boutique d’interiorisme estratègic per a retail, hospitality i wellness.",
 	"blocks": [
 		{
 			"_template": "statement",
-			"label": "Missió",
-			"statement": "EL TEU ESPAI PARLA PER TU.\nCONVERTEIX-LO EN EL TEU\nACTIU MÉS RENDIBLE.",
+			"label": "Ester, sense hac",
+			"statement": "Comunica,\nCaptiva,\nConnecta.",
 			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
 			"placeholderLabel": "Retrat de l’estudi pendent",
 			"content": {
@@ -16,7 +16,7 @@
 						"children": [
 							{
 								"type": "text",
-							"text": "La nostra missió és projectar espais identitaris que tradueixen l’essència i els valors de la teva marca en experiències memorables pensades per perdurar."
+								"text": "Ester Cobles · Fundadora i directora creativa"
 							}
 						]
 					},
@@ -25,12 +25,117 @@
 						"children": [
 							{
 								"type": "text",
-							"text": "Concebem cada espai com l’escenari on la teva marca cobra vida, se sent i s’experimenta, creant una connexió autèntica amb el teu client ideal. Integrem els teus fluxos de treball i l’estratègia de venda a l’entorn per impulsar la rendibilitat en els sectors retail, hospitality i wellness."
+								"text": "Soc l’Ester —sense aquesta «h» que gairebé tothom s’entesta a posar-me— i m’he passat mitja vida repetint la mateixa frase: «Ester, sense hac»."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "El que va començar com una anècdota es va convertir, amb els anys, en molt més que una simple falca. Es va transformar en un senyal d’identitat."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Per això el nom del meu estudi, sens*hac (sense hac, «sense h» en català), és en realitat una declaració d’intencions."
+							}
+						]
+					},
+					{
+						"type": "h2",
+						"children": [
+							{
+								"type": "text",
+								"text": "MISSIÓ"
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "D’aquesta aposta per l’autenticitat neix la filosofia de l’estudi:"
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Cada negoci té una identitat pròpia i una història que mereix ser explicada. Per això la nostra missió és crear espais que l’expliquin, expressin l’essència de la teva marca i connectin amb el teu client."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Perquè un espai que comunica i se sent multiplica el valor de la teva marca. D’aquí el nostre lema:"
 							}
 						]
 					}
 				]
 			}
+		},
+		{
+			"_template": "showcase",
+			"mediaId": "reference-intake/conocenos/la-trobada",
+			"imageAlt": "Interior de l’espai La Trobada",
+			"placeholderLabel": "Imatge de La Trobada pendent"
+		},
+		{
+			"_template": "text",
+			"title": "TRAJECTÒRIA",
+			"headingLevel": "h2",
+			"body": "Abans de graduar-me a la Massana, vaig estudiar Geologia entre Barcelona i Noruega. Aquella etapa va forjar la meva mirada analítica i va acabar enfortint i madurant la meva creativitat.\n\nSens*hac va començar després de diversos anys col·laborant amb altres dissenyadors. Amb l’arribada del meu segon fill va néixer de debò aquest projecte de vida: l’estudi des d’on ajudo empresaris amb idees i il·lusió a materialitzar els seus espais i convertir-los en eines de venda i creixement."
+		},
+		{
+			"_template": "list",
+			"title": "RECONEIXEMENTS",
+			"items": [
+				{
+					"title": "INTERCIDEC 2026",
+					"text": "2n accèssit — Calma. La convivencia en equilibrio."
+				},
+				{
+					"title": "ARGO AWARDS (UAB), 2021",
+					"text": "1r premi — Projecte: Agua, una dosis de realidad."
+				},
+				{
+					"title": "PREMIS EXTRAORDINARIS, 2021",
+					"text": "Menció d’honor als Premis Extraordinaris d’Arts Plàstiques i Disseny."
+				},
+				{
+					"title": "PREMIS CODIC, 2021",
+					"text": "Finalista a la 23a edició dels Premis CODIC."
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"title": "PER QUÈ TREBALLAR AMB SENS*HAC?",
+			"headingLevel": "h2",
+			"body": "Ens distingim pel tracte personal, de tu a tu, i per la capacitat tècnica de crear narratives de marca úniques, traslladant la teva essència a l’espai sense diluir-la. Ho aconseguim formant un equip d’especialistes a la mida del teu projecte. Fem de pont entre totes les disciplines i agents; així, amb un únic interlocutor, garantim que cada decisió de disseny respongui als objectius del teu negoci."
+		},
+		{
+			"_template": "text",
+			"title": "Tens un negoci entre mans?",
+			"headingLevel": "h2",
+			"body": "Estàs pensant a obrir, renovar o donar un nou impuls al teu espai? Explica’m què tens al cap i parlem de com podem donar-li forma."
+		},
+		{
+			"_template": "callout",
+			"text": "Explica’ns el teu projecte",
+			"link": "/ca/contact"
 		}
 	]
 }

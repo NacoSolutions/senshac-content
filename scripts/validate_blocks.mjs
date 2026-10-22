@@ -5,6 +5,7 @@ import path from "node:path";
 
 const blockVariants = new Map([
 	["media", new Set(["banner", "full"])],
+	["list", new Set(["default", "phase-scroll"])],
 	["text", new Set(["brief", "concept", "strategy"])],
 ]);
 const blockTypes = new Set([
@@ -66,7 +67,7 @@ const blockFields = new Map(
 			"placeholderLabel",
 			"objectFit",
 		],
-		list: ["title", "intro", "items"],
+		list: ["title", "intro", "variant", "mediaId", "imageAlt", "placeholderLabel", "items"],
 		media: ["variant", "mediaId", "alt"],
 		showcase: [
 			"eyebrow",
@@ -137,7 +138,7 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 							continue;
 						}
 						const invalid = Object.keys(item).filter(
-							(field) => !["title", "text", "href", "ctaText"].includes(field),
+						(field) => !["number", "title", "text", "href", "ctaText"].includes(field),
 						);
 						if (invalid.length)
 							errors.push(
@@ -230,6 +231,11 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 				if (block._template === "text" && variant && !variants?.has(variant)) {
 					errors.push(
 						`${location} has unsupported ${block._template} variant ${String(block.variant)}`,
+					);
+				}
+				if (block._template === "list" && variant && !variants?.has(variant)) {
+					errors.push(
+						`${location} has unsupported list variant ${String(variant)}`,
 					);
 				}
 				if (!variants && "variant" in block) {

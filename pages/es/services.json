@@ -1,19 +1,96 @@
 {
-	"title": "Método - Sens*Hac",
+	"title": "Servicios - Sens*Hac",
 	"description": "Nuestro método de interiorismo estratégico, desde el diagnóstico de marca hasta la apertura.",
 	"blocks": [
 		{
-			"title": "NUESTRO MÉTODO:\nDE LA ESTRATEGIA A\nLA APERTURA.",
+			"title": "SERVICIOS A MEDIDA DE TUS NECESIDADES:",
 			"headingLevel": "h1",
 			"showStar": true,
 			"_template": "text"
 		},
 		{
-			"mediaId": "https://media.senshac.com/images/about/senshac-about-our-mission/1200.webp",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Sabemos que no hay dos situaciones iguales, por eso te ofrecemos la flexibilidad de contratar sólo lo que necesitas:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"title": "Consultoría estratégica",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después. Analizamos tu local y te damos directrices estratégicas para integrar la marca, optimizar el espacio y mejorar los flujos de venta."
+									}
+								]
+							}
+						]
+					},
+					"href": "/es/contact?service=strategic-consultation",
+					"ctaText": "Solicita una Consultoría estratégica ↗"
+				},
+				{
+					"title": "Proyecto Decorativo y Restyling",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Desarrollamos el concepto espacial y la expresión de marca, seleccionamos mobiliario, iluminación y piezas a medida, con ninguna o mínima modificación de la distribución y sin obra o con intervención mínima."
+									}
+								]
+							}
+						]
+					},
+					"href": "/es/contact?service=decorative-restyling",
+					"ctaText": "Solicita un Proyecto Decorativo y Restyling ↗"
+				},
+				{
+					"title": "Proyecto Integral",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Acompañamiento 360º desde la idea hasta la apertura. Abarcamos el proceso desde la estrategia inicial hasta la ejecución, incluyendo los cambios de distribución y la obra necesarios."
+									}
+								]
+							}
+						]
+					},
+					"href": "/es/contact?service=integral",
+					"ctaText": "Solicita un Proyecto Integral ↗"
+				}
+			],
+			"_template": "list"
+		},
+		{
+			"mediaId": "reference-intake/services/intro",
 			"imageAlt": "Investigación visual y material durante el proceso creativo",
 			"_template": "showcase"
 		},
 		{
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "El paso a paso: de la estrategia a la apertura." }] }] },
 			"items": [
 				{
 					"number": "01",
@@ -256,85 +333,9 @@
 			"_template": "callout"
 		},
 		{
-			"mediaId": "redesign/photos/img-9212",
+			"mediaId": "reference-intake/services/moodboard",
 			"imageAlt": "Muestras de materiales y acabados",
 			"_template": "showcase"
-		},
-		{
-			"intro": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "Te ofrecemos la flexibilidad de contratar el proceso por fases para que elijas el nivel de acompañamiento que deseas en tu proyecto:"
-							}
-						]
-					}
-				]
-			},
-			"items": [
-				{
-					"title": "Consultoría estratégica",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después. Analizamos tu local y te damos directrices estratégicas para integrar la marca, optimizar el espacio y mejorar los flujos de venta."
-									}
-								]
-							}
-						]
-					},
-					"href": "/es/contact?service=strategic-consultation",
-					"ctaText": "Solicita una Consultoría estratégica ↗"
-				},
-				{
-					"title": "Proyecto Decorativo y Restyling",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Desarrollamos el concepto espacial y la expresión de marca, seleccionamos mobiliario, iluminación y piezas a medida, con ninguna o mínima modificación de la distribución y sin obra o con intervención mínima."
-									}
-								]
-							}
-						]
-					},
-					"href": "/es/contact?service=decorative-restyling",
-					"ctaText": "Solicita un Proyecto Decorativo y Restyling ↗"
-				},
-				{
-					"title": "Proyecto Integral",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Acompañamiento 360º desde la idea hasta la apertura. Abarcamos el proceso desde la estrategia inicial hasta la ejecución, incluyendo los cambios de distribución y la obra necesarios."
-									}
-								]
-							}
-						]
-					},
-					"href": "/es/contact?service=integral",
-					"ctaText": "Solicita un Proyecto Integral ↗"
-				}
-			],
-			"_template": "list"
 		},
 		{
 			"text": "Solicita una propuesta personalizada",
@@ -342,8 +343,19 @@
 			"_template": "callout"
 		},
 		{
-			"mediaId": "https://media.senshac.com/images/redesign/photos/img-9249/1200.webp",
-			"_template": "showcase"
+			"_template": "showcase",
+			"items": [
+				{
+					"mediaId": "reference-intake/services/materials-left",
+					"imageAlt": "Muestras de materiales y acabados del proyecto",
+					"placeholderLabel": "Imagen de materiales y acabados pendiente"
+				},
+				{
+					"mediaId": "reference-intake/services/pillow-replacement",
+					"imageAlt": "Detalle de un cojín de la propuesta de interiorismo",
+					"placeholderLabel": "Imagen del cojín pendiente"
+				}
+			]
 		},
 		{
 			"intro": {
