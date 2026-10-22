@@ -14,19 +14,9 @@
       "_template": "hero"
     },
     {
-      "title": "Comunica.\nCautiva.\nConecta.",
-      "subtitle": "",
-      "topRight": {
-        "lines": [
-          "interior",
-          "design",
-          "studio R"
-        ]
-      },
-      "mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
-      "imageAlt": "Formaciones rocosas negras sobre fondo oscuro",
-      "objectFit": "cover",
-      "_template": "banner"
+      "_template": "showcase",
+      "eyebrow": "interior design studio®",
+      "title": "Comunica.\nCautiva.\nConecta."
     },
     {
       "mediaType": "image",
@@ -48,6 +38,11 @@
       "headingLevel": "h2",
       "body": "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
       "_template": "text"
+    },
+    {
+      "mediaType": "video",
+      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+      "_template": "showcase"
     },
     {
       "_template": "callout",
@@ -87,6 +82,14 @@
         }
       ],
       "_template": "accordion"
+    },
+    {
+      "_template": "feed",
+      "description": "",
+      "tag": "novedades",
+      "limit": 4,
+      "maxVisible": 3,
+      "disableLinks": true
     },
     {
       "_template": "list",

@@ -14,13 +14,9 @@
 			"imageAlt": "A selection of materials, textures and finishes"
 		},
 		{
-			"_template": "banner",
-			"title": "Communicate.\nCaptivate.\nConnect.",
-			"subtitle": "",
-			"topRight": { "lines": ["interior", "design", "studio R"] },
-			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
-			"imageAlt": "Black rock formations against a dark background",
-			"objectFit": "cover"
+			"_template": "showcase",
+			"eyebrow": "interior design studio®",
+			"title": "Communicate.\nCaptivate.\nConnect."
 		},
 		{
 			"_template": "showcase",
@@ -35,6 +31,11 @@
 			"headingLevel": "h2",
 			"body": "We design interiors with a distinctive visual language, rooted in your brand universe and built to work as a real part of your business.\n\nWe look at how your customers move, how your team works and what the space needs so brand, experience and operations work together."
 		},
+		{
+			"_template": "showcase",
+			"mediaType": "video",
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
+		},
 		{ "_template": "callout", "text": "Our method", "link": "/en/methods" },
 		{
 			"_template": "accordion",
@@ -44,6 +45,14 @@
 				{ "number": "2", "title": "RAISE ITS VALUE", "summary": "Design increases perceived value, attracts the right customer and positions your product or service at the level it deserves." },
 				{ "number": "3", "title": "MAKE YOUR SPACE WORK FOR YOU", "summary": "Smart planning streamlines operations, supports sales and improves the customer experience. Make every square metre work for your business." }
 			]
+		},
+		{
+			"_template": "feed",
+			"description": "",
+			"tag": "novedades",
+			"limit": 4,
+			"maxVisible": 3,
+			"disableLinks": true
 		},
 		{
 			"_template": "list",

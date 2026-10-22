@@ -14,13 +14,9 @@
 			"imageAlt": "Selecció de materials, textures i acabats"
 		},
 		{
-			"_template": "banner",
-			"title": "Comunica.\nCaptiva.\nConnecta.",
-			"subtitle": "",
-			"topRight": { "lines": ["interior", "design", "studio R"] },
-			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
-			"imageAlt": "Formacions rocoses negres sobre un fons fosc",
-			"objectFit": "cover"
+			"_template": "showcase",
+			"eyebrow": "interior design studio®",
+			"title": "Comunica.\nCaptiva.\nConnecta."
 		},
 		{
 			"_template": "showcase",
@@ -35,6 +31,11 @@
 			"headingLevel": "h2",
 			"body": "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades."
 		},
+		{
+			"_template": "showcase",
+			"mediaType": "video",
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
+		},
 		{ "_template": "callout", "text": "El nostre mètode", "link": "/ca/methods" },
 		{
 			"_template": "accordion",
@@ -44,6 +45,14 @@
 				{ "number": "2", "title": "ELEVAR-NE EL VALOR", "summary": "El disseny augmenta el valor percebut, atrau el client adequat i posiciona el teu producte o servei al nivell que es mereix." },
 				{ "number": "3", "title": "CONVERTIR L’ESPAI EN UNA EINA", "summary": "Una distribució intel·ligent agilitza l’operativa, facilita les vendes i millora l’experiència del client. Fes que cada metre quadrat treballi pel teu negoci." }
 			]
+		},
+		{
+			"_template": "feed",
+			"description": "",
+			"tag": "novedades",
+			"limit": 4,
+			"maxVisible": 3,
+			"disableLinks": true
 		},
 		{
 			"_template": "list",

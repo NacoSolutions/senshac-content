@@ -53,7 +53,7 @@ const blockFields = new Map(
 			"location",
 			"locationLabel",
 		],
-		feed: ["title", "description", "tag", "limit", "maxVisible"],
+		feed: ["title", "description", "tag", "limit", "maxVisible", "disableLinks"],
 		form: ["heading", "subheading", "mediaId"],
 		gallery: ["cols", "images"],
 		hero: [
@@ -130,6 +130,13 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 					errors.push(
 						`${location} has unsupported fields: ${unsupportedFields.join(", ")}`,
 					);
+				}
+				if (
+					block._template === "feed" &&
+					block.disableLinks !== undefined &&
+					typeof block.disableLinks !== "boolean"
+				) {
+					errors.push(`${location} feed disableLinks must be a boolean`);
 				}
 				if (block._template === "list" && Array.isArray(block.items)) {
 					for (const [itemIndex, item] of block.items.entries()) {

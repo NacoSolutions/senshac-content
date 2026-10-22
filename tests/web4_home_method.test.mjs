@@ -6,11 +6,13 @@ const readPage = async (file) =>
 
 const homeOrder = [
 	"hero",
-	"banner",
+	"showcase",
 	"showcase",
 	"text",
+	"showcase",
 	"callout",
 	"accordion",
+	"feed",
 	"list",
 	"list",
 ];
@@ -49,7 +51,13 @@ test("Spanish homepage follows the approved opening and retains the inquiry path
 		ctaText: "¿Quieres que tu espacio hable?",
 		ctaLink: "/es/contact",
 	});
-	expect(page.blocks[1].title).toBe("Comunica.\nCautiva.\nConecta.");
+	expect(page.blocks[1]).toMatchObject({
+		_template: "showcase",
+		eyebrow: "interior design studio®",
+		title: "Comunica.\nCautiva.\nConecta.",
+	});
+	expect(page.blocks[1]).not.toHaveProperty("mediaId");
+	expect(page.blocks[1]).not.toHaveProperty("items");
 	expect(page.blocks[2].items).toEqual([
 		{
 			title: "RUDE / RETAIL",
@@ -66,26 +74,33 @@ test("Spanish homepage follows the approved opening and retains the inquiry path
 		headingLevel: "h2",
 		body: "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
 	});
-	expect(page.blocks[5].items.map((item) => item.title)).toEqual([
-		"DIFERENCIAR TU MARCA",
-		"ELEVAR SU VALOR",
-		"CONVERTIR TU ESPACIO EN UNA HERRAMIENTA",
-	]);
 	expect(page.blocks[4]).toMatchObject({
+		_template: "showcase",
+		mediaType: "video",
+		mediaId:
+			"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+	});
+	expect(page.blocks[5]).toMatchObject({
 		_template: "callout",
 		text: "Nuestro método",
 		link: "/es/methods",
 	});
-	expect(page.blocks[7].items.map((item) => item.href)).toEqual(
+	expect(page.blocks[6].items.map((item) => item.title)).toEqual([
+		"DIFERENCIAR TU MARCA",
+		"ELEVAR SU VALOR",
+		"CONVERTIR TU ESPACIO EN UNA HERRAMIENTA",
+	]);
+	expect(page.blocks[7]).toMatchObject({
+		_template: "feed",
+		tag: "novedades",
+		limit: 4,
+		maxVisible: 3,
+		disableLinks: true,
+	});
+	expect(page.blocks[9].items.map((item) => item.href)).toEqual(
 		inquiryHrefs("es"),
 	);
-	expect(page.blocks.some((block) => block._template === "feed")).toBe(false);
-	expect(
-		page.blocks.some(
-			(block) =>
-				block._template === "showcase" && block.mediaType === "video",
-		),
-	).toBe(false);
+
 });
 
 test("localized homepages keep the same structure and locale-correct paths", async () => {
@@ -103,7 +118,13 @@ test("localized homepages keep the same structure and locale-correct paths", asy
 			"Space, Brand Identity & Strategy.",
 		],
 	};
+const carouselTitles = {
+	es: "Comunica.\nCautiva.\nConecta.",
+	ca: "Comunica.\nCaptiva.\nConnecta.",
+	en: "Communicate.\nCaptivate.\nConnect.",
+};
 	for (const locale of ["es", "ca", "en"]) {
+
 		const page = await readPage(`../pages/${locale}/home.json`);
 		expect(page.blocks.map(({ _template }) => _template)).toEqual(homeOrder);
 		expect(page.blocks[0]).toMatchObject({
@@ -114,13 +135,28 @@ test("localized homepages keep the same structure and locale-correct paths", asy
 		expect(page.blocks.find(({ _template, variant }) => _template === "list" && !variant).items.map(({ href }) => href)).toEqual(
 			inquiryHrefs(locale),
 		);
-		expect(page.blocks.some(({ _template }) => _template === "feed")).toBe(false);
-		expect(
-			page.blocks.some(
-				({ _template, mediaType }) =>
-					_template === "showcase" && mediaType === "video",
-			),
-		).toBe(false);
+		expect(page.blocks[1]).toMatchObject({
+			_template: "showcase",
+			eyebrow: "interior design studio®",
+			title: carouselTitles[locale],
+		});
+		expect(page.blocks[1]).not.toHaveProperty("mediaId");
+		expect(page.blocks[2].items[0]).toMatchObject({
+			link: `/${locale}/works/rude`,
+			mediaId: "projects/rude/cover",
+		});
+		expect(page.blocks[4]).toMatchObject({
+			mediaType: "video",
+			mediaId:
+				"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+		});
+		expect(page.blocks[7]).toMatchObject({
+			_template: "feed",
+			tag: "novedades",
+			limit: 4,
+			maxVisible: 3,
+			disableLinks: true,
+		});
 	}
 });
 
