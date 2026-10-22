@@ -4,6 +4,16 @@
 	"chrome": { "header": { "style": "transparent" } },
 	"blocks": [
 		{
+			"_template": "hero",
+			"title": "DISSENYEM ESPAIS\nPER A MARQUES QUE\nTENEN ALGUNA COSA A DIR.",
+			"intro": "Espai, Identitat de Marca & Estratègia.",
+			"ctaText": "Vols que el teu espai parli?",
+			"ctaLink": "/ca/contact",
+			"mediaType": "image",
+			"mediaId": "redesign/photos/img-9212",
+			"imageAlt": "Selecció de materials, textures i acabats"
+		},
+		{
 			"_template": "banner",
 			"title": "Comunica.\nCaptiva.\nConnecta.",
 			"subtitle": "",
@@ -11,16 +21,6 @@
 			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
 			"imageAlt": "Formacions rocoses negres sobre un fons fosc",
 			"objectFit": "cover"
-		},
-		{
-			"_template": "hero",
-			"title": "L’ESPAI ÉS ON\nLA TEVA MARCA\nCOBRA VIDA.",
-			"intro": "Dissenyem espais per a marques que tenen alguna cosa a dir.\nEspai, Identitat de Marca & Estratègia.",
-			"ctaText": "Vols que el teu espai parli?",
-			"ctaLink": "/ca/contact",
-			"mediaType": "image",
-			"mediaId": "redesign/photos/img-9212",
-			"imageAlt": "Selecció de materials, textures i acabats"
 		},
 		{
 			"_template": "showcase",
@@ -37,11 +37,6 @@
 		},
 		{ "_template": "callout", "text": "El nostre mètode", "link": "/ca/methods" },
 		{
-			"_template": "showcase",
-			"mediaType": "video",
-			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
-		},
-		{
 			"_template": "accordion",
 			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "Què pot fer el disseny pel teu negoci?" }] }] },
 			"items": [
@@ -51,11 +46,20 @@
 			]
 		},
 		{
-			"_template": "showcase",
-			"mediaType": "image",
-			"mediaId": "redesign/editorial/rocas",
-			"imageAlt": "Formacions rocoses negres sobre un fons fosc",
-			"title": "UN REEL SOBRE COM PRENC DECISIONS"
+			"_template": "list",
+			"variant": "phase-scroll",
+			"title": "Un espai que no guia, que no funciona i que no reforça la teva identitat és una oportunitat de negoci perduda.",
+			"intro": "Si ja tens tot això clar, t’explico els passos que seguirem per començar a treballar en el teu projecte:",
+			"mediaId": "reference-intake/home/manos-ester",
+			"imageAlt": "Mans triant mostres de teixits i materials",
+			"placeholderLabel": "Imatge pendent",
+			"items": [
+				{ "number": "01", "title": "Ens coneixem", "text": "Parlem de la teva marca, del que vols aconseguir i de la inversió que hi faràs." },
+				{ "number": "02", "title": "Anàlisi i mesures", "text": "Si hi ha entesa, vaig al teu local, prenc mides i estudio a fons la teva marca i el que ofereixes." },
+				{ "number": "03", "title": "Explorem opcions", "text": "Debatem junts les primeres propostes de distribució i concepte per triar el millor camí." },
+				{ "number": "04", "title": "Disseny final", "text": "Desenvolupem la idea escollida al detall perquè vegis exactament com serà el teu nou espai." },
+				{ "number": "05", "title": "Pressupost transparent", "text": "Calculem el cost de cada partida i tanquem els números perquè no hi hagi sorpreses." }
+			]
 		},
 		{
 			"_template": "list",
@@ -67,7 +71,6 @@
 				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?situation=growth" },
 				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact?situation=growth&service=other-challenge" }
 			]
-		},
-		{ "_template": "feed", "description": "", "tag": "novedades", "limit": 4, "maxVisible": 3 }
+		}
 	]
 }

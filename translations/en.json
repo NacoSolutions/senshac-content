@@ -1,19 +1,19 @@
 {
 	"nav": {
-		"social": "social",
-		"menu": "menu",
-		"letsTalk": "LET'S TALK",
+		"social": "Follow us",
+		"menu": "Menu",
+		"letsTalk": "Let's talk",
 		"links": [
 			{
-				"label": "Studio",
+				"label": "About",
 				"href": "/en/studio"
 			},
 			{
-				"label": "Work",
+				"label": "Projects",
 				"href": "/en/works"
 			},
 			{
-				"label": "Method",
+				"label": "Services",
 				"href": "/en/methods"
 			},
 			{
@@ -35,15 +35,15 @@
 		],
 		"links": [
 			{
-				"label": "Studio",
+				"label": "About",
 				"href": "/en/studio"
 			},
 			{
-				"label": "Work",
+				"label": "Projects",
 				"href": "/en/works"
 			},
 			{
-				"label": "Method",
+				"label": "Services",
 				"href": "/en/methods"
 			},
 			{

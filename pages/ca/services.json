@@ -1,19 +1,96 @@
 {
-	"title": "Mètode - Sens*Hac",
+	"title": "Serveis - Sens*Hac",
 	"description": "El nostre mètode d’interiorisme estratègic, del diagnòstic de marca i espai fins a l’obertura.",
 	"blocks": [
 		{
 			"_template": "text",
-			"title": "EL NOSTRE MÈTODE:\nDE L’ESTRATÈGIA A\nL’OBERTURA.",
+			"title": "SERVEIS A MIDA DE LES TEVES NECESSITATS:",
 			"headingLevel": "h1",
 			"showStar": true
 		},
 		{
+			"_template": "list",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Sabem que no hi ha dues situacions iguals; per això t’oferim la flexibilitat de contractar només el que necessites:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"title": "Consultoria estratègica",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Sessió intensiva de dues hores, amb lliurament d’un dossier al cap de 72 hores. Analitzem el local i t’orientem estratègicament per integrar-hi la marca, optimitzar l’espai i millorar els fluxos de venda."
+									}
+								]
+							}
+						]
+					},
+					"href": "/ca/contact?service=strategic-consultation",
+					"ctaText": "Sol·licita una Consultoria estratègica ↗"
+				},
+				{
+					"title": "Projecte Decoratiu i Restyling",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Desenvolupem el concepte espacial i l’expressió de marca, seleccionem mobiliari, il·luminació i peces a mida, amb cap o molt pocs canvis en la distribució i sense obra o amb una intervenció mínima."
+									}
+								]
+							}
+						]
+					},
+					"href": "/ca/contact?service=decorative-restyling",
+					"ctaText": "Sol·licita un Projecte Decoratiu i Restyling ↗"
+				},
+				{
+					"title": "Projecte Integral",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Acompanyament 360° des de la idea fins a l’obertura. Cobrim el procés, de l’estratègia inicial a l’execució, incloent-hi els canvis de distribució i l’obra necessaris."
+									}
+								]
+							}
+						]
+					},
+					"href": "/ca/contact?service=integral",
+					"ctaText": "Sol·licita un Projecte Integral ↗"
+				}
+			]
+		},
+		{
 			"_template": "showcase",
-			"mediaId": "https://media.senshac.com/images/about/senshac-about-our-mission/1200.webp",
+			"mediaId": "reference-intake/services/intro",
 			"imageAlt": "Recerca visual i material durant el procés creatiu"
 		},
 		{
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "El pas a pas: de l’estratègia a l’obertura." }] }] },
 			"_template": "accordion",
 			"items": [
 				{
@@ -257,84 +334,8 @@
 		},
 		{
 			"_template": "showcase",
-			"mediaId": "redesign/photos/img-9212",
+			"mediaId": "reference-intake/services/moodboard",
 			"imageAlt": "Mostres de materials i acabats"
-		},
-		{
-			"_template": "list",
-			"intro": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "Pots contractar el procés per fases i triar el nivell d’acompanyament que necessites:"
-							}
-						]
-					}
-				]
-			},
-			"items": [
-				{
-					"title": "Consultoria estratègica",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Sessió intensiva de dues hores, amb lliurament d’un dossier al cap de 72 hores. Analitzem el local i t’orientem estratègicament per integrar-hi la marca, optimitzar l’espai i millorar els fluxos de venda."
-									}
-								]
-							}
-						]
-					},
-					"href": "/ca/contact?service=strategic-consultation",
-					"ctaText": "Sol·licita una Consultoria estratègica ↗"
-				},
-				{
-					"title": "Projecte Decoratiu i Restyling",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Desenvolupem el concepte espacial i l’expressió de marca, seleccionem mobiliari, il·luminació i peces a mida, amb cap o molt pocs canvis en la distribució i sense obra o amb una intervenció mínima."
-									}
-								]
-							}
-						]
-					},
-					"href": "/ca/contact?service=decorative-restyling",
-					"ctaText": "Sol·licita un Projecte Decoratiu i Restyling ↗"
-				},
-				{
-					"title": "Projecte Integral",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "Acompanyament 360° des de la idea fins a l’obertura. Cobrim el procés, de l’estratègia inicial a l’execució, incloent-hi els canvis de distribució i l’obra necessaris."
-									}
-								]
-							}
-						]
-					},
-					"href": "/ca/contact?service=integral",
-					"ctaText": "Sol·licita un Projecte Integral ↗"
-				}
-			]
 		},
 		{
 			"_template": "callout",
@@ -343,7 +344,18 @@
 		},
 		{
 			"_template": "showcase",
-			"mediaId": "https://media.senshac.com/images/redesign/photos/img-9249/1200.webp"
+			"items": [
+				{
+					"mediaId": "reference-intake/services/materials-left",
+					"imageAlt": "Mostres de materials i acabats del projecte",
+					"placeholderLabel": "Imatge de materials i acabats pendent"
+				},
+				{
+					"mediaId": "reference-intake/services/pillow-replacement",
+					"imageAlt": "Detall d’un coixí de la proposta d’interiorisme",
+					"placeholderLabel": "Imatge del coixí pendent"
+				}
+			]
 		},
 		{
 			"_template": "accordion",

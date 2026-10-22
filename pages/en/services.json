@@ -1,19 +1,96 @@
 {
-	"title": "Method - Sens*Hac",
+	"title": "Services - Sens*Hac",
 	"description": "Our strategic interior design method, from brand and spatial diagnosis to opening.",
 	"blocks": [
 		{
 			"_template": "text",
-			"title": "OUR METHOD:\nFROM STRATEGY TO\nOPENING.",
+			"title": "SERVICES TAILORED TO YOUR NEEDS:",
 			"headingLevel": "h1",
 			"showStar": true
 		},
 		{
+			"_template": "list",
+			"intro": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "We know no two situations are alike, so we offer the flexibility to choose only what you need:"
+							}
+						]
+					}
+				]
+			},
+			"items": [
+				{
+					"title": "Strategic Consultation",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "A focused two-hour session, followed by a report within 72 hours. We assess your premises and provide strategic guidance on integrating your brand, optimizing the space, and improving customer flow."
+									}
+								]
+							}
+						]
+					},
+					"href": "/en/contact?service=strategic-consultation",
+					"ctaText": "Request a Strategic Consultation ↗"
+				},
+				{
+					"title": "Decorative Project & Restyling",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "We develop the spatial concept and brand expression, and select furnishings, lighting, and custom pieces, with no or minimal changes to the existing layout and little to no construction."
+									}
+								]
+							}
+						]
+					},
+					"href": "/en/contact?service=decorative-restyling",
+					"ctaText": "Request a Decorative Project & Restyling ↗"
+				},
+				{
+					"title": "Comprehensive Project",
+					"text": {
+						"type": "root",
+						"children": [
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "360° support from the initial idea through to opening. We cover the process from strategy to delivery, including any layout changes and construction needed."
+									}
+								]
+							}
+						]
+					},
+					"href": "/en/contact?service=integral",
+					"ctaText": "Request a Comprehensive Project ↗"
+				}
+			]
+		},
+		{
 			"_template": "showcase",
-			"mediaId": "https://media.senshac.com/images/about/senshac-about-our-mission/1200.webp",
+			"mediaId": "reference-intake/services/intro",
 			"imageAlt": "Visual and material research during the creative process"
 		},
 		{
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "Step by step: from strategy to opening." }] }] },
 			"_template": "accordion",
 			"items": [
 				{
@@ -257,84 +334,8 @@
 		},
 		{
 			"_template": "showcase",
-			"mediaId": "redesign/photos/img-9212",
+			"mediaId": "reference-intake/services/moodboard",
 			"imageAlt": "Samples of materials and finishes"
-		},
-		{
-			"_template": "list",
-			"intro": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "You can commission the process in phases and choose the level of support you need:"
-							}
-						]
-					}
-				]
-			},
-			"items": [
-				{
-					"title": "Strategic Consultation",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "A focused two-hour session, followed by a report within 72 hours. We assess your premises and provide strategic guidance on integrating your brand, optimizing the space, and improving customer flow."
-									}
-								]
-							}
-						]
-					},
-					"href": "/en/contact?service=strategic-consultation",
-					"ctaText": "Request a Strategic Consultation ↗"
-				},
-				{
-					"title": "Decorative Project & Restyling",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "We develop the spatial concept and brand expression, and select furnishings, lighting, and custom pieces, with no or minimal changes to the existing layout and little to no construction."
-									}
-								]
-							}
-						]
-					},
-					"href": "/en/contact?service=decorative-restyling",
-					"ctaText": "Request a Decorative Project & Restyling ↗"
-				},
-				{
-					"title": "Comprehensive Project",
-					"text": {
-						"type": "root",
-						"children": [
-							{
-								"type": "p",
-								"children": [
-									{
-										"type": "text",
-										"text": "360° support from the initial idea through to opening. We cover the process from strategy to delivery, including any layout changes and construction needed."
-									}
-								]
-							}
-						]
-					},
-					"href": "/en/contact?service=integral",
-					"ctaText": "Request a Comprehensive Project ↗"
-				}
-			]
 		},
 		{
 			"_template": "callout",
@@ -343,7 +344,18 @@
 		},
 		{
 			"_template": "showcase",
-			"mediaId": "https://media.senshac.com/images/redesign/photos/img-9249/1200.webp"
+			"items": [
+				{
+					"mediaId": "reference-intake/services/materials-left",
+					"imageAlt": "Project material and finish samples",
+					"placeholderLabel": "Materials and finishes image pending"
+				},
+				{
+					"mediaId": "reference-intake/services/pillow-replacement",
+					"imageAlt": "Detail of a cushion in the interior design proposal",
+					"placeholderLabel": "Cushion image pending"
+				}
+			]
 		},
 		{
 			"_template": "accordion",

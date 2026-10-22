@@ -4,6 +4,16 @@
 	"chrome": { "header": { "style": "transparent" } },
 	"blocks": [
 		{
+			"_template": "hero",
+			"title": "WE DESIGN SPACES\nFOR BRANDS WITH\nSOMETHING TO SAY.",
+			"intro": "Space, Brand Identity & Strategy.",
+			"ctaText": "Want your space to speak?",
+			"ctaLink": "/en/contact",
+			"mediaType": "image",
+			"mediaId": "redesign/photos/img-9212",
+			"imageAlt": "A selection of materials, textures and finishes"
+		},
+		{
 			"_template": "banner",
 			"title": "Communicate.\nCaptivate.\nConnect.",
 			"subtitle": "",
@@ -11,16 +21,6 @@
 			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
 			"imageAlt": "Black rock formations against a dark background",
 			"objectFit": "cover"
-		},
-		{
-			"_template": "hero",
-			"title": "SPACE IS WHERE\nYOUR BRAND\nCOMES TO LIFE.",
-			"intro": "We design spaces for brands with something to say.\nSpace, Brand Identity & Strategy.",
-			"ctaText": "Want your space to speak?",
-			"ctaLink": "/en/contact",
-			"mediaType": "image",
-			"mediaId": "redesign/photos/img-9212",
-			"imageAlt": "A selection of materials, textures and finishes"
 		},
 		{
 			"_template": "showcase",
@@ -37,11 +37,6 @@
 		},
 		{ "_template": "callout", "text": "Our method", "link": "/en/methods" },
 		{
-			"_template": "showcase",
-			"mediaType": "video",
-			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
-		},
-		{
 			"_template": "accordion",
 			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "What can design do for your business?" }] }] },
 			"items": [
@@ -51,11 +46,20 @@
 			]
 		},
 		{
-			"_template": "showcase",
-			"mediaType": "image",
-			"mediaId": "redesign/editorial/rocas",
-			"imageAlt": "Black rock formations against a dark background",
-			"title": "A REEL ABOUT HOW I MAKE DECISIONS"
+			"_template": "list",
+			"variant": "phase-scroll",
+			"title": "A space that doesn’t guide, function, or reinforce your identity is a missed business opportunity.",
+			"intro": "If you’re clear on all this, here are the steps we’ll take to start working on your project:",
+			"mediaId": "reference-intake/home/manos-ester",
+			"imageAlt": "Hands selecting fabric and material samples",
+			"placeholderLabel": "Image pending",
+			"items": [
+				{ "number": "01", "title": "Getting to know you", "text": "We talk about your brand, what you want to achieve, and your investment." },
+				{ "number": "02", "title": "Analysis and measurements", "text": "If we’re a good fit, I visit your premises, take measurements, and study your brand and offer in depth." },
+				{ "number": "03", "title": "Exploring options", "text": "Together, we discuss initial layout and concept proposals to choose the best direction." },
+				{ "number": "04", "title": "Final design", "text": "We develop the chosen idea in detail so you can see exactly what your new space will look like." },
+				{ "number": "05", "title": "Transparent budget", "text": "We calculate the cost of every item and settle the numbers, so there are no surprises." }
+			]
 		},
 		{
 			"_template": "list",
@@ -67,7 +71,6 @@
 				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?situation=growth" },
 				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact?situation=growth&service=other-challenge" }
 			]
-		},
-		{ "_template": "feed", "description": "", "tag": "novedades", "limit": 4, "maxVisible": 3 }
+		}
 	]
 }

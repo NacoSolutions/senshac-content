@@ -1,19 +1,19 @@
 {
 	"nav": {
-		"social": "social",
-		"menu": "menú",
-		"letsTalk": "LET'S TALK",
+		"social": "Segueix-nos",
+		"menu": "Menú",
+		"letsTalk": "Parlem",
 		"links": [
 			{
-				"label": "Estudi",
+				"label": "Coneix-nos",
 				"href": "/ca/studio"
 			},
 			{
-				"label": "Treballs",
+				"label": "Projectes",
 				"href": "/ca/works"
 			},
 			{
-				"label": "Mètode",
+				"label": "Serveis",
 				"href": "/ca/methods"
 			},
 			{
@@ -35,15 +35,15 @@
 		],
 		"links": [
 			{
-				"label": "Estudi",
+				"label": "Coneix-nos",
 				"href": "/ca/studio"
 			},
 			{
-				"label": "Treballs",
+				"label": "Projectes",
 				"href": "/ca/works"
 			},
 			{
-				"label": "Mètode",
+				"label": "Serveis",
 				"href": "/ca/methods"
 			},
 			{

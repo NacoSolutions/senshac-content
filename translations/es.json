@@ -1,19 +1,19 @@
 {
 	"nav": {
-		"social": "social",
-		"menu": "menú",
-		"letsTalk": "LET'S TALK",
+		"social": "Síguenos",
+		"menu": "Menú",
+		"letsTalk": "Hablemos",
 		"links": [
 			{
-				"label": "Estudio",
+				"label": "Conócenos",
 				"href": "/es/studio"
 			},
 			{
-				"label": "Trabajos",
+				"label": "Proyectos",
 				"href": "/es/works"
 			},
 			{
-				"label": "Método",
+				"label": "Servicios",
 				"href": "/es/methods"
 			},
 			{
@@ -35,15 +35,15 @@
 		],
 		"links": [
 			{
-				"label": "Estudio",
+				"label": "Conócenos",
 				"href": "/es/studio"
 			},
 			{
-				"label": "Trabajos",
+				"label": "Proyectos",
 				"href": "/es/works"
 			},
 			{
-				"label": "Método",
+				"label": "Servicios",
 				"href": "/es/methods"
 			},
 			{
