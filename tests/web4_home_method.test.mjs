@@ -9,12 +9,13 @@ const homeOrder = [
 	"showcase",
 	"showcase",
 	"text",
+	"accordion",
 	"showcase",
 	"callout",
-	"accordion",
+	"list",
+	"list",
+	"showcase",
 	"feed",
-	"list",
-	"list",
 ];
 
 const inquiryHrefs = (locale) => [
@@ -42,7 +43,7 @@ test("localized homepages include the five reference phases without changing inq
 	}
 });
 
-test("Spanish homepage follows the approved opening and retains the inquiry paths", async () => {
+test("Spanish homepage follows the PDF sequence and preserves confirmed routes", async () => {
 	const page = await readPage("../pages/es/home.json");
 	expect(page.blocks.map((block) => block._template)).toEqual(homeOrder);
 	expect(page.blocks[0]).toMatchObject({
@@ -53,12 +54,18 @@ test("Spanish homepage follows the approved opening and retains the inquiry path
 	});
 	expect(page.blocks[1]).toMatchObject({
 		_template: "showcase",
-		eyebrow: "interior design studio®",
-		title: "Comunica.\nCautiva.\nConecta.",
+		maxVisible: 2,
+		placeholderLabel: "Imagen pendiente de confirmar",
 	});
+	expect(page.blocks[1]).not.toHaveProperty("eyebrow");
+	expect(page.blocks[1]).not.toHaveProperty("title");
 	expect(page.blocks[1]).not.toHaveProperty("mediaId");
 	expect(page.blocks[1]).not.toHaveProperty("items");
 	expect(page.blocks[2].items).toEqual([
+		{
+			placeholderLabel: "Imagen pendiente de confirmar",
+			imageAlt: "Imagen de proyecto pendiente de asignación.",
+		},
 		{
 			title: "RUDE / RETAIL",
 			link: "/es/works/rude",
@@ -74,36 +81,49 @@ test("Spanish homepage follows the approved opening and retains the inquiry path
 		headingLevel: "h2",
 		body: "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
 	});
-	expect(page.blocks[4]).toMatchObject({
+	expect(page.blocks.filter((block) => block._template === "accordion")).toHaveLength(1);
+	expect(page.blocks[4]).toMatchObject({ _template: "accordion" });
+	expect(page.blocks[4].items.map((item) => item.title)).toEqual([
+		"DIFERENCIAR TU MARCA",
+		"ELEVAR SU VALOR",
+		"CONVERTIR TU ESPACIO EN UNA HERRAMIENTA",
+	]);
+	expect(page.blocks[4].items.every((item) => item.open !== true)).toBe(true);
+	expect(page.blocks[5]).toMatchObject({
 		_template: "showcase",
 		mediaType: "video",
 		mediaId:
 			"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
 	});
-	expect(page.blocks[5]).toMatchObject({
+	expect(page.blocks[6]).toMatchObject({
 		_template: "callout",
 		text: "Nuestro método",
 		link: "/es/methods",
 	});
-	expect(page.blocks[6].items.map((item) => item.title)).toEqual([
-		"DIFERENCIAR TU MARCA",
-		"ELEVAR SU VALOR",
-		"CONVERTIR TU ESPACIO EN UNA HERRAMIENTA",
-	]);
 	expect(page.blocks[7]).toMatchObject({
+		_template: "list",
+		variant: "phase-scroll",
+	});
+	expect(page.blocks[8].items.map((item) => item.href)).toEqual(
+		inquiryHrefs("es"),
+	);
+	expect(page.blocks[9]).toMatchObject({
+		_template: "showcase",
+		title: "PROYECTOS DESTACADOS",
+		limit: 3,
+		maxVisible: 3,
+		placeholderLabel: "Imagen pendiente de confirmar",
+	});
+	expect(page.blocks[10]).toMatchObject({
 		_template: "feed",
 		tag: "novedades",
 		limit: 4,
 		maxVisible: 3,
 		disableLinks: true,
 	});
-	expect(page.blocks[9].items.map((item) => item.href)).toEqual(
-		inquiryHrefs("es"),
-	);
-
 });
 
-test("localized homepages keep the same structure and locale-correct paths", async () => {
+test("localized homepages keep the PDF structure and locale-correct paths", async () => {
 	const heroCopy = {
 		es: [
 			"DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.",
@@ -118,39 +138,61 @@ test("localized homepages keep the same structure and locale-correct paths", asy
 			"Space, Brand Identity & Strategy.",
 		],
 	};
-const carouselTitles = {
-	es: "Comunica.\nCautiva.\nConecta.",
-	ca: "Comunica.\nCaptiva.\nConnecta.",
-	en: "Communicate.\nCaptivate.\nConnect.",
-};
-	for (const locale of ["es", "ca", "en"]) {
+	const featuredTitles = {
+		es: "PROYECTOS DESTACADOS",
+		ca: "PROJECTES DESTACATS",
+		en: "FEATURED PROJECTS",
+	};
+	const placeholderLabels = {
+		es: "Imagen pendiente de confirmar",
+		ca: "Imatge pendent de confirmar",
+		en: "Image mapping pending",
+	};
 
-		const page = await readPage(`../pages/${locale}/home.json`);
+	for (const locale of ["es", "ca", "en"]) {
+		const page = await readPage("../pages/" + locale + "/home.json");
 		expect(page.blocks.map(({ _template }) => _template)).toEqual(homeOrder);
 		expect(page.blocks[0]).toMatchObject({
 			title: heroCopy[locale][0],
 			intro: heroCopy[locale][1],
-			ctaLink: `/${locale}/contact`,
+			ctaLink: "/" + locale + "/contact",
 		});
-		expect(page.blocks.find(({ _template, variant }) => _template === "list" && !variant).items.map(({ href }) => href)).toEqual(
-			inquiryHrefs(locale),
-		);
 		expect(page.blocks[1]).toMatchObject({
 			_template: "showcase",
-			eyebrow: "interior design studio®",
-			title: carouselTitles[locale],
+			maxVisible: 2,
+			placeholderLabel: placeholderLabels[locale],
 		});
-		expect(page.blocks[1]).not.toHaveProperty("mediaId");
+		expect(page.blocks[2].items).toHaveLength(2);
 		expect(page.blocks[2].items[0]).toMatchObject({
-			link: `/${locale}/works/rude`,
+			placeholderLabel: placeholderLabels[locale],
+		});
+		expect(page.blocks[2].items[1]).toMatchObject({
+			link: "/" + locale + "/works/rude",
 			mediaId: "projects/rude/cover",
 		});
-		expect(page.blocks[4]).toMatchObject({
+		expect(page.blocks.filter(({ _template }) => _template === "accordion")).toHaveLength(1);
+		expect(page.blocks[4].items).toHaveLength(3);
+		expect(page.blocks[4].items.every((item) => item.open !== true)).toBe(true);
+		expect(page.blocks[5]).toMatchObject({
 			mediaType: "video",
 			mediaId:
 				"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
 		});
 		expect(page.blocks[7]).toMatchObject({
+			_template: "list",
+			variant: "phase-scroll",
+		});
+		expect(page.blocks[8].items.map(({ href }) => href)).toEqual(
+			inquiryHrefs(locale),
+		);
+		expect(page.blocks[9]).toMatchObject({
+			_template: "showcase",
+			title: featuredTitles[locale],
+			limit: 3,
+			maxVisible: 3,
+			placeholderLabel: placeholderLabels[locale],
+		});
+		expect(page.blocks[10]).toMatchObject({
 			_template: "feed",
 			tag: "novedades",
 			limit: 4,

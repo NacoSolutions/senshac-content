@@ -15,8 +15,8 @@
     },
     {
       "_template": "showcase",
-      "eyebrow": "interior design studio®",
-      "title": "Comunica.\nCautiva.\nConecta."
+      "maxVisible": 2,
+      "placeholderLabel": "Imagen pendiente de confirmar"
     },
     {
       "mediaType": "image",
@@ -24,6 +24,10 @@
       "imageAlt": "Proceso de diseño estratégico de Senshac",
       "_template": "showcase",
       "items": [
+        {
+          "placeholderLabel": "Imagen pendiente de confirmar",
+          "imageAlt": "Imagen de proyecto pendiente de asignación."
+        },
         {
           "title": "RUDE / RETAIL",
           "link": "/es/works/rude",
@@ -38,16 +42,6 @@
       "headingLevel": "h2",
       "body": "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
       "_template": "text"
-    },
-    {
-      "mediaType": "video",
-      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
-      "_template": "showcase"
-    },
-    {
-      "_template": "callout",
-      "text": "Nuestro método",
-      "link": "/es/methods"
     },
     {
       "intro": {
@@ -84,12 +78,14 @@
       "_template": "accordion"
     },
     {
-      "_template": "feed",
-      "description": "",
-      "tag": "novedades",
-      "limit": 4,
-      "maxVisible": 3,
-      "disableLinks": true
+      "mediaType": "video",
+      "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
+      "_template": "showcase"
+    },
+    {
+      "_template": "callout",
+      "text": "Nuestro método",
+      "link": "/es/methods"
     },
     {
       "_template": "list",
@@ -133,6 +129,21 @@
           "href": "/es/contact?situation=growth&service=other-challenge"
         }
       ]
+    },
+    {
+      "_template": "showcase",
+      "title": "PROYECTOS DESTACADOS",
+      "limit": 3,
+      "maxVisible": 3,
+      "placeholderLabel": "Imagen pendiente de confirmar"
+    },
+    {
+      "_template": "feed",
+      "description": "",
+      "tag": "novedades",
+      "limit": 4,
+      "maxVisible": 3,
+      "disableLinks": true
     }
   ]
 }
