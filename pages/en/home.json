@@ -15,6 +15,7 @@
 		},
 		{
       "_template": "showcase",
+      "limit": 2,
       "maxVisible": 2,
       "placeholderLabel": "Image mapping pending"
     },
