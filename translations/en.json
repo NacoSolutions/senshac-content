@@ -5,16 +5,16 @@
 		"letsTalk": "Let's talk",
 		"links": [
 			{
-				"label": "About",
-				"href": "/en/studio"
+				"label": "Services",
+				"href": "/en/methods"
 			},
 			{
 				"label": "Projects",
 				"href": "/en/works"
 			},
 			{
-				"label": "Services",
-				"href": "/en/methods"
+				"label": "About",
+				"href": "/en/studio"
 			},
 			{
 				"label": "Contact",
@@ -26,25 +26,27 @@
 		"privacy": "Privacy Policy",
 		"legal": "Legal Notice",
 		"attributions": [
-			{ "label": "Design by", "name": "©be mediàtic" },
-			{ "label": "Development by", "name": "Naco Solutions" }
-		],
-		"attributions": [
-			{ "label": "Design by", "name": "©be mediàtic" },
-			{ "label": "Development by", "name": "Naco Solutions" }
+			{
+				"label": "Design by",
+				"name": "Sens*hac"
+			},
+			{
+				"label": "Development by",
+				"name": "Naco Solutions"
+			}
 		],
 		"links": [
 			{
-				"label": "About",
-				"href": "/en/studio"
+				"label": "Services",
+				"href": "/en/methods"
 			},
 			{
 				"label": "Projects",
 				"href": "/en/works"
 			},
 			{
-				"label": "Services",
-				"href": "/en/methods"
+				"label": "About",
+				"href": "/en/studio"
 			},
 			{
 				"label": "Contact",

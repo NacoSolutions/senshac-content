@@ -14,16 +14,19 @@
 			"imageAlt": "Selecció de materials, textures i acabats"
 		},
 		{
-			"_template": "showcase",
-			"eyebrow": "interior design studio®",
-			"title": "Comunica.\nCaptiva.\nConnecta."
-		},
+      "_template": "showcase",
+      "maxVisible": 2,
+      "placeholderLabel": "Imatge pendent de confirmar"
+    },
 		{
 			"_template": "showcase",
 			"mediaType": "image",
 			"mediaId": "",
 			"imageAlt": "Procés de disseny estratègic de Senshac",
-			"items": [{ "title": "RUDE / RETAIL", "link": "/ca/works/rude", "ctaText": "VEURE PROJECTE", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
+			"items": [{
+          "placeholderLabel": "Imatge pendent de confirmar",
+          "imageAlt": "Imatge de projecte pendent d'assignació."
+        },{ "title": "RUDE / RETAIL", "link": "/ca/works/rude", "ctaText": "VEURE PROJECTE", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
 		},
 		{
 			"_template": "text",
@@ -31,12 +34,6 @@
 			"headingLevel": "h2",
 			"body": "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades."
 		},
-		{
-			"_template": "showcase",
-			"mediaType": "video",
-			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
-		},
-		{ "_template": "callout", "text": "El nostre mètode", "link": "/ca/methods" },
 		{
 			"_template": "accordion",
 			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "Què pot fer el disseny pel teu negoci?" }] }] },
@@ -47,13 +44,11 @@
 			]
 		},
 		{
-			"_template": "feed",
-			"description": "",
-			"tag": "novedades",
-			"limit": 4,
-			"maxVisible": 3,
-			"disableLinks": true
+			"_template": "showcase",
+			"mediaType": "video",
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
 		},
+		{ "_template": "callout", "text": "El nostre mètode", "link": "/ca/methods" },
 		{
 			"_template": "list",
 			"variant": "phase-scroll",
@@ -80,6 +75,21 @@
 				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?situation=growth" },
 				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact?situation=growth&service=other-challenge" }
 			]
+		},
+		{
+      "_template": "showcase",
+      "title": "PROJECTES DESTACATS",
+      "limit": 3,
+      "maxVisible": 3,
+      "placeholderLabel": "Imatge pendent de confirmar"
+    },
+		{
+			"_template": "feed",
+			"description": "",
+			"tag": "novedades",
+			"limit": 4,
+			"maxVisible": 3,
+			"disableLinks": true
 		}
 	]
 }

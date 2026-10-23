@@ -5,16 +5,16 @@
 		"letsTalk": "Hablemos",
 		"links": [
 			{
-				"label": "Conócenos",
-				"href": "/es/studio"
+				"label": "Servicios",
+				"href": "/es/methods"
 			},
 			{
 				"label": "Proyectos",
 				"href": "/es/works"
 			},
 			{
-				"label": "Servicios",
-				"href": "/es/methods"
+				"label": "Conócenos",
+				"href": "/es/studio"
 			},
 			{
 				"label": "Contacto",
@@ -26,25 +26,27 @@
 		"privacy": "Política de Privacidad",
 		"legal": "Aviso Legal",
 		"attributions": [
-			{ "label": "Diseño por", "name": "©be mediàtic" },
-			{ "label": "Desarrollo por", "name": "Naco Solutions" }
-		],
-		"attributions": [
-			{ "label": "Diseño por", "name": "©be mediàtic" },
-			{ "label": "Desarrollo por", "name": "Naco Solutions" }
+			{
+				"label": "Diseño por",
+				"name": "Sens*hac"
+			},
+			{
+				"label": "Desarrollo por",
+				"name": "Naco Solutions"
+			}
 		],
 		"links": [
 			{
-				"label": "Conócenos",
-				"href": "/es/studio"
+				"label": "Servicios",
+				"href": "/es/methods"
 			},
 			{
 				"label": "Proyectos",
 				"href": "/es/works"
 			},
 			{
-				"label": "Servicios",
-				"href": "/es/methods"
+				"label": "Conócenos",
+				"href": "/es/studio"
 			},
 			{
 				"label": "Contacto",

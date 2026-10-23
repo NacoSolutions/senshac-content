@@ -78,6 +78,8 @@ const blockFields = new Map(
 			"placeholderLabel",
 			"ctaText",
 			"ctaLink",
+			"limit",
+			"maxVisible",
 			"items",
 		],
 		statement: [
@@ -137,6 +139,19 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 					typeof block.disableLinks !== "boolean"
 				) {
 					errors.push(`${location} feed disableLinks must be a boolean`);
+				}
+				if (block._template === "showcase") {
+					for (const field of ["limit", "maxVisible"]) {
+						const value = block[field];
+						if (
+							value !== undefined &&
+							(!Number.isInteger(value) || value < 1 || value > 3)
+						) {
+							errors.push(
+								`${location} showcase ${field} must be an integer between 1 and 3`,
+							);
+						}
+					}
 				}
 				if (block._template === "list" && Array.isArray(block.items)) {
 					for (const [itemIndex, item] of block.items.entries()) {

@@ -6,28 +6,28 @@ const expected = {
 		social: "Síguenos",
 		menu: "Menú",
 		letsTalk: "Hablemos",
-		links: ["Conócenos", "Proyectos", "Servicios", "Contacto"],
+		links: ["Servicios", "Proyectos", "Conócenos", "Contacto"],
 	},
 	ca: {
 		social: "Segueix-nos",
 		menu: "Menú",
 		letsTalk: "Parlem",
-		links: ["Coneix-nos", "Projectes", "Serveis", "Contacte"],
+		links: ["Serveis", "Projectes", "Coneix-nos", "Contacte"],
 	},
 	en: {
 		social: "Follow us",
 		menu: "Menu",
 		letsTalk: "Let's talk",
-		links: ["About", "Projects", "Services", "Contact"],
+		links: ["Services", "Projects", "About", "Contact"],
 	},
 };
 
-test("localized navigation labels preserve every existing route", async () => {
-	const routes = ["studio", "works", "methods", "contact"];
+test("localized navigation uses the requested order and preserves every route", async () => {
+	const routes = ["methods", "works", "studio", "contact"];
 	for (const locale of ["es", "ca", "en"]) {
 		const document = JSON.parse(
 			await readFile(
-				new URL(`../translations/${locale}.json`, import.meta.url),
+				new URL("../translations/" + locale + ".json", import.meta.url),
 				"utf8",
 			),
 		);
@@ -37,11 +37,9 @@ test("localized navigation labels preserve every existing route", async () => {
 			letsTalk: expected[locale].letsTalk,
 		});
 		for (const links of [document.nav.links, document.footer.links]) {
-			expect(links.map(({ label }) => label)).toEqual(
-				expected[locale].links,
-			);
+			expect(links.map(({ label }) => label)).toEqual(expected[locale].links);
 			expect(links.map(({ href }) => href)).toEqual(
-				routes.map((route) => `/${locale}/${route}`),
+				routes.map((route) => "/" + locale + "/" + route),
 			);
 		}
 	}

@@ -14,16 +14,19 @@
 			"imageAlt": "A selection of materials, textures and finishes"
 		},
 		{
-			"_template": "showcase",
-			"eyebrow": "interior design studio®",
-			"title": "Communicate.\nCaptivate.\nConnect."
-		},
+      "_template": "showcase",
+      "maxVisible": 2,
+      "placeholderLabel": "Image mapping pending"
+    },
 		{
 			"_template": "showcase",
 			"mediaType": "image",
 			"mediaId": "",
 			"imageAlt": "Senshac strategic design process",
-			"items": [{ "title": "RUDE / RETAIL", "link": "/en/works/rude", "ctaText": "VIEW PROJECT", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
+			"items": [{
+          "placeholderLabel": "Image mapping pending",
+          "imageAlt": "Project image awaiting confirmed mapping."
+        },{ "title": "RUDE / RETAIL", "link": "/en/works/rude", "ctaText": "VIEW PROJECT", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
 		},
 		{
 			"_template": "text",
@@ -31,12 +34,6 @@
 			"headingLevel": "h2",
 			"body": "We design interiors with a distinctive visual language, rooted in your brand universe and built to work as a real part of your business.\n\nWe look at how your customers move, how your team works and what the space needs so brand, experience and operations work together."
 		},
-		{
-			"_template": "showcase",
-			"mediaType": "video",
-			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
-		},
-		{ "_template": "callout", "text": "Our method", "link": "/en/methods" },
 		{
 			"_template": "accordion",
 			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "What can design do for your business?" }] }] },
@@ -47,13 +44,11 @@
 			]
 		},
 		{
-			"_template": "feed",
-			"description": "",
-			"tag": "novedades",
-			"limit": 4,
-			"maxVisible": 3,
-			"disableLinks": true
+			"_template": "showcase",
+			"mediaType": "video",
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
 		},
+		{ "_template": "callout", "text": "Our method", "link": "/en/methods" },
 		{
 			"_template": "list",
 			"variant": "phase-scroll",
@@ -80,6 +75,21 @@
 				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?situation=growth" },
 				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact?situation=growth&service=other-challenge" }
 			]
+		},
+		{
+      "_template": "showcase",
+      "title": "FEATURED PROJECTS",
+      "limit": 3,
+      "maxVisible": 3,
+      "placeholderLabel": "Image mapping pending"
+    },
+		{
+			"_template": "feed",
+			"description": "",
+			"tag": "novedades",
+			"limit": 4,
+			"maxVisible": 3,
+			"disableLinks": true
 		}
 	]
 }
