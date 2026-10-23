@@ -54,6 +54,7 @@ test("Spanish homepage follows the PDF sequence and preserves confirmed routes",
 	});
 	expect(page.blocks[1]).toMatchObject({
 		_template: "showcase",
+		limit: 2,
 		maxVisible: 2,
 		placeholderLabel: "Imagen pendiente de confirmar",
 	});
@@ -159,6 +160,7 @@ test("localized homepages keep the PDF structure and locale-correct paths", asyn
 		});
 		expect(page.blocks[1]).toMatchObject({
 			_template: "showcase",
+			limit: 2,
 			maxVisible: 2,
 			placeholderLabel: placeholderLabels[locale],
 		});
