@@ -6,23 +6,22 @@ const readPage = async (file) =>
 
 const homeOrder = [
 	"hero",
-	"showcase",
+	"text",
 	"showcase",
 	"text",
+	"showcase",
 	"accordion",
 	"showcase",
-	"callout",
 	"list",
 	"list",
-	"showcase",
 	"feed",
 ];
 
 const inquiryHrefs = (locale) => [
-	`/${locale}/contact?situation=first-space`,
-	`/${locale}/contact?situation=existing-space`,
-	`/${locale}/contact?situation=growth`,
-	`/${locale}/contact?situation=growth&service=other-challenge`,
+	"/" + locale + "/contact?situation=first-space",
+	"/" + locale + "/contact?situation=existing-space",
+	"/" + locale + "/contact?situation=growth",
+	"/" + locale + "/contact?situation=growth&service=other-challenge",
 ];
 
 test("localized homepages include the five reference phases without changing inquiry routes", async () => {
@@ -32,7 +31,7 @@ test("localized homepages include the five reference phases without changing inq
 		en: ["Getting to know you", "Analysis and measurements", "Exploring options", "Final design", "Transparent budget"],
 	};
 	for (const locale of ["es", "ca", "en"]) {
-		const page = await readPage(`../pages/${locale}/home.json`);
+		const page = await readPage("../pages/" + locale + "/home.json");
 		const phaseRail = page.blocks.find(
 			({ _template, variant }) => _template === "list" && variant === "phase-scroll",
 		);
@@ -43,101 +42,21 @@ test("localized homepages include the five reference phases without changing inq
 	}
 });
 
-test("Spanish homepage follows the PDF sequence and preserves confirmed routes", async () => {
-	const page = await readPage("../pages/es/home.json");
-	expect(page.blocks.map((block) => block._template)).toEqual(homeOrder);
-	expect(page.blocks[0]).toMatchObject({
-		title: "DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.",
-		intro: "Espacio, Identidad de Marca & Estrategia.",
-		ctaText: "¿Quieres que tu espacio hable?",
-		ctaLink: "/es/contact",
-	});
-	expect(page.blocks[1]).toMatchObject({
-		_template: "showcase",
-		limit: 2,
-		maxVisible: 2,
-		placeholderLabel: "Imagen pendiente de confirmar",
-	});
-	expect(page.blocks[1]).not.toHaveProperty("eyebrow");
-	expect(page.blocks[1]).not.toHaveProperty("title");
-	expect(page.blocks[1]).not.toHaveProperty("mediaId");
-	expect(page.blocks[1]).not.toHaveProperty("items");
-	expect(page.blocks[2].items).toEqual([
-		{
-			placeholderLabel: "Imagen pendiente de confirmar",
-			imageAlt: "Imagen de proyecto pendiente de asignación.",
-		},
-		{
-			title: "RUDE / RETAIL",
-			link: "/es/works/rude",
-			ctaText: "VER PROYECTO",
-			mediaId: "projects/rude/cover",
-			imageAlt:
-				"Interior de la tienda RUDE, con zona de exposición y probadores.",
-		},
-	]);
-	expect(page.blocks[3]).toMatchObject({
-		title:
-			"Si tu producto o servicio te hace diferente, tu espacio tiene que demostrarlo.",
-		headingLevel: "h2",
-		body: "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
-	});
-	expect(page.blocks.filter((block) => block._template === "accordion")).toHaveLength(1);
-	expect(page.blocks[4]).toMatchObject({ _template: "accordion" });
-	expect(page.blocks[4].items.map((item) => item.title)).toEqual([
-		"DIFERENCIAR TU MARCA",
-		"ELEVAR SU VALOR",
-		"CONVERTIR TU ESPACIO EN UNA HERRAMIENTA",
-	]);
-	expect(page.blocks[4].items.every((item) => item.open !== true)).toBe(true);
-	expect(page.blocks[5]).toMatchObject({
-		_template: "showcase",
-		mediaType: "video",
-		mediaId:
-			"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
-	});
-	expect(page.blocks[6]).toMatchObject({
-		_template: "callout",
-		text: "Nuestro método",
-		link: "/es/methods",
-	});
-	expect(page.blocks[7]).toMatchObject({
-		_template: "list",
-		variant: "phase-scroll",
-	});
-	expect(page.blocks[8].items.map((item) => item.href)).toEqual(
-		inquiryHrefs("es"),
-	);
-	expect(page.blocks[9]).toMatchObject({
-		_template: "showcase",
-		title: "PROYECTOS DESTACADOS",
-		limit: 3,
-		maxVisible: 3,
-		placeholderLabel: "Imagen pendiente de confirmar",
-	});
-	expect(page.blocks[10]).toMatchObject({
-		_template: "feed",
-		tag: "novedades",
-		limit: 4,
-		maxVisible: 3,
-		disableLinks: true,
-	});
-});
-
-test("localized homepages keep the PDF structure and locale-correct paths", async () => {
+test("localized homepages follow the PDF order and preserve confirmed content", async () => {
 	const heroCopy = {
-		es: [
-			"DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.",
-			"Espacio, Identidad de Marca & Estrategia.",
-		],
-		ca: [
-			"DISSENYEM ESPAIS\nPER A MARQUES QUE\nTENEN ALGUNA COSA A DIR.",
-			"Espai, Identitat de Marca & Estratègia.",
-		],
-		en: [
-			"WE DESIGN SPACES\nFOR BRANDS WITH\nSOMETHING TO SAY.",
-			"Space, Brand Identity & Strategy.",
-		],
+		es: ["DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.", "Espacio, Identidad de Marca & Estrategia.", "Conócenos"],
+		ca: ["DISSENYEM ESPAIS\nPER A MARQUES QUE\nTENEN ALGUNA COSA A DIR.", "Espai, Identitat de Marca & Estratègia.", "Coneix-nos"],
+		en: ["WE DESIGN SPACES\nFOR BRANDS WITH\nSOMETHING TO SAY.", "Space, Brand Identity & Strategy.", "About"],
+	};
+	const statementTitles = {
+		es: "Si tu producto o servicio te hace diferente, tu espacio tiene que demostrarlo.",
+		ca: "Si el teu producte o servei et fa diferent, el teu espai ho ha de demostrar.",
+		en: "If your product or service is different, your space should show it.",
+	};
+	const statementBodies = {
+		es: "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
+		ca: "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades.",
+		en: "We design interiors with a distinctive visual language, rooted in your brand universe and built to work as a real part of your business.\n\nWe look at how your customers move, how your team works and what the space needs so brand, experience and operations work together.",
 	};
 	const featuredTitles = {
 		es: "PROYECTOS DESTACADOS",
@@ -156,26 +75,41 @@ test("localized homepages keep the PDF structure and locale-correct paths", asyn
 		expect(page.blocks[0]).toMatchObject({
 			title: heroCopy[locale][0],
 			intro: heroCopy[locale][1],
-			ctaLink: "/" + locale + "/contact",
+			ctaText: heroCopy[locale][2],
+			ctaLink: "/" + locale + "/studio",
 		});
 		expect(page.blocks[1]).toMatchObject({
+			_template: "text",
+			title: statementTitles[locale],
+			headingLevel: "h2",
+		});
+		expect(page.blocks[1]).not.toHaveProperty("body");
+		expect(page.blocks[2]).toMatchObject({
 			_template: "showcase",
 			limit: 2,
 			maxVisible: 2,
 			placeholderLabel: placeholderLabels[locale],
 		});
-		expect(page.blocks[2].items).toHaveLength(2);
-		expect(page.blocks[2].items[0]).toMatchObject({
+		expect(page.blocks[2]).not.toHaveProperty("title");
+		expect(page.blocks[3]).toMatchObject({
+			_template: "text",
+			body: statementBodies[locale],
+		});
+		expect(page.blocks[3]).not.toHaveProperty("title");
+		expect(page.blocks[4].items).toHaveLength(2);
+		expect(page.blocks[4].items[0]).toMatchObject({
 			placeholderLabel: placeholderLabels[locale],
 		});
-		expect(page.blocks[2].items[1]).toMatchObject({
+		expect(page.blocks[4].items[1]).toMatchObject({
+			title: "RUDE / RETAIL",
 			link: "/" + locale + "/works/rude",
 			mediaId: "projects/rude/cover",
 		});
-		expect(page.blocks.filter(({ _template }) => _template === "accordion")).toHaveLength(1);
-		expect(page.blocks[4].items).toHaveLength(3);
-		expect(page.blocks[4].items.every((item) => item.open !== true)).toBe(true);
-		expect(page.blocks[5]).toMatchObject({
+		expect(page.blocks[5]._template).toBe("accordion");
+		expect(page.blocks[5].items).toHaveLength(3);
+		expect(page.blocks[5].items.every((item) => item.open !== true)).toBe(true);
+		expect(page.blocks[6]).toMatchObject({
+			_template: "showcase",
 			mediaType: "video",
 			mediaId:
 				"https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
@@ -188,19 +122,21 @@ test("localized homepages keep the PDF structure and locale-correct paths", asyn
 			inquiryHrefs(locale),
 		);
 		expect(page.blocks[9]).toMatchObject({
-			_template: "showcase",
-			title: featuredTitles[locale],
-			limit: 3,
-			maxVisible: 3,
-			placeholderLabel: placeholderLabels[locale],
-		});
-		expect(page.blocks[10]).toMatchObject({
 			_template: "feed",
+			title: featuredTitles[locale],
 			tag: "novedades",
 			limit: 4,
 			maxVisible: 3,
 			disableLinks: true,
 		});
+		expect(page.blocks.at(-1)).toBe(page.blocks[9]);
+		expect(page.blocks.filter(({ _template }) => _template === "feed")).toHaveLength(1);
+		expect(page.blocks.some(({ _template }) => _template === "callout")).toBe(false);
+		expect(
+			page.blocks.some(
+				({ _template, title }) => _template === "showcase" && title === featuredTitles[locale],
+			),
+		).toBe(false);
 	}
 });
 
