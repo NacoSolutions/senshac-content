@@ -6,18 +6,27 @@
     {
       "title": "DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.",
       "intro": "Espacio, Identidad de Marca & Estrategia.",
-      "ctaText": "¿Quieres que tu espacio hable?",
-      "ctaLink": "/es/contact",
+      "ctaText": "Conócenos",
+      "ctaLink": "/es/studio",
       "mediaType": "image",
       "mediaId": "redesign/photos/img-9212",
       "imageAlt": "Selección de materiales, texturas y acabados",
       "_template": "hero"
     },
     {
+      "title": "Si tu producto o servicio te hace diferente, tu espacio tiene que demostrarlo.",
+      "headingLevel": "h2",
+      "_template": "text"
+    },
+    {
       "_template": "showcase",
       "limit": 2,
       "maxVisible": 2,
       "placeholderLabel": "Imagen pendiente de confirmar"
+    },
+    {
+      "_template": "text",
+      "body": "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas."
     },
     {
       "mediaType": "image",
@@ -37,12 +46,6 @@
           "imageAlt": "Interior de la tienda RUDE, con zona de exposición y probadores."
         }
       ]
-    },
-    {
-      "title": "Si tu producto o servicio te hace diferente, tu espacio tiene que demostrarlo.",
-      "headingLevel": "h2",
-      "body": "Diseñamos interiores con lenguaje visual propio, integrados en el universo de tu marca y pensados para funcionar como una parte real de tu negocio.\n\nAnalizamos cómo se mueve tu cliente, cómo trabaja tu equipo y qué necesita el espacio para que marca, experiencia y operativa trabajen juntas.",
-      "_template": "text"
     },
     {
       "intro": {
@@ -82,11 +85,6 @@
       "mediaType": "video",
       "mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8",
       "_template": "showcase"
-    },
-    {
-      "_template": "callout",
-      "text": "Nuestro método",
-      "link": "/es/methods"
     },
     {
       "_template": "list",
@@ -132,14 +130,8 @@
       ]
     },
     {
-      "_template": "showcase",
-      "title": "PROYECTOS DESTACADOS",
-      "limit": 3,
-      "maxVisible": 3,
-      "placeholderLabel": "Imagen pendiente de confirmar"
-    },
-    {
       "_template": "feed",
+      "title": "PROYECTOS DESTACADOS",
       "description": "",
       "tag": "novedades",
       "limit": 4,

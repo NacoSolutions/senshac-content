@@ -7,11 +7,16 @@
 			"_template": "hero",
 			"title": "WE DESIGN SPACES\nFOR BRANDS WITH\nSOMETHING TO SAY.",
 			"intro": "Space, Brand Identity & Strategy.",
-			"ctaText": "Want your space to speak?",
-			"ctaLink": "/en/contact",
+			"ctaText": "About",
+			"ctaLink": "/en/studio",
 			"mediaType": "image",
 			"mediaId": "redesign/photos/img-9212",
 			"imageAlt": "A selection of materials, textures and finishes"
+		},
+		{
+			"_template": "text",
+			"title": "If your product or service is different, your space should show it.",
+			"headingLevel": "h2"
 		},
 		{
       "_template": "showcase",
@@ -19,6 +24,10 @@
       "maxVisible": 2,
       "placeholderLabel": "Image mapping pending"
     },
+		{
+			"_template": "text",
+			"body": "We design interiors with a distinctive visual language, rooted in your brand universe and built to work as a real part of your business.\n\nWe look at how your customers move, how your team works and what the space needs so brand, experience and operations work together."
+		},
 		{
 			"_template": "showcase",
 			"mediaType": "image",
@@ -28,12 +37,6 @@
           "placeholderLabel": "Image mapping pending",
           "imageAlt": "Project image awaiting confirmed mapping."
         },{ "title": "RUDE / RETAIL", "link": "/en/works/rude", "ctaText": "VIEW PROJECT", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
-		},
-		{
-			"_template": "text",
-			"title": "If your product or service is different, your space should show it.",
-			"headingLevel": "h2",
-			"body": "We design interiors with a distinctive visual language, rooted in your brand universe and built to work as a real part of your business.\n\nWe look at how your customers move, how your team works and what the space needs so brand, experience and operations work together."
 		},
 		{
 			"_template": "accordion",
@@ -49,7 +52,6 @@
 			"mediaType": "video",
 			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
 		},
-		{ "_template": "callout", "text": "Our method", "link": "/en/methods" },
 		{
 			"_template": "list",
 			"variant": "phase-scroll",
@@ -78,14 +80,8 @@
 			]
 		},
 		{
-      "_template": "showcase",
-      "title": "FEATURED PROJECTS",
-      "limit": 3,
-      "maxVisible": 3,
-      "placeholderLabel": "Image mapping pending"
-    },
-		{
 			"_template": "feed",
+			"title": "FEATURED PROJECTS",
 			"description": "",
 			"tag": "novedades",
 			"limit": 4,

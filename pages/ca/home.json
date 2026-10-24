@@ -7,11 +7,16 @@
 			"_template": "hero",
 			"title": "DISSENYEM ESPAIS\nPER A MARQUES QUE\nTENEN ALGUNA COSA A DIR.",
 			"intro": "Espai, Identitat de Marca & Estratègia.",
-			"ctaText": "Vols que el teu espai parli?",
-			"ctaLink": "/ca/contact",
+			"ctaText": "Coneix-nos",
+			"ctaLink": "/ca/studio",
 			"mediaType": "image",
 			"mediaId": "redesign/photos/img-9212",
 			"imageAlt": "Selecció de materials, textures i acabats"
+		},
+		{
+			"_template": "text",
+			"title": "Si el teu producte o servei et fa diferent, el teu espai ho ha de demostrar.",
+			"headingLevel": "h2"
 		},
 		{
       "_template": "showcase",
@@ -19,6 +24,10 @@
       "maxVisible": 2,
       "placeholderLabel": "Imatge pendent de confirmar"
     },
+		{
+			"_template": "text",
+			"body": "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades."
+		},
 		{
 			"_template": "showcase",
 			"mediaType": "image",
@@ -28,12 +37,6 @@
           "placeholderLabel": "Imatge pendent de confirmar",
           "imageAlt": "Imatge de projecte pendent d'assignació."
         },{ "title": "RUDE / RETAIL", "link": "/ca/works/rude", "ctaText": "VEURE PROJECTE", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
-		},
-		{
-			"_template": "text",
-			"title": "Si el teu producte o servei et fa diferent, el teu espai ho ha de demostrar.",
-			"headingLevel": "h2",
-			"body": "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades."
 		},
 		{
 			"_template": "accordion",
@@ -49,7 +52,6 @@
 			"mediaType": "video",
 			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
 		},
-		{ "_template": "callout", "text": "El nostre mètode", "link": "/ca/methods" },
 		{
 			"_template": "list",
 			"variant": "phase-scroll",
@@ -78,14 +80,8 @@
 			]
 		},
 		{
-      "_template": "showcase",
-      "title": "PROJECTES DESTACATS",
-      "limit": 3,
-      "maxVisible": 3,
-      "placeholderLabel": "Imatge pendent de confirmar"
-    },
-		{
 			"_template": "feed",
+			"title": "PROJECTES DESTACATS",
 			"description": "",
 			"tag": "novedades",
 			"limit": 4,
