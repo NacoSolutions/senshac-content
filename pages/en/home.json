@@ -5,7 +5,7 @@
 	"blocks": [
 		{
 			"_template": "hero",
-			"title": "WE DESIGN SPACES\nFOR BRANDS WITH\nSOMETHING TO SAY.",
+			"title": "We design spaces for brands\nwith something to say.",
 			"intro": "Space, Brand Identity & Strategy.",
 			"ctaText": "About",
 			"ctaLink": "/en/studio",
@@ -56,13 +56,53 @@
 			"_template": "list",
 			"variant": "phase-scroll",
 			"title": "A space that doesn’t guide, function, or reinforce your identity is a missed business opportunity.",
-			"intro": "If you’re clear on all this, here are the steps we’ll take to start working on your project:",
+			"intro": {
+			  "type": "root",
+			  "children": [
+			    {
+			      "type": "p",
+			      "children": [
+			        {
+			          "type": "text",
+			          "text": "If you’re clear on all this, here are "
+			        },
+			        {
+			          "type": "text",
+			          "text": "the steps we’ll take to start working on your project:",
+			          "bold": true
+			        }
+			      ]
+			    }
+			  ]
+			},
 			"mediaId": "reference-intake/home/manos-ester",
 			"imageAlt": "Hands selecting fabric and material samples",
 			"placeholderLabel": "Image pending",
 			"items": [
 				{ "number": "01", "title": "Getting to know you", "text": "We talk about your brand, what you want to achieve, and your investment." },
-				{ "number": "02", "title": "Analysis and measurements", "text": "If we’re a good fit, I visit your premises, take measurements, and study your brand and offer in depth." },
+				{ "number": "02", "title": "Analysis and measurements", "text": {
+				  "type": "root",
+				  "children": [
+				    {
+				      "type": "p",
+				      "children": [
+				        {
+				          "type": "text",
+				          "text": "If we’re a "
+				        },
+				        {
+				          "type": "text",
+				          "text": "good fit",
+				          "italic": true
+				        },
+				        {
+				          "type": "text",
+				          "text": ", I visit your premises, take measurements, and study your brand and offer in depth."
+				        }
+				      ]
+				    }
+				  ]
+				} },
 				{ "number": "03", "title": "Exploring options", "text": "Together, we discuss initial layout and concept proposals to choose the best direction." },
 				{ "number": "04", "title": "Final design", "text": "We develop the chosen idea in detail so you can see exactly what your new space will look like." },
 				{ "number": "05", "title": "Transparent budget", "text": "We calculate the cost of every item and settle the numbers, so there are no surprises." }

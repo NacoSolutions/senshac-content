@@ -4,7 +4,7 @@
 	"chrome": { "header": { "style": "transparent", "scrolling": "transparent-light", "atFinal": "opaque-light" } },
   "blocks": [
     {
-      "title": "DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.",
+      "title": "Diseñamos espacios para marcas\nque tienen algo que decir.",
       "intro": "Espacio, Identidad de Marca & Estrategia.",
       "ctaText": "Conócenos",
       "ctaLink": "/es/studio",
@@ -90,13 +90,53 @@
       "_template": "list",
       "variant": "phase-scroll",
       "title": "Un espacio que no guía, que no funciona y que no refuerza tu identidad es una oportunidad de negocio perdida.",
-      "intro": "Si ya tienes esto claro, te explico los pasos que tomaremos para empezar a trabajar en tu proyecto:",
+      "intro": {
+        "type": "root",
+        "children": [
+          {
+            "type": "p",
+            "children": [
+              {
+                "type": "text",
+                "text": "Si ya tienes esto claro, te explico "
+              },
+              {
+                "type": "text",
+                "text": "los pasos que tomaremos para empezar a trabajar en tu proyecto:",
+                "bold": true
+              }
+            ]
+          }
+        ]
+      },
       "mediaId": "reference-intake/home/manos-ester",
       "imageAlt": "Manos seleccionando muestras de tejidos y materiales",
       "placeholderLabel": "Imagen pendiente",
       "items": [
         { "number": "01", "title": "Nos conocemos", "text": "Hablamos de tu marca, de lo que quieres conseguir y de tu inversión." },
-        { "number": "02", "title": "Análisis y medidas", "text": "Si hacemos match, voy a tu local, tomo medidas y estudio a fondo tu marca y lo que ofreces." },
+        { "number": "02", "title": "Análisis y medidas", "text": {
+          "type": "root",
+          "children": [
+            {
+              "type": "p",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Si hacemos "
+                },
+                {
+                  "type": "text",
+                  "text": "match",
+                  "italic": true
+                },
+                {
+                  "type": "text",
+                  "text": ", voy a tu local, tomo medidas y estudio a fondo tu marca y lo que ofreces."
+                }
+              ]
+            }
+          ]
+        } },
         { "number": "03", "title": "Exploramos opciones", "text": "Debatimos juntos las primeras propuestas de distribución y concepto para elegir el mejor camino." },
         { "number": "04", "title": "Diseño final", "text": "Desarrollamos la idea elegida al detalle para que veas exactamente cómo será tu nuevo espacio." },
         { "number": "05", "title": "Presupuesto transparente", "text": "Calculamos el coste de cada partida y cerramos los números para que no haya sorpresas." }
