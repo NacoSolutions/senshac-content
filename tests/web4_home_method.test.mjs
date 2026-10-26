@@ -42,11 +42,53 @@ test("localized homepages include the five reference phases without changing inq
 	}
 });
 
+test("localized home process copy uses PDF inline emphasis without changing wording", async () => {
+	const expected = {
+		es: {
+			intro: "Si ya tienes esto claro, te explico los pasos que tomaremos para empezar a trabajar en tu proyecto:",
+			bold: "los pasos que tomaremos para empezar a trabajar en tu proyecto:",
+			step: "Si hacemos match, voy a tu local, tomo medidas y estudio a fondo tu marca y lo que ofreces.",
+			italic: "match",
+		},
+		ca: {
+			intro: "Si ja tens tot això clar, t’explico els passos que seguirem per començar a treballar en el teu projecte:",
+			bold: "els passos que seguirem per començar a treballar en el teu projecte:",
+			step: "Si hi ha entesa, vaig al teu local, prenc mides i estudio a fons la teva marca i el que ofereixes.",
+			italic: "hi ha entesa",
+		},
+		en: {
+			intro: "If you’re clear on all this, here are the steps we’ll take to start working on your project:",
+			bold: "the steps we’ll take to start working on your project:",
+			step: "If we’re a good fit, I visit your premises, take measurements, and study your brand and offer in depth.",
+			italic: "good fit",
+		},
+	};
+	const textNodes = (node) => {
+		if (Array.isArray(node)) return node.flatMap(textNodes);
+		if (!node || typeof node !== "object") return [];
+		if (node.type === "text") return [node];
+		return (node.children ?? []).flatMap(textNodes);
+	};
+
+	for (const locale of ["es", "ca", "en"]) {
+		const page = await readPage("../pages/" + locale + "/home.json");
+		const phase = page.blocks.find(
+			({ _template, variant }) => _template === "list" && variant === "phase-scroll",
+		);
+		const intro = textNodes(phase.intro);
+		const step = textNodes(phase.items[1].text);
+		expect(intro.map(({ text }) => text).join("")).toBe(expected[locale].intro);
+		expect(intro.some(({ text, bold }) => text === expected[locale].bold && bold)).toBe(true);
+		expect(step.map(({ text }) => text).join("")).toBe(expected[locale].step);
+		expect(step.some(({ text, italic }) => text === expected[locale].italic && italic)).toBe(true);
+	}
+});
+
 test("localized homepages follow the PDF order and preserve confirmed content", async () => {
 	const heroCopy = {
-		es: ["DISEÑAMOS ESPACIOS\nPARA MARCAS QUE TIENEN\nALGO QUE DECIR.", "Espacio, Identidad de Marca & Estrategia.", "Conócenos"],
-		ca: ["DISSENYEM ESPAIS\nPER A MARQUES QUE\nTENEN ALGUNA COSA A DIR.", "Espai, Identitat de Marca & Estratègia.", "Coneix-nos"],
-		en: ["WE DESIGN SPACES\nFOR BRANDS WITH\nSOMETHING TO SAY.", "Space, Brand Identity & Strategy.", "About"],
+		es: ["Diseñamos espacios para marcas\nque tienen algo que decir.", "Espacio, Identidad de Marca & Estrategia.", "Conócenos"],
+		ca: ["Dissenyem espais per a marques\nque tenen alguna cosa a dir.", "Espai, Identitat de Marca & Estratègia.", "Coneix-nos"],
+		en: ["We design spaces for brands\nwith something to say.", "Space, Brand Identity & Strategy.", "About"],
 	};
 	const statementTitles = {
 		es: "Si tu producto o servicio te hace diferente, tu espacio tiene que demostrarlo.",

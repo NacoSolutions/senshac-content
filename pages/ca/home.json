@@ -5,7 +5,7 @@
 	"blocks": [
 		{
 			"_template": "hero",
-			"title": "DISSENYEM ESPAIS\nPER A MARQUES QUE\nTENEN ALGUNA COSA A DIR.",
+			"title": "Dissenyem espais per a marques\nque tenen alguna cosa a dir.",
 			"intro": "Espai, Identitat de Marca & Estratègia.",
 			"ctaText": "Coneix-nos",
 			"ctaLink": "/ca/studio",
@@ -56,13 +56,53 @@
 			"_template": "list",
 			"variant": "phase-scroll",
 			"title": "Un espai que no guia, que no funciona i que no reforça la teva identitat és una oportunitat de negoci perduda.",
-			"intro": "Si ja tens tot això clar, t’explico els passos que seguirem per començar a treballar en el teu projecte:",
+			"intro": {
+			  "type": "root",
+			  "children": [
+			    {
+			      "type": "p",
+			      "children": [
+			        {
+			          "type": "text",
+			          "text": "Si ja tens tot això clar, t’explico "
+			        },
+			        {
+			          "type": "text",
+			          "text": "els passos que seguirem per començar a treballar en el teu projecte:",
+			          "bold": true
+			        }
+			      ]
+			    }
+			  ]
+			},
 			"mediaId": "reference-intake/home/manos-ester",
 			"imageAlt": "Mans triant mostres de teixits i materials",
 			"placeholderLabel": "Imatge pendent",
 			"items": [
 				{ "number": "01", "title": "Ens coneixem", "text": "Parlem de la teva marca, del que vols aconseguir i de la inversió que hi faràs." },
-				{ "number": "02", "title": "Anàlisi i mesures", "text": "Si hi ha entesa, vaig al teu local, prenc mides i estudio a fons la teva marca i el que ofereixes." },
+				{ "number": "02", "title": "Anàlisi i mesures", "text": {
+				  "type": "root",
+				  "children": [
+				    {
+				      "type": "p",
+				      "children": [
+				        {
+				          "type": "text",
+				          "text": "Si "
+				        },
+				        {
+				          "type": "text",
+				          "text": "hi ha entesa",
+				          "italic": true
+				        },
+				        {
+				          "type": "text",
+				          "text": ", vaig al teu local, prenc mides i estudio a fons la teva marca i el que ofereixes."
+				        }
+				      ]
+				    }
+				  ]
+				} },
 				{ "number": "03", "title": "Explorem opcions", "text": "Debatem junts les primeres propostes de distribució i concepte per triar el millor camí." },
 				{ "number": "04", "title": "Disseny final", "text": "Desenvolupem la idea escollida al detall perquè vegis exactament com serà el teu nou espai." },
 				{ "number": "05", "title": "Pressupost transparent", "text": "Calculem el cost de cada partida i tanquem els números perquè no hi hagi sorpreses." }
