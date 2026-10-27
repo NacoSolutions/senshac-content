@@ -85,6 +85,7 @@ test("localized home process copy uses PDF inline emphasis without changing word
 });
 
 test("localized homepages follow the PDF order and preserve confirmed content", async () => {
+	const rudeTitles = { es: "INDENTIDAD DE RUDE", ca: "IDENTITAT DE RUDE", en: "RUDE BRAND IDENTITY" };
 	const heroCopy = {
 		es: ["Diseñamos espacios para marcas\nque tienen algo que decir.", "Espacio, Identidad de Marca & Estrategia.", "Conócenos"],
 		ca: ["Dissenyem espais per a marques\nque tenen alguna cosa a dir.", "Espai, Identitat de Marca & Estratègia.", "Coneix-nos"],
@@ -128,10 +129,10 @@ test("localized homepages follow the PDF order and preserve confirmed content", 
 		expect(page.blocks[1]).not.toHaveProperty("body");
 		expect(page.blocks[2]).toMatchObject({
 			_template: "showcase",
-			limit: 2,
 			maxVisible: 2,
 			placeholderLabel: placeholderLabels[locale],
 		});
+		expect(page.blocks[2]).not.toHaveProperty("limit");
 		expect(page.blocks[2]).not.toHaveProperty("title");
 		expect(page.blocks[3]).toMatchObject({
 			_template: "text",
@@ -143,7 +144,7 @@ test("localized homepages follow the PDF order and preserve confirmed content", 
 			placeholderLabel: placeholderLabels[locale],
 		});
 		expect(page.blocks[4].items[1]).toMatchObject({
-			title: "RUDE / RETAIL",
+			title: rudeTitles[locale],
 			link: "/" + locale + "/works/rude",
 			mediaId: "projects/rude/cover",
 		});

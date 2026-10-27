@@ -20,8 +20,8 @@
 		},
 		{
       "_template": "showcase",
-      "limit": 2,
       "maxVisible": 2,
+      "scrollStep": 1,
       "placeholderLabel": "Image mapping pending"
     },
 		{
@@ -36,11 +36,12 @@
 			"items": [{
           "placeholderLabel": "Image mapping pending",
           "imageAlt": "Project image awaiting confirmed mapping."
-        },{ "title": "RUDE / RETAIL", "link": "/en/works/rude", "ctaText": "VIEW PROJECT", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
+        },{ "title": "RUDE BRAND IDENTITY",
+          "link": "/en/works/rude", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
 		},
 		{
 			"_template": "accordion",
-			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "What can design do for your business?" }] }] },
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "Your space should work for you, not the other way around. Smart design helps you:" }] }] },
 			"items": [
 				{ "number": "1", "title": "MAKE YOUR BRAND DISTINCTIVE", "summary": "Your space communicates who you are and what sets you apart. Make it as recognisable as your brand." },
 				{ "number": "2", "title": "RAISE ITS VALUE", "summary": "Design increases perceived value, attracts the right customer and positions your product or service at the level it deserves." },
@@ -110,11 +111,11 @@
 		},
 		{
 			"_template": "list",
-			"title": "We want to understand you.\nWhere is your business right now?",
-			"intro": "",
+			"title": "Where is your business right now?",
+			"intro": "Every business is different and has its own challenges. To help you, I need to understand your situation.",
 			"items": [
 				{ "title": "I want to open my first space", "text": "", "href": "/en/contact?situation=first-space" },
-				{ "title": "My space is not working as it should", "text": "", "href": "/en/contact?situation=existing-space" },
+				{ "title": "My space needs a change", "text": "", "href": "/en/contact?situation=existing-space" },
 				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?situation=growth" },
 				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact?situation=growth&service=other-challenge" }
 			]

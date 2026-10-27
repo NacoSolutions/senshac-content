@@ -80,6 +80,7 @@ const blockFields = new Map(
 			"ctaLink",
 			"limit",
 			"maxVisible",
+			"scrollStep",
 			"items",
 		],
 		statement: [
@@ -141,7 +142,7 @@ export async function validateBlocks(roots = ["pages", "projects"]) {
 					errors.push(`${location} feed disableLinks must be a boolean`);
 				}
 				if (block._template === "showcase") {
-					for (const field of ["limit", "maxVisible"]) {
+					for (const field of ["limit", "maxVisible", "scrollStep"]) {
 						const value = block[field];
 						if (
 							value !== undefined &&

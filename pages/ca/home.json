@@ -20,8 +20,8 @@
 		},
 		{
       "_template": "showcase",
-      "limit": 2,
       "maxVisible": 2,
+      "scrollStep": 1,
       "placeholderLabel": "Imatge pendent de confirmar"
     },
 		{
@@ -36,11 +36,12 @@
 			"items": [{
           "placeholderLabel": "Imatge pendent de confirmar",
           "imageAlt": "Imatge de projecte pendent d'assignació."
-        },{ "title": "RUDE / RETAIL", "link": "/ca/works/rude", "ctaText": "VEURE PROJECTE", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
+        },{ "title": "IDENTITAT DE RUDE",
+          "link": "/ca/works/rude", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
 		},
 		{
 			"_template": "accordion",
-			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "Què pot fer el disseny pel teu negoci?" }] }] },
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "L'espai ha de treballar per a tu, i no al revés. El disseny intel·ligent t'ajuda a:" }] }] },
 			"items": [
 				{ "number": "1", "title": "DIFERENCIAR LA TEVA MARCA", "summary": "El teu espai comunica qui ets i què et fa diferent. Fes que sigui tan reconeixible com la teva marca." },
 				{ "number": "2", "title": "ELEVAR-NE EL VALOR", "summary": "El disseny augmenta el valor percebut, atrau el client adequat i posiciona el teu producte o servei al nivell que es mereix." },
@@ -110,11 +111,11 @@
 		},
 		{
 			"_template": "list",
-			"title": "Et volem entendre.\nEn quin punt és el teu negoci?",
-			"intro": "",
+			"title": "En quin punt et trobes ara mateix?",
+			"intro": "Cada negoci és un món i té els seus propis reptes. Per poder ajudar-te, necessito entendre la teva situació.",
 			"items": [
 				{ "title": "Vull obrir el meu primer espai", "text": "", "href": "/ca/contact?situation=first-space" },
-				{ "title": "El meu local no funciona com caldria", "text": "", "href": "/ca/contact?situation=existing-space" },
+				{ "title": "El meu local necessita un canvi", "text": "", "href": "/ca/contact?situation=existing-space" },
 				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?situation=growth" },
 				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact?situation=growth&service=other-challenge" }
 			]
