@@ -20,8 +20,8 @@
     },
     {
       "_template": "showcase",
-      "limit": 2,
       "maxVisible": 2,
+      "scrollStep": 1,
       "placeholderLabel": "Imagen pendiente de confirmar"
     },
     {
@@ -39,9 +39,8 @@
           "imageAlt": "Imagen de proyecto pendiente de asignación."
         },
         {
-          "title": "RUDE / RETAIL",
+          "title": "INDENTIDAD DE RUDE",
           "link": "/es/works/rude",
-          "ctaText": "VER PROYECTO",
           "mediaId": "projects/rude/cover",
           "imageAlt": "Interior de la tienda RUDE, con zona de exposición y probadores."
         }
@@ -56,7 +55,7 @@
             "children": [
               {
                 "type": "text",
-                "text": "¿Qué puede hacer el diseño por tu negocio?"
+                "text": "El espacio debe trabajar para ti, y no al revés. El diseño inteligente te ayuda a:"
               }
             ]
           }
@@ -144,8 +143,8 @@
     },
     {
       "_template": "list",
-      "title": "Queremos entenderte.\n¿En qué punto está tu negocio?",
-      "intro": "",
+      "title": "¿En qué punto estás ahora mismo?",
+      "intro": "Cada negocio es un mundo y tiene sus propios retos. Para poder ayudarte, necesito entender tu situación.",
       "items": [
         {
           "title": "Quiero abrir mi primer espacio",
@@ -153,7 +152,7 @@
           "href": "/es/contact?situation=first-space"
         },
         {
-          "title": "Mi local no funciona como debería",
+          "title": "Mi local necesita un cambio",
           "text": "",
           "href": "/es/contact?situation=existing-space"
         },
