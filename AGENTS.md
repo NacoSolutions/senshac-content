@@ -35,7 +35,6 @@ Use these curated role skills for focused work:
 - [Tina Content Migration](.agents/skills/tina-content-migration/SKILL.md) for localized editorial-content migration and export validation.
 - [Bun and Web Toolchain](.agents/skills/toolchain-bun-web/SKILL.md) for the pinned Bun setup, content checks, and generated-artifact contract.
 - [Security Review](.agents/skills/security-review/SKILL.md) for content, localization, export, and publishing-boundary changes.
-- [Terrarium Triage](.agents/skills/terrarium-triage/SKILL.md) for selecting one owned, unblocked Seed from the canonical Senshac graph.
 
 ## Portable rules and CLI skills
 
