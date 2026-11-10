@@ -168,7 +168,7 @@ test("localized homepages follow the PDF order and preserve confirmed content", 
 			_template: "feed",
 			title: featuredTitles[locale],
 			tag: "novedades",
-			limit: 4,
+			limit: 3,
 			maxVisible: 3,
 			disableLinks: true,
 		});

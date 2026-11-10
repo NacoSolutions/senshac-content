@@ -12,6 +12,14 @@ test("Home carousel is configured for two visible projects and one slide per mov
 	}
 });
 
+test("Home Instagram feeds show no more than three available posts in each locale", async () => {
+	for (const locale of ["es", "ca", "en"]) {
+		const home = await readHome(locale);
+		const feed = home.blocks.find((block) => block._template === "feed");
+		expect(feed).toMatchObject({ limit: 3, maxVisible: 3 });
+	}
+});
+
 test("Home benefits and inquiry copy match the PDF in each locale", async () => {
 	const expected = {
 		es: ["El espacio debe trabajar para ti, y no al revés. El diseño inteligente te ayuda a:", "¿En qué punto estás ahora mismo?", "Cada negocio es un mundo y tiene sus propios retos. Para poder ayudarte, necesito entender tu situación.", "Mi local necesita un cambio"],

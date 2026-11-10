@@ -173,7 +173,7 @@
       "title": "PROYECTOS DESTACADOS",
       "description": "",
       "tag": "novedades",
-      "limit": 4,
+      "limit": 3,
       "maxVisible": 3,
       "disableLinks": true
     }
