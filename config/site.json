@@ -16,6 +16,7 @@
       "scrolling": "opaque-dark"
     }
   },
+  "typography": { "preset": "senshac" },
   "locales": [
     "es",
     "ca",
