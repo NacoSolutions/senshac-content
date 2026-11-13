@@ -5,7 +5,8 @@
   "type": "object",
   "required": ["chrome"],
   "properties": {
-    "chrome": { "$ref": "#/$defs/chrome" }
+    "chrome": { "$ref": "#/$defs/chrome" },
+    "typography": { "$ref": "#/$defs/typography" }
   },
   "$defs": {
     "chrome": {
@@ -16,6 +17,18 @@
         "header": { "$ref": "#/$defs/chromeElement" },
         "footer": { "$ref": "#/$defs/chromeElement" }
       }
+    },
+    "typography": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["preset"],
+      "properties": {
+        "preset": { "$ref": "#/$defs/typographyPreset" }
+      }
+    },
+    "typographyPreset": {
+      "type": "string",
+      "enum": ["senshac", "sinteca", "editorial"]
     },
     "chromeElement": {
       "type": "object",
