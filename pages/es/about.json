@@ -6,7 +6,7 @@
 		{
 			"label": "Ester, sin hache",
 			"statement": "Comunica,\nCautiva,\nConecta.",
-			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
+			"mediaId": "reference-intake/conocenos/ester",
 			"placeholderLabel": "Retrato del estudio pendiente",
 			"_template": "statement",
 			"content": {

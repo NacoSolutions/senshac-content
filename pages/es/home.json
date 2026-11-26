@@ -35,8 +35,9 @@
       "_template": "showcase",
       "items": [
         {
+          "mediaId": "reference-intake/home/peluqueria",
           "placeholderLabel": "Imagen pendiente de confirmar",
-          "imageAlt": "Imagen de proyecto pendiente de asignación."
+          "imageAlt": "Interior de peluquería diseñada por Senshac."
         },
         {
           "title": "INDENTIDAD DE RUDE",

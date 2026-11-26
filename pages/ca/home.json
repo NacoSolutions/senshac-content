@@ -34,8 +34,9 @@
 			"mediaId": "",
 			"imageAlt": "Procés de disseny estratègic de Senshac",
 			"items": [{
+          "mediaId": "reference-intake/home/peluqueria",
           "placeholderLabel": "Imatge pendent de confirmar",
-          "imageAlt": "Imatge de projecte pendent d'assignació."
+          "imageAlt": "Interior de perruqueria dissenyada per Senshac."
         },{ "title": "IDENTITAT DE RUDE",
           "link": "/ca/works/rude", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
 		},
