@@ -1,6 +1,8 @@
 { pkgs, ... }:
 
 {
+  imports = [ /workspace/common/main/devenv.nix ];
+
   packages = [ pkgs.bun ];
 
   scripts.validate.exec = "bun scripts/validate_export.mjs";
