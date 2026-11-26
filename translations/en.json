@@ -68,30 +68,40 @@
 		"invalidEmail": "Invalid email.",
 		"missingFields": "Please complete all required fields.",
 		"inquiryPaths": {
-			"heading": "Tell us what kind of space you want to transform",
+			"heading": "We want to understand you. Where is your business right now?",
 			"paths": [
 				{
 					"value": "first-space",
-					"title": "Open a new space",
-					"description": "Strategic design for a new business or your next location.",
+					"title": "I want to open my first space",
+					"description": "You want to open your first space and need it to be born aligned with your brand. We design from the start so identity, experience, and operations are part of one cohesive idea. Tell us what you're imagining. We'd love to hear your idea!",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (optional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Business type",
+							"label": "What type of business are you opening?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurant / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hospitality"
+									"label": "Hospitality / food & beverage"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / shop"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Health / beauty / wellness"
+								},
+								{
+									"value": "offices",
+									"label": "Offices"
 								},
 								{
 									"value": "other",
@@ -102,44 +112,50 @@
 						{
 							"name": "location",
 							"kind": "text",
-							"label": "City or area",
+							"label": "Where will your business be located?",
 							"required": true
 						},
 						{
 							"name": "premisesStatus",
 							"kind": "select",
-							"label": "Premises status",
+							"label": "Have you already chosen a space or are you still looking?",
 							"required": true,
 							"options": [
 								{
 									"value": "signed",
-									"label": "Lease signed"
+									"label": "Yes, already signed"
 								},
 								{
 									"value": "deciding",
-									"label": "Considering options; deciding soon"
+									"label": "I have several options and will decide soon"
 								},
 								{
 									"value": "searching",
-									"label": "Looking for premises"
+									"label": "Still looking"
 								}
 							]
 						},
 						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Space photos or floor plans (optional; PDF, JPG, PNG, or WebP; up to 3 files, 5 MB each)",
+							"required": false
+						},
+						{
 							"name": "floorArea",
 							"kind": "text",
-							"label": "Approximate floor area (m²)",
+							"label": "What is the floor area of the space, or what size are you looking for?",
 							"required": false
 						},
 						{
 							"name": "openingTimeframe",
 							"kind": "select",
-							"label": "When do you plan to open?",
+							"label": "When do you want to open?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-3-months",
-									"label": "Within 3 months"
+									"value": "urgent",
+									"label": "As soon as possible"
 								},
 								{
 									"value": "3-6-months",
@@ -150,43 +166,47 @@
 									"label": "In 6–12 months"
 								},
 								{
-									"value": "flexible",
-									"label": "Flexible / not set"
+									"value": "later",
+									"label": "Later"
+								},
+								{
+									"value": "undecided",
+									"label": "I don't know yet"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Estimated project investment",
+							"label": "How much do you plan to invest in your project?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-30k",
-									"label": "Under €30,000"
+									"value": "under-25k",
+									"label": "Under €25,000"
 								},
 								{
-									"value": "30-75k",
-									"label": "€30,000–75,000"
+									"value": "25-50k",
+									"label": "€25,000 – €50,000"
 								},
 								{
-									"value": "75-150k",
-									"label": "€75,000–150,000"
+									"value": "50-80k",
+									"label": "€50,000 – €80,000"
 								},
 								{
-									"value": "over-150k",
-									"label": "Over €150,000"
+									"value": "over-80k",
+									"label": "Over €80,000"
 								},
 								{
 									"value": "undecided",
-									"label": "To be defined"
+									"label": "I need advice to define the budget"
 								}
 							]
 						},
 						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Tell us more about the project",
+							"label": "If you'd like, tell us more about your project in detail",
 							"required": false
 						}
 					],
@@ -204,32 +224,42 @@
 						{
 							"value": "strategic-consultation",
 							"label": "Strategic Consultation",
-							"description": "A focused strategy session to set priorities, answer questions, and guide decisions before opening."
+							"description": "A focused session to assess viability, set priorities, and guide decisions before opening."
 						}
 					]
 				},
 				{
 					"value": "existing-space",
-					"title": "Improve an existing space",
-					"description": "Find what is limiting performance and create a better experience.",
+					"title": "My space needs a change",
+					"description": "You feel your space could perform better or needs an update. We analyze your premises to identify what may be holding your business back: layout, operational flow, and brand image. Tell us about your situation and we will review your case.",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (optional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Business type",
+							"label": "What type of business do you have?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurant / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hospitality"
+									"label": "Hospitality / food & beverage"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / shop"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Health / beauty / wellness"
+								},
+								{
+									"value": "offices",
+									"label": "Offices"
 								},
 								{
 									"value": "other",
@@ -244,45 +274,51 @@
 							"required": true
 						},
 						{
-							"name": "challenges",
-							"kind": "textarea",
-							"label": "What is not working? (layout, flow, lighting, sales...)",
-							"required": true
-						},
-						{
 							"name": "desiredOutcome",
 							"kind": "select",
-							"label": "What would you like to improve?",
+							"label": "What do you want to solve or achieve in your space?",
 							"required": true,
 							"options": [
 								{
-									"value": "sales",
-									"label": "Sales and profitability"
+									"value": "image-refresh",
+									"label": "Refresh image and aesthetics"
 								},
 								{
 									"value": "workflow",
-									"label": "Operational flow"
+									"label": "Streamline team operations and remove bottlenecks"
 								},
 								{
-									"value": "experience",
-									"label": "Premium customer experience"
+									"value": "specific-area",
+									"label": "Redesign a specific area (bar, storefront, reception, etc.)"
 								},
 								{
-									"value": "refresh",
-									"label": "Refresh without major works"
+									"value": "premium-ticket",
+									"label": "Attract higher-value clients and raise average spend"
 								}
 							]
 						},
 						{
+							"name": "challenges",
+							"kind": "textarea",
+							"label": "Would you like to share any more details about your case? (Optional)",
+							"required": false
+						},
+						{
 							"name": "floorArea",
 							"kind": "text",
-							"label": "Approximate floor area (m²)",
+							"label": "What is the floor area of your space?",
+							"required": false
+						},
+						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Do you have photos or floor plans of the space? (PDF, JPG, PNG, or WebP; up to 3 files, 5 MB each)",
 							"required": false
 						},
 						{
 							"name": "timeline",
 							"kind": "select",
-							"label": "Desired timeline",
+							"label": "When would you like to carry out the project?",
 							"required": true,
 							"options": [
 								{
@@ -294,49 +330,47 @@
 									"label": "In 3–6 months"
 								},
 								{
+									"value": "6-12-months",
+									"label": "In 6–12 months"
+								},
+								{
 									"value": "flexible",
-									"label": "Flexible / not set"
+									"label": "No fixed date yet"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Estimated project investment",
+							"label": "What investment do you have planned for the project?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-15k",
-									"label": "Under €15,000"
+									"value": "under-20k",
+									"label": "Under €20,000"
 								},
 								{
-									"value": "15-50k",
-									"label": "€15,000–50,000"
+									"value": "20-40k",
+									"label": "€20,000 – €40,000"
 								},
 								{
-									"value": "50-100k",
-									"label": "€50,000–100,000"
+									"value": "40-70k",
+									"label": "€40,000 – €70,000"
 								},
 								{
-									"value": "over-100k",
-									"label": "Over €100,000"
+									"value": "over-70k",
+									"label": "Over €70,000"
 								},
 								{
 									"value": "undecided",
-									"label": "To be defined"
+									"label": "We are looking for advice to assess the investment"
 								}
 							]
 						},
 						{
-							"name": "plans",
-							"kind": "file",
-							"label": "Photos or plans (PDF, JPG, PNG, WebP; up to 3 files, 5 MB each)",
-							"required": false
-						},
-						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Tell us more about the project",
+							"label": "Additional information",
 							"required": false
 						}
 					],
@@ -354,32 +388,42 @@
 						{
 							"value": "strategic-consultation",
 							"label": "Strategic Consultation",
-							"description": "A focused session to assess the space and prioritize opportunities for improvement."
+							"description": "To identify bottlenecks and provide clear direction on high-impact improvements."
 						}
 					]
 				},
 				{
 					"value": "growth",
-					"title": "Plan business growth",
-					"description": "Plan a new location, brand evolution, or a model that can scale.",
+					"title": "I want to grow my business",
+					"description": "Your business has grown and your space needs to evolve at the same pace. We design spaces that consolidate your brand, scale operations, and take the experience to the next level. Tell us where you want to go and we'll help you design it:",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (optional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Business type",
+							"label": "What type of business do you have?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurant / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hospitality"
+									"label": "Hospitality / food & beverage"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / shop"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Health / beauty / wellness"
+								},
+								{
+									"value": "offices",
+									"label": "Offices"
 								},
 								{
 									"value": "other",
@@ -390,48 +434,44 @@
 						{
 							"name": "growthPlan",
 							"kind": "select",
-							"label": "What are you planning?",
+							"label": "Are you going to open a new space?",
 							"required": true,
 							"options": [
 								{
-									"value": "new-location",
-									"label": "Open a new location"
-								},
-								{
-									"value": "transform",
-									"label": "Transform the current space"
+									"value": "elevate-current",
+									"label": "No, I want to elevate my current space"
 								},
 								{
 									"value": "replicate",
-									"label": "Replicate across locations"
+									"label": "Yes, I want to replicate the existing concept"
 								},
 								{
 									"value": "evolve",
-									"label": "Evolve the brand and concept"
+									"label": "Yes, I want to evolve my concept"
 								}
 							]
 						},
 						{
 							"name": "objective",
 							"kind": "select",
-							"label": "Main objective",
+							"label": "What is your main growth objective?",
 							"required": true,
 							"options": [
 								{
 									"value": "premium",
-									"label": "Increase average spend and premium perception"
+									"label": "Increase average spend / Attract premium clients"
 								},
 								{
 									"value": "throughput",
-									"label": "Improve capacity and operations"
+									"label": "Optimize operations to increase turnover"
 								},
 								{
 									"value": "franchise",
-									"label": "Build a franchise-ready model"
+									"label": "Create a franchise-ready model to replicate easily"
 								},
 								{
 									"value": "reposition",
-									"label": "Reposition the brand"
+									"label": "Reposition the brand image against competitors"
 								}
 							]
 						},
@@ -442,63 +482,67 @@
 							"required": false
 						},
 						{
+							"name": "dossier",
+							"kind": "file",
+							"label": "Do you have floor plans or a space dossier? (PDF, JPG, PNG, or WebP; up to 3 files, 5 MB each)",
+							"required": false
+						},
+						{
 							"name": "timeline",
 							"kind": "select",
-							"label": "Desired timeline",
+							"label": "When would you like to carry out the project?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-6-months",
-									"label": "Within 6 months"
+									"value": "urgent",
+									"label": "As soon as possible"
+								},
+								{
+									"value": "3-6-months",
+									"label": "In 3–6 months"
 								},
 								{
 									"value": "6-12-months",
 									"label": "In 6–12 months"
 								},
 								{
-									"value": "over-12-months",
-									"label": "Later / no set date"
+									"value": "later",
+									"label": "Later"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Estimated project investment",
+							"label": "What investment do you have planned to scale your business?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-50k",
-									"label": "Under €50,000"
+									"value": "under-30k",
+									"label": "Under €30,000"
 								},
 								{
-									"value": "50-150k",
-									"label": "€50,000–150,000"
+									"value": "30-60k",
+									"label": "€30,000 – €60,000"
 								},
 								{
-									"value": "150-300k",
-									"label": "€150,000–300,000"
+									"value": "60-100k",
+									"label": "€60,000 – €100,000"
 								},
 								{
-									"value": "over-300k",
-									"label": "Over €300,000"
+									"value": "over-100k",
+									"label": "Over €100,000"
 								},
 								{
 									"value": "undecided",
-									"label": "To be defined"
+									"label": "Not yet defined / Looking for advice"
 								}
 							]
 						},
 						{
-							"name": "dossier",
-							"kind": "file",
-							"label": "Plans or business dossier (PDF, JPG, PNG, WebP; up to 3 files, 5 MB each)",
-							"required": false
-						},
-						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Tell us more about the project",
+							"label": "Is there any key detail about your expansion plans we should know?",
 							"required": false
 						}
 					],
@@ -522,18 +566,72 @@
 				}
 			],
 			"situationLabel": "What is your business situation?",
-			"serviceLabel": "Which service do you need?",
+			"serviceLabel": "What service scope do you need?",
 			"selectPlaceholder": "Select an option",
 			"continue": "Continue",
 			"alternate": {
-				"title": "I have a different situation",
-				"description": "Briefly tell us what you need and what outcome you would like to achieve.",
+				"title": "Do you have a different challenge?",
+				"description": "Ephemeral projects, pop-up stores, exhibition stands, product design, or bespoke technical consulting. Tell us about your case and we will assess its viability.",
 				"fields": [
+					{
+						"name": "website",
+						"kind": "text",
+						"label": "Website (optional)",
+						"required": false
+					},
 					{
 						"name": "challenge",
 						"kind": "textarea",
-						"label": "What situation or challenge would you like to address?",
+						"label": "What is your project or challenge?",
 						"required": true
+					},
+					{
+						"name": "timeline",
+						"kind": "select",
+						"label": "What timeline or horizon are you working with?",
+						"required": true,
+						"options": [
+							{
+								"value": "urgent",
+								"label": "As soon as possible / Urgent"
+							},
+							{
+								"value": "1-3-months",
+								"label": "In the next 1–3 months"
+							},
+							{
+								"value": "over-3-months",
+								"label": "More than 3 months / Defining scope"
+							}
+						]
+					},
+					{
+						"name": "investment",
+						"kind": "select",
+						"label": "Do you have an approximate budget for this project?",
+						"required": true,
+						"options": [
+							{
+								"value": "under-10k",
+								"label": "Under €10,000"
+							},
+							{
+								"value": "10-30k",
+								"label": "€10,000 – €30,000"
+							},
+							{
+								"value": "30-60k",
+								"label": "€30,000 – €60,000"
+							},
+							{
+								"value": "over-60k",
+								"label": "Over €60,000"
+							},
+							{
+								"value": "undecided",
+								"label": "Not yet defined / Looking for advice"
+							}
+						]
 					}
 				]
 			}

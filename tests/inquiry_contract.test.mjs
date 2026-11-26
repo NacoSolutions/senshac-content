@@ -94,3 +94,42 @@ test("localized home and service CTAs preselect only the canonical situation or 
 		expect(cards.every(({ ctaText }) => ctaText?.trim())).toBe(true);
 	}
 });
+
+test("all locales match the QUESTIONARIOS budget tiers and alternate intake fields", async () => {
+	const expectedBudgets = {
+		"first-space": ["under-25k", "25-50k", "50-80k", "over-80k", "undecided"],
+		"existing-space": [
+			"under-20k",
+			"20-40k",
+			"40-70k",
+			"over-70k",
+			"undecided",
+		],
+		growth: ["under-30k", "30-60k", "60-100k", "over-100k", "undecided"],
+		alternate: ["under-10k", "10-30k", "30-60k", "over-60k", "undecided"],
+	};
+	for (const locale of ["es", "en", "ca"]) {
+		const doc = JSON.parse(
+			await readFile(`translations/${locale}.json`, "utf8"),
+		);
+		const inquiry = doc.contactForm.inquiryPaths;
+		for (const path of inquiry.paths) {
+			const investment = path.fields.find(({ name }) => name === "investment");
+			expect(investment?.options.map(({ value }) => value)).toEqual(
+				expectedBudgets[path.value],
+			);
+		}
+		expect(inquiry.alternate.fields.map(({ name }) => name)).toEqual([
+			"website",
+			"challenge",
+			"timeline",
+			"investment",
+		]);
+		const alternateInvestment = inquiry.alternate.fields.find(
+			({ name }) => name === "investment",
+		);
+		expect(alternateInvestment?.options.map(({ value }) => value)).toEqual(
+			expectedBudgets.alternate,
+		);
+	}
+});

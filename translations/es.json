@@ -68,67 +68,83 @@
 		"invalidEmail": "Email inválido.",
 		"missingFields": "Por favor, completa todos los campos obligatorios.",
 		"inquiryPaths": {
-			"heading": "Cuéntanos qué espacio quieres transformar",
+			"heading": "Queremos entenderte. ¿En qué punto está tu negocio?",
 			"paths": [
 				{
 					"value": "first-space",
-					"title": "Abrir un nuevo espacio",
-					"description": "Diseño estratégico para un negocio que empieza o busca su próximo local.",
+					"title": "Quiero abrir mi primer espacio",
+					"description": "Quieres abrir tu primer espacio y necesitas que nazca alineado con tu marca. Diseñamos desde el principio para que identidad, experiencia y operativa formen parte de una misma idea. Cuéntanos qué estás imaginando. ¡Tenemos ganas de escuchar tu idea!",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (opcional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Tipo de negocio",
+							"label": "¿Qué tipo de negocio vas a abrir?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Comercio / retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurante / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hostelería"
+									"label": "Hostelería / restauración"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / tienda"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Salud / estética / bienestar"
+								},
+								{
+									"value": "offices",
+									"label": "Oficinas"
 								},
 								{
 									"value": "other",
-									"label": "Otro"
+									"label": "Otros"
 								}
 							]
 						},
 						{
 							"name": "location",
 							"kind": "text",
-							"label": "Ciudad o zona",
+							"label": "¿Dónde estará ubicado tu negocio?",
 							"required": true
 						},
 						{
 							"name": "premisesStatus",
 							"kind": "select",
-							"label": "Situación del local",
+							"label": "¿Ya has elegido un local o estás buscando?",
 							"required": true,
 							"options": [
 								{
 									"value": "signed",
-									"label": "Contrato firmado"
+									"label": "Sí, ya firmado"
 								},
 								{
 									"value": "deciding",
-									"label": "Valorando opciones; decidiré pronto"
+									"label": "Tengo varias opciones y pronto decidiré"
 								},
 								{
 									"value": "searching",
-									"label": "Estoy buscando local"
+									"label": "Aún estoy buscando"
 								}
 							]
 						},
 						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Fotografías o planos del espacio (opcional; PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
+							"required": false
+						},
+						{
 							"name": "floorArea",
 							"kind": "text",
-							"label": "Superficie aproximada (m²)",
+							"label": "¿Qué superficie tiene el local o qué superficie estás buscando?",
 							"required": false
 						},
 						{
@@ -138,55 +154,59 @@
 							"required": true,
 							"options": [
 								{
-									"value": "under-3-months",
-									"label": "En menos de 3 meses"
+									"value": "urgent",
+									"label": "Lo antes posible"
 								},
 								{
 									"value": "3-6-months",
-									"label": "En 3–6 meses"
+									"label": "En 3 - 6 meses"
 								},
 								{
 									"value": "6-12-months",
-									"label": "En 6–12 meses"
+									"label": "En 6 - 12 meses"
 								},
 								{
-									"value": "flexible",
-									"label": "Sin fecha definida"
+									"value": "later",
+									"label": "Más adelante"
+								},
+								{
+									"value": "undecided",
+									"label": "Todavía no lo sé"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Inversión estimada para el proyecto",
+							"label": "¿Cuánto tienes planeado invertir en tu proyecto?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-30k",
-									"label": "Menos de 30.000 €"
+									"value": "under-25k",
+									"label": "Menos de 25.000 €"
 								},
 								{
-									"value": "30-75k",
-									"label": "30.000–75.000 €"
+									"value": "25-50k",
+									"label": "25.000 € – 50.000 €"
 								},
 								{
-									"value": "75-150k",
-									"label": "75.000–150.000 €"
+									"value": "50-80k",
+									"label": "50.000 € – 80.000 €"
 								},
 								{
-									"value": "over-150k",
-									"label": "Más de 150.000 €"
+									"value": "over-80k",
+									"label": "Más de 80.000 €"
 								},
 								{
 									"value": "undecided",
-									"label": "Aún por definir"
+									"label": "Necesito asesoramiento para definir el presupuesto"
 								}
 							]
 						},
 						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Cuéntanos más sobre el proyecto",
+							"label": "Si quieres, puedes contarnos tu proyecto más en detalle",
 							"required": false
 						}
 					],
@@ -204,36 +224,46 @@
 						{
 							"value": "strategic-consultation",
 							"label": "Consultoría estratégica",
-							"description": "Una sesión estratégica para definir prioridades, resolver dudas y orientar las decisiones antes de abrir."
+							"description": "Sesión para definir viabilidad, prioridades, resolver dudas y orientar las decisiones antes de abrir."
 						}
 					]
 				},
 				{
 					"value": "existing-space",
-					"title": "Mejorar un espacio existente",
-					"description": "Detectemos qué frena el rendimiento y cómo convertirlo en una mejor experiencia.",
+					"title": "Mi local necesita un cambio",
+					"description": "Sientes que tu espacio podría funcionar mejor o que le falta ponerse al día. Analizamos tu local para detectar qué puede estar frenando tu negocio: distribución, flujo operativo e imagen. Explícanos tu situación y estudiamos tu caso.",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (opcional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Tipo de negocio",
+							"label": "¿Qué tipo de negocio tienes?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Comercio / retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurante / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hostelería"
+									"label": "Hostelería / restauración"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / tienda"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Salud / estética / bienestar"
+								},
+								{
+									"value": "offices",
+									"label": "Oficinas"
 								},
 								{
 									"value": "other",
-									"label": "Otro"
+									"label": "Otros"
 								}
 							]
 						},
@@ -244,45 +274,51 @@
 							"required": true
 						},
 						{
-							"name": "challenges",
-							"kind": "textarea",
-							"label": "¿Qué no está funcionando? (distribución, flujo, iluminación, ventas...)",
-							"required": true
-						},
-						{
 							"name": "desiredOutcome",
 							"kind": "select",
-							"label": "¿Qué te gustaría mejorar?",
+							"label": "¿Qué quieres resolver o conseguir en tu espacio?",
 							"required": true,
 							"options": [
 								{
-									"value": "sales",
-									"label": "Ventas y rentabilidad"
+									"value": "image-refresh",
+									"label": "Renovar la imagen y la estética"
 								},
 								{
 									"value": "workflow",
-									"label": "Flujo operativo"
+									"label": "Agilizar la operativa del equipo y eliminar cuellos de botella"
 								},
 								{
-									"value": "experience",
-									"label": "Experiencia premium del cliente"
+									"value": "specific-area",
+									"label": "Rediseñar un área concreta (barra, escaparate, recepción, etc.)"
 								},
 								{
-									"value": "refresh",
-									"label": "Actualizar sin grandes obras"
+									"value": "premium-ticket",
+									"label": "Atraer a un cliente de mayor valor y elevar el ticket medio"
 								}
 							]
 						},
 						{
+							"name": "challenges",
+							"kind": "textarea",
+							"label": "¿Quieres darnos algún detalle más sobre tu caso? (Opcional)",
+							"required": false
+						},
+						{
 							"name": "floorArea",
 							"kind": "text",
-							"label": "Superficie aproximada (m²)",
+							"label": "¿Qué superficie tiene tu local?",
+							"required": false
+						},
+						{
+							"name": "plans",
+							"kind": "file",
+							"label": "¿Tienes fotografías o plano del espacio? (PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
 							"required": false
 						},
 						{
 							"name": "timeline",
 							"kind": "select",
-							"label": "Plazo deseado",
+							"label": "¿Cuándo te gustaría llevar a cabo la intervención?",
 							"required": true,
 							"options": [
 								{
@@ -291,47 +327,45 @@
 								},
 								{
 									"value": "3-6-months",
-									"label": "En 3–6 meses"
+									"label": "En 3 - 6 meses"
+								},
+								{
+									"value": "6-12-months",
+									"label": "En 6 - 12 meses"
 								},
 								{
 									"value": "flexible",
-									"label": "Flexible"
+									"label": "No he puesto fecha concreta"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Inversión estimada",
+							"label": "¿Qué inversión tienes prevista para el proyecto?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-15k",
-									"label": "Menos de 15.000 €"
+									"value": "under-20k",
+									"label": "Menos de 20.000 €"
 								},
 								{
-									"value": "15-50k",
-									"label": "15.000–50.000 €"
+									"value": "20-40k",
+									"label": "20.000 € – 40.000 €"
 								},
 								{
-									"value": "50-100k",
-									"label": "50.000–100.000 €"
+									"value": "40-70k",
+									"label": "40.000 € – 70.000 €"
 								},
 								{
-									"value": "over-100k",
-									"label": "Más de 100.000 €"
+									"value": "over-70k",
+									"label": "Más de 70.000 €"
 								},
 								{
 									"value": "undecided",
-									"label": "Aún por definir"
+									"label": "Buscamos asesoramiento para valorar la inversión"
 								}
 							]
-						},
-						{
-							"name": "plans",
-							"kind": "file",
-							"label": "Fotos o planos (PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
-							"required": false
 						},
 						{
 							"name": "message",
@@ -354,84 +388,90 @@
 						{
 							"value": "strategic-consultation",
 							"label": "Consultoría estratégica",
-							"description": "Una sesión estratégica para diagnosticar el espacio y priorizar oportunidades de mejora."
+							"description": "Para detectar fallos y dar directrices claras que prioricen las oportunidades de mejora."
 						}
 					]
 				},
 				{
 					"value": "growth",
-					"title": "Preparar el crecimiento del negocio",
-					"description": "Diseñemos una nueva ubicación, una evolución de marca o un modelo replicable.",
+					"title": "Quiero escalar mi negocio",
+					"description": "Tu negocio ha crecido y tu espacio necesita evolucionar al mismo ritmo. Diseñamos espacios capaces de consolidar tu marca, escalar la operativa y llevar la experiencia al siguiente nivel. Dinos a dónde quieres llegar y te ayudamos a proyectarlo:",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (opcional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Tipo de negocio",
+							"label": "¿Qué tipo de negocio tienes?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Comercio / retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurante / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hostelería"
+									"label": "Hostelería / restauración"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / tienda"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Salud / estética / bienestar"
+								},
+								{
+									"value": "offices",
+									"label": "Oficinas"
 								},
 								{
 									"value": "other",
-									"label": "Otro"
+									"label": "Otros"
 								}
 							]
 						},
 						{
 							"name": "growthPlan",
 							"kind": "select",
-							"label": "¿Qué tienes previsto?",
+							"label": "¿Vas a abrir un nuevo espacio?",
 							"required": true,
 							"options": [
 								{
-									"value": "new-location",
-									"label": "Abrir una nueva ubicación"
-								},
-								{
-									"value": "transform",
-									"label": "Transformar el espacio actual"
+									"value": "elevate-current",
+									"label": "No, quiero elevar el que tengo"
 								},
 								{
 									"value": "replicate",
-									"label": "Replicar el modelo en varias ubicaciones"
+									"label": "Sí, quiero replicar el concepto existente"
 								},
 								{
 									"value": "evolve",
-									"label": "Evolucionar la marca y el concepto"
+									"label": "Sí, quiero evolucionar mi concepto"
 								}
 							]
 						},
 						{
 							"name": "objective",
 							"kind": "select",
-							"label": "Objetivo principal",
+							"label": "¿Cuál es el objetivo principal de crecimiento?",
 							"required": true,
 							"options": [
 								{
 									"value": "premium",
-									"label": "Aumentar ticket medio y percepción premium"
+									"label": "Aumentar el ticket medio / Atraer cliente premium"
 								},
 								{
 									"value": "throughput",
-									"label": "Mejorar capacidad y operativa"
+									"label": "Optimizar la operativa para aumentar la rotación"
 								},
 								{
 									"value": "franchise",
-									"label": "Crear un modelo franquiciable"
+									"label": "Crear un modelo franquiciable para replicar fácilmente"
 								},
 								{
 									"value": "reposition",
-									"label": "Reposicionar la marca"
+									"label": "Reposicionar la imagen de marca frente a la competencia"
 								}
 							]
 						},
@@ -442,63 +482,67 @@
 							"required": false
 						},
 						{
+							"name": "dossier",
+							"kind": "file",
+							"label": "¿Dispones de planos o dossier del local? (PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
+							"required": false
+						},
+						{
 							"name": "timeline",
 							"kind": "select",
-							"label": "Plazo deseado",
+							"label": "¿Cuándo te gustaría llevar a cabo la intervención?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-6-months",
-									"label": "En menos de 6 meses"
+									"value": "urgent",
+									"label": "Lo antes posible"
+								},
+								{
+									"value": "3-6-months",
+									"label": "En 3 - 6 meses"
 								},
 								{
 									"value": "6-12-months",
-									"label": "En 6–12 meses"
+									"label": "En 6 - 12 meses"
 								},
 								{
-									"value": "over-12-months",
-									"label": "Más adelante / sin fecha"
+									"value": "later",
+									"label": "Más adelante"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Inversión estimada",
+							"label": "¿Qué inversión tienes prevista para escalar tu negocio?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-50k",
-									"label": "Menos de 50.000 €"
+									"value": "under-30k",
+									"label": "Menos de 30.000 €"
 								},
 								{
-									"value": "50-150k",
-									"label": "50.000–150.000 €"
+									"value": "30-60k",
+									"label": "30.000 € – 60.000 €"
 								},
 								{
-									"value": "150-300k",
-									"label": "150.000–300.000 €"
+									"value": "60-100k",
+									"label": "60.000 € – 100.000 €"
 								},
 								{
-									"value": "over-300k",
-									"label": "Más de 300.000 €"
+									"value": "over-100k",
+									"label": "Más de 100.000 €"
 								},
 								{
 									"value": "undecided",
-									"label": "Aún por definir"
+									"label": "Aún no lo tenemos definido / Buscamos asesoramiento"
 								}
 							]
 						},
 						{
-							"name": "dossier",
-							"kind": "file",
-							"label": "Planos o dossier (PDF, JPG, PNG o WebP; hasta 3 archivos, 5 MB cada uno)",
-							"required": false
-						},
-						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Cuéntanos tu plan de crecimiento",
+							"label": "¿Hay algún detalle clave sobre tus planes de expansión que debamos saber?",
 							"required": false
 						}
 					],
@@ -522,18 +566,72 @@
 				}
 			],
 			"situationLabel": "¿Cuál es la situación de tu negocio?",
-			"serviceLabel": "¿Qué servicio necesitas?",
+			"serviceLabel": "¿Qué alcance de servicio necesitas?",
 			"selectPlaceholder": "Selecciona una opción",
 			"continue": "Continuar",
 			"alternate": {
-				"title": "Tengo otra situación",
-				"description": "Cuéntanos brevemente qué necesitas y qué resultado te gustaría conseguir.",
+				"title": "¿Tienes un reto diferente?",
+				"description": "Proyectos efímeros, pop-up stores, stands, diseño de producto o consultorías técnicas a medida. Cuéntanos tu caso y evaluamos su viabilidad.",
 				"fields": [
+					{
+						"name": "website",
+						"kind": "text",
+						"label": "Website (opcional)",
+						"required": false
+					},
 					{
 						"name": "challenge",
 						"kind": "textarea",
-						"label": "¿Qué situación o reto quieres resolver?",
+						"label": "¿En qué consiste tu proyecto o reto?",
 						"required": true
+					},
+					{
+						"name": "timeline",
+						"kind": "select",
+						"label": "¿Con qué plazos u horizontes de tiempo trabajáis?",
+						"required": true,
+						"options": [
+							{
+								"value": "urgent",
+								"label": "Lo antes posible / Urgente"
+							},
+							{
+								"value": "1-3-months",
+								"label": "En los próximos 1-3 meses"
+							},
+							{
+								"value": "over-3-months",
+								"label": "Más de 3 meses / En fase de definición"
+							}
+						]
+					},
+					{
+						"name": "investment",
+						"kind": "select",
+						"label": "¿Tenéis un presupuesto aproximado para esta actuación?",
+						"required": true,
+						"options": [
+							{
+								"value": "under-10k",
+								"label": "Menos de 10.000 €"
+							},
+							{
+								"value": "10-30k",
+								"label": "10.000 € – 30.000 €"
+							},
+							{
+								"value": "30-60k",
+								"label": "30.000 € – 60.000 €"
+							},
+							{
+								"value": "over-60k",
+								"label": "Más de 60.000 €"
+							},
+							{
+								"value": "undecided",
+								"label": "Aún no lo tenemos definido / Buscamos asesoramiento"
+							}
+						]
 					}
 				]
 			}
