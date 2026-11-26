@@ -34,8 +34,9 @@
 			"mediaId": "",
 			"imageAlt": "Senshac strategic design process",
 			"items": [{
+          "mediaId": "reference-intake/home/peluqueria",
           "placeholderLabel": "Image mapping pending",
-          "imageAlt": "Project image awaiting confirmed mapping."
+          "imageAlt": "Interior of a hair salon designed by Senshac."
         },{ "title": "RUDE BRAND IDENTITY",
           "link": "/en/works/rude", "mediaId": "projects/rude/cover", "imageAlt": "Inside the RUDE shop, with display and fitting areas." }]
 		},

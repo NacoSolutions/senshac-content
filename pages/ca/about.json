@@ -7,7 +7,7 @@
 			"_template": "statement",
 			"label": "Ester, sense hac",
 			"statement": "Comunica,\nCaptiva,\nConnecta.",
-			"mediaId": "https://media.senshac.com/images/redesign/editorial/ester/1200.webp",
+			"mediaId": "reference-intake/conocenos/ester",
 			"placeholderLabel": "Retrat de l’estudi pendent",
 			"content": {
 				"type": "root",
