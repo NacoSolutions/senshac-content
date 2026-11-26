@@ -1,20 +1,20 @@
 {
 	"nav": {
-		"social": "social",
-		"menu": "menú",
-		"letsTalk": "LET'S TALK",
+		"social": "Síguenos",
+		"menu": "Menú",
+		"letsTalk": "Hablemos",
 		"links": [
 			{
-				"label": "Estudio",
-				"href": "/es/studio"
+				"label": "Servicios",
+				"href": "/es/methods"
 			},
 			{
-				"label": "Trabajos",
+				"label": "Proyectos",
 				"href": "/es/works"
 			},
 			{
-				"label": "Método",
-				"href": "/es/methods"
+				"label": "Conócenos",
+				"href": "/es/studio"
 			},
 			{
 				"label": "Contacto",
@@ -26,25 +26,27 @@
 		"privacy": "Política de Privacidad",
 		"legal": "Aviso Legal",
 		"attributions": [
-			{ "label": "Diseño por", "name": "©be mediàtic" },
-			{ "label": "Desarrollo por", "name": "Naco Solutions" }
-		],
-		"attributions": [
-			{ "label": "Diseño por", "name": "©be mediàtic" },
-			{ "label": "Desarrollo por", "name": "Naco Solutions" }
+			{
+				"label": "Diseño por",
+				"name": "Sens*hac"
+			},
+			{
+				"label": "Desarrollo por",
+				"name": "Naco Solutions"
+			}
 		],
 		"links": [
 			{
-				"label": "Estudio",
-				"href": "/es/studio"
+				"label": "Servicios",
+				"href": "/es/methods"
 			},
 			{
-				"label": "Trabajos",
+				"label": "Proyectos",
 				"href": "/es/works"
 			},
 			{
-				"label": "Método",
-				"href": "/es/methods"
+				"label": "Conócenos",
+				"href": "/es/studio"
 			},
 			{
 				"label": "Contacto",
@@ -540,6 +542,7 @@
 		"invalidSelection": "Selecciona una situación y un servicio compatibles."
 	},
 	"projects": {
+		"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 		"title": "Trabajos - Sens*Hac",
 		"description": "Explora nuestro portfolio de proyectos de diseño de interiores.",
 		"heading": "PROYECTOS,\nENSAYOS\nY OBJETOS"

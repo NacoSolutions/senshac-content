@@ -1,49 +1,47 @@
 {
 	"title": "Sens*Hac - Estudi d’Interiorisme Estratègic",
 	"description": "Dissenyem espais amb identitat de marca que augmenten el valor i la rendibilitat del teu negoci.",
-	"chrome": { "header": { "style": "transparent" } },
+	"chrome": { "header": { "style": "transparent", "scrolling": "transparent-light", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
-			"_template": "banner",
-			"title": "Comunica.\nCaptiva.\nConnecta.",
-			"subtitle": "",
-			"topRight": { "lines": ["interior", "design", "studio R"] },
-			"mediaId": "https://media.senshac.com/images/redesign/editorial/rocas/1200.webp",
-			"imageAlt": "Formacions rocoses negres sobre un fons fosc",
-			"objectFit": "cover"
-		},
-		{
 			"_template": "hero",
-			"title": "L’ESPAI ÉS ON\nLA TEVA MARCA\nCOBRA VIDA.",
-			"intro": "Dissenyem espais per a marques que tenen alguna cosa a dir.\nEspai, Identitat de Marca & Estratègia.",
-			"ctaText": "Vols que el teu espai parli?",
-			"ctaLink": "/ca/contact",
+			"title": "Dissenyem espais per a marques\nque tenen alguna cosa a dir.",
+			"intro": "Espai, Identitat de Marca & Estratègia.",
+			"ctaText": "Coneix-nos",
+			"ctaLink": "/ca/studio",
 			"mediaType": "image",
 			"mediaId": "redesign/photos/img-9212",
 			"imageAlt": "Selecció de materials, textures i acabats"
+		},
+		{
+			"_template": "text",
+			"title": "Si el teu producte o servei et fa diferent, el teu espai ho ha de demostrar.",
+			"headingLevel": "h2"
+		},
+		{
+      "_template": "showcase",
+      "maxVisible": 2,
+      "scrollStep": 1,
+      "placeholderLabel": "Imatge pendent de confirmar"
+    },
+		{
+			"_template": "text",
+			"body": "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades."
 		},
 		{
 			"_template": "showcase",
 			"mediaType": "image",
 			"mediaId": "",
 			"imageAlt": "Procés de disseny estratègic de Senshac",
-			"items": [{ "title": "RUDE / RETAIL", "link": "/ca/works/rude", "ctaText": "VEURE PROJECTE", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
-		},
-		{
-			"_template": "text",
-			"title": "Si el teu producte o servei et fa diferent, el teu espai ho ha de demostrar.",
-			"headingLevel": "h2",
-			"body": "Dissenyem interiors amb un llenguatge visual propi, integrats en l’univers de la teva marca i pensats per funcionar com una part real del teu negoci.\n\nAnalitzem com es mou el teu client, com treballa el teu equip i què necessita l’espai perquè marca, experiència i operativa treballin plegades."
-		},
-		{ "_template": "callout", "text": "El nostre mètode", "link": "/ca/methods" },
-		{
-			"_template": "showcase",
-			"mediaType": "video",
-			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
+			"items": [{
+          "placeholderLabel": "Imatge pendent de confirmar",
+          "imageAlt": "Imatge de projecte pendent d'assignació."
+        },{ "title": "IDENTITAT DE RUDE",
+          "link": "/ca/works/rude", "mediaId": "projects/rude/cover", "imageAlt": "Interior de la botiga RUDE, amb zona d’exposició i emprovadors." }]
 		},
 		{
 			"_template": "accordion",
-			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "Què pot fer el disseny pel teu negoci?" }] }] },
+			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "L'espai ha de treballar per a tu, i no al revés. El disseny intel·ligent t'ajuda a:" }] }] },
 			"items": [
 				{ "number": "1", "title": "DIFERENCIAR LA TEVA MARCA", "summary": "El teu espai comunica qui ets i què et fa diferent. Fes que sigui tan reconeixible com la teva marca." },
 				{ "number": "2", "title": "ELEVAR-NE EL VALOR", "summary": "El disseny augmenta el valor percebut, atrau el client adequat i posiciona el teu producte o servei al nivell que es mereix." },
@@ -52,22 +50,84 @@
 		},
 		{
 			"_template": "showcase",
-			"mediaType": "image",
-			"mediaId": "redesign/editorial/rocas",
-			"imageAlt": "Formacions rocoses negres sobre un fons fosc",
-			"title": "UN REEL SOBRE COM PRENC DECISIONS"
+			"mediaType": "video",
+			"mediaId": "https://media.senshac.com/videos/redesign/horizontal-1-corto/master.m3u8"
 		},
 		{
 			"_template": "list",
-			"title": "Et volem entendre.\nEn quin punt és el teu negoci?",
-			"intro": "",
+			"variant": "phase-scroll",
+			"title": "Un espai que no guia, que no funciona i que no reforça la teva identitat és una oportunitat de negoci perduda.",
+			"intro": {
+			  "type": "root",
+			  "children": [
+			    {
+			      "type": "p",
+			      "children": [
+			        {
+			          "type": "text",
+			          "text": "Si ja tens tot això clar, t’explico "
+			        },
+			        {
+			          "type": "text",
+			          "text": "els passos que seguirem per començar a treballar en el teu projecte:",
+			          "bold": true
+			        }
+			      ]
+			    }
+			  ]
+			},
+			"mediaId": "reference-intake/home/manos-ester",
+			"imageAlt": "Mans triant mostres de teixits i materials",
+			"placeholderLabel": "Imatge pendent",
+			"items": [
+				{ "number": "01", "title": "Ens coneixem", "text": "Parlem de la teva marca, del que vols aconseguir i de la inversió que hi faràs." },
+				{ "number": "02", "title": "Anàlisi i mesures", "text": {
+				  "type": "root",
+				  "children": [
+				    {
+				      "type": "p",
+				      "children": [
+				        {
+				          "type": "text",
+				          "text": "Si "
+				        },
+				        {
+				          "type": "text",
+				          "text": "hi ha entesa",
+				          "italic": true
+				        },
+				        {
+				          "type": "text",
+				          "text": ", vaig al teu local, prenc mides i estudio a fons la teva marca i el que ofereixes."
+				        }
+				      ]
+				    }
+				  ]
+				} },
+				{ "number": "03", "title": "Explorem opcions", "text": "Debatem junts les primeres propostes de distribució i concepte per triar el millor camí." },
+				{ "number": "04", "title": "Disseny final", "text": "Desenvolupem la idea escollida al detall perquè vegis exactament com serà el teu nou espai." },
+				{ "number": "05", "title": "Pressupost transparent", "text": "Calculem el cost de cada partida i tanquem els números perquè no hi hagi sorpreses." }
+			]
+		},
+		{
+			"_template": "list",
+			"title": "En quin punt et trobes ara mateix?",
+			"intro": "Cada negoci és un món i té els seus propis reptes. Per poder ajudar-te, necessito entendre la teva situació.",
 			"items": [
 				{ "title": "Vull obrir el meu primer espai", "text": "", "href": "/ca/contact?situation=first-space" },
-				{ "title": "El meu local no funciona com caldria", "text": "", "href": "/ca/contact?situation=existing-space" },
+				{ "title": "El meu local necessita un canvi", "text": "", "href": "/ca/contact?situation=existing-space" },
 				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?situation=growth" },
 				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact?situation=growth&service=other-challenge" }
 			]
 		},
-		{ "_template": "feed", "description": "", "tag": "novedades", "limit": 4, "maxVisible": 3 }
+		{
+			"_template": "feed",
+			"title": "PROJECTES DESTACATS",
+			"description": "",
+			"tag": "novedades",
+			"limit": 3,
+			"maxVisible": 3,
+			"disableLinks": true
+		}
 	]
 }

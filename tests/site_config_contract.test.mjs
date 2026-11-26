@@ -29,3 +29,12 @@ test("chrome schema exposes the editable header and footer fields", () => {
 		"scrolling",
 	]);
 });
+
+
+test("site configuration uses an approved typography preset", () => {
+	const presets = new Set(siteSchema.$defs.typographyPreset.enum);
+	expect(siteConfig.typography.preset).toBe("senshac");
+	expect(presets.has(siteConfig.typography.preset)).toBe(true);
+	expect(siteSchema.properties.typography.$ref).toBe("#/$defs/typography");
+	expect(siteSchema.$defs.typography.properties.preset.$ref).toBe("#/$defs/typographyPreset");
+});

@@ -1,20 +1,20 @@
 {
 	"nav": {
-		"social": "social",
-		"menu": "menú",
-		"letsTalk": "LET'S TALK",
+		"social": "Segueix-nos",
+		"menu": "Menú",
+		"letsTalk": "Parlem",
 		"links": [
 			{
-				"label": "Estudi",
-				"href": "/ca/studio"
+				"label": "Serveis",
+				"href": "/ca/methods"
 			},
 			{
-				"label": "Treballs",
+				"label": "Projectes",
 				"href": "/ca/works"
 			},
 			{
-				"label": "Mètode",
-				"href": "/ca/methods"
+				"label": "Coneix-nos",
+				"href": "/ca/studio"
 			},
 			{
 				"label": "Contacte",
@@ -26,25 +26,27 @@
 		"privacy": "Política de Privacitat",
 		"legal": "Avís Legal",
 		"attributions": [
-			{ "label": "Disseny per", "name": "©be mediàtic" },
-			{ "label": "Desenvolupament per", "name": "Naco Solutions" }
-		],
-		"attributions": [
-			{ "label": "Disseny per", "name": "©be mediàtic" },
-			{ "label": "Desenvolupament per", "name": "Naco Solutions" }
+			{
+				"label": "Disseny per",
+				"name": "Sens*hac"
+			},
+			{
+				"label": "Desenvolupament per",
+				"name": "Naco Solutions"
+			}
 		],
 		"links": [
 			{
-				"label": "Estudi",
-				"href": "/ca/studio"
+				"label": "Serveis",
+				"href": "/ca/methods"
 			},
 			{
-				"label": "Treballs",
+				"label": "Projectes",
 				"href": "/ca/works"
 			},
 			{
-				"label": "Mètode",
-				"href": "/ca/methods"
+				"label": "Coneix-nos",
+				"href": "/ca/studio"
 			},
 			{
 				"label": "Contacte",
@@ -540,6 +542,7 @@
 		"invalidSelection": "Selecciona una situació i un servei compatibles."
 	},
 	"projects": {
+		"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 		"title": "Treballs - Sens*Hac",
 		"description": "Explora el nostre portfolio de projectes de disseny d'interiors.",
 		"heading": "PROJECTES,\nASSAIGS\nI OBJECTES"
