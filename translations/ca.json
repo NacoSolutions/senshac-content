@@ -68,30 +68,40 @@
 		"invalidEmail": "Email invàlid.",
 		"missingFields": "Si us plau, completa tots els camps obligatoris.",
 		"inquiryPaths": {
-			"heading": "Explica’ns quin espai vols transformar",
+			"heading": "Volem entendre’t. En quin punt està el teu negoci?",
 			"paths": [
 				{
 					"value": "first-space",
-					"title": "Obrir un espai nou",
-					"description": "Disseny estratègic per a un negoci nou o una nova ubicació.",
+					"title": "Vull obrir el meu primer espai",
+					"description": "Vols obrir el teu primer espai i necessites que neixi alineat amb la teva marca. Dissenyem des del principi perquè identitat, experiència i operativa formin part d’una mateixa idea. Explica’ns què t’estàs imaginant. Tenim ganes d’escoltar la teva idea!",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (opcional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Tipus de negoci",
+							"label": "Quin tipus de negoci obriràs?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Comerç / retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurant / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hostaleria"
+									"label": "Hostaleria / restauració"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / botiga"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Salut / estètica / benestar"
+								},
+								{
+									"value": "offices",
+									"label": "Oficines"
 								},
 								{
 									"value": "other",
@@ -102,33 +112,39 @@
 						{
 							"name": "location",
 							"kind": "text",
-							"label": "Ciutat o zona",
+							"label": "On estarà ubicat el teu negoci?",
 							"required": true
 						},
 						{
 							"name": "premisesStatus",
 							"kind": "select",
-							"label": "Situació del local",
+							"label": "Ja has triat un local o encara n’estàs buscant?",
 							"required": true,
 							"options": [
 								{
 									"value": "signed",
-									"label": "Contracte signat"
+									"label": "Sí, ja signat"
 								},
 								{
 									"value": "deciding",
-									"label": "Valorant opcions; decidiré aviat"
+									"label": "Tinc diverses opcions i aviat decidiré"
 								},
 								{
 									"value": "searching",
-									"label": "Estic buscant local"
+									"label": "Encara estic buscant"
 								}
 							]
 						},
 						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Fotografies o plànols de l’espai (opcional; PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
+							"required": false
+						},
+						{
 							"name": "floorArea",
 							"kind": "text",
-							"label": "Superfície aproximada (m²)",
+							"label": "Quina superfície té el local o quina superfície estàs buscant?",
 							"required": false
 						},
 						{
@@ -138,55 +154,59 @@
 							"required": true,
 							"options": [
 								{
-									"value": "under-3-months",
-									"label": "En menys de 3 mesos"
+									"value": "urgent",
+									"label": "Tan aviat com sigui possible"
 								},
 								{
 									"value": "3-6-months",
-									"label": "En 3–6 mesos"
+									"label": "En 3 – 6 mesos"
 								},
 								{
 									"value": "6-12-months",
-									"label": "En 6–12 mesos"
+									"label": "En 6 – 12 mesos"
 								},
 								{
-									"value": "flexible",
-									"label": "Flexible / sense data"
+									"value": "later",
+									"label": "Més endavant"
+								},
+								{
+									"value": "undecided",
+									"label": "Encara no ho sé"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Inversió estimada",
+							"label": "Quant tens previst invertir en el teu projecte?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-30k",
-									"label": "Menys de 30.000 €"
+									"value": "under-25k",
+									"label": "Menys de 25.000 €"
 								},
 								{
-									"value": "30-75k",
-									"label": "30.000–75.000 €"
+									"value": "25-50k",
+									"label": "25.000 € – 50.000 €"
 								},
 								{
-									"value": "75-150k",
-									"label": "75.000–150.000 €"
+									"value": "50-80k",
+									"label": "50.000 € – 80.000 €"
 								},
 								{
-									"value": "over-150k",
-									"label": "Més de 150.000 €"
+									"value": "over-80k",
+									"label": "Més de 80.000 €"
 								},
 								{
 									"value": "undecided",
-									"label": "Per definir"
+									"label": "Necessito assessorament per definir el pressupost"
 								}
 							]
 						},
 						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Explica’ns més sobre el projecte",
+							"label": "Si vols, pots explicar-nos el teu projecte més en detall",
 							"required": false
 						}
 					],
@@ -204,32 +224,42 @@
 						{
 							"value": "strategic-consultation",
 							"label": "Consultoria estratègica",
-							"description": "Una sessió estratègica per definir prioritats, resoldre dubtes i orientar les decisions abans d’obrir."
+							"description": "Sessió per definir viabilitat, prioritats, resoldre dubtes i orientar les decisions abans d’obrir."
 						}
 					]
 				},
 				{
 					"value": "existing-space",
-					"title": "Millorar un espai existent",
-					"description": "Descobrim què limita el rendiment i com millorar l’experiència.",
+					"title": "El meu local necessita un canvi",
+					"description": "Sents que el teu espai podria funcionar millor o que li falta posar-se al dia. Analitzem el teu local per detectar què pot estar frenant el teu negoci: distribució, flux operatiu i imatge. Explica’ns la teva situació i estudiem el teu cas.",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (opcional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Tipus de negoci",
+							"label": "Quin tipus de negoci tens?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Comerç / retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurant / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hostaleria"
+									"label": "Hostaleria / restauració"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / botiga"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Salut / estètica / benestar"
+								},
+								{
+									"value": "offices",
+									"label": "Oficines"
 								},
 								{
 									"value": "other",
@@ -244,45 +274,51 @@
 							"required": true
 						},
 						{
-							"name": "challenges",
-							"kind": "textarea",
-							"label": "Què no funciona? (distribució, flux, il·luminació, vendes...)",
-							"required": true
-						},
-						{
 							"name": "desiredOutcome",
 							"kind": "select",
-							"label": "Què t’agradaria millorar?",
+							"label": "Què vols resoldre o aconseguir al teu espai?",
 							"required": true,
 							"options": [
 								{
-									"value": "sales",
-									"label": "Vendes i rendibilitat"
+									"value": "image-refresh",
+									"label": "Renovar la imatge i l’estètica"
 								},
 								{
 									"value": "workflow",
-									"label": "Flux operatiu"
+									"label": "Agilitzar l’operativa de l’equip i eliminar colls d’ampolla"
 								},
 								{
-									"value": "experience",
-									"label": "Experiència premium del client"
+									"value": "specific-area",
+									"label": "Redissenyar una àrea concreta (barra, aparador, recepció, etc.)"
 								},
 								{
-									"value": "refresh",
-									"label": "Actualitzar sense grans obres"
+									"value": "premium-ticket",
+									"label": "Atreure un client de més valor i elevar el tiquet mitjà"
 								}
 							]
 						},
 						{
+							"name": "challenges",
+							"kind": "textarea",
+							"label": "Vols donar-nos algun detall més sobre el teu cas? (Opcional)",
+							"required": false
+						},
+						{
 							"name": "floorArea",
 							"kind": "text",
-							"label": "Superfície aproximada (m²)",
+							"label": "Quina superfície té el teu local?",
+							"required": false
+						},
+						{
+							"name": "plans",
+							"kind": "file",
+							"label": "Tens fotografies o plànol de l’espai? (PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
 							"required": false
 						},
 						{
 							"name": "timeline",
 							"kind": "select",
-							"label": "Termini desitjat",
+							"label": "Quan t’agradaria dur a terme la intervenció?",
 							"required": true,
 							"options": [
 								{
@@ -291,52 +327,50 @@
 								},
 								{
 									"value": "3-6-months",
-									"label": "En 3–6 mesos"
+									"label": "En 3 – 6 mesos"
+								},
+								{
+									"value": "6-12-months",
+									"label": "En 6 – 12 mesos"
 								},
 								{
 									"value": "flexible",
-									"label": "Flexible / sense data"
+									"label": "No he posat data concreta"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Inversió estimada",
+							"label": "Quina inversió tens prevista per al projecte?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-15k",
-									"label": "Menys de 15.000 €"
+									"value": "under-20k",
+									"label": "Menys de 20.000 €"
 								},
 								{
-									"value": "15-50k",
-									"label": "15.000–50.000 €"
+									"value": "20-40k",
+									"label": "20.000 € – 40.000 €"
 								},
 								{
-									"value": "50-100k",
-									"label": "50.000–100.000 €"
+									"value": "40-70k",
+									"label": "40.000 € – 70.000 €"
 								},
 								{
-									"value": "over-100k",
-									"label": "Més de 100.000 €"
+									"value": "over-70k",
+									"label": "Més de 70.000 €"
 								},
 								{
 									"value": "undecided",
-									"label": "Per definir"
+									"label": "Busquem assessorament per valorar la inversió"
 								}
 							]
 						},
 						{
-							"name": "plans",
-							"kind": "file",
-							"label": "Fotos o plànols (PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
-							"required": false
-						},
-						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Explica’ns més sobre el projecte",
+							"label": "Informació addicional",
 							"required": false
 						}
 					],
@@ -354,32 +388,42 @@
 						{
 							"value": "strategic-consultation",
 							"label": "Consultoria estratègica",
-							"description": "Una sessió per diagnosticar l’espai i prioritzar oportunitats de millora."
+							"description": "Per detectar errors i donar directrius clares per prioritzar oportunitats de millora."
 						}
 					]
 				},
 				{
 					"value": "growth",
-					"title": "Preparar el creixement del negoci",
-					"description": "Planifiquem una nova ubicació, l’evolució de marca o un model escalable.",
+					"title": "Vull fer créixer el meu negoci",
+					"description": "El teu negoci ha crescut i el teu espai necessita evolucionar al mateix ritme. Dissenyem espais capaços de consolidar la teva marca, escalar l’operativa i portar l’experiència al següent nivell. Digues-nos on vols arribar i t’ajudem a projectar-ho:",
 					"fields": [
+						{
+							"name": "website",
+							"kind": "text",
+							"label": "Website (opcional)",
+							"required": false
+						},
 						{
 							"name": "businessType",
 							"kind": "select",
-							"label": "Tipus de negoci",
+							"label": "Quin tipus de negoci tens?",
 							"required": true,
 							"options": [
 								{
-									"value": "retail",
-									"label": "Comerç / retail"
-								},
-								{
-									"value": "restaurant",
-									"label": "Restaurant / bar"
-								},
-								{
 									"value": "hospitality",
-									"label": "Hostaleria"
+									"label": "Hostaleria / restauració"
+								},
+								{
+									"value": "retail",
+									"label": "Retail / botiga"
+								},
+								{
+									"value": "health-wellness",
+									"label": "Salut / estètica / benestar"
+								},
+								{
+									"value": "offices",
+									"label": "Oficines"
 								},
 								{
 									"value": "other",
@@ -390,48 +434,44 @@
 						{
 							"name": "growthPlan",
 							"kind": "select",
-							"label": "Què tens previst?",
+							"label": "Obriràs un nou espai?",
 							"required": true,
 							"options": [
 								{
-									"value": "new-location",
-									"label": "Obrir una nova ubicació"
-								},
-								{
-									"value": "transform",
-									"label": "Transformar l’espai actual"
+									"value": "elevate-current",
+									"label": "No, vull elevar el que tinc"
 								},
 								{
 									"value": "replicate",
-									"label": "Replicar el model en diverses ubicacions"
+									"label": "Sí, vull replicar el concepte existent"
 								},
 								{
 									"value": "evolve",
-									"label": "Evolucionar la marca i el concepte"
+									"label": "Sí, vull evolucionar el meu concepte"
 								}
 							]
 						},
 						{
 							"name": "objective",
 							"kind": "select",
-							"label": "Objectiu principal",
+							"label": "Quin és l’objectiu principal de creixement?",
 							"required": true,
 							"options": [
 								{
 									"value": "premium",
-									"label": "Augmentar el tiquet mitjà i la percepció premium"
+									"label": "Augmentar el tiquet mitjà / Atreure client prèmium"
 								},
 								{
 									"value": "throughput",
-									"label": "Millorar la capacitat i l’operativa"
+									"label": "Optimitzar l’operativa per augmentar la rotació"
 								},
 								{
 									"value": "franchise",
-									"label": "Crear un model franquiciable"
+									"label": "Crear un model franquiciable per replicar fàcilment"
 								},
 								{
 									"value": "reposition",
-									"label": "Reposicionar la marca"
+									"label": "Reposicionar la imatge de marca davant la competència"
 								}
 							]
 						},
@@ -442,63 +482,67 @@
 							"required": false
 						},
 						{
+							"name": "dossier",
+							"kind": "file",
+							"label": "Disposes de plànols o dossier del local? (PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
+							"required": false
+						},
+						{
 							"name": "timeline",
 							"kind": "select",
-							"label": "Termini desitjat",
+							"label": "Quan t’agradaria dur a terme la intervenció?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-6-months",
-									"label": "En menys de 6 mesos"
+									"value": "urgent",
+									"label": "Tan aviat com sigui possible"
+								},
+								{
+									"value": "3-6-months",
+									"label": "En 3 – 6 mesos"
 								},
 								{
 									"value": "6-12-months",
-									"label": "En 6–12 mesos"
+									"label": "En 6 – 12 mesos"
 								},
 								{
-									"value": "over-12-months",
-									"label": "Més endavant / sense data"
+									"value": "later",
+									"label": "Més endavant"
 								}
 							]
 						},
 						{
 							"name": "investment",
 							"kind": "select",
-							"label": "Inversió estimada",
+							"label": "Quina inversió tens prevista per escalar el teu negoci?",
 							"required": true,
 							"options": [
 								{
-									"value": "under-50k",
-									"label": "Menys de 50.000 €"
+									"value": "under-30k",
+									"label": "Menys de 30.000 €"
 								},
 								{
-									"value": "50-150k",
-									"label": "50.000–150.000 €"
+									"value": "30-60k",
+									"label": "30.000 € – 60.000 €"
 								},
 								{
-									"value": "150-300k",
-									"label": "150.000–300.000 €"
+									"value": "60-100k",
+									"label": "60.000 € – 100.000 €"
 								},
 								{
-									"value": "over-300k",
-									"label": "Més de 300.000 €"
+									"value": "over-100k",
+									"label": "Més de 100.000 €"
 								},
 								{
 									"value": "undecided",
-									"label": "Per definir"
+									"label": "Encara no ho tenim definit / Busquem assessorament"
 								}
 							]
 						},
 						{
-							"name": "dossier",
-							"kind": "file",
-							"label": "Plànols o dossier de negoci (PDF, JPG, PNG o WebP; fins a 3 fitxers, 5 MB cadascun)",
-							"required": false
-						},
-						{
 							"name": "message",
 							"kind": "textarea",
-							"label": "Explica’ns més sobre el projecte",
+							"label": "Hi ha algun detall clau sobre els teus plans d’expansió que hàgim de saber?",
 							"required": false
 						}
 					],
@@ -522,18 +566,72 @@
 				}
 			],
 			"situationLabel": "Quina és la situació del teu negoci?",
-			"serviceLabel": "Quin servei necessites?",
+			"serviceLabel": "Quin abast de servei necessites?",
 			"selectPlaceholder": "Selecciona una opció",
 			"continue": "Continua",
 			"alternate": {
-				"title": "Tinc una altra situació",
-				"description": "Explica’ns breument què necessites i quin resultat t’agradaria aconseguir.",
+				"title": "Tens un repte diferent?",
+				"description": "Projectes efímers, pop-up stores, estands, disseny de producte o consultories tècniques a mida. Explica’ns el teu cas i n’avaluem la viabilitat.",
 				"fields": [
+					{
+						"name": "website",
+						"kind": "text",
+						"label": "Website (opcional)",
+						"required": false
+					},
 					{
 						"name": "challenge",
 						"kind": "textarea",
-						"label": "Quina situació o repte vols resoldre?",
+						"label": "En què consisteix el teu projecte o repte?",
 						"required": true
+					},
+					{
+						"name": "timeline",
+						"kind": "select",
+						"label": "Amb quins terminis o horitzons de temps treballeu?",
+						"required": true,
+						"options": [
+							{
+								"value": "urgent",
+								"label": "Tan aviat com sigui possible / Urgent"
+							},
+							{
+								"value": "1-3-months",
+								"label": "En els pròxims 1–3 mesos"
+							},
+							{
+								"value": "over-3-months",
+								"label": "Més de 3 mesos / En fase de definició"
+							}
+						]
+					},
+					{
+						"name": "investment",
+						"kind": "select",
+						"label": "Teniu un pressupost aproximat per a aquesta actuació?",
+						"required": true,
+						"options": [
+							{
+								"value": "under-10k",
+								"label": "Menys de 10.000 €"
+							},
+							{
+								"value": "10-30k",
+								"label": "10.000 € – 30.000 €"
+							},
+							{
+								"value": "30-60k",
+								"label": "30.000 € – 60.000 €"
+							},
+							{
+								"value": "over-60k",
+								"label": "Més de 60.000 €"
+							},
+							{
+								"value": "undecided",
+								"label": "Encara no ho tenim definit / Busquem assessorament"
+							}
+						]
 					}
 				]
 			}
