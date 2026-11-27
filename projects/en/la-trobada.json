@@ -1,40 +1,38 @@
 {
 	"title": "La Trobada",
-	"description": "A homage to Mediterranean culture, flavor, and warmth. Neighborhood restaurant in Badalona.",
+	"description": "The flavor of coming together has a Mediterranean taste. A 52 m² neighborhood bar in Casagemes, Badalona.",
 	"slug": "la-trobada",
 	"publishDate": "2024-01-15",
 	"completedDate": "2024-01-15",
 	"tags": [
-		"Bar/Restaurant",
+		"Bar",
 		"Gastronomy"
 	],
 	"featured": true,
 	"draft": false,
 	"blocks": [
 		{
-			"mediaId": "projects/la-trobada/cover",
-			"alt": "La Trobada",
 			"_template": "media",
-			"variant": "banner"
+			"variant": "banner",
+			"mediaId": "projects/la-trobada/hero",
+			"alt": "Interior of La Trobada in Casagemes, Badalona"
 		},
 		{
+			"_template": "details",
 			"title": "La Trobada",
-			"subtitle": "A homage to Mediterranean culture, flavor, and warmth",
-			"mediaId": "projects/la-trobada/detail",
-			"services": "Interior Design, Visual Identity",
+			"subtitle": "The flavor of coming together has a Mediterranean taste.",
+			"services": "Interior Design, Graphic Identity",
 			"servicesLabel": "SERVICES",
-			"category": "Bar/Restaurant",
+			"category": "BAR",
 			"categoryLabel": "CATEGORY",
-			"area": "<50 m²",
+			"area": "52 m²",
 			"areaLabel": "AREA",
-			"location": "Badalona, Barcelona",
-			"locationLabel": "LOCATION",
-			"_template": "details"
+			"location": "Casagemes, Badalona",
+			"locationLabel": "LOCATION"
 		},
 		{
-			"title": "BRIEF",
 			"_template": "text",
-			"variant": "brief",
+			"eyebrow": "BAR / 52 m² · Casagemes, Badalona",
 			"body": {
 				"type": "root",
 				"children": [
@@ -43,44 +41,16 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "La Trobada is a homage to Mediterranean culture, flavor, and warmth. This small neighborhood restaurant operated by Inma and Jonathan functions as a gathering space for locals and friends. The name 'La Trobada' (Catalan for 'meeting point') reflects the Mediterranean lifestyle characterized by warmth and shared moments."
+								"text": "La Trobada is a neighborhood bar run by a Catalan-Valencian couple, proudly embracing Mediterranean essence and tradition in both hospitality and gastronomy."
 							}
 						]
-					}
-				]
-			}
-		},
-		{
-			"_template": "gallery",
-			"cols": 3,
-			"images": [
-				{
-					"mediaId": "projects/la-trobada/brief/01",
-					"alt": "La Trobada interior view"
-				},
-				{
-					"mediaId": "projects/la-trobada/brief/02",
-					"alt": "La Trobada details"
-				},
-				{
-					"mediaId": "projects/la-trobada/brief/03",
-					"alt": "La Trobada atmosphere"
-				}
-			]
-		},
-		{
-			"title": "CONCEPT",
-			"_template": "text",
-			"variant": "concept",
-			"body": {
-				"type": "root",
-				"children": [
+					},
 					{
 						"type": "p",
 						"children": [
 							{
 								"type": "text",
-								"text": "The concept focuses on creating a welcoming atmosphere that evokes Mediterranean warmth. The earthy color palette, natural materials, and warm lighting work together to create a space where diners feel at home."
+								"text": "We undertook a comprehensive redesign—including the graphic identity designed by sens*hac—to align the business identity with a warm atmosphere and agile operations between the bar and dining room."
 							}
 						]
 					}
@@ -92,27 +62,19 @@
 			"cols": 2,
 			"images": [
 				{
-					"mediaId": "projects/la-trobada/concept/01",
-					"alt": "Concept visualization 1"
+					"mediaId": "projects/la-trobada/intro-menu",
+					"alt": "La Trobada menu and graphic identity"
 				},
 				{
-					"mediaId": "projects/la-trobada/concept/02",
-					"alt": "Concept visualization 2"
-				},
-				{
-					"mediaId": "projects/la-trobada/concept/03",
-					"alt": "Concept visualization 3"
-				},
-				{
-					"mediaId": "projects/la-trobada/concept/04",
-					"alt": "Concept visualization 4"
+					"mediaId": "projects/la-trobada/intro-ceramic",
+					"alt": "Mediterranean ceramic latticework by Ceràmica Ferrés"
 				}
 			]
 		},
 		{
-			"title": "STRATEGY",
 			"_template": "text",
-			"variant": "strategy",
+			"variant": "brief",
+			"title": "Business needs",
 			"body": {
 				"type": "root",
 				"children": [
@@ -121,7 +83,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "The primary challenge involved optimizing flow between the compact 50m² interior and an adjacent spacious terrace. Kitchen reorganization addressed functional zones for cooking, prep, and cleaning, plus dedicated waitstaff stations."
+								"text": "The opening of Hospital Quirón just a few meters from the restaurant triggered the project, aiming to attract new walk-in customers, streamline operations, and increase the average check."
 							}
 						]
 					}
@@ -132,46 +94,203 @@
 			"_template": "carousel",
 			"items": [
 				{
-					"mediaId": "projects/la-trobada/strategy/01",
-					"alt": "Strategy slide 1"
+					"mediaId": "projects/la-trobada/business-01",
+					"alt": "Overview of the dining room and bar at La Trobada"
 				},
 				{
-					"mediaId": "projects/la-trobada/strategy/02",
-					"alt": "Strategy slide 2"
-				},
-				{
-					"mediaId": "projects/la-trobada/strategy/03",
-					"alt": "Strategy slide 3"
-				},
-				{
-					"mediaId": "projects/la-trobada/strategy/04",
-					"alt": "Strategy slide 4"
-				},
-				{
-					"mediaId": "projects/la-trobada/strategy/05",
-					"alt": "Strategy slide 5"
-				},
-				{
-					"mediaId": "projects/la-trobada/strategy/06",
-					"alt": "Strategy slide 6"
+					"mediaId": "projects/la-trobada/business-02",
+					"alt": "Interior view of the entrance and high tables at La Trobada"
 				}
 			]
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "CONCEPT AND IDENTITY",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "In terms of visual identity, the starting values were deeply rooted in Mediterranean culture. The space needed to convey the character and warmth of the coast through a natural color palette and materials drawn from local tradition, such as ceramics, lime plaster, and Catalan terracotta tiles. Honest, simple, and comfortable furniture completes this identity."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/la-trobada/concept-materials",
+			"alt": "Mediterranean material palette and furniture board for La Trobada"
+		},
+		{
+			"_template": "text",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "1. Bogart high stools by Vergès / 2. Clay mortar wall finish / 3. Traditional terracotta tile by Ferres / 4. Wall sconce by Marset / 5. Tableware by Aguadé Cerámica / 6. Ceramic latticework element by Ferres."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "SPATIAL STRATEGY",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "The main goal was to resolve circulation between the kitchen, the dining room, and the terrace, which quadruples the indoor capacity. Avoiding cross-traffic between workflows—food service, coffee preparation, payments, and clearing—was essential to improving team operations."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "To achieve this, we modified the street-facing enclosure and created an independent service station combining coffee preparation, clearing, and the beverage fridge, strategically positioned next to the dining-room entrance to speed up service."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "carousel",
+			"items": [
+				{
+					"mediaId": "projects/la-trobada/strategy-01",
+					"alt": "Independent service station between terrace and dining room"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy-02",
+					"alt": "Undulating ceramic latticework above the bar at La Trobada"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Yet the most distinctive and evocative element of the project is undoubtedly the large ceramic latticework above the bar. Its sinuous curve evokes the movement of the sea and becomes the space's most recognizable gesture—a form that transcends interior design and carries over into the menu design, adopting its undulating geometry as a visual thread."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/la-trobada/celosia-materials",
+			"alt": "Material details, undulating latticework, and menu application"
 		},
 		{
 			"_template": "gallery",
 			"cols": 2,
 			"images": [
 				{
-					"mediaId": "projects/la-trobada/process/01",
-					"alt": "Process image 1"
+					"mediaId": "projects/la-trobada/plan-initial",
+					"alt": "Initial floor plan of La Trobada"
 				},
 				{
-					"mediaId": "projects/la-trobada/process/02",
-					"alt": "Process image 2"
+					"mediaId": "projects/la-trobada/plan-project",
+					"alt": "Redesigned floor plan of La Trobada"
 				}
 			]
 		},
 		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/la-trobada/strategy-bar",
+			"alt": "Reorganized bar, kitchen, and high-table seating area"
+		},
+		{
+			"_template": "text",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "We reorganized the kitchen, moving hot food prep to the wall opposite the bar and placing cold prep behind the bar, opening up space for bar seating. We also reoriented the furniture and replaced low tables with high tables to encourage turnover and reactivate an underused interior dining room."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "To complete the intervention, we built a large custom storage cabinet in the corridor between the dining room and restrooms to house dining and terrace supplies, including cutlery, condiment baskets, preserves, and beverage stock."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"title": "Before and after"
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/before-after-01",
+					"alt": "Initial state of the La Trobada dining room before renovation"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-02",
+					"alt": "Initial state of the La Trobada bar before renovation"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-03",
+					"alt": "Pre-renovation interior view of La Trobada"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-04",
+					"alt": "Completed design: new dining room with high tables and Mediterranean warmth"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-05",
+					"alt": "Completed design: renewed bar with undulating ceramic latticework"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-06",
+					"alt": "Initial state of the entrance and service area before renovation"
+				}
+			]
+		},
+		{
+			"_template": "credits",
 			"title": "COLLABORATORS",
 			"list": [
 				{
@@ -183,7 +302,7 @@
 					"role": "Provider"
 				},
 				{
-					"name": "Auténtica Cerámica",
+					"name": "Aguadé Cerámica",
 					"role": "Provider"
 				},
 				{
@@ -194,14 +313,7 @@
 					"name": "Marset Iluminación",
 					"role": "Provider"
 				}
-			],
-			"_template": "credits"
-		},
-		{
-			"mediaId": "projects/la-trobada/collab/01",
-			"alt": "Collaborators showcase",
-			"_template": "media",
-			"variant": "full"
+			]
 		}
 	]
 }

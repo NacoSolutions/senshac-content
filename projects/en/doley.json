@@ -1,10 +1,10 @@
 {
 	"title": "Doley",
-	"description": "Hair beauty, colour and wellness brought together in an immersive experience.",
+	"description": "Aesthetics, color, and hair health in one space.",
 	"slug": "doley",
 	"publishDate": "2024-01-14T00:00:00.000Z",
 	"tags": [
-		"Salón de belleza"
+		"Beauty salon"
 	],
 	"showTags": true,
 	"featured": false,
@@ -12,16 +12,27 @@
 	"blocks": [
 		{
 			"_template": "media",
-			"variant": "banner"
+			"variant": "banner",
+			"mediaId": "projects/doley/cover",
+			"alt": "Doley beauty salon in Sant Gervasi, Barcelona"
 		},
 		{
+			"_template": "details",
 			"title": "Doley",
-			"_template": "details"
+			"subtitle": "Aesthetics, color, and hair health in one space.",
+			"services": "Interior design, Spatial identity",
+			"servicesLabel": "SERVICES",
+			"category": "BEAUTY SALON",
+			"categoryLabel": "CATEGORY",
+			"area": "53 m²",
+			"areaLabel": "AREA",
+			"location": "SANT GERVASI, BARCELONA",
+			"locationLabel": "LOCATION"
 		},
 		{
-			"title": "BRIEF",
 			"_template": "text",
 			"variant": "brief",
+			"title": "THE PROJECT",
 			"body": {
 				"type": "root",
 				"children": [
@@ -30,7 +41,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": ""
+								"text": "Doley is an image consultancy specializing in color, hair health, and character makeup. For Doley's new chapter in Sant Gervasi, we transformed a former takeover hair salon into a wellness, aesthetics, and treatment space aligned with its brand identity—designed to project professionalism and position it as a local benchmark."
 							}
 						]
 					}
@@ -38,9 +49,23 @@
 			}
 		},
 		{
-			"title": "CONCEPTO",
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/intro-brand",
+					"alt": "Doley brand identity"
+				},
+				{
+					"mediaId": "projects/doley/intro-detail",
+					"alt": "Interior design detail and atmosphere of Doley salon"
+				}
+			]
+		},
+		{
 			"_template": "text",
-			"variant": "concept",
+			"variant": "brief",
+			"title": "BUSINESS NEEDS",
 			"body": {
 				"type": "root",
 				"children": [
@@ -49,40 +74,290 @@
 						"children": [
 							{
 								"type": "text",
-								"text": ""
+								"text": "The project translates the studio's offering into a polished, cohesive image that blends wellness and fantasy, building loyalty among an aligned clientele to boost profitability and pave the way for its own product line."
 							}
 						]
 					}
 				]
 			}
-		},
-		{
-			"title": "ESTRATEGIA",
-			"_template": "text",
-			"variant": "strategy",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": ""
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"title": "COLABORADORES",
-			"list": [],
-			"_template": "credits"
 		},
 		{
 			"_template": "media",
-			"variant": "full"
+			"variant": "full",
+			"mediaId": "projects/doley/brief-01",
+			"alt": "Overview of Doley salon featuring dusty pink and sand tones"
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "CONCEPT & IDENTITY",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Doley brings together creative and technical disciplines that coexist naturally: color as a language, character makeup as artistic expression, and hair health as the essential foundation of wellbeing."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "The challenge was merging these worlds in a single space, balancing the expressive energy of color and fantasy with the serenity of a spa and hair treatments. We chose a dusty pink—echoing the original logo—that wraps the space from floor to ceiling as a unifying thread, softened by sand tones and natural woods. Dark styling chairs and the precision of brushed steel complete the palette, striking a balance between warmth, character, and sophistication."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "In order: Rustic lime-mortar stucco / Light natural oak finish / Dusty pink clay plaster / Brushed steel / Recycled plastic terrazzo-effect countertop by KIMO."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 3,
+			"images": [
+				{
+					"mediaId": "projects/doley/material-01-stucco",
+					"alt": "Rustic lime-mortar stucco"
+				},
+				{
+					"mediaId": "projects/doley/material-02-oak",
+					"alt": "Light natural oak wood finish"
+				},
+				{
+					"mediaId": "projects/doley/material-03-clay",
+					"alt": "Dusty pink clay plaster"
+				},
+				{
+					"mediaId": "projects/doley/material-04-steel",
+					"alt": "Brushed steel"
+				},
+				{
+					"mediaId": "projects/doley/material-05-terrazzo",
+					"alt": "Recycled plastic terrazzo-effect countertop by KIMO"
+				}
+			]
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/concept-01",
+					"alt": "Daytime facade of Doley salon in Sant Gervasi"
+				},
+				{
+					"mediaId": "projects/doley/concept-02",
+					"alt": "Lightweight minimalist shelving for product display"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "PRODUCT DISPLAY",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Given the strategic role of this product line—focused on respectful hair and scalp care—we chose to reduce display volume and keep visual clutter to a minimum. A curated set of light, minimalist shelves presents products in an orderly, structured way, reinforcing sophistication and spotlighting the treatment experience."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "SPATIAL STRATEGY",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Spatially, we resolved the complex, irregular footprint of the premises by establishing a logical structure and sizing each functional zone proportionally, allowing us to integrate a separate, dedicated space for the hair spa."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/plan-initial",
+					"alt": "Initial floorplan before renovation"
+				},
+				{
+					"mediaId": "projects/doley/plan-project",
+					"alt": "Proposed floorplan for Doley salon"
+				}
+			]
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/strategy-01",
+					"alt": "Interior view of the redesigned Doley layout"
+				},
+				{
+					"mediaId": "projects/doley/before-01",
+					"alt": "Existing condition of the premises prior to renovation"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "TREATMENT STATION & WASH AREA",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Operationally, we restructured the interior to improve circulation around the wash basins and add a private treatment station, avoiding the exposure of the original layout. The former wet zone lacked minimum working clearance and kept the color-mixing area separated from the basins, slowing down daily work. One of the biggest challenges was integrating a dedicated hair spa right next to the water supply."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/strategy-02",
+					"alt": "Private treatment station with ceiling-track curtain"
+				},
+				{
+					"mediaId": "projects/doley/strategy-03",
+					"alt": "Wash basins and hair spa zone"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "STORAGE & SPACIOUSNESS",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Solving the lack of storage was a top priority. We designed several strategic points: a generously dimensioned wash area, a back room equipped with a desk, washing machine, and stock cabinets, plus storage integrated directly into the salon furniture. The oval reception counter, wardrobe, and auxiliary units maintain order and lighten the visual field. Floor-to-ceiling mirrors multiply the perception of space—a tool that only works in your favor when order is maintained—creating a bright, spacious atmosphere."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/storage-01",
+					"alt": "Custom furniture and integrated storage solutions"
+				},
+				{
+					"mediaId": "projects/doley/storage-02",
+					"alt": "Floor-to-ceiling mirrors and oval counter at Doley salon"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/doley/before-02",
+			"alt": "Previous interior condition before the renovation"
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "STOREFRONT",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Located on a quiet street, it was essential for the salon to gain long-range visibility and draw in passersby."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "To capture attention at first glance, we removed posters and signage from the shopfront and cleared out the old furniture, adding clean glass decals detailing the services offered."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "At night, warm interior lighting creates an inviting atmosphere while highlighting key focal points inside."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/storefront-night",
+					"alt": "Doley storefront at night with warm interior lighting"
+				},
+				{
+					"mediaId": "projects/doley/before-03",
+					"alt": "Previous storefront condition before renovation"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/doley/storefront-interior",
+			"alt": "Interior perspective of Doley beauty salon"
 		}
 	]
 }
