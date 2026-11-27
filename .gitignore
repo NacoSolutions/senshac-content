@@ -7,3 +7,4 @@ node_modules/
 .devenv/
 .direnv/
 .engram/
+.wrangler/
