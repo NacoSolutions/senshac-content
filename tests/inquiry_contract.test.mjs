@@ -73,7 +73,11 @@ test("localized home and service CTAs preselect only the canonical situation or 
 		expect(homeLinks.some((href) => href.includes("?situation=growth"))).toBe(
 			true,
 		);
-		expect(homeLinks.includes(`/${locale}/contact`)).toBe(true);
+		expect(
+			homeLinks.some((href) =>
+				href.includes("?situation=growth&service=other-challenge"),
+			),
+		).toBe(true);
 		expect(homeLinks.some((href) => href.includes("?path="))).toBe(false);
 		const cards = servicesPage.blocks.find(
 			(block) => block._template === "list" && block.items?.length === 3,
