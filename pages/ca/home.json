@@ -118,7 +118,7 @@
 				{ "title": "Vull obrir el meu primer espai", "text": "", "href": "/ca/contact?situation=first-space" },
 				{ "title": "El meu local necessita un canvi", "text": "", "href": "/ca/contact?situation=existing-space" },
 				{ "title": "Vull fer créixer el meu negoci", "text": "", "href": "/ca/contact?situation=growth" },
-				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact?situation=growth&service=other-challenge" }
+				{ "title": "Tens un altre repte? Parlem-ne", "text": "", "href": "/ca/contact" }
 			]
 		},
 		{
