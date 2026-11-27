@@ -118,7 +118,7 @@
 				{ "title": "I want to open my first space", "text": "", "href": "/en/contact?situation=first-space" },
 				{ "title": "My space needs a change", "text": "", "href": "/en/contact?situation=existing-space" },
 				{ "title": "I want to grow my business", "text": "", "href": "/en/contact?situation=growth" },
-				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact" }
+				{ "title": "Facing a different challenge? Let’s talk", "text": "", "href": "/en/contact?situation=growth&service=other-challenge" }
 			]
 		},
 		{

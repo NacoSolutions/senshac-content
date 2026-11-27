@@ -21,7 +21,7 @@ const inquiryHrefs = (locale) => [
 	"/" + locale + "/contact?situation=first-space",
 	"/" + locale + "/contact?situation=existing-space",
 	"/" + locale + "/contact?situation=growth",
-	"/" + locale + "/contact",
+	"/" + locale + "/contact?situation=growth&service=other-challenge",
 ];
 
 test("localized homepages include the five reference phases without changing inquiry routes", async () => {
