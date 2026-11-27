@@ -136,7 +136,7 @@
 		{
 			"_template": "callout",
 			"text": "Cuéntanos tu proyecto",
-			"link": "/es/contact"
+			"link": "/es/contact?mode=guided"
 		}
 	]
 }

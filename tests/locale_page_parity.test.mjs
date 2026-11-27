@@ -57,7 +57,7 @@ test("studio pages include the localized founder story, recognitions, and contac
 		expect(page.blocks[3].items).toHaveLength(4);
 		expect(page.blocks.at(-1)).toMatchObject({
 			_template: "callout",
-			link: `/${locale}/contact`,
+			link: `/${locale}/contact?mode=guided`,
 		});
 		expect(JSON.stringify(page.blocks)).not.toContain(
 			"escenario donde la marca cobra vida",
