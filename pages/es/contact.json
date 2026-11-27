@@ -3,10 +3,10 @@
   "description": "Contacta con nosotros para discutir tu proyecto de diseño de interiores.",
   "chrome": {
     "header": {
-      "style": "default",
-      "mode": "scrolling",
-      "atFinal": "transparent-dark",
-      "scrolling": "opaque-dark"
+      "style": "transparent",
+      "mode": "fixed",
+      "scrolling": "transparent-light",
+      "atFinal": "opaque-light"
     }
   },
   "blocks": [
