@@ -11,7 +11,7 @@ test("Spanish services FAQ matches WEB4 and contains finalized answers", async (
 	const faq = page.blocks.find(
 		(block) =>
 			block._template === "accordion" &&
-			block.intro?.children?.[0]?.children?.[0]?.text === "FAQ'S",
+			block.intro?.children?.[0]?.children?.[0]?.text === "PREGUNTAS FRECUENTES",
 	);
 
 	expect(faq?.items.map((item) => item.title)).toEqual([

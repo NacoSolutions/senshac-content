@@ -4,9 +4,14 @@
 	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
-			"title": "SERVICIOS A MEDIDA DE TUS NECESIDADES:",
+			"mediaId": "reference-intake/services/intro",
+			"imageAlt": "Investigación visual y material durante el proceso creativo",
+			"_template": "showcase"
+		},
+		{
+			"title": "Servicios a medida de tus necesidades:",
 			"headingLevel": "h1",
-			"showStar": true,
+			"showStar": false,
 			"_template": "text"
 		},
 		{
@@ -26,7 +31,7 @@
 			},
 			"items": [
 				{
-					"title": "Consultoría estratégica",
+					"title": "CONSULTORÍA ESTRATÉGICA",
 					"text": {
 						"type": "root",
 						"children": [
@@ -35,17 +40,27 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después. Analizamos tu local y te damos directrices estratégicas para integrar la marca, optimizar el espacio y mejorar los flujos de venta."
+										"text": "Sesión intensiva de dos horas con entrega de dosier 72h después.",
+										"bold": true
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Una auditoría de tu espacio para detectar oportunidades y tomar decisiones estratégicas."
 									}
 								]
 							}
 						]
 					},
-					"href": "/es/contact?service=strategic-consultation",
-					"ctaText": "Solicita una Consultoría estratégica ↗"
+					"href": "/es/methods/consultation",
+					"ctaText": "Agenda sesión ↗"
 				},
 				{
-					"title": "Proyecto Decorativo y Restyling",
+					"title": "ESTILISMO / REBRANDING",
 					"text": {
 						"type": "root",
 						"children": [
@@ -54,17 +69,27 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Desarrollamos el concepto espacial y la expresión de marca, seleccionamos mobiliario, iluminación y piezas a medida, con ninguna o mínima modificación de la distribución y sin obra o con intervención mínima."
+										"text": "Transformación puntual o estilismo sin cambios de distribución.",
+										"bold": true
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Renueva la imagen de tu negocio y actualiza elementos para alinearlos con tu marca."
 									}
 								]
 							}
 						]
 					},
 					"href": "/es/contact?service=decorative-restyling",
-					"ctaText": "Solicita un Proyecto Decorativo y Restyling ↗"
+					"ctaText": "Cuéntanos qué necesitas ↗"
 				},
 				{
-					"title": "Proyecto Integral",
+					"title": "PROYECTO INTEGRAL",
 					"text": {
 						"type": "root",
 						"children": [
@@ -73,21 +98,31 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Acompañamiento 360º desde la idea hasta la apertura. Abarcamos el proceso desde la estrategia inicial hasta la ejecución, incluyendo los cambios de distribución y la obra necesarios."
+										"text": "Acompañamiento 360º desde la idea hasta la apertura.",
+										"bold": true
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Para crear un espacio completamente hecho para tu marca."
 									}
 								]
 							}
 						]
 					},
 					"href": "/es/contact?service=integral",
-					"ctaText": "Solicita un Proyecto Integral ↗"
+					"ctaText": "Solicita información ↗"
 				}
 			],
 			"_template": "list"
 		},
 		{
-			"mediaId": "reference-intake/services/intro",
-			"imageAlt": "Investigación visual y material durante el proceso creativo",
+			"mediaId": "reference-intake/services/moodboard",
+			"imageAlt": "Muestras de materiales y acabados",
 			"_template": "showcase"
 		},
 		{
@@ -96,7 +131,7 @@
 				{
 					"number": "01",
 					"title": "Diagnóstico y estrategia espacial",
-					"summary": "Antes de diseñar, analizamos tu marca, tu negocio y las necesidades del espacio para definir una estrategia que haga que todo trabaje en la misma dirección.",
+					"summary": "Antes de diseñar, analizamos tu marca y las necesidades de tu negocio y espacio para que todo trabaje en la misma dirección.",
 					"details": [
 						{
 							"label": "Auditoría de negocio",
@@ -136,8 +171,8 @@
 				},
 				{
 					"number": "02",
-					"title": "Concepto creativo",
-					"summary": "Traducimos tu estrategia en una experiencia espacial memorable. Diseñamos el recorrido del cliente y una atmósfera visual capaz de hacer que tu negocio destaque y tenga una identidad propia.",
+					"title": "Concepto Creativo y 3D",
+					"summary": "Desarrollamos un concepto creativo alineado con tu marca y una estrategia espacial que mejora la experiencia del cliente, optimiza tu operativa e impulsa las ventas.",
 					"details": [
 						{
 							"label": "Identidad",
@@ -211,8 +246,8 @@
 				},
 				{
 					"number": "03",
-					"title": "Desarrollo técnico",
-					"summary": "Convertimos la visión creativa en un proyecto ejecutable. Desarrollamos toda la documentación técnica necesaria para llevar el proyecto de interiorismo a la realidad con control y coherencia.",
+					"title": "Desarrollo Técnico",
+					"summary": "Elaboramos la documentación técnica necesaria para llevar el proyecto de interiorismo a la realidad con control y coherencia.",
 					"details": [
 						{
 							"label": "Planos técnicos ejecutivos",
@@ -269,8 +304,8 @@
 				},
 				{
 					"number": "04",
-					"title": "Supervisión de obra y coordinación de montaje",
-					"summary": "Acompañamos el proceso de ejecución para que la transición del papel a la realidad sea fiel al diseño, resolviendo imprevistos y coordinando el montaje.",
+					"title": "Supervisión de obra y Coordinación de montaje",
+					"summary": "Acompañamos la ejecución junto al jefe de obra e industriales para asegurar que el resultado final sea fiel al proyecto aprobado.",
 					"details": [
 						{
 							"label": "Un solo interlocutor",
@@ -329,18 +364,8 @@
 			"_template": "accordion"
 		},
 		{
-			"text": "Agenda una llamada",
-			"link": "/es/contact",
-			"_template": "callout"
-		},
-		{
-			"mediaId": "reference-intake/services/moodboard",
-			"imageAlt": "Muestras de materiales y acabados",
-			"_template": "showcase"
-		},
-		{
-			"text": "Solicita una propuesta personalizada",
-			"link": "/es/contact",
+			"text": "Empieza tu proyecto",
+			"link": "/es/contact?mode=guided",
 			"_template": "callout"
 		},
 		{
@@ -367,7 +392,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "FAQ'S"
+								"text": "PREGUNTAS FRECUENTES"
 							}
 						]
 					}
@@ -377,7 +402,7 @@
 				{
 					"number": "",
 					"title": "¿Cuándo es el mejor momento para contactar con el estudio?",
-					"summary": "Cuanto antes podamos conocer tu proyecto, mejor. Podemos intervenir desde las primeras fases, cuando estás definiendo el negocio o valorando un espacio, pero también cuando ya tienes un local y necesitas replantearlo, transformarlo o hacerlo funcionar mejor.",
+					"summary": "Cuanto antes podamos conocer tu proyecto, mejor. Los estadios iniciales son críticos para detectar oportunidades, anticipar decisiones y evitar problemas de distribución, costes o ejecución más adelante.",
 					"details": [
 						{
 							"label": "",
@@ -389,7 +414,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Los estadios iniciales son críticos para detectar oportunidades, anticipar decisiones y evitar problemas de distribución, costes o ejecución más adelante."
+												"text": "Podemos intervenir desde las primeras fases, cuando estás definiendo el negocio o valorando un espacio, pero también cuando ya tienes un local y necesitas replantearlo, transformarlo o hacerlo funcionar mejor."
 											}
 										]
 									}
@@ -401,12 +426,12 @@
 				{
 					"number": "",
 					"title": "¿Hacéis proyectos fuera de nuestra ciudad?",
-					"summary": "Sí. Las fases de Diagnóstico y Concepto Creativo pueden desarrollarse de forma híbrida, combinando trabajo online y visitas presenciales. Nos desplazamos para la toma de datos inicial y para las fases críticas de ejecución y montaje."
+					"summary": "Sí. La fase creativa puede desarrollarse remotamente o de forma híbrida, combinando trabajo online y visitas presenciales. Nos desplazamos para la toma de datos en las fases críticas de ejecución y montaje."
 				},
 				{
 					"number": "",
 					"title": "¿Os encargáis de la obra, los permisos y la arquitectura estructural?",
-					"summary": "Nuestro foco está en la estrategia espacial y el diseño de interiores.",
+					"summary": "Nuestro foco está en la creatividad, la estrategia espacial y el diseño de interiores.",
 					"details": [
 						{
 							"label": "",
@@ -418,7 +443,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Para la ejecución de obra, licencias y proyectos técnicos que requieran la intervención de arquitectos o ingenieros, colaboramos estrechamente con tus propios técnicos o te conectamos con nuestra red de profesionales de confianza. Coordinamos nuestro trabajo con ellos para que todas las piezas del proyecto avancen en la misma dirección."
+												"text": "Para la ejecución de obra, licencias y proyectos técnicos que requieran la intervención de arquitectos o ingenieros, colaboramos estrechamente con una red de profesionales de confianza."
 											}
 										]
 									}
@@ -442,7 +467,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "La dirección técnica y legal de la obra corresponde a la empresa constructora y/o al técnico facultativo responsable."
+												"text": "Aclaramos, sin embargo, que la dirección técnica y legal de la obra corresponde a la empresa constructora y/o al técnico facultativo responsable."
 											}
 										]
 									}
@@ -454,25 +479,8 @@
 				{
 					"number": "",
 					"title": "¿Cómo se calculan los honorarios del proyecto?",
-					"summary": "Los honorarios se definen en función del alcance, la complejidad y las necesidades específicas de cada proyecto.",
+					"summary": "Los honorarios se definen en función del alcance, la complejidad y las necesidades específicas de cada proyecto. Antes de empezar, recibirás una propuesta detallada con todo lo que incluye el proyecto y los honorarios, para que tengas total claridad desde el principio.",
 					"details": [
-						{
-							"label": "",
-							"text": {
-								"type": "root",
-								"children": [
-									{
-										"type": "p",
-										"children": [
-											{
-												"type": "text",
-												"text": "Antes de empezar, recibirás una propuesta detallada con todo lo que incluye el proyecto y sus honorarios, para que tengas total claridad desde el principio."
-											}
-										]
-									}
-								]
-							}
-						},
 						{
 							"label": "",
 							"text": {
@@ -507,7 +515,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Si ya tienes una constructora o industriales de confianza, podemos coordinarnos con ellos y trabajar conjuntamente para desarrollar el proyecto y asegurar una correcta ejecución."
+												"text": "Y si ya tienes una constructora o industriales de confianza, podemos coordinarnos con ellos y trabajar conjuntamente para desarrollar el proyecto y asegurar una correcta ejecución."
 											}
 										]
 									}
@@ -519,7 +527,7 @@
 				{
 					"number": "",
 					"title": "¿Puedo comprar mis propios materiales?",
-					"summary": "Centralizar las compras nos permite detectar posibles incidencias con antelación, coordinar las entregas con la obra y reducir errores, retrasos o costes imprevistos. No obstante, si ya tienes algunos proveedores o materiales identificados, no tenemos problemas en incorporarlos.",
+					"summary": "La selección de materiales se trabaja conjuntamente para trasladar la identidad de marca al espacio. Desde el estudio centralizamos su suministro y coordinación, priorizando fabricantes nacionales de confianza para garantizar calidad, plazos y presupuesto.",
 					"details": [
 						{
 							"label": "",
@@ -531,7 +539,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Trabajamos principalmente con proveedores nacionales que conocemos y recomendamos en función de las necesidades y el presupuesto de cada proyecto."
+												"text": "Si ya tenéis algunos materiales o proveedores identificados, podemos valorarlos para incorporarlos y coordinarlos dentro del proyecto."
 											}
 										]
 									}

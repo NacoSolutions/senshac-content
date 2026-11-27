@@ -183,25 +183,25 @@ test("localized homepages follow the PDF order and preserve confirmed content", 
 	}
 });
 
-test("Spanish methods phases match the WEB4 sequence and approved descriptions", async () => {
+test("Spanish methods phases match the WEB SERVICES.indd sequence and approved descriptions", async () => {
 	const page = await readPage("../pages/es/services.json");
 	expect(page.title).toBe("Servicios - Sens*Hac");
 	expect(page.blocks.map(({ _template }) => _template)).toEqual([
+		"showcase",
 		"text",
 		"list",
 		"showcase",
 		"accordion",
 		"callout",
 		"showcase",
-		"callout",
-		"showcase",
 		"accordion",
 	]);
-	expect(page.blocks[0]).toMatchObject({
-		title: "SERVICIOS A MEDIDA DE TUS NECESIDADES:",
+	expect(page.blocks[1]).toMatchObject({
+		title: "Servicios a medida de tus necesidades:",
 		headingLevel: "h1",
+		showStar: false,
 	});
-	expect(page.blocks[1].intro.children[0].children[0].text).toBe(
+	expect(page.blocks[2].intro.children[0].children[0].text).toBe(
 		"Sabemos que no hay dos situaciones iguales, por eso te ofrecemos la flexibilidad de contratar sólo lo que necesitas:",
 	);
 	const methods = page.blocks.find(
@@ -221,57 +221,67 @@ test("Spanish methods phases match the WEB4 sequence and approved descriptions",
 			number: "01",
 			title: "Diagnóstico y estrategia espacial",
 			summary:
-				"Antes de diseñar, analizamos tu marca, tu negocio y las necesidades del espacio para definir una estrategia que haga que todo trabaje en la misma dirección.",
+				"Antes de diseñar, analizamos tu marca y las necesidades de tu negocio y espacio para que todo trabaje en la misma dirección.",
 		},
 		{
 			number: "02",
-			title: "Concepto creativo",
+			title: "Concepto Creativo y 3D",
 			summary:
-				"Traducimos tu estrategia en una experiencia espacial memorable. Diseñamos el recorrido del cliente y una atmósfera visual capaz de hacer que tu negocio destaque y tenga una identidad propia.",
+				"Desarrollamos un concepto creativo alineado con tu marca y una estrategia espacial que mejora la experiencia del cliente, optimiza tu operativa e impulsa las ventas.",
 		},
 		{
 			number: "03",
-			title: "Desarrollo técnico",
+			title: "Desarrollo Técnico",
 			summary:
-				"Convertimos la visión creativa en un proyecto ejecutable. Desarrollamos toda la documentación técnica necesaria para llevar el proyecto de interiorismo a la realidad con control y coherencia.",
+				"Elaboramos la documentación técnica necesaria para llevar el proyecto de interiorismo a la realidad con control y coherencia.",
 		},
 		{
 			number: "04",
-			title: "Supervisión de obra y coordinación de montaje",
+			title: "Supervisión de obra y Coordinación de montaje",
 			summary:
-				"Acompañamos el proceso de ejecución para que la transición del papel a la realidad sea fiel al diseño, resolviendo imprevistos y coordinando el montaje.",
+				"Acompañamos la ejecución junto al jefe de obra e industriales para asegurar que el resultado final sea fiel al proyecto aprobado.",
 		},
 	]);
+	expect(page.blocks[5]).toMatchObject({
+		_template: "callout",
+		text: "Empieza tu proyecto",
+		link: "/es/contact?mode=guided",
+	});
 });
 
-test("English and Catalan pages follow the WEB4 homepage and method structure", async () => {
+test("English and Catalan pages follow the WEB SERVICES.indd method structure", async () => {
 	for (const locale of ["en", "ca"]) {
 		const methods = await readPage(`../pages/${locale}/services.json`);
 		expect(methods.blocks.map(({ _template }) => _template)).toEqual([
+			"showcase",
 			"text",
 			"list",
 			"showcase",
 			"accordion",
 			"callout",
 			"showcase",
-			"callout",
-			"showcase",
 			"accordion",
 		]);
-		expect(methods.blocks[3].items).toHaveLength(4);
-		expect(methods.blocks[8].items).toHaveLength(7);
+		expect(methods.blocks[4].items).toHaveLength(4);
+		expect(methods.blocks[7].items).toHaveLength(7);
 		expect(methods.title).toBe(
 			locale === "ca" ? "Serveis - Sens*Hac" : "Services - Sens*Hac",
 		);
-		expect(methods.blocks[1].intro.children[0].children[0].text).toBe(
+		expect(methods.blocks[2].intro.children[0].children[0].text).toBe(
 			locale === "ca"
 				? "Sabem que no hi ha dues situacions iguals; per això t’oferim la flexibilitat de contractar només el que necessites:"
 				: "We know no two situations are alike, so we offer the flexibility to choose only what you need:",
 		);
-		expect(methods.blocks[3].intro.children[0].children[0].text).toBe(
+		expect(methods.blocks[4].intro.children[0].children[0].text).toBe(
 			locale === "ca"
 				? "El pas a pas: de l’estratègia a l’obertura."
 				: "Step by step: from strategy to opening.",
 		);
+		expect(methods.blocks[5]).toMatchObject({
+			_template: "callout",
+			text:
+				locale === "ca" ? "Comença el teu projecte" : "Start your project",
+			link: `/${locale}/contact?mode=guided`,
+		});
 	}
 });

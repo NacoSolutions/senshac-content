@@ -7,7 +7,7 @@ const richText = (value) =>
 		.map((node) => node.text ?? "")
 		.join("\n");
 
-test("Spanish services cards match WEB4 names, copy, and actions", async () => {
+test("Spanish services cards match WEB SERVICES.indd names, copy, and actions", async () => {
 	const page = JSON.parse(
 		await readFile(
 			new URL("../pages/es/services.json", import.meta.url),
@@ -17,7 +17,7 @@ test("Spanish services cards match WEB4 names, copy, and actions", async () => {
 	const cards = page.blocks.find(
 		(block) =>
 			block._template === "list" &&
-			block.items?.some((item) => item.title === "Consultoría estratégica"),
+			block.items?.some((item) => item.title === "CONSULTORÍA ESTRATÉGICA"),
 	);
 
 	expect(
@@ -29,21 +29,21 @@ test("Spanish services cards match WEB4 names, copy, and actions", async () => {
 		})),
 	).toEqual([
 		{
-			title: "Consultoría estratégica",
-			text: "Sesión intensiva de dos horas con entrega de dosier 72h después. Analizamos tu local y te damos directrices estratégicas para integrar la marca, optimizar el espacio y mejorar los flujos de venta.",
-			action: "Solicita una Consultoría estratégica ↗",
-			href: "/es/contact?service=strategic-consultation",
+			title: "CONSULTORÍA ESTRATÉGICA",
+			text: "Sesión intensiva de dos horas con entrega de dosier 72h después.\nUna auditoría de tu espacio para detectar oportunidades y tomar decisiones estratégicas.",
+			action: "Agenda sesión ↗",
+			href: "/es/methods/consultation",
 		},
 		{
-			title: "Proyecto Decorativo y Restyling",
-			text: "Desarrollamos el concepto espacial y la expresión de marca, seleccionamos mobiliario, iluminación y piezas a medida, con ninguna o mínima modificación de la distribución y sin obra o con intervención mínima.",
-			action: "Solicita un Proyecto Decorativo y Restyling ↗",
+			title: "ESTILISMO / REBRANDING",
+			text: "Transformación puntual o estilismo sin cambios de distribución.\nRenueva la imagen de tu negocio y actualiza elementos para alinearlos con tu marca.",
+			action: "Cuéntanos qué necesitas ↗",
 			href: "/es/contact?service=decorative-restyling",
 		},
 		{
-			title: "Proyecto Integral",
-			text: "Acompañamiento 360º desde la idea hasta la apertura. Abarcamos el proceso desde la estrategia inicial hasta la ejecución, incluyendo los cambios de distribución y la obra necesarios.",
-			action: "Solicita un Proyecto Integral ↗",
+			title: "PROYECTO INTEGRAL",
+			text: "Acompañamiento 360º desde la idea hasta la apertura.\nPara crear un espacio completamente hecho para tu marca.",
+			action: "Solicita información ↗",
 			href: "/es/contact?service=integral",
 		},
 	]);
