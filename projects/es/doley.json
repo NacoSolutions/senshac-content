@@ -1,6 +1,6 @@
 {
 	"title": "Doley",
-	"description": "Estética, color y salud capilar convertidos en una experiencia envolvente.",
+	"description": "Estética, color y salud capilar en un mismo espacio.",
 	"slug": "doley",
 	"publishDate": "2024-01-14T00:00:00.000Z",
 	"tags": [
@@ -12,16 +12,27 @@
 	"blocks": [
 		{
 			"_template": "media",
-			"variant": "banner"
+			"variant": "banner",
+			"mediaId": "projects/doley/cover",
+			"alt": "Salón de belleza Doley en Sant Gervasi, Barcelona"
 		},
 		{
+			"_template": "details",
 			"title": "Doley",
-			"_template": "details"
+			"subtitle": "Estética, color y salud capilar en un mismo espacio.",
+			"services": "Diseño de interiores, Identidad espacial",
+			"servicesLabel": "SERVICIOS",
+			"category": "SALÓN DE BELLEZA",
+			"categoryLabel": "CATEGORÍA",
+			"area": "53 m²",
+			"areaLabel": "ÁREA",
+			"location": "SANT GERVASI, BARCELONA",
+			"locationLabel": "UBICACIÓN"
 		},
 		{
-			"title": "BRIEF",
 			"_template": "text",
 			"variant": "brief",
+			"title": "EL PROYECTO",
 			"body": {
 				"type": "root",
 				"children": [
@@ -30,7 +41,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": ""
+								"text": "Doley es una asesoría de imagen especializada en color, salud capilar y caracterización de personajes. Para la nueva etapa de Doley en Sant Gervasi, transformamos una antigua peluquería de traspaso en un espacio de wellness, estética y tratamiento alineado con su identidad de marca; diseñado para proyectar profesionalidad y posicionarlo como referente en el ámbito local."
 							}
 						]
 					}
@@ -38,9 +49,23 @@
 			}
 		},
 		{
-			"title": "CONCEPTO",
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/intro-brand",
+					"alt": "Identidad de marca Doley"
+				},
+				{
+					"mediaId": "projects/doley/intro-detail",
+					"alt": "Detalle de interiorismo y atmósfera del salón Doley"
+				}
+			]
+		},
+		{
 			"_template": "text",
-			"variant": "concept",
+			"variant": "brief",
+			"title": "NECESIDADES DE NEGOCIO",
 			"body": {
 				"type": "root",
 				"children": [
@@ -49,40 +74,290 @@
 						"children": [
 							{
 								"type": "text",
-								"text": ""
+								"text": "El proyecto busca traducir su propuesta en una imagen pulida y coherente que fusione wellness y fantasía, fidelizando a una clientela afín para elevar la rentabilidad y abrir la puerta a su propia línea de producto."
 							}
 						]
 					}
 				]
 			}
-		},
-		{
-			"title": "ESTRATEGIA",
-			"_template": "text",
-			"variant": "strategy",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": ""
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"title": "COLABORADORES",
-			"list": [],
-			"_template": "credits"
 		},
 		{
 			"_template": "media",
-			"variant": "full"
+			"variant": "full",
+			"mediaId": "projects/doley/brief-01",
+			"alt": "Vista general del salón Doley con paleta en rosa empolvado y tonos arena"
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "CONCEPTO E IDENTIDAD",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Doley nace de la unión de distintas facetas creativas y técnicas que conviven de manera natural: el color como lenguaje, el maquillaje de caracterización como expresión artística y la salud capilar como base imprescindible del bienestar."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "El reto era fusionar estos universos en un mismo espacio, equilibrando la fuerza expresiva del color y la fantasía con la serenidad propia del spa y los tratamientos capilares. Elegimos un color rosa empolvado, recordando al color del antiguo logo, que envuelve el espacio de arriba a abajo como hilo conductor, suavizado por tonos arena y maderas naturales. El conjunto se completa con el contraste de los sillones oscuros y la precisión del acero cepillado, creando un equilibrio entre calidez, carácter y sofisticación."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Por orden: Estuco rústico con mortero de cal / Acabado de madera natural de roble claro / Mortero de arcilla en tonalidad rosa empolvado / Acero cepillado / Sobre de plástico reciclado imitando al terrazo, de KIMO."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 3,
+			"images": [
+				{
+					"mediaId": "projects/doley/material-01-stucco",
+					"alt": "Estuco rústico con mortero de cal"
+				},
+				{
+					"mediaId": "projects/doley/material-02-oak",
+					"alt": "Acabado de madera natural de roble claro"
+				},
+				{
+					"mediaId": "projects/doley/material-03-clay",
+					"alt": "Mortero de arcilla en tonalidad rosa empolvado"
+				},
+				{
+					"mediaId": "projects/doley/material-04-steel",
+					"alt": "Acero cepillado"
+				},
+				{
+					"mediaId": "projects/doley/material-05-terrazzo",
+					"alt": "Sobre de plástico reciclado imitando al terrazo, de KIMO"
+				}
+			]
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/concept-01",
+					"alt": "Fachada diurna del salón Doley en Sant Gervasi"
+				},
+				{
+					"mediaId": "projects/doley/concept-02",
+					"alt": "Estanterías ligeras y minimalistas para la exposición de producto"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "EXPOSICIÓN DE PRODUCTO",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Dado el papel estratégico de esta línea de productos para el negocio, orientada al tratamiento y al cuidado respetuoso del cabello y el cuero cabelludo, se opta por reducir la presencia de producto de exposición y reducir la carga visual al mínimo. Una selección de estanterías ligeras y minimalistas permite exhibirlo de forma ordenada y estructurada, reforzando la percepción de sofisticación y poniendo en valor la experiencia de tratamiento."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "ESTRATEGIA ESPACIAL",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "A nivel espacial, resolvimos la compleja morfología irregular del local dándole una estructura lógica y dimensionando cada área funcional de forma proporcional, lo que nos permitió integrar, además, un espacio separado y exclusivo para el spa capilar."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/plan-initial",
+					"alt": "Planta de estado inicial del local"
+				},
+				{
+					"mediaId": "projects/doley/plan-project",
+					"alt": "Planta de distribución del proyecto Doley"
+				}
+			]
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/strategy-01",
+					"alt": "Vista interior de la nueva distribución del salón Doley"
+				},
+				{
+					"mediaId": "projects/doley/before-01",
+					"alt": "Fotografía del estado previo del local antes de la reforma"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "TOCADOR DE TRATAMIENTOS Y ZONA DE AGUAS",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Desde el punto de vista operativo, reestructuramos el interior para ganar fluidez en los lavacabezas y sumar un tocador privado exclusivo para tratamientos, evitando la exposición de la imagen original. La antigua zona de aguas no solo carecía de dimensiones mínimas para trabajar, sino que mantenía el área de mezclas separada de los lavacabezas, entorpeciendo el día a día. Una de las mayores dificultades fue integrar en este esquema un espacio dedicado al spa capilar que debía ubicarse junto a la toma de agua."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/strategy-02",
+					"alt": "Tocador privado de tratamientos con cortina en riel"
+				},
+				{
+					"mediaId": "projects/doley/strategy-03",
+					"alt": "Zona de lavacabezas y spa capilar"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "ALMACENAMIENTO Y AMPLITUD",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Una de las prioridades fue solucionar la falta de almacenamiento. Para ello, se proyectaron varios puntos estratégicos: un lavacabezas bien dimensionado, una recámara equipada con escritorio, lavadora y armarios de stock, además de soluciones integradas en el propio mobiliario del salón. El mostrador ovalado, el armario ropero y los pequeños elementos auxiliares garantizan el orden y descargan visualmente el conjunto. Por su parte, los espejos de suelo a techo multiplican la percepción espacial, un recurso que solo juega a favor cuando existe orden, logrando ahora una atmósfera llena de luz y amplitud."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/storage-01",
+					"alt": "Soluciones de mobiliario a medida y almacenamiento integrado"
+				},
+				{
+					"mediaId": "projects/doley/storage-02",
+					"alt": "Espejos de suelo a techo y mostrador ovalado en el salón Doley"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/doley/before-02",
+			"alt": "Estado previo de la zona interior antes de la intervención"
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "ESCAPARATE",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Al ubicarse en una calle tranquila, era vital que el local ganara visibilidad desde lejos y atrajera al paseante."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Para captar la atención desde el primer vistazo, retiramos los carteles y anuncios del escaparate y despejamos el mobiliario anterior. Además, añadimos vinilos en el vidrio detallando los diversos servicios."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Por la noche, la iluminación cálida del local logra una atmósfera acogedora que, al mismo tiempo, destaca puntos clave del interior."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/storefront-night",
+					"alt": "Escaparate nocturno de Doley con iluminación cálida"
+				},
+				{
+					"mediaId": "projects/doley/before-03",
+					"alt": "Estado previo del escaparate antes de la reforma"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/doley/storefront-interior",
+			"alt": "Perspectiva interior del salón de belleza Doley"
 		}
 	]
 }

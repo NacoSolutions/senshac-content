@@ -1,40 +1,38 @@
 {
 	"title": "La Trobada",
-	"description": "Un homenaje a la cultura mediterránea, el sabor y la calidez. Restaurante de barrio en Badalona.",
+	"description": "El sabor de encontrarse tiene gusto mediterráneo. Bar de barrio de 52 m² en Casagemes, Badalona.",
 	"slug": "la-trobada",
 	"publishDate": "2024-01-15T00:00:00.000Z",
 	"completedDate": "2024-01-15T00:00:00.000Z",
 	"tags": [
-		"Bar/Restaurante",
+		"Bar",
 		"Gastronomía"
 	],
 	"featured": true,
 	"draft": false,
 	"blocks": [
 		{
-			"mediaId": "projects/la-trobada/cover",
-			"alt": "La Trobada",
 			"_template": "media",
-			"variant": "banner"
+			"variant": "banner",
+			"mediaId": "projects/la-trobada/hero",
+			"alt": "Interior de La Trobada en Casagemes, Badalona"
 		},
 		{
+			"_template": "details",
 			"title": "La Trobada",
-			"subtitle": "Un homenaje a la cultura mediterránea, el sabor y la calidez",
-			"mediaId": "projects/la-trobada/detail",
-			"services": "Diseño de interiores, Identidad visual",
+			"subtitle": "El sabor de encontrarse tiene gusto mediterráneo.",
+			"services": "Diseño de interiores, Identidad gráfica",
 			"servicesLabel": "SERVICIOS",
-			"category": "Bar/Restaurante",
+			"category": "BAR",
 			"categoryLabel": "CATEGORÍA",
-			"area": "<50 m²",
+			"area": "52 m²",
 			"areaLabel": "ÁREA",
-			"location": "Badalona, Barcelona",
-			"locationLabel": "UBICACIÓN",
-			"_template": "details"
+			"location": "Casagemes, Badalona",
+			"locationLabel": "UBICACIÓN"
 		},
 		{
-			"title": "BRIEF",
 			"_template": "text",
-			"variant": "brief",
+			"eyebrow": "BAR / 52 m² · Casagemes, Badalona",
 			"body": {
 				"type": "root",
 				"children": [
@@ -43,40 +41,16 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "La Trobada es un homenaje a la cultura mediterránea, el sabor y la calidez. Este pequeño restaurante de barrio, operado por Inma y Jonathan, funciona como un espacio de encuentro para vecinos y amigos. El nombre 'La Trobada' (en catalán 'punto de encuentro') refleja el estilo de vida mediterráneo caracterizado por la calidez y los momentos compartidos."
+								"text": "La Trobada es un bar de barrio liderado por una pareja catalano-valenciana, con la esencia y tradición mediterránea por bandera en su trato y su gastronomía."
 							}
 						]
-					}
-				]
-			}
-		},
-		{
-			"items": [
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/brief/01/1200.webp"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/brief/02/1200.webp"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/brief/03/1200.webp"
-				}
-			],
-			"_template": "carousel"
-		},
-		{
-			"title": "CONCEPTO",
-			"_template": "text",
-			"variant": "concept",
-			"body": {
-				"type": "root",
-				"children": [
+					},
 					{
 						"type": "p",
 						"children": [
 							{
 								"type": "text",
-								"text": "El concepto se centra en crear un ambiente acogedor que evoque la calidez mediterránea. La paleta de colores terrosos, materiales naturales y una iluminación cálida trabajan juntos para crear un espacio donde los comensales se sientan como en casa."
+								"text": "Abordamos un cambio de imagen integral —incluida la identidad gráfica diseñada por sens*hac— para alinear la identidad del negocio con una atmósfera cálida y una operativa ágil entre barra y sala."
 							}
 						]
 					}
@@ -84,85 +58,239 @@
 			}
 		},
 		{
-			"items": [
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/01/1200.webp"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/02/1200.webp"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/03/1200.webp"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/concept/04/1200.webp"
-				}
-			],
-			"_template": "carousel"
-		},
-		{
-			"title": "ESTRATEGIA",
-			"_template": "text",
-			"variant": "strategy",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": "El desafío principal consistió en optimizar el flujo entre el compacto interior de 50m² y la amplia terraza adyacente. La reorganización de la cocina abordó zonas funcionales para cocción, preparación y limpieza, además de estaciones dedicadas para el personal de sala."
-							}
-						]
-					}
-				]
-			}
-		},
-		{
+			"_template": "gallery",
 			"cols": 2,
 			"images": [
 				{
-					"mediaId": "projects/la-trobada/process/01",
-					"alt": "Proceso 1"
+					"mediaId": "projects/la-trobada/intro-menu",
+					"alt": "Carta de platos e identidad gráfica de La Trobada"
 				},
 				{
-					"mediaId": "projects/la-trobada/process/02",
-					"alt": "Proceso 2"
+					"mediaId": "projects/la-trobada/intro-ceramic",
+					"alt": "Celosía cerámica mediterránea de Ceràmica Ferrés"
 				}
-			],
-			"_template": "gallery"
+			]
 		},
 		{
+			"_template": "text",
+			"variant": "brief",
+			"title": "Necesidades de negocio",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "La apertura del Hospital Quirón a pocos metros del restaurante fue el detonante del proyecto, con el objetivo de captar nuevos clientes de paso, mejorar la operativa y aumentar el ticket medio."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "carousel",
 			"items": [
 				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/01/1200.webp",
-					"alt": "Estrategia 1"
+					"mediaId": "projects/la-trobada/business-01",
+					"alt": "Vista general de la sala y barra de La Trobada"
 				},
 				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/02/1200.webp",
-					"alt": "Estrategia 2"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/03/1200.webp",
-					"alt": "Estrategia 3"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/04/1200.webp",
-					"alt": "Estrategia 4"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/05/1200.webp",
-					"alt": "Estrategia 5"
-				},
-				{
-					"mediaId": "https://media.senshac.com/images/projects/la-trobada/strategy/06/1200.webp",
-					"alt": "Estrategia 6"
+					"mediaId": "projects/la-trobada/business-02",
+					"alt": "Perspectiva interior del acceso y mesas altas de La Trobada"
 				}
-			],
-			"_template": "carousel"
+			]
 		},
 		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "CONCEPTO E IDENTIDAD",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "En cuanto a la identidad visual, los valores de partida estaban profundamente vinculados a la cultura mediterránea. El espacio debía transmitir el carácter de la costa y su calidez a través de una paleta cromática natural y materiales propios de la tradición local, como la cerámica, el estuco a la cal y las baldosas catalanas. El mobiliario, de diseño honesto, formas sencillas y materiales confortables, completa esta identidad."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/la-trobada/concept-materials",
+			"alt": "Carta de materiales y mobiliario mediterráneo de La Trobada"
+		},
+		{
+			"_template": "text",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "1. Taburetes altos Bogart de Vergès / 2. Acabado de mortero de arcilla en paredes / 3. Baldosa tradicional de terracota de Ferres / 4. Aplique de pared de Marset / 5. Vajilla de Aguadé Cerámica / 6. Elemento de celosía de Ferres."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "ESTRATEGIA ESPACIAL",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "El objetivo principal era resolver la circulación entre cocina, sala y la terraza, que cuadruplica la capacidad interior. Era fundamental evitar cruces entre los distintos flujos de trabajo —servicio de platos, cafés, cobros y limpieza— y mejorar la operativa del equipo."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Para ello, modificamos el cerramiento a calle y creamos una estación de servicio independiente que concentra la preparación de cafés, la limpieza y la nevera de bebidas, estratégicamente situada junto al acceso a sala para agilizar el servicio."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "carousel",
+			"items": [
+				{
+					"mediaId": "projects/la-trobada/strategy-01",
+					"alt": "Estación de servicio y acceso entre terraza y sala"
+				},
+				{
+					"mediaId": "projects/la-trobada/strategy-02",
+					"alt": "Celosía cerámica ondulante sobre la barra de La Trobada"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Sin embargo, el elemento más distintivo y evocador del proyecto es, sin duda, la gran celosía sobre la barra. Su trazado sinuoso evoca el movimiento del mar y se convierte en el gesto más reconocible del espacio. Una forma que trasciende el interiorismo y se traslada también al diseño de la carta, que adopta su geometría ondulante como hilo conductor."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/la-trobada/celosia-materials",
+			"alt": "Detalle de materiales, celosía ondulante y aplicación en la carta"
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/plan-initial",
+					"alt": "Planta del estado inicial de La Trobada"
+				},
+				{
+					"mediaId": "projects/la-trobada/plan-project",
+					"alt": "Planta de proyecto y nueva distribución de La Trobada"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/la-trobada/strategy-bar",
+			"alt": "Reorganización de barra, cocina y zona de mesas altas"
+		},
+		{
+			"_template": "text",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Reorganizamos la cocina, trasladando la preparación en caliente a la pared opuesta a la barra y ubicamos la preparación en frío detrás de ésta, habilitando espacio para los puestos de barra. Además, reorientamos el mobiliario y sustituimos las mesas bajas por mesas altas para favorecer la rotación y recuperar una sala interior infrautilizada."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Para completar la intervención, incorporamos un gran armario a medida en el pasillo entre la sala y los aseos, destinado al almacenamiento de material de sala y terraza, como cubertería, cestas de salsas, conservas y stock de bebidas."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"title": "Antes y después"
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/la-trobada/before-after-01",
+					"alt": "Estado inicial de la sala de La Trobada antes de la reforma"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-02",
+					"alt": "Estado inicial de la barra de La Trobada antes de la reforma"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-03",
+					"alt": "Vista previa del espacio interior antes de la intervención"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-04",
+					"alt": "Resultado del proyecto: nueva sala con mesas altas y calidez mediterránea"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-05",
+					"alt": "Resultado del proyecto: barra renovada con celosía cerámica ondulante"
+				},
+				{
+					"mediaId": "projects/la-trobada/before-after-06",
+					"alt": "Estado inicial del acceso y zona de servicio antes de la reforma"
+				}
+			]
+		},
+		{
+			"_template": "credits",
 			"title": "COLABORADORES",
 			"list": [
 				{
@@ -174,7 +302,7 @@
 					"role": "Proveedor"
 				},
 				{
-					"name": "Auténtica Cerámica",
+					"name": "Aguadé Cerámica",
 					"role": "Proveedor"
 				},
 				{
@@ -185,14 +313,7 @@
 					"name": "Marset Iluminación",
 					"role": "Proveedor"
 				}
-			],
-			"_template": "credits"
-		},
-		{
-			"mediaId": "projects/la-trobada/collab/01",
-			"alt": "Colaboradores",
-			"_template": "media",
-			"variant": "full"
+			]
 		}
 	]
 }

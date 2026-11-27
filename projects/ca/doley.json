@@ -1,10 +1,10 @@
 {
 	"title": "Doley",
-	"description": "Estètica, color i salut capil·lar convertits en una experiència immersiva.",
+	"description": "Estètica, color i salut capil·lar en un mateix espai.",
 	"slug": "doley",
 	"publishDate": "2024-01-14T00:00:00.000Z",
 	"tags": [
-		"Salón de belleza"
+		"Saló de bellesa"
 	],
 	"showTags": true,
 	"featured": false,
@@ -12,16 +12,27 @@
 	"blocks": [
 		{
 			"_template": "media",
-			"variant": "banner"
+			"variant": "banner",
+			"mediaId": "projects/doley/cover",
+			"alt": "Saló de bellesa Doley a Sant Gervasi, Barcelona"
 		},
 		{
+			"_template": "details",
 			"title": "Doley",
-			"_template": "details"
+			"subtitle": "Estètica, color i salut capil·lar en un mateix espai.",
+			"services": "Disseny d'interiors, Identitat espacial",
+			"servicesLabel": "SERVEIS",
+			"category": "SALÓ DE BELLESA",
+			"categoryLabel": "CATEGORIA",
+			"area": "53 m²",
+			"areaLabel": "ÀREA",
+			"location": "SANT GERVASI, BARCELONA",
+			"locationLabel": "UBICACIÓ"
 		},
 		{
-			"title": "BRIEF",
 			"_template": "text",
 			"variant": "brief",
+			"title": "EL PROJECTE",
 			"body": {
 				"type": "root",
 				"children": [
@@ -30,7 +41,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": ""
+								"text": "Doley és una assessoria d'imatge especialitzada en color, salut capil·lar i caracterització de personatges. Per a la nova etapa de Doley a Sant Gervasi, transformem una antiga perruqueria de traspàs en un espai de wellness, estètica i tractament alineat amb la seva identitat de marca; dissenyat per projectar professionalitat i posicionar-lo com a referent en l'àmbit local."
 							}
 						]
 					}
@@ -38,9 +49,23 @@
 			}
 		},
 		{
-			"title": "CONCEPTO",
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/intro-brand",
+					"alt": "Identitat de marca Doley"
+				},
+				{
+					"mediaId": "projects/doley/intro-detail",
+					"alt": "Detall d'interiorisme i atmosfera del saló Doley"
+				}
+			]
+		},
+		{
 			"_template": "text",
-			"variant": "concept",
+			"variant": "brief",
+			"title": "NECESSITATS DE NEGOCI",
 			"body": {
 				"type": "root",
 				"children": [
@@ -49,40 +74,290 @@
 						"children": [
 							{
 								"type": "text",
-								"text": ""
+								"text": "El projecte busca traduir la seva proposta en una imatge polida i coherent que fusione wellness i fantasia, fidelitzant una clientela afí per elevar la rendibilitat i obrir la porta a la seva pròpia línia de producte."
 							}
 						]
 					}
 				]
 			}
-		},
-		{
-			"title": "ESTRATEGIA",
-			"_template": "text",
-			"variant": "strategy",
-			"body": {
-				"type": "root",
-				"children": [
-					{
-						"type": "p",
-						"children": [
-							{
-								"type": "text",
-								"text": ""
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"title": "COLABORADORES",
-			"list": [],
-			"_template": "credits"
 		},
 		{
 			"_template": "media",
-			"variant": "full"
+			"variant": "full",
+			"mediaId": "projects/doley/brief-01",
+			"alt": "Vista general del saló Doley amb paleta en rosa empolsat i tons sorra"
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "CONCEPTE I IDENTITAT",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Doley neix de la unió de diferents facetes creatives i tècniques que conviuen de manera natural: el color com a llenguatge, el maquillatge de caracterització com a expressió artística i la salut capil·lar com a base imprescindible del benestar."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "El repte era fusionar aquests universos en un mateix espai, equilibrant la força expressiva del color i la fantasia amb la serenitat pròpia del spa i els tractaments capil·lars. Vam triar un color rosa empolsat, recordant el color de l'antic logotip, que envolta l'espai de dalt a baix com a fil conductor, suavitzat per tons sorra i fustes naturals. El conjunt es completa amb el contrast de les butaques fosques i la precisió de l'acer raspallat, creant un equilibri entre calidesa, caràcter i sofisticació."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Per ordre: Estuc rústic amb morter de calç / Acabat de fusta natural de roure clar / Morter d'argila en tonalitat rosa empolsat / Acer raspallat / Taulell de plàstic reciclat imitant el terratzo, de KIMO."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 3,
+			"images": [
+				{
+					"mediaId": "projects/doley/material-01-stucco",
+					"alt": "Estuc rústic amb morter de calç"
+				},
+				{
+					"mediaId": "projects/doley/material-02-oak",
+					"alt": "Acabat de fusta natural de roure clar"
+				},
+				{
+					"mediaId": "projects/doley/material-03-clay",
+					"alt": "Morter d'argila en tonalitat rosa empolsat"
+				},
+				{
+					"mediaId": "projects/doley/material-04-steel",
+					"alt": "Acer raspallat"
+				},
+				{
+					"mediaId": "projects/doley/material-05-terrazzo",
+					"alt": "Taulell de plàstic reciclat imitant el terratzo, de KIMO"
+				}
+			]
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/concept-01",
+					"alt": "Façana diürna del saló Doley a Sant Gervasi"
+				},
+				{
+					"mediaId": "projects/doley/concept-02",
+					"alt": "Prestatgeries lleugeres i minimalistes per a l'exposició de producte"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "concept",
+			"title": "EXPOSICIÓ DE PRODUCTE",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Atès el paper estratègic d'aquesta línia de productes per al negoci, orientada al tractament i a la cura respectuosa del cabell i el cuir cabellut, s'opta per reduir la presència de producte d'exposició i minimitzar la càrrega visual. Una selecció de prestatgeries lleugeres i minimalistes permet exhibir-lo de manera ordenada i estructurada, reforçant la percepció de sofisticació i posant en valor l'experiència de tractament."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "ESTRATÈGIA ESPACIAL",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "En l'àmbit espacial, vam resoldre la complexa morfologia irregular del local donant-li una estructura lògica i dimensionant cada àrea funcional de manera proporcional, cosa que ens va permetre integrar, a més, un espai separat i exclusiu per al spa capil·lar."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/plan-initial",
+					"alt": "Planta de l'estat inicial del local"
+				},
+				{
+					"mediaId": "projects/doley/plan-project",
+					"alt": "Planta de distribució del projecte Doley"
+				}
+			]
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/strategy-01",
+					"alt": "Vista interior de la nova distribució del saló Doley"
+				},
+				{
+					"mediaId": "projects/doley/before-01",
+					"alt": "Fotografia de l'estat previ del local abans de la reforma"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "TOCADOR DE TRACTAMENTS I ZONA D'AIGÜES",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Des del punt de vista operatiu, vam reestructurar l'interior per guanyar fluïdesa als rentacaps i sumar un tocador privat exclusiu per a tractaments, evitant l'exposició de la imatge original. L'antiga zona d'aigües no només no tenia les dimensions mínimes per treballar, sinó que mantenia l'àrea de mescles separada dels rentacaps, entorpint el dia a dia. Una de les dificultats més grans va ser integrar en aquest esquema un espai dedicat al spa capil·lar que s'havia d'ubicar al costat de la presa d'aigua."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/strategy-02",
+					"alt": "Tocador privat de tractaments amb cortina en carril"
+				},
+				{
+					"mediaId": "projects/doley/strategy-03",
+					"alt": "Zona de rentacaps i spa capil·lar"
+				}
+			]
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "EMMAGATZEMATGE I AMPLADA",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Una de les prioritats va ser solucionar la manca d'emmagatzematge. Per aconseguir-ho, es van projectar diversos punts estratègics: un rentacaps ben dimensionat, una rebotiga equipada amb escriptori, rentadora i armaris d'estoc, a més de solucions integrades en el mateix mobiliari del saló. El taulell ovalat, l'armari rober i els petits elements auxiliars garanteixen l'ordre i descarreguen visualment el conjunt. Per la seva banda, els miralls de terra a sostre multipliquen la percepció espacial, un recurs que només juga a favor quan hi ha ordre, aconseguint ara una atmosfera plena de llum i amplada."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/storage-01",
+					"alt": "Solucions de mobiliari a mida i emmagatzematge integrat"
+				},
+				{
+					"mediaId": "projects/doley/storage-02",
+					"alt": "Miralls de terra a sostre i taulell ovalat al saló Doley"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/doley/before-02",
+			"alt": "Estat previ de la zona interior abans de la intervenció"
+		},
+		{
+			"_template": "text",
+			"variant": "strategy",
+			"title": "APARADOR",
+			"body": {
+				"type": "root",
+				"children": [
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "En estar situat en un carrer tranquil, era vital que el local guanyés visibilitat des de lluny i atragués el vianant."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "Per captar l'atenció des del primer cop d'ull, vam retirar els cartells i anuncis de l'aparador i vam buidar el mobiliari anterior. A més, vam afegir vinils al vidre detallant els diversos serveis."
+							}
+						]
+					},
+					{
+						"type": "p",
+						"children": [
+							{
+								"type": "text",
+								"text": "A la nit, la il·luminació càlida del local crea una atmosfera acollidora que, alhora, destaca punts clau de l'interior."
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"_template": "gallery",
+			"cols": 2,
+			"images": [
+				{
+					"mediaId": "projects/doley/storefront-night",
+					"alt": "Aparador nocturn de Doley amb il·luminació càlida"
+				},
+				{
+					"mediaId": "projects/doley/before-03",
+					"alt": "Estat previ de l'aparador abans de la reforma"
+				}
+			]
+		},
+		{
+			"_template": "media",
+			"variant": "full",
+			"mediaId": "projects/doley/storefront-interior",
+			"alt": "Perspectiva interior del saló de bellesa Doley"
 		}
 	]
 }
