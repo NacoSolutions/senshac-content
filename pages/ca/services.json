@@ -4,10 +4,15 @@
 	"chrome": { "header": { "scrolling": "transparent-dark", "atFinal": "opaque-light" } },
 	"blocks": [
 		{
+			"_template": "showcase",
+			"mediaId": "reference-intake/services/intro",
+			"imageAlt": "Recerca visual i material durant el procés creatiu"
+		},
+		{
 			"_template": "text",
-			"title": "SERVEIS A MIDA DE LES TEVES NECESSITATS:",
+			"title": "Serveis a mida de les teves necessitats:",
 			"headingLevel": "h1",
-			"showStar": true
+			"showStar": false
 		},
 		{
 			"_template": "list",
@@ -27,7 +32,7 @@
 			},
 			"items": [
 				{
-					"title": "Consultoria estratègica",
+					"title": "CONSULTORIA ESTRATÈGICA",
 					"text": {
 						"type": "root",
 						"children": [
@@ -36,17 +41,27 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Sessió intensiva de dues hores, amb lliurament d’un dossier al cap de 72 hores. Analitzem el local i t’orientem estratègicament per integrar-hi la marca, optimitzar l’espai i millorar els fluxos de venda."
+										"text": "Sessió intensiva de dues hores amb lliurament de dossier 72 h després.",
+										"bold": true
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Una auditoria del teu espai per detectar oportunitats i prendre decisions estratègiques."
 									}
 								]
 							}
 						]
 					},
-					"href": "/ca/contact?service=strategic-consultation",
-					"ctaText": "Sol·licita una Consultoria estratègica ↗"
+					"href": "/ca/methods/consultation",
+					"ctaText": "Agenda sessió ↗"
 				},
 				{
-					"title": "Projecte Decoratiu i Restyling",
+					"title": "ESTILISME / REBRANDING",
 					"text": {
 						"type": "root",
 						"children": [
@@ -55,17 +70,27 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Desenvolupem el concepte espacial i l’expressió de marca, seleccionem mobiliari, il·luminació i peces a mida, amb cap o molt pocs canvis en la distribució i sense obra o amb una intervenció mínima."
+										"text": "Transformació puntual o estilisme sense canvis de distribució.",
+										"bold": true
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Renova la imatge del teu negoci i actualitza elements per alinear-los amb la teva marca."
 									}
 								]
 							}
 						]
 					},
 					"href": "/ca/contact?service=decorative-restyling",
-					"ctaText": "Sol·licita un Projecte Decoratiu i Restyling ↗"
+					"ctaText": "Explica'ns què necessites ↗"
 				},
 				{
-					"title": "Projecte Integral",
+					"title": "PROJECTE INTEGRAL",
 					"text": {
 						"type": "root",
 						"children": [
@@ -74,21 +99,31 @@
 								"children": [
 									{
 										"type": "text",
-										"text": "Acompanyament 360° des de la idea fins a l’obertura. Cobrim el procés, de l’estratègia inicial a l’execució, incloent-hi els canvis de distribució i l’obra necessaris."
+										"text": "Acompanyament 360° des de la idea fins a l’obertura.",
+										"bold": true
+									}
+								]
+							},
+							{
+								"type": "p",
+								"children": [
+									{
+										"type": "text",
+										"text": "Per crear un espai completament fet per a la teva marca."
 									}
 								]
 							}
 						]
 					},
 					"href": "/ca/contact?service=integral",
-					"ctaText": "Sol·licita un Projecte Integral ↗"
+					"ctaText": "Sol·licita informació ↗"
 				}
 			]
 		},
 		{
 			"_template": "showcase",
-			"mediaId": "reference-intake/services/intro",
-			"imageAlt": "Recerca visual i material durant el procés creatiu"
+			"mediaId": "reference-intake/services/moodboard",
+			"imageAlt": "Mostres de materials i acabats"
 		},
 		{
 			"intro": { "type": "root", "children": [{ "type": "h2", "children": [{ "type": "text", "text": "El pas a pas: de l’estratègia a l’obertura." }] }] },
@@ -97,7 +132,7 @@
 				{
 					"number": "01",
 					"title": "Diagnòstic i estratègia espacial",
-					"summary": "Abans de dissenyar, analitzem la marca, el negoci i les necessitats de l’espai per definir una estratègia que ho alineï tot.",
+					"summary": "Abans de dissenyar, analitzem la teva marca i les necessitats del teu negoci i espai perquè tot treballi en la mateixa direcció.",
 					"details": [
 						{
 							"label": "Auditoria de negoci",
@@ -137,8 +172,8 @@
 				},
 				{
 					"number": "02",
-					"title": "Concepte creatiu",
-					"summary": "Convertim l’estratègia en una experiència espacial memorable, definint el recorregut del client i una atmosfera visual amb identitat pròpia.",
+					"title": "Concepte Creatiu i 3D",
+					"summary": "Desenvolupem un concepte creatiu alineat amb la teva marca i una estratègia espacial que millora l’experiència del client, optimitza l’operativa i impulsa les vendes.",
 					"details": [
 						{
 							"label": "Identitat",
@@ -212,8 +247,8 @@
 				},
 				{
 					"number": "03",
-					"title": "Desenvolupament tècnic",
-					"summary": "Convertim la visió creativa en un projecte coherent i executable, amb la documentació tècnica necessària per fer-lo realitat.",
+					"title": "Desenvolupament Tècnic",
+					"summary": "Elaborem la documentació tècnica necessària per portar el projecte d’interiorisme a la realitat amb control i coherència.",
 					"details": [
 						{
 							"label": "Plànols tècnics",
@@ -270,8 +305,8 @@
 				},
 				{
 					"number": "04",
-					"title": "Supervisió d’obra i coordinació del muntatge",
-					"summary": "Acompanyem l’execució perquè el resultat sigui fidel al disseny, resolent imprevistos i coordinant el muntatge.",
+					"title": "Supervisió d’obra i Coordinació de muntatge",
+					"summary": "Acompanyem l’execució juntament amb el cap d’obra i els industrials per assegurar que el resultat final sigui fidel al projecte aprovat.",
 					"details": [
 						{
 							"label": "Un sol interlocutor",
@@ -330,18 +365,8 @@
 		},
 		{
 			"_template": "callout",
-			"text": "Agenda una trucada",
-			"link": "/ca/contact"
-		},
-		{
-			"_template": "showcase",
-			"mediaId": "reference-intake/services/moodboard",
-			"imageAlt": "Mostres de materials i acabats"
-		},
-		{
-			"_template": "callout",
-			"text": "Sol·licita una proposta personalitzada",
-			"link": "/ca/contact"
+			"text": "Comença el teu projecte",
+			"link": "/ca/contact?mode=guided"
 		},
 		{
 			"_template": "showcase",
@@ -368,7 +393,7 @@
 						"children": [
 							{
 								"type": "text",
-								"text": "FAQ"
+								"text": "PREGUNTES FREQÜENTS"
 							}
 						]
 					}
@@ -378,7 +403,7 @@
 				{
 					"number": "",
 					"title": "Quan és millor contactar amb l’estudi?",
-					"summary": "Com més aviat coneguem el projecte, millor. Podem intervenir quan defineixes el negoci o valores un espai, i també per replantejar, transformar o millorar un local existent.",
+					"summary": "Com més aviat puguem conèixer el teu projecte, millor. Les fases inicials són crítiques per detectar oportunitats, anticipar decisions i evitar problemes de distribució, costos o execució més endavant.",
 					"details": [
 						{
 							"label": "",
@@ -390,7 +415,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Les decisions inicials ajuden a detectar oportunitats i evitar problemes posteriors de distribució, costos o execució."
+												"text": "Podem intervenir des de les primeres fases, quan defineixes el negoci o valores un espai, però també quan ja tens un local i necessites replantejar-lo, transformar-lo o fer-lo funcionar millor."
 											}
 										]
 									}
@@ -402,12 +427,12 @@
 				{
 					"number": "",
 					"title": "Feu projectes fora de la vostra ciutat?",
-					"summary": "Sí. El Diagnòstic i el Concepte Creatiu poden fer-se en format híbrid, combinant treball en línia i visites presencials. Ens desplacem per prendre dades inicials i en les fases clau d’execució i muntatge."
+					"summary": "Sí. La fase creativa es pot desenvolupar en remot o en format híbrid, combinant treball en línia i visites presencials. Ens desplacem per a la presa de dades en les fases crítiques d’execució i muntatge."
 				},
 				{
 					"number": "",
 					"title": "Us encarregueu de l’obra, els permisos i l’arquitectura estructural?",
-					"summary": "El nostre focus és l’estratègia espacial i el disseny d’interiors.",
+					"summary": "El nostre focus és la creativitat, l’estratègia espacial i el disseny d’interiors.",
 					"details": [
 						{
 							"label": "",
@@ -419,7 +444,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Per a l’obra, les llicències i els projectes tècnics que requereixen arquitectes o enginyers, col·laborem amb els teus tècnics o et connectem amb professionals de confiança. Coordinem la feina perquè totes les parts avancin en la mateixa direcció."
+												"text": "Per a l’execució d’obra, les llicències i els projectes tècnics que requereixen la intervenció d’arquitectes o enginyers, col·laborem estretament amb una xarxa de professionals de confiança."
 											}
 										]
 									}
@@ -431,7 +456,7 @@
 				{
 					"number": "",
 					"title": "Què inclou la supervisió d’obra?",
-					"summary": "Supervisem l’execució del projecte d’interiorisme: revisem la ubicació dels elements, els acabats, els detalls constructius, els materials i el muntatge del mobiliari perquè el resultat sigui fidel al disseny.",
+					"summary": "Supervisem l’execució del projecte d’interiorisme: revisem la ubicació dels elements, definim tancaments i detalls constructius, i controlem acabats, materials i muntatge del mobiliari perquè el resultat sigui fidel al disseny.",
 					"details": [
 						{
 							"label": "",
@@ -443,7 +468,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "La direcció tècnica i legal de l’obra correspon a l’empresa constructora i/o al tècnic responsable."
+												"text": "Aclarim, tanmateix, que la direcció tècnica i legal de l’obra correspon a l’empresa constructora i/o al tècnic facultatiu responsable."
 											}
 										]
 									}
@@ -455,7 +480,7 @@
 				{
 					"number": "",
 					"title": "Com es calculen els honoraris?",
-					"summary": "Els honoraris depenen de l’abast, la complexitat i les necessitats específiques de cada projecte.",
+					"summary": "Els honoraris es defineixen en funció de l’abast, la complexitat i les necessitats específiques de cada projecte. Abans de començar, rebràs una proposta detallada amb tot el que inclou el projecte i els honoraris, perquè tinguis total claredat des del principi.",
 					"details": [
 						{
 							"label": "",
@@ -467,7 +492,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Abans de començar, rebràs una proposta detallada amb l’abast i els honoraris. També rebràs un correu cada divendres amb l’estat del projecte, ens hàgim vist aquella setmana o no."
+												"text": "A més, cada divendres rebràs un correu electrònic amb l’avenç i el seguiment del projecte, ens hàgim vist aquella setmana o no."
 											}
 										]
 									}
@@ -479,7 +504,7 @@
 				{
 					"number": "",
 					"title": "Treballeu amb una constructora pròpia o puc triar els industrials?",
-					"summary": "Comptem amb una xarxa de professionals de confiança, especialment en fusteria a mida, serralleria, il·luminació i mobiliari.",
+					"summary": "Comptem amb una xarxa de professionals i industrials que coneixem de primera mà, especialment en fusteria a mida, serralleria i metal·listeria, il·luminació i mobiliari. Hi confiem per garantir el nivell de qualitat, precisió i acabat que requereix cada projecte.",
 					"details": [
 						{
 							"label": "",
@@ -491,7 +516,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Si ja tens constructora o industrials de confiança, ens hi podem coordinar i treballar plegats per desenvolupar el projecte i executar-lo correctament."
+												"text": "I si ja tens una constructora o industrials de confiança, ens hi podem coordinar i treballar conjuntament per desenvolupar el projecte i assegurar una execució correcta."
 											}
 										]
 									}
@@ -503,7 +528,7 @@
 				{
 					"number": "",
 					"title": "Puc comprar els meus materials?",
-					"summary": "Centralitzar les compres ajuda a anticipar incidències, coordinar lliuraments i reduir errors, retards o costos imprevistos. També podem incorporar proveïdors o materials que ja hagis identificat.",
+					"summary": "La selecció de materials es treballa conjuntament per traslladar la identitat de marca a l’espai. Des de l’estudi en centralitzem el subministrament i la coordinació, prioritzant fabricants nacionals de confiança per garantir qualitat, terminis i pressupost.",
 					"details": [
 						{
 							"label": "",
@@ -515,7 +540,7 @@
 										"children": [
 											{
 												"type": "text",
-												"text": "Treballem sobretot amb proveïdors nacionals que coneixem i recomanem segons les necessitats i el pressupost de cada projecte."
+												"text": "Si ja teniu alguns materials o proveïdors identificats, podem valorar-los per incorporar-los i coordinar-los dins del projecte."
 											}
 										]
 									}

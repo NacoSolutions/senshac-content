@@ -53,11 +53,7 @@ test("localized inquiry content rejects legacy scope fields and invalid service 
 });
 
 test("localized home and service CTAs preselect only the canonical situation or service", async () => {
-	const expectedServices = [
-		"strategic-consultation",
-		"decorative-restyling",
-		"integral",
-	];
+	const expectedServices = [null, "decorative-restyling", "integral"];
 	for (const locale of ["es", "en", "ca"]) {
 		const home = JSON.parse(
 			await readFile(`pages/${locale}/home.json`, "utf8"),
@@ -86,6 +82,7 @@ test("localized home and service CTAs preselect only the canonical situation or 
 		const cards = servicesPage.blocks.find(
 			(block) => block._template === "list" && block.items?.length === 3,
 		).items;
+		expect(cards[0].href).toBe(`/${locale}/methods/consultation`);
 		expect(
 			cards.map(({ href }) =>
 				new URL(href, "https://example.test").searchParams.get("service"),

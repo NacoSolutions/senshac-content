@@ -1,7 +1,11 @@
 import { expect, test } from "bun:test";
 import { readFile } from "node:fs/promises";
 
-const services = ["strategic-consultation", "decorative-restyling", "integral"];
+const expectedHrefs = (lang) => [
+	`/${lang}/methods/consultation`,
+	`/${lang}/contact?service=decorative-restyling`,
+	`/${lang}/contact?service=integral`,
+];
 
 test("localized methods service CTAs preserve canonical service identifiers", async () => {
 	for (const lang of ["es", "en", "ca"]) {
@@ -14,8 +18,6 @@ test("localized methods service CTAs preserve canonical service identifiers", as
 		const items = page.blocks
 			.flatMap((block) => block.items ?? [])
 			.filter((item) => item.ctaText);
-		expect(items.map((item) => item.href)).toEqual(
-			services.map((id) => `/${lang}/contact?service=${id}`),
-		);
+		expect(items.map((item) => item.href)).toEqual(expectedHrefs(lang));
 	}
 });

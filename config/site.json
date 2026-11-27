@@ -33,6 +33,7 @@
     "email": "ester@senshac.com",
     "phone": "+34 661 661 426",
     "phoneLink": "+34661661426",
+    "consultationBookingUrl": "",
     "location": {
       "city": "Barcelona",
       "country": "ES"
